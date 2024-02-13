@@ -12,7 +12,7 @@ Sure, in this case, we recommend using MetaPerson Creator Mobile. It is more lig
 
 ### [](#header-3)2. Do you have any sample projects with the integration of MetaPerson Creator?
 
-The sample projects for iOS, Android, Unity VR, and UE can be found here [https://github.com/avatarsdk](https://github.com/avatarsdk). Also, we recommend checking this page on the website [https://avatarsdk.com/metaperson-creator/](https://avatarsdk.com/metaperson-creator/).
+The sample projects for iOS, Android, Unity VR, and UE can be found here [https://github.com/avatarsdk](https://github.com/avatarsdk). Also, we recommend checking this page on the website [https://avatarsdk.com/metaperson-creator/](https://avatarsdk.com/metaperson-creator/) and our [video tutorials](https://www.youtube.com/watch?v=Z2Ila9tb3aA&list=PLDdNlBHHu4Dl6zI8ZFNGfFigy9VJeT8on).
 
 ### [](#header-3)2. What limitations do you have for integration MetaPerson Creator?
 

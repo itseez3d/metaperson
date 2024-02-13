@@ -11,7 +11,7 @@ Introducing [MetaPerson Creator](https://metaperson.avatarsdk.com) – the revol
 ![](assets/img/creator.png)
 
 With MetaPerson Creator, you have complete control over every aspect of your avatar, from its facial features to its body type, outfits, and hairstyles.
-Our advanced technology uses the latest in facial recognition and 3D modeling to create an avatar that closely resembles you. You can customize your avatar by adjusting its facial features like the shape of your nose, eyes, mouth. Plus, you can experiment with different hairstyles and colors until you find the perfect look.
+Our advanced technology uses the latest in facial recognition and 3D modeling to create an avatar that closely resembles you. You can customize your avatar by adjusting its facial features like the shape of your nose, eyes, and mouth. Plus, you can experiment with different hairstyles and colors until you find the perfect look.
 
 ![](assets/img/facial_features.png)
 
