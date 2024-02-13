@@ -34,7 +34,7 @@ It's important to ensure that you've correctly added your developer credentials 
 
 To avoid this issue, double-check that you've entered your c "CLIENT_ID" and "CLIENT_SECRET" values correctly and that your account is on the Pro plan or higher. If you're still experiencing issues, please don't hesitate to contact our [support team](mailto:support@avatarsdk.com) for assistance.
 
-You can find the whole sample page with the integration at this link [https://metaperson.avatarsdk.com/business.html](https://metaperson.avatarsdk.com/business.html). Use the "open the creator" button to open an iframe with MetaPerson Creator. Please investigate the page source to look at the integration sample. Please pay attention to JS API calls on this sample page. 
+You can find the whole sample page with the integration at this link [https://metaperson.avatarsdk.com/business.html](https://metaperson.avatarsdk.com/business.html). Use the "Open MetaPerson Creator" button to open an iframe with MetaPerson Creator. Also, here you can specify your developer credentials with the UI controls. Please investigate the page source to look at the integration sample. Please pay attention to JS API calls on this sample page. 
 
 ![](assets/img/sample_page.png)
 
