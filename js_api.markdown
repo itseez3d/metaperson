@@ -28,7 +28,7 @@ These events tell the MetaPerson Creator to perform some specific actions.
 
 * **Export Avatar** - This event allows you to export avatar from API. It can be required if you hide the button for export from the UI and want to control export functionality not from the iframe, but from an external website or application.
 
-* **Show Avatar** - This event allows you to open an already created avatar and customize it.
+* **Show Avatar** - This event allows you to open an already-created avatar and customize it.
 
 ## [](#header-4)Events from MetaPerson Creator
 
@@ -69,7 +69,7 @@ After setting these parameters, you can use the `postMessage()` method to send t
 
 ## [](#header-2)UI Parameters
 
-This function allows customization of a bit UI of MetaPerson Creator. This functionality differs between Mobile and Desktop versions, so we split this description correspondingly. 
+This function allows customization of a bit of UI of MetaPerson Creator. This functionality differs between Mobile and Desktop versions, so we split this description correspondingly. 
 
 ## [](#header-3)MetaPerson Creator Desktop
 
@@ -122,16 +122,12 @@ The parameters of this code are:
 The `generate_avatar` event initiates avatar generation.
 
 ```
-function generateAvatar() {
-    let iframe = document.getElementById("editor_iframe");
     let generateAvatarMessage = {
         "eventName": "generate_avatar",
-        "gender" : "male",
-        "image" : "image_encoded_to_base64_string"
+        "gender": "male",
+        "image": "image_encoded_to_base64_string"
     };
-    iframe.contentWindow.postMessage(generateAvatarMessage, "*");
-    iframe.contentWindow.focus();
-}
+    evt.source.postMessage(generateAvatarMessage, "*"); 
 ```
 
 Here's a breakdown of the parameters:
@@ -145,7 +141,7 @@ The "gender" parameter can be empty in the Desktop version. In this case, the Me
 ## [](#header-2)Export Avatar
 
 The `export_avatar` event initiates an avatar export. Use this event when you need to implement your own "Export" button outside the iframe with MetaPerson Creator.
-Yo need to find the iframe component with MetaPerson Creator on your page and post a message into it.
+You need to find the iframe component with MetaPerson Creator on your page and post a message into it.
 
 E.g. it can be done in the following way:
 
@@ -168,7 +164,7 @@ It's possible to open a previously generated avatar for further customization. Y
 ```
 let showAvatarMessage = {
     "eventName": "show_avatar",
-    "avatarCode" : AVATAR_CODE_TO_SHOW
+    "avatarCode": AVATAR_CODE_TO_SHOW
 };
 evt.source.postMessage(showAvatarMessage, "*");
 ```
