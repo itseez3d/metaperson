@@ -9,6 +9,7 @@ parent: Business integration
 
 Communication between an iframe with MetaPerson Creator and your page is performed via a messaging mechanism. Messages with special events are both posted to and received from the MetaPerson Creator.
 The events should be sent after the load of the corresponding version of MetaPerson Creator. In the Desktop version, we use the "unity_loaded" event to signal about it, in the Mobile version the "mobile_loaded" is used. Please check the corresponding business.html sample described [here](web_integration).
+Also you can check if the MetaPerson Creator is loaded via the `window.metaPersonCreator.isLoaded` parameter.
 
 ## [](#header-4)Configuration events
 
@@ -75,22 +76,24 @@ This function allows customization of a bit of UI of MetaPerson Creator. This fu
 
 In the Desktop version, it allows to hide export button to use the **Export Avatar** function manually and control the modal window with an export link that shows after export.
 
+```
+let uiParametersMessage = {
+    "eventName": "set_ui_parameters",
+    "isExportButtonVisible" : true,
+    "isLoginButtonVisible": true,
+    "closeExportDialogWhenExportComlpeted" : false,
+    "outfitsBlackList" : ["ARPI", "SEVAN"]
+};
+evt.source.postMessage(uiParametersMessage, "*");
+```
+
 Here's a breakdown of the parameters:
 
 * **eventName** - This is the name of the event, which in this case is "set_ui_parameters". This tells MetaPerson Creator which request you're making.
 * **isExportButtonVisible** - This parameter specifies should the UI includes the export button or not.
 * **isLoginButtonVisible** - This parameter specifies should the UI includes the profile button or not. 
 * **closeExportDialogWhenExportComlpeted** - This parameter specifies closing the modal window with the export link right after export completion. 
-
-```
-let uiParametersMessage = {
-       "eventName": "set_ui_parameters",
-       "isExportButtonVisible" : true,
-       "isLoginButtonVisible": true,
-       "closeExportDialogWhenExportComlpeted" : false,
-};
-evt.source.postMessage(uiParametersMessage, "*");
-```
+* **outfitsBlackList** - A list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
 
 ## [](#header-3)MetaPerson Creator Mobile
 
@@ -104,6 +107,7 @@ let uiParametersMessage = {
     "exportButtonText": "Go",
     "theme": "light", 
     "gender": "female",
+    "outfitsBlackList" : ["ARPI", "SEVAN"]
 };
 evt.source.postMessage(uiParametersMessage, "*");
 ```
@@ -116,6 +120,7 @@ The parameters of this code are:
 * **exportButtonText** - It allows to change the text of the export button. 
 * **theme** - It allows to choose the visual theme for the UI (available options: "dark", "light").
 * **gender** - If the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are "male" and "female".
+* **outfitsBlackList** - A list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
 
 ## [](#header-2)Generate Avatar
 
@@ -125,6 +130,7 @@ The `generate_avatar` event initiates avatar generation.
     let generateAvatarMessage = {
         "eventName": "generate_avatar",
         "gender": "male",
+        "age": "adult",
         "image": "image_encoded_to_base64_string"
     };
     evt.source.postMessage(generateAvatarMessage, "*"); 
@@ -134,6 +140,7 @@ Here's a breakdown of the parameters:
 
 * **eventName** - This is the name of the event, which in this case is "generate_avatar". This tells MetaPerson Creator which request you're making.
 * **gender** - This parameter specifies the gender of the computed avatar. Possible values are "male" and "female".
+* **age** - This parameters specifies the age of the avatar. Possible values are "adult", "teen15" and "teen12". Default value is "adult". This parameter is available only for the Desktop version. 
 * **image** - An image in JPEG or PNG format encoded into a base64 string. 
 
 The "gender" parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
@@ -234,8 +241,6 @@ Here's a breakdown of the parameters:
 * **eventName** - This is the name of the event the MetaPerson Creator sends. It is "action_availability_changed" in this case.
 * **actionName** - The name of the actions whose availability has changed. Possible values are "avatar_generation" and "avatar_export".
 * **isAvailable** - Indicates if this particular action is available. For example, whether you can generate or export an avatar at the current moment. 
-
-This message is sent only by the Desktop version of the MetaPerson Creator.
 
 
 If you need any help or guidance with our JS API or any other aspect of MetaPerson Creator, our [support team](mailto:support@avatarsdk.com) is always available to assist you.
