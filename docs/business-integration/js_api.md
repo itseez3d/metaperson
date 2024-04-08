@@ -41,7 +41,7 @@ These events tell the MetaPerson Creator to perform some specific actions.
 
 The call is for setting the export parameters. This allows you to customize the output of your avatar by specifying things like the file format, resolution, and other options. Here's an example of how you can use the export parameters request:
 
-```
+```js
     let exportParametersMessage = {
         "eventName": "set_export_parameters",
         "format" : "gltf",
@@ -75,7 +75,7 @@ This function allows customization of a bit of UI of MetaPerson Creator. This fu
 
 In the Desktop version, it allows to hide export button to use the **Export Avatar** function manually and control the modal window with an export link that shows after export.
 
-```
+```js
 let uiParametersMessage = {
     "eventName": "set_ui_parameters",
     "isExportButtonVisible" : true,
@@ -98,7 +98,7 @@ Here's a breakdown of the parameters:
 
 In the Mobile version, this function includes a bit more options. 
 
-```
+```js
 let uiParametersMessage = {
     "eventName": "set_ui_parameters",
     "isExportButtonVisible": true,
@@ -125,7 +125,7 @@ The parameters of this code are:
 
 The `generate_avatar` event initiates avatar generation.
 
-```
+```js
     let generateAvatarMessage = {
         "eventName": "generate_avatar",
         "gender": "male",
@@ -151,7 +151,7 @@ You need to find the iframe component with MetaPerson Creator on your page and p
 
 E.g. it can be done in the following way:
 
-```
+```js
 function onExportClicked() {
     let iframe = document.getElementById("editor_iframe");
     let exportAvatarMessage = {
@@ -167,7 +167,7 @@ You need to be sure that the avatar is ready for export and displayed on the sce
 
 It's possible to open a previously generated avatar for further customization. You'll need an "avatar code" to display it in the MetaPerson Creator.
 
-```
+```js
 let showAvatarMessage = {
     "eventName": "show_avatar",
     "avatarCode": AVATAR_CODE_TO_SHOW
@@ -188,7 +188,7 @@ You can use the `model_exported` event to receive the link to the exported avata
 
 Here's an example code snippet that demonstrates how to do this:
 
-```
+```js
 function onWindowMessage(evt) {
     if (evt.type === "message") {
         if (evt.data?.source === "metaperson_creator"){
@@ -212,7 +212,7 @@ The MetaPerson Creator sends this message outside the iframe to tell when it is 
 
 Here's an example code snippet that demonstrates how to receive this event:
 
-```
+```js
 function onWindowMessage(evt) {
     if (evt.type === "message") {
         if (evt.data?.source === "metaperson_creator"){

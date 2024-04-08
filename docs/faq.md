@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'FAQ'
-sidebar_position: 3
+sidebar_position: 4
 description: Frequently Asked Questions
 ---
 

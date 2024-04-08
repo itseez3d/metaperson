@@ -17,7 +17,7 @@ To integrate MetaPerson Creator Desktop into your website, you'll need to first 
 
 To connect MetaPerson Creator Desktop with your Avatar SDK account you need to use JS API to set your developer credentials to the iframe. 
 
-```
+```js
 function onUnityLoaded(evt, data) {
     let authenticationMessage = {
         "eventName": "authenticate",
@@ -46,7 +46,7 @@ Integration of MetaPerson Creator Mobile is almost the same but you need to use 
 
 To connect MetaPerson Creator Mobile with your Avatar SDK account you need to use almost the same JS API to set your developer credentials to the iframe. 
 
-```
+```js
 function onMobileLoaded(evt, data) {
     let authenticationMessage = {
         "eventName": "authenticate",
