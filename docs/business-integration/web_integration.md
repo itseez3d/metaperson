@@ -1,15 +1,15 @@
 ---
-layout: default
-title: Website intergration
-nav_order: 2
-parent: Business integration
+sidebar_label: 'Website intergration'
+sidebar_position: 2
+description: Website intergration
+slug: /web_integration
 ---
 
-# [](#header-1)Website integration
+# Website integration
 
 Integrating MetaPerson Creator into your website is easy and straightforward, thanks to our iframe mechanism and special JS API. This allows you to embed the creator directly into your website and set up, providing a seamless and intuitive experience for your users.
 
-# [](#header-2)MetaPerson Creator Desktop
+# MetaPerson Creator Desktop
 
 To integrate MetaPerson Creator Desktop into your website, you'll need to first create an iframe element that references our creator URL. We recommend using the link [https://metaperson.avatarsdk.com/iframe.html](https://metaperson.avatarsdk.com/iframe.html) for MetaPerson Creator Desktop to use it in an iframe. It is the same version of MetaPerson Creator Desktop but without any additional controls, that allow easy resizing it to the size of the iframe element. 
 
@@ -36,11 +36,11 @@ To avoid this issue, double-check that you've entered your c "CLIENT_ID" and "CL
 
 You can find the whole sample page with the integration at this link [https://metaperson.avatarsdk.com/business.html](https://metaperson.avatarsdk.com/business.html). Use the "Open MetaPerson Creator" button to open an iframe with MetaPerson Creator. Also, here you can specify your developer credentials with the UI controls. Please investigate the page source to look at the integration sample. Please pay attention to JS API calls on this sample page. 
 
-![](assets/img/sample_page.png)
+![](./img/sample_page.png)
 
 Once you've added the iframe to your website, your users can start creating their own avatars directly from your website. They can upload a selfie, customize their avatar's features, hairstyles, outfits, and body settings, and then download or integrate their avatar into your product.
 	
-# [](#header-2)MetaPerson Creator Mobile
+# MetaPerson Creator Mobile
 
 Integration of MetaPerson Creator Mobile is almost the same but you need to use another link to make it. We recommend using the link [https://mobile.metaperson.avatarsdk.com/generator](https://mobile.metaperson.avatarsdk.com/generator) for MetaPerson Creator Mobile to use it in an iframe. 
 
@@ -59,4 +59,4 @@ function onMobileLoaded(evt, data) {
 
 You also can find the whole sample page with the integration at this link [https://mobile.metaperson.avatarsdk.com/business.html](https://mobile.metaperson.avatarsdk.com/business.html). Please investigate the page source to look at the integration sample. Please pay attention to JS API calls on this sample page. 
 
-![](assets/img/mobile_sample_page.png)
+![](./img/mobile_sample_page.png)
