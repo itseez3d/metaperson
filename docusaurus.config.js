@@ -59,7 +59,8 @@ const config = {
       navbar: {       
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.png',
+          src: 'img/logo-normal@2x.png',
+          srcDark: '/img/logo-white-color@2x.png',
         },
       },
       footer: {
