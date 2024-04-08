@@ -61,7 +61,23 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo-normal@2x.png',
           srcDark: '/img/logo-white-color@2x.png',
-        },
+        }, items: [
+          {
+            to: 'https://api.avatarsdk.com/',
+            position: 'left',
+            label: 'REST API',
+          },
+		  {
+            to: 'https://metaperson.avatarsdk.com/',
+            position: 'left',
+            label: 'Metaperson Creator',
+          },
+		  {
+            to: 'https://accounts.avatarsdk.com/developer/signup/',
+            position: 'left',
+            label: 'Developer sign-up',
+          },
+		]
       },
       footer: {
         style: 'dark',
