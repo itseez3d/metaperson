@@ -81,24 +81,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [          
-          {
-            title: 'Metaperson',
-            items: [
-              {
-                label: 'Metaperson Creator',
-                href: 'https://metaperson.avatarsdk.com/',
-              },
-              {
-                label: 'Metaperson avatars',
-                href: 'https://avatarsdk.com/metaperson-creator/',
-              },
-              {
-                label: 'Sign up as Developer',
-                href: 'https://accounts.avatarsdk.com/developer/signup',
-              },
-            ],
-          },
+        links: [  
           {
             title: 'Github',
             items: [
