@@ -33,8 +33,8 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
-  presets: [
+	plugins: ['docusaurus-plugin-sass'],
+	presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
@@ -45,7 +45,13 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+		  //require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/customTheme.scss'),
+          //  require.resolve('./src/css/index.scss'),
+          //  require.resolve('./src/css/showcase.scss'),
+          //  require.resolve('./src/css/versions.scss'),
+          ],
         },
       }),
     ],
@@ -56,10 +62,12 @@ const config = {
     ({
       // Replace with your project's social card 
       image: 'img/metaperson-social-card.png',
-      navbar: {       
+      navbar: {    
+		style: 'dark',	  
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo-normal@2x.png',
+          //src: 'img/logo-normal@2x.png',
+		  src: '/img/logo-white-color@2x.png',
           srcDark: '/img/logo-white-color@2x.png',
         }, items: [
           {
@@ -77,13 +85,19 @@ const config = {
             position: 'left',
             label: 'Developer sign-up',
           },
+          {
+            href: 'https://github.com/avatarsdk',
+            'aria-label': 'GitHub repository',
+            position: 'right',
+            className: 'navbar-github-link',
+          },
 		]
       },
       footer: {
         style: 'dark',
         links: [  
           {
-            title: 'Github',
+            title: 'Github',			
             items: [
               {
                 label: 'Unity',
