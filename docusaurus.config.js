@@ -54,6 +54,22 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+	  metadata: [
+        {name: 'description', content: 'Bringing Realism to the Metaverse: The Avatar SDK\'s AI-Driven 3D Avatar Creation'},
+        {name: 'og:type', content: 'website'},
+		{name: 'article:tag', content: 'metaverse'},
+		{name: 'article:tag', content: '3D avatar creation'},
+		{name: 'article:tag', content: 'realistic avatar'},
+		{name: 'article:tag', content: 'selfie-based'},		
+		{name: 'article:tag', content: 'virtual representation'},
+		{name: 'article:tag', content: 'lifelike avatars'},
+		{name: 'article:tag', content: 'create avatar from photo'},		
+		{name: 'article:tag', content: 'realistic full body avatar creator'},
+		{name: 'article:tag', content: 'avatar app'},
+		{name: 'article:tag', content: 'custom avatar'},		
+		{name: 'article:tag', content: 'vrchat avatar creator'},
+		{name: 'article:tag', content: 'vrchat model maker'}
+      ],
       // Replace with your project's social card 
       image: 'img/metaperson-social-card.png',
       navbar: {       
