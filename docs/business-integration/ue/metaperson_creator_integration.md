@@ -56,7 +56,7 @@ At first we obviously need to create the widget and add it to the viewport.
 
 ![Create widget](img/createwidget.png)
 
-We need to subscribe to 2 events that are raised by `UAvatarSDKWebBrowser`. The first one is `OnBrowserError` that gets raised if something gets wrong, for example if you forget to [provide your Client ID and Client Secret](getting_started). The second one is `OnAvatarExported` and it is raised when you've finished editing your avatar and it is ready to be downloaded from the cloud. At this point you can also set the `ReadParametersFromSettings` parameter to false, if you'd like to provide Client ID and Client Secret in the blueprint instead of taking it from the plugin settings.
+We need to subscribe to 2 events that are raised by `UAvatarSDKWebBrowser`. The first one is `OnBrowserError` that gets raised if something gets wrong, for example if you forget to [provide your Client ID and Client Secret](project#running-the-sample). The second one is `OnAvatarExported` and it is raised when you've finished editing your avatar and it is ready to be downloaded from the cloud. At this point you can also set the `ReadParametersFromSettings` parameter to false, if you'd like to provide Client ID and Client Secret in the blueprint instead of taking it from the plugin settings.
 
 ![Events of browser](img/browserevents.png)
 
