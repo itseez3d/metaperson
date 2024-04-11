@@ -1,7 +1,7 @@
 ---
-sidebar_label: 'Website intergration'
+sidebar_label: 'Website integration'
 sidebar_position: 2
-description: Website intergration
+description: Website integration
 slug: /web_integration
 ---
 

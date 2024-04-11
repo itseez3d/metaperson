@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Metaperson documentation',
-  tagline: 'Documentation for Metaperson avatars',
+  title: 'MetaPerson documentation',
+  tagline: 'Documentation for MetaPerson avatars',
   favicon: 'img/favicon-32x32.png',
 
   // Set the production url of your site here
@@ -57,7 +57,7 @@ const config = {
 	  metadata: [	    
 		{property: 'og:type', 	  content: 'article'},
 		{property: 'og:title', 	  content: 'Realistic Avatars for the Metaverse World'},
-		{property: 'og:site_name', 	  content: 'What is MetaPerson Creator | Metaperson documentation'},
+		{property: 'og:site_name', 	  content: 'What is MetaPerson Creator | MetaPerson documentation'},
 		{property: 'og:description', 	  content: 'Bringing Realism to the Metaverse: The Avatar SDK&#39;s AI-Driven 3D Avatar Creation'},
 		{property: 'og:url', 	  content: 'https://docs.metaperson.avatarsdk.com/'},
         {property: 'description', content: 'Bringing Realism to the Metaverse: The Avatar SDK\'s AI-Driven 3D Avatar Creation'},
@@ -100,7 +100,7 @@ const config = {
 		  {
             to: 'https://metaperson.avatarsdk.com/',
             position: 'left',
-            label: 'Metaperson Creator',
+            label: 'MetaPerson Creator',
           },
 		  {
             to: 'https://accounts.avatarsdk.com/developer/signup/',
