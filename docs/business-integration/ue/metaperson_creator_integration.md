@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'MetaPerson Creator integration'
-description: Integrating MetaPerson Creator into your UE project.
+description: MetaPerson Creator integration technical details.
 sidebar_position: 2
 ---
 

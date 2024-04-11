@@ -1,7 +1,7 @@
 ---
-title: Unreal Engine Marketplace Plugin
-layout: home
-nav_order: 6
+sidebar_label: 'Unreal Engine Marketplace Plugin'
+description: Marketplace version of the project.
+sidebar_position: 4
 ---
 
 # Unreal Engine Marketplace Plugin

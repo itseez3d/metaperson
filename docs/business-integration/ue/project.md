@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'Sample project overview'
+description: Basic information needed to run the sample project.
 sidebar_position: 1
-description: Sample project overview
 ---
 
 # MetaPerson 2.0 UE sample

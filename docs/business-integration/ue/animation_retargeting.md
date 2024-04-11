@@ -1,7 +1,7 @@
 ---
-title: Animation retargeting
-layout: home
-nav_order: 4
+sidebar_label: 'Animation retargeting'
+description: Retargeting animation from Epic's Mannequin skeleton to Metaperson 2.
+sidebar_position: 4
 ---
 
 # Animation Retargeting
