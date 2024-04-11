@@ -4,7 +4,7 @@ layout: home
 nav_order: 4
 ---
 
-# [](#header-1)Animation Retargeting
+# Animation Retargeting
 
 MetaPerson 2 was originally designed using a Mixamo-compatible skeleton so that Mixamo animations can be easily used with avatars. At the same time, UE5 provides [tools](https://docs.unrealengine.com/5.0/en-US/ik-rig-animation-retargeting-in-unreal-engine/) that can be used to retarget an animation from an Epic skeleton to any other. We will not repeat the official documentation here but will focus on the assets provided with the demo project that can help retarget animations.
 
