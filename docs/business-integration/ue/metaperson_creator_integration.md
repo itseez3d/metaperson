@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'MetaPerson Creator integration'
 description: MetaPerson Creator integration technical details.
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # MetaPerson Creator integration

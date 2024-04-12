@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'Unreal Engine Marketplace Plugin'
 description: Marketplace version of the project.
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Unreal Engine Marketplace Plugin
