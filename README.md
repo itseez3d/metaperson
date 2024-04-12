@@ -11,7 +11,8 @@ $ yarn
 ### Local Development
 
 ```
-$ yarn start
+cd metaperson
+npx docusaurus start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -34,8 +35,16 @@ $ USE_SSH=true yarn deploy
 
 Not using SSH:
 
+Bash:
+
 ```
 $ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+Windows:
+
+```
+cmd /C "set GIT_USER=<Your GitHub username>&& yarn deploy"
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
