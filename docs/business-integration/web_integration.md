@@ -5,7 +5,7 @@ description: Web
 slug: /web_integration
 ---
 
-# Website integration
+# Web integration
 
 Integrating MetaPerson Creator into your website is easy and straightforward, thanks to our iframe mechanism and special JS API. This allows you to embed the creator directly into your website and set up, providing a seamless and intuitive experience for your users.
 
