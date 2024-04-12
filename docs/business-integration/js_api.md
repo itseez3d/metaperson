@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'JS API'
-sidebar_position: 3
+sidebar_position: 2
 description: JS API
 slug: /js_api
 ---

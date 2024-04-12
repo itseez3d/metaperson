@@ -113,30 +113,50 @@ const config = {
         style: 'dark',
         links: [  
           {
-            title: 'Github',
+            title: 'GitHub',
             items: [
               {
                 label: 'Unity',
                 href: 'https://github.com/avatarsdk/metaperson-loader-unity',
+              },
+			  {
+                label: 'Unreal Engine',
+                href: 'https://github.com/avatarsdk/metaperson-ue-sample',
               },
               {
                 label: 'Android',
                 href: 'https://github.com/avatarsdk/metaperson-android-sample',
               },
 			  {
-                label: 'Oculus',
-                href: 'https://github.com/avatarsdk/metaperson-vr-quest-sample',
-              },
-			  {
                 label: 'iOS',
                 href: 'https://github.com/avatarsdk/metaperson-ios-sample',
               },
 			  {
-                label: 'Unreal Engine',
-                href: 'https://github.com/avatarsdk/metaperson-ue-sample',
+                label: 'Oculus',
+                href: 'https://github.com/avatarsdk/metaperson-vr-quest-sample',
               },
-            ],
+            ]
+			
           },
+		  {
+			title: 'YouTube',
+			items: [
+				{
+					label: 'Video Tutorials',
+					href: 'https://youtube.com/playlist?list=PLDdNlBHHu4Dl6zI8ZFNGfFigy9VJeT8on&feature=shared',
+                }
+			],
+		  },
+		  {
+			title: 'Support',
+			items: [
+				{
+					label: 'support@avatarsdk.com',
+					href: 'mailto:support@avatarsdk.com',
+                }
+			]
+		  }
+		  
         ],
         copyright: `Copyright © ${new Date().getFullYear()} itSeez3D. Built with Docusaurus.`,
       },

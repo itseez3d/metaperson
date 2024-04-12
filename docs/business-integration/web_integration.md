@@ -1,6 +1,6 @@
 ---
-sidebar_label: 'Website integration'
-sidebar_position: 2
+sidebar_label: 'Web'
+sidebar_position: 3
 description: Website integration
 slug: /web_integration
 ---
