@@ -28,7 +28,7 @@ For detailed information about the MetaPerson Creator integration, see the [rele
 
 ### Animations
 
-We use UE5 [IK Rig Retargeting](https://docs.unrealengine.com/5.0/en-US/ik-rig-animation-retargeting-in-unreal-engine/) to retarget animations (and animation blueprints) from Mannequin to MetaPerson 2 skeleton. 
+We use UE5 [IK Rig Retargeting](https://docs.unrealengine.com/5.0/en-US/ik-rig-animation-retargeting-in-unreal-engine/) to retarget animations (and animation blueprints) from Mannequin to MetaPerson skeleton. 
 The animation retargeting process is described in the [corresponding chapter](animation_retargeting).
 
 ## FAQ.

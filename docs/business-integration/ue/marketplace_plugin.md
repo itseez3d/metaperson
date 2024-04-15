@@ -16,9 +16,9 @@ To run the demo scene you will need developer credentials that can be found on y
 
 ![Client ID and Client Secret](img/credentials01.png)
 
-See the [additional documentation](https://docs.metaperson.avatarsdk.com/getting_started.html#developer-credentials) on the developer-credentials. 
+See the [additional documentation](../../getting_started#developer-credentials) on the developer-credentials. 
 
-Go to the Edit->Project Settings->Plugins->Avatar SDK MetaPerson 2 section in UE Editor and set these parameters in corresponding fields:
+Go to the Edit->Project Settings->Plugins->Avatar SDK MetaPerson section in UE Editor and set these parameters in corresponding fields:
 
 ![Credentials](img/credentials.png)
 
