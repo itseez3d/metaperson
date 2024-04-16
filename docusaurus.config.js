@@ -119,7 +119,7 @@ const config = {
                 label: 'Unity',
                 href: 'https://github.com/avatarsdk/metaperson-loader-unity',
               },
-			  {
+              {
                 label: 'Unreal Engine',
                 href: 'https://github.com/avatarsdk/metaperson-ue-sample',
               },
@@ -127,11 +127,11 @@ const config = {
                 label: 'Android',
                 href: 'https://github.com/avatarsdk/metaperson-android-sample',
               },
-			  {
+              {
                 label: 'iOS',
                 href: 'https://github.com/avatarsdk/metaperson-ios-sample',
               },
-			  {
+              {
                 label: 'Oculus',
                 href: 'https://github.com/avatarsdk/metaperson-vr-quest-sample',
               },
@@ -139,12 +139,24 @@ const config = {
 			
           },
 		  {
-			title: 'YouTube',
+			title: 'Follow Us',
 			items: [
 				{
 					label: 'Video Tutorials',
 					href: 'https://youtube.com/playlist?list=PLDdNlBHHu4Dl6zI8ZFNGfFigy9VJeT8on&feature=shared',
-                }
+        },
+        {
+					label: 'Blog',
+					href: 'https://avatarsdk.com/blog/',
+        },
+        {
+					label: 'Facebook',
+					href: 'https://www.facebook.com/avatarsdk/',
+        },
+        {
+					label: 'X',
+					href: 'https://x.com/avatarsdk',
+        }
 			],
 		  },
 		  {
