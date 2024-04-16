@@ -6,14 +6,13 @@ slug: /js_api
 ---
 # JS API
 
-Communication between an iframe with MetaPerson Creator and your page is performed via a messaging mechanism. Messages with special events are both posted to and received from the MetaPerson Creator.
-Once the MetaPerson Page is loaded, it sends a `metaperson_creator_loaded` event. Only after that configuration messages can be sent to MetaPerson Creator page. 
-Also you can check if the MetaPerson Creator is loaded via the `window.metaPersonCreator.isLoaded` parameter.
+Communication between MetaPerson Creator and your HTML page or application is performed via a messaging mechanism. JavaScript messages with special events are both posted to and received from the MetaPerson Creator.
+Once MetaPerson Creator page is loaded, it sends a `metaperson_creator_loaded` event. After that, you can send JS messages to MetaPerson Creator, e.g. configuration parameters.
 
-As an example you can look at the [web integration sample](web_integration).
+As an example, you can look at the [web integration sample](web_integration).
 
 ## MetaPerson Creator Versions
-There are two version of the MetaPerson Creator: **Desktop** and **Mobile**. It is recommended to use the former on desktop platforms and the latter on mobile platforms.
+There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. It is recommended to use the former on desktop platforms and the latter on mobile platforms.
 
 Use the following URLs to integrate these versions into your site or application:
 
@@ -23,9 +22,10 @@ Use the following URLs to integrate these versions into your site or application
 
 ## Configuration Messages
 
-These messages can be sent only once right after the MetaPerson Creator was loaded.
+These messages can be sent only once right after MetaPerson Creator was loaded.
 
-* [**Authentication parameters**](#authentication-parameters) - in this message, you should specify your developer credentials. This ensures that your website or application is authorized to access the creator. If you provide incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. 
+* [**Authentication parameters**](#authentication-parameters) - in this message, you should specify your developer credentials. This ensures that your website or application is authorized to access the creator. 
+If you provide incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. Go to [developer credentials](getting_started#developer-credentials) to get more info.
 
 * [**Export Parameters**](#export-parameters) - in this message, you can configure export parameters for your avatar. You can specify the format of the exported file (such as GLB, GLTF, or FBX), the level of detail for the exported mesh, the resolution of textures and the format.
 
@@ -33,7 +33,7 @@ These messages can be sent only once right after the MetaPerson Creator was load
 
 ### Authentication Parameters
 
-Here's an example of how you can authenticate your account in MetaPerson Creator.
+Here's an example of how you can authenticate your account in MetaPerson Creator. You need [developer credentials](getting_started#developer-credentials) from your account.
 
 ```js
 let authenticationMessage = {
@@ -78,7 +78,7 @@ Message parameters:
   * `4K.png`, `2K.png`, `1K.png`
   * `4K.jpg`, `2K.jpg`, `1K.jpg`
   * `4K.webp`, `2K.webp`, `1K.webp`
-* **useZip** - by default, MetaPerson Creator return a link to a ZIP acrhive with an exported model. You can set it to `false`, to get a direct link to a GLB of FBX file.
+* **useZip** - by default, MetaPerson Creator returns a link to a ZIP archive with an exported model. You can set it to `false`, to get a direct link to a GLB of FBX file.
 
 ### UI Parameters
 
@@ -122,7 +122,7 @@ let uiParametersMessage = {
     // Mobile version specific parameters
     "isScreenshotButtonVisible": true,
     "isNoPhotoVisible": true,
-    "exportButtonText": "Export",
+    "exportButtonText": "Export",**age** - this parameters
     "theme": "dark", 
     "gender": "female",
 };
@@ -135,11 +135,11 @@ The parameters of this code are:
 * **isExportButtonVisible** - this parameter specifies if the Export button is visible. Default value: `true`.
 * **isLoginButtonVisible** - this parameter specifies if the Login button is visible. Default value: `true`.
 * **outfitsBlackList** - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
-* **isScreenshotButtonVisible** - this parameter specifies if the Screenshot button visible. Default value: `true`.
+* **isScreenshotButtonVisible** - this parameter specifies if the Screenshot button is visible. Default value: `true`.
 * **isNoPhotoVisible** - this parameter specifies if the sample avatars are available. Default value: `true`.
-* **exportButtonText** - it allows to change the text of the Export button. 
-* **theme** - it allows to choose the visual theme for the UI (available options: `dark`, `light`).
-* **gender** - if the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are `male`, `female` or can be empty.
+* **exportButtonText** - it allows changing the text of the Export button. 
+* **theme** - it allows choosing the visual theme for the UI (available options: `dark`, `light`).
+* **gender** - if the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are `male`, `female`, or can be empty.
 
 ## Action Messages
 
@@ -149,7 +149,7 @@ These messages specify events that tell the MetaPerson Creator to perform some s
 
 * [**Export Avatar**](#export-avatar) - this message allows you to export an avatar from API. It can be required if you hide the button for export from the UI and want to control export functionality not from the iframe, but from an external website or application.
 
-* [**Make Screenshot**](#make-screenshot) - this message alows you to make a screenshot of the avatar. The screenshot captures an avatar head and an upper part of a bust. 
+* [**Make Screenshot**](#make-screenshot) - this message allows you to make a screenshot of the avatar. The screenshot captures an avatar head and an upper part of a bust. 
 
 * [**Show Avatar**](#show-avatar) - this message allows you to open an already-created avatar and customize it.
 
@@ -171,7 +171,7 @@ Message parameters:
 
 * **eventName** - should be set to `generate_avatar`. This tells MetaPerson Creator which request you're making.
 * **gender** - this parameter specifies the gender of the computed avatar. Possible values are `male` and `female`.
-* **age** - this parameters specifies the age of the avatar. Possible values are `adult`, `teen15` and `teen12`. Default value is `adult`. This parameter is available only for the **Desktop version**. 
+* **age** - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15` and `teen12`. Default value is `adult`. This parameter is available only for the **Desktop version**. 
 * **image** - an image in JPEG or PNG format encoded into a base64 string. 
 
 The 'gender' parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
@@ -202,7 +202,7 @@ Once the export is completed, MetaPerson Creator sends a link to this model in t
 
 ### Make Screenshot
 
-The `make_screenshot` event makes a sceenshot of the avatar. Use this event when you need to get a peview of the avatar. The screenshot captures an avatar head and an upper part of a bust. 
+The `make_screenshot` event makes a screenshot of the avatar. Use this event when you need to get a preview of the avatar. The screenshot captures an avatar head and an upper part of a bust. 
 
 ```js
 let makeScreenshotEvent = {
@@ -277,7 +277,7 @@ There are following events
 
 * [**model_exported**](#model-exported) - MetaPerson Creator sends this message when the avatar is exported. This event allows you to get the link to the resulting avatar. This link can then be used to download or integrate the avatar into your website or application.
 
-* [**model_screenshot**](#model-screenshot) - MetaPerson Creator send this message as a response to the [`make screenshot`](#make-screenshot) message.
+* [**model_screenshot**](#model-screenshot) - MetaPerson Creator sends this message as a response to the [`make screenshot`](#make-screenshot) message.
 
 * **action_availability_changed** - The MetaPerson Creator sends this message to tell whether the "Export Avatar" and the "Generate Avatar" actions are available at the current moment.
 
@@ -285,7 +285,7 @@ There are following events
 
 The `metaperson_creator_loaded` event is sent once the MetaPerson Creator page is loaded. It is the first sent message and indicates that the MetaPerson Creator is initialized and you can send [configuration messages](#configuration-messages).
 
-Event's data:
+Event data:
 
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `metaperson_creator_loaded`.
@@ -299,7 +299,7 @@ iframe.contentWindow.metaPersonCreator.isLoaded
 
 The `authentication_status` event is a response to the [`authenticate`](#authentication-parameters) message. It contains an authentication result.
 
-Event's data:
+Event data:
 
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `authentication_status`.
@@ -317,7 +317,7 @@ This event is available only for the **Desktop version**.
 
 The `model_generated` event is sent when a new avatar is generated.
 
-Event's data:
+Event data:
 
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `model_generated`.
@@ -332,7 +332,7 @@ This event is available only for the **Desktop version**.
 
 The `model_exported` event is sent once the avatar is exported. This event returns an "avatar code" that can be used to reopen this avatar for further modifications.
 
-Event's data:
+Event data:
 
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `model_exported`.
@@ -344,7 +344,7 @@ Event's data:
 
 The `model_screenshot` event is a response to the [`make screenshot`](#make-screenshot) message. It contains an avatar screenshot.
 
-Event's data:
+Event data:
 
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `model_screenshot`.
@@ -353,9 +353,9 @@ Event's data:
 This event is available only for the **Desktop version**.
 
 ### Action Availability
-MetaPerson Creator sends this message to indicate if a specific [action](#action-messages) become available or unavailable.
+MetaPerson Creator sends this message to indicate if a specific [action](#action-messages) becomes available or unavailable.
 
-For example, the [`export_avatar`](#export-avatar) event can be sent only when the avatar is opened and all assets (outfits, haircts, glasses) are loaded. So, if you design your own "Export" or "Generate Avatar" buttons, you can enable and disable them according to the parameters of the `action_availability_changed` event.
+For example, the [`export_avatar`](#export-avatar) event can be sent only when the avatar is opened and all assets (outfits, haircuts, glasses) are loaded. So, if you design your own "Export" or "Generate Avatar" buttons, you can enable and disable them according to the parameters of the `action_availability_changed` event.
 
 Here's an example code snippet that demonstrates how to receive and handle this event:
 
@@ -379,9 +379,9 @@ function onWindowMessage(evt) {
 }
 ```
 
-Event's data:
+Event data:
 
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `action_availability_changed`.
-* `data.actionName` - a name of the action which availability was changed. Possible values: `avatar_generation`, `avatar_export`, `avatar_screenshot`. The latter is available only for the **Desktop version**.
+* `data.actionName` - a name of the action whose availability was changed. Possible values: `avatar_generation`, `avatar_export`, `avatar_screenshot`. The latter is available only for the **Desktop version**.
 * `data.isAvailable` - indicates if the action is available.

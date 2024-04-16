@@ -7,56 +7,99 @@ slug: /web_integration
 
 # Web integration
 
-Integrating MetaPerson Creator into your website is easy and straightforward, thanks to our iframe mechanism and special JS API. This allows you to embed the creator directly into your website and set up, providing a seamless and intuitive experience for your users.
+MetaPerson Creator can be integrated into your page via an HTML `<iframe>`. [JS API](js_api) messages are used to send events to and receive them from MetaPerson Creator.
 
-# MetaPerson Creator Desktop
+## Getting Started
 
-To integrate MetaPerson Creator Desktop into your website, you'll need to first create an iframe element that references our creator URL. We recommend using the link [https://metaperson.avatarsdk.com/iframe.html](https://metaperson.avatarsdk.com/iframe.html) for MetaPerson Creator Desktop to use it in an iframe. It is the same version of MetaPerson Creator Desktop but without any additional controls, that allow easy resizing it to the size of the iframe element. 
+1\. Create an empty HTML page.
 
-`<iframe src="https://metaperson.avatarsdk.com/iframe.html" frameborder="0"></iframe>`
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaPerson Creator Web Sample</title>
+     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+  </body>
+  
+  <script>
+  </script>
 
-To connect MetaPerson Creator Desktop with your Avatar SDK account you need to use JS API to set your developer credentials to the iframe. 
+</html>
+```
+
+2\. Add an `<iframe>` element to the `<body>` section. Specify `src` parameter depending on the [MetaPerson Creator version](js_api#metaperson-creator-versions) you are going to use.
+
+```html
+<body>
+  <div style="display: flex; height: 100vh; width: 100vw;">
+    <iframe id="editor_iframe" src="https://metaperson.avatarsdk.com/iframe.html" allow="fullscreen" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+  </div>
+</body>
+```
+
+3\. Add the following JavaScript methods to the `<script>` section.
 
 ```js
-function onUnityLoaded(evt, data) {
-    let authenticationMessage = {
-        "eventName": "authenticate",
-        "clientId": CLIENT_ID,
-        "clientSecret": CLIENT_SECRET,
-    };
-    evt.source.postMessage(authenticationMessage, "*");
+document.addEventListener('DOMContentLoaded', function onDocumentReady() {
+  window.addEventListener("message", onWindowMessage);
+});
+
+function onWindowMessage(evt) {
+  if (evt.type === "message") {
+    if (evt.data?.source === "metaperson_creator"){
+      let data = evt.data;
+      let evtName = data?.eventName;
+      switch (evtName) {
+      }
+    }
+  }
 }
 ```
 
-Replace "CLIENT_ID" and "CLIENT_SECRET" with the values you received when you [created your application](getting_started). This will ensure that your website is authorized to access the creator and your avatar data.
+Firstly, this code subscribes to the `DOMContentLoaded` event. When the document is loaded, it subscribes to the `message` events. `onWindowMessage` method handles all received messages and finds those that are from the MetaPerson Creator.
+Messages from MetaPerson Creator have `evt.data.source` parameter that is set to `"metaperson_creator"`.
+
+4\. Add a handle for the `metaperson_creator_loaded` event. Replace `CLIENT_ID` and `CLIENT_SECRET` by [credentials from your account](getting_started#developer-credentials).
+
+```js
+switch (evtName) {
+  case "metaperson_creator_loaded":
+    let authenticationMessage = {
+      "eventName": "authenticate",
+      "clientId": CLIENT_ID,
+      "clientSecret": CLIENT_SECRET
+    };
+    evt.source.postMessage(authenticationMessage, "*");
+  break;
+}
+```
+
+MetaPerson Creator sends the `metaperson_creator_loaded` event when it is loaded and ready to use. After that you need to authenticate your account in MetaPerson Creator by sending the `authenticate` message with your credentials.
 
 It's important to ensure that you've correctly added your developer credentials to MetaPerson Creator to ensure that you have access to all of the creator's features, including the Export button. If you've incorrectly added your credentials, or if your account doesn't have a Pro plan or higher, the Export button may be inactive.
 
-To avoid this issue, double-check that you've entered your c "CLIENT_ID" and "CLIENT_SECRET" values correctly and that your account is on the Pro plan or higher. If you're still experiencing issues, please don't hesitate to contact our [support team](mailto:support@avatarsdk.com) for assistance.
+Here you can also send additional messages with configuration settings such as export and UI parameters and add handlers to other events from MetaPerson Creator.
 
-You can find the whole sample page with the integration at this link [https://metaperson.avatarsdk.com/business.html](https://metaperson.avatarsdk.com/business.html). Use the "Open MetaPerson Creator" button to open an iframe with MetaPerson Creator. Also, here you can specify your developer credentials with the UI controls. Please investigate the page source to look at the integration sample. Please pay attention to JS API calls on this sample page. 
+See [JS API](js_api) documentation to get more information about various parameters and events.
 
-![](./img/sample_page.png)
+## Sample Page
 
-Once you've added the iframe to your website, your users can start creating their own avatars directly from your website. They can upload a selfie, customize their avatar's features, hairstyles, outfits, and body settings, and then download or integrate their avatar into your product.
-	
-# MetaPerson Creator Mobile
+A more comprehensive web sample that covers most of [JS API](js_api) methods is available at this link below. You can look at the source of this page to get more implementation details.
 
-Integration of MetaPerson Creator Mobile is almost the same but you need to use another link to make it. We recommend using the link [https://mobile.metaperson.avatarsdk.com/generator](https://mobile.metaperson.avatarsdk.com/generator) for MetaPerson Creator Mobile to use it in an iframe. 
+https://metaperson.avatarsdk.com/business.html
 
-To connect MetaPerson Creator Mobile with your Avatar SDK account you need to use almost the same JS API to set your developer credentials to the iframe. 
+Following this link, you need to enter your [credentials](getting_started#developer-credentials) and choose the version of Meta Person Creator (Desktop or Mobile) you are going to use.
 
-```js
-function onMobileLoaded(evt, data) {
-    let authenticationMessage = {
-        "eventName": "authenticate",
-        "clientId": CLIENT_ID,
-        "clientSecret": CLIENT_SECRET,
-    };
-    evt.source.postMessage(authenticationMessage, "*");
-}
-```
+![](./img/web_sample_start_page.jpg)
 
-You also can find the whole sample page with the integration at this link [https://mobile.metaperson.avatarsdk.com/business.html](https://mobile.metaperson.avatarsdk.com/business.html). Please investigate the page source to look at the integration sample. Please pay attention to JS API calls on this sample page. 
-
-![](./img/mobile_sample_page.png)
+If you experience any issues or have questions, please don't hesitate to contact our [support team](mailto:support@avatarsdk.com) for assistance.
