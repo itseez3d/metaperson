@@ -1,12 +1,12 @@
 ---
 sidebar_label: 'Windows and macOS'
-description: Integration into Windows and macOS unity applications.
+description: Integration into Windows and macOS Unity applications
 sidebar_position: 2
 ---
 
-# Integration into Windows and macOS unity applications.
+# Integration into Windows and macOS Unity applications
 
-A sample for integration MetaPerson Creator into a unity application for desktop platforms is a part of the MetaPerson Loader package. It can be found in github repository:
+A sample for integration MetaPerson Creator into a Unity application for desktop platforms is a part of the MetaPerson Loader package. It can be found in the GitHub repository:
 
 [MetaPerson Creator Desktop Integration Sample](https://github.com/avatarsdk/metaperson-loader-unity/blob/main/Documentation~/MetaPersonCreatorDesktopIntegration.md)
 

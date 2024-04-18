@@ -69,7 +69,7 @@ function onWindowMessage(evt) {
 Firstly, this code subscribes to the `DOMContentLoaded` event. When the document is loaded, it subscribes to the `message` events. `onWindowMessage` method handles all received messages and finds those that are from the MetaPerson Creator.
 Messages from MetaPerson Creator have `evt.data.source` parameter that is set to `"metaperson_creator"`.
 
-4\. Add a handle for the `metaperson_creator_loaded` event. Replace `CLIENT_ID` and `CLIENT_SECRET` by [credentials from your account](getting_started#developer-credentials).
+4\. Add a handle for the `metaperson_creator_loaded` event. Replace `CLIENT_ID` and `CLIENT_SECRET` with [credentials from your account](getting_started#developer-credentials).
 
 ```js
 switch (evtName) {
@@ -84,7 +84,7 @@ switch (evtName) {
 }
 ```
 
-MetaPerson Creator sends the `metaperson_creator_loaded` event when it is loaded and ready to use. After that you need to authenticate your account in MetaPerson Creator by sending the `authenticate` message with your credentials.
+MetaPerson Creator sends the `metaperson_creator_loaded` event when it is loaded and ready to use. After that, you need to authenticate your account in MetaPerson Creator by sending the `authenticate` message with your credentials.
 
 It's important to ensure that you've correctly added your developer credentials to MetaPerson Creator to ensure that you have access to all of the creator's features, including the Export button. If you've incorrectly added your credentials, or if your account doesn't have a Pro plan or higher, the Export button may be inactive.
 
@@ -94,7 +94,7 @@ See [JS API](js_api) documentation to get more information about various paramet
 
 ## Sample Page
 
-A more comprehensive web sample that covers most of [JS API](js_api) methods is available at this link below. You can look at the source of this page to get more implementation details.
+A more comprehensive web sample that covers most [JS API](js_api) methods is available at this link below. You can look at the source of this page to get more implementation details.
 
 https://metaperson.avatarsdk.com/business.html
 

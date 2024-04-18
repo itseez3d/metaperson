@@ -5,6 +5,13 @@ sidebar_position: 1
 
 # What is MetaPerson Creator
 
+<div class="iframe-container">
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/Z2Ila9tb3aA">
+</iframe></div>
+
+&nbsp;
+
 Introducing [MetaPerson Creator](https://metaperson.avatarsdk.com) – the revolutionary 3D avatar builder that allows you to create your own lifelike avatar using just a selfie! 
 
 ![](./img/creator.png)

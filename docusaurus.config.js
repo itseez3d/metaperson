@@ -132,7 +132,7 @@ const config = {
                 href: 'https://github.com/avatarsdk/metaperson-ios-sample',
               },
               {
-                label: 'Oculus',
+                label: 'VR',
                 href: 'https://github.com/avatarsdk/metaperson-vr-quest-sample',
               },
             ]

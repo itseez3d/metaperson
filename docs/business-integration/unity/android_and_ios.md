@@ -1,10 +1,10 @@
 ---
 sidebar_label: 'Android and iOS'
-description: Integration into Android and iOS unity applications.
+description: Integration into Android and iOS Unity applications
 sidebar_position: 3
 ---
 
-# Integration into Android and iOS unity applications
+# Integration into Android and iOS Unity applications
 
 There are two mobile samples that are the parts of the MetaPerson Loader package.
 

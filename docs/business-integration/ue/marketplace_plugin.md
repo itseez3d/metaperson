@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Unreal Engine Marketplace Plugin
 
-You can use our [free official Marketplace Plugin](https://www.unrealengine.com/marketplace/en-US/product/avatar-sdk-metaperson-plugin) to bring the functionality of MetaPerson avatars to your Unreal Engine project. It contains tools to implement the same functionality as in our Sample project. With this plugin, you can create recognizable and customizable avatars. You can also load an avatar at runtime and use it as a character in your project. Plugin contains two demo scenes: the first one with the help of the MetaPerson Creator shows how to create the MetaPerson avatar, customize and export it to the "Third Person" scene. The second demonstrates how to load an avatar at runtime from a local drive to a "Third Person" scene.
+You can use our [free official Marketplace Plugin](https://www.unrealengine.com/marketplace/en-US/product/avatar-sdk-metaperson-plugin) to bring the functionality of MetaPerson avatars to your Unreal Engine project. It contains tools to implement the same functionality as in our Sample project. With this plugin, you can create recognizable and customizable avatars. You can also load an avatar at runtime and use it as a character in your project. Plugin contains two demo scenes: the first one with the help of the MetaPerson Creator shows how to create the MetaPerson avatar, and customize and export it to the "Third Person" scene. The second demonstrates how to load an avatar at runtime from a local drive to a "Third Person" scene.
 
 ## "Third Person" Map
 
@@ -16,7 +16,7 @@ To run the demo scene you will need developer credentials that can be found on y
 
 ![Client ID and Client Secret](img/credentials01.png)
 
-See the [additional documentation](../../getting_started#developer-credentials) on the developer-credentials. 
+See the [additional documentation](../../getting_started#developer-credentials) on the developer credentials. 
 
 Go to the Edit->Project Settings->Plugins->Avatar SDK MetaPerson section in UE Editor and set these parameters in corresponding fields:
 

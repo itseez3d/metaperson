@@ -1,12 +1,12 @@
 ---
 sidebar_label: 'Android'
-description: Integration into a native Android application.
+description: Integration into a native Android application
 sidebar_position: 6
 ---
 
-# Android Integration
+# Android integration
 
-MetaPerson Creator can be integrated into a native Android application. Please see our github sample and video tutorial for details.
+MetaPerson Creator can be integrated into a native Android application. Please see our GitHub sample and video tutorial for details.
 
 https://github.com/avatarsdk/metaperson-android-sample
 

@@ -1,12 +1,12 @@
 ---
 sidebar_label: 'iOS'
-description: Integration into a native iOS application.
+description: Integration into a native iOS application
 sidebar_position: 7
 ---
 
-# iOS Integration
+# iOS integration
 
-MetaPerson Creator can be integrated into a native iOS application. Please see our github sample and video tutorial for details.
+MetaPerson Creator can be integrated into a native iOS application. Please see our GitHub sample and video tutorial for details.
 
 https://github.com/avatarsdk/metaperson-ios-sample
 

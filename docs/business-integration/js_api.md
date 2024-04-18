@@ -9,7 +9,7 @@ slug: /js_api
 Communication between MetaPerson Creator and your HTML page or application is performed via a messaging mechanism. JavaScript messages with special events are both posted to and received from the MetaPerson Creator.
 Once MetaPerson Creator page is loaded, it sends a `metaperson_creator_loaded` event. After that, you can send JS messages to MetaPerson Creator, e.g. configuration parameters.
 
-As an example, you can look at the [web integration sample](web_integration).
+As an example, you can look at the [Web integration sample](web_integration).
 
 ## MetaPerson Creator Versions
 There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. It is recommended to use the former on desktop platforms and the latter on mobile platforms.
@@ -25,9 +25,9 @@ Use the following URLs to integrate these versions into your site or application
 These messages can be sent only once right after MetaPerson Creator was loaded.
 
 * [**Authentication parameters**](#authentication-parameters) - in this message, you should specify your developer credentials. This ensures that your website or application is authorized to access the creator. 
-If you provide incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. Go to [developer credentials](getting_started#developer-credentials) to get more info.
+If you provide an incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. Go to [developer credentials](getting_started#developer-credentials) to get more info.
 
-* [**Export Parameters**](#export-parameters) - in this message, you can configure export parameters for your avatar. You can specify the format of the exported file (such as GLB, GLTF, or FBX), the level of detail for the exported mesh, the resolution of textures and the format.
+* [**Export Parameters**](#export-parameters) - in this message, you can configure export parameters for your avatar. You can specify the format of the exported file (such as GLB, GLTF, or FBX), the level of detail for the exported mesh, the resolution of textures, and the format.
 
 * [**UI Parameters**](#ui-parameters) - in this message, you can configure some parts of the UI of MetaPerson Creator. E.g. hide some buttons or rename text for them.
 
@@ -82,7 +82,7 @@ Message parameters:
 
 ### UI Parameters
 
-This message allows you to make some customizations in UI of MetaPerson Creator. Some parameters differ between Mobile and Desktop versions, so we split this description correspondingly. 
+This message allows you to make some customizations in the UI of MetaPerson Creator. Some parameters differ between Mobile and Desktop versions, so we split this description correspondingly. 
 
 #### MetaPerson Creator Desktop
 
@@ -139,7 +139,7 @@ The parameters of this code are:
 * **isNoPhotoVisible** - this parameter specifies if the sample avatars are available. Default value: `true`.
 * **exportButtonText** - it allows changing the text of the Export button. 
 * **theme** - it allows choosing the visual theme for the UI (available options: `dark`, `light`).
-* **gender** - if the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are `male`, `female`, or can be empty.
+* **gender** - if the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are `male` and `female`, or can be empty.
 
 ## Action Messages
 
@@ -171,7 +171,7 @@ Message parameters:
 
 * **eventName** - should be set to `generate_avatar`. This tells MetaPerson Creator which request you're making.
 * **gender** - this parameter specifies the gender of the computed avatar. Possible values are `male` and `female`.
-* **age** - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15` and `teen12`. Default value is `adult`. This parameter is available only for the **Desktop version**. 
+* **age** - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`. This parameter is available only for the **Desktop version**. 
 * **image** - an image in JPEG or PNG format encoded into a base64 string. 
 
 The 'gender' parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
@@ -216,8 +216,8 @@ iframe.contentWindow.postMessage(makeScreenshotEvent, "*");
 Message parameters:
 
 * **eventName** - should be set to `make_screenshot`. This tells MetaPerson Creator which request you're making.
-* **width** - width of the screenshot image. Default value is `640`.
-* **height** - height of the screenshot image. Default value is `480`.
+* **width** - width of the screenshot image. The default value is `640`.
+* **height** - height of the screenshot image. The default value is `480`.
 
 This message is available only for the **Desktop version**.
 
@@ -241,6 +241,11 @@ Message parameters:
 * **avatarCode** - a code of the avatar you need to open.
 
 The avatar code can be retrieved from the [`model_generated`](#model-generated) and [`model_exported`](#model-exported) events.
+
+<div class="iframe-container">
+  <iframe width="560" height="315" allow="fullscreen" src="https://www.youtube.com/embed/iZMRdDbwB-w">
+  </iframe>
+</div>
 
 ## Events Sent By MetaPerson Creator
 
@@ -267,7 +272,7 @@ function onWindowMessage(evt) {
 }
 ```
 
-There are following events
+There are the following events
 
 * [**metaperson_creator_loaded**](#metaperson-creator-loaded) - MetaPerson Creator sends this message when the page is loaded.
 
@@ -323,7 +328,7 @@ Event data:
 * `data.eventName` - is set to `model_generated`.
 * `data.avatarCode` - a code of the generated avatar.
 * `data.gender` - a gender of the generated avatar. Possible values: `male` and `female`.
-* `data.photoFileName` - a name of the photo file from which this avatar was generated.
+* `data.photoFileName` - the name of the photo file from which this avatar was generated.
 * `data.photoUrl` - a link to the source photo. The link is valid till the next avatar is generated. 
 
 This event is available only for the **Desktop version**.

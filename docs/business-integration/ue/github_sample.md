@@ -39,11 +39,11 @@ Currently, the sample is Windows-only (as a development and target platform). We
 
 ### Which version of UE is supported?
 
-Versions 5.1, 5.2, 5.3 of the Unreal Engine are supported.
+Versions 5.1, 5.2, and 5.3 of the Unreal Engine are supported.
 
 ### The "export " button is not accessible in the MetaPerson Creator. What should I do?
 
-Please, double-check that you entered the correct Client ID and Client Secret. See the [Running the sample](#running-the-sample) for more details.
+Please, double-check that you entered the correct Client ID and Client Secret. Please check the [additional documentation](../../getting_started#developer-credentials) on the developer credentials.
 
 ## Support
 
