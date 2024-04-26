@@ -11,7 +11,7 @@ MetaPerson Creator provides ready-to-use customer-facing solutions with low-code
 Currently, MetaPerson Creator utilizes the MetaPersonavatars pipeline. See the relevant REST API documentation section&nbsp;[here](https://api.avatarsdk.com/#metaperson-2-0). It provides:
 
 - `generated` and `metaperson` haircuts set: https://api.avatarsdk.com/#haircuts
-- complete `metaperson` and split to top/bottom/shoes outfits sets: https://api.avatarsdk.com/#id5
+- complete `metaperson` and split to top/bottom/shoes outfit sets: https://api.avatarsdk.com/#id5
 - `metaperson` set of glasses: https://api.avatarsdk.com/#id8
 - facial expressions and facial/body modification sets of blendshapes: https://api.avatarsdk.com/#blendshapes
 - various export parameters to retrieve the fine-tuned final avatar model: https://api.avatarsdk.com/#id34
@@ -20,4 +20,4 @@ Currently, MetaPerson Creator utilizes the MetaPersonavatars pipeline. See the r
 You can find a step-by-step tutorial on how to create a MetaPerson 2.0 avatar from a photo and download the avatar’s mesh, haircut, and outfit in glb format using the curl command-line utility on the following&nbsp;[page](https://api.avatarsdk.com/samples/curl_metaperson_20/).
 
 
-Please note, that REST API for MetaPerson avatars is available only on the Enterprise plan. Contact us at&nbsp;[support@avatarsdk.com](mailto:support@avatarsdk.com) if you have any questions.
+Please note, that REST API for MetaPerson avatars is available only on the&nbsp;[Enterprise plan](https://avatarsdk.com/pricing-cloud/). Contact us at&nbsp;[support@avatarsdk.com](mailto:support@avatarsdk.com) if you have any questions.
