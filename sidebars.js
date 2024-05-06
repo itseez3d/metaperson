@@ -29,7 +29,7 @@ const sidebars = {
 			id: 'business-integration/index'},
 			items:[
 			'business-integration/getting_started',
-			'business-integration/js_api',
+			'business-integration/js_api',			
 			'business-integration/web_integration',
 			{
 				type: 'category',
@@ -74,6 +74,7 @@ const sidebars = {
 		
 	},
 	'rest_api',
+	'mixamo',
 	'faq'
   ],
   
