@@ -15,7 +15,7 @@ Please contact us to get access to the source code of this project: support@avat
 
 1\. Extract an archive with MetaPerson Creator project and open it in Unity.
 
-2\. You will be prompted to provide [credentials](getting_started#developer-credentials). Copy **Client Id** and **Client Secret** from your account and press **Save credentials** button.
+2\. You will be prompted to provide [credentials](../../getting_started#developer-credentials). Copy **Client Id** and **Client Secret** from your account and press **Save credentials** button.
 
 ![](./img/unity_authentication_window.JPG)
 
