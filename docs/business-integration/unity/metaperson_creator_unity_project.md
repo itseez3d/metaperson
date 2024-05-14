@@ -9,6 +9,8 @@ sidebar_position: 6
 [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com) version is developed in Unity.<br/>
 We offer a source project featuring a customized [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com), retaining all fundamental functionalities. So, you can customize it for your needs and integrate into your project.
 
+Please contact us to get access to the source code of this project: support@avatarsdk.com.
+
 ## Getting Started
 
 1\. Extract an archive with MetaPerson Creator project and open it in Unity.
