@@ -41,7 +41,7 @@ const sidebars = {
 					'business-integration/unity/android_and_ios',
 					'business-integration/unity/webgl',
 					'business-integration/unity/vr',
-					'business-integration/unity/native_plugin',
+					'business-integration/unity/metaperson_creator_unity_project',
 					{
 						type: 'category',
 						label: 'Additional samples',
