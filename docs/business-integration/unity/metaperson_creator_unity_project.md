@@ -24,6 +24,7 @@ Please contact us to get access to the source code of this project: support@avat
 ## Supported Platforms and Limitations
 
 The primary platform for MetaPerson Creator is **WebGL**. However, it can be run for other platforms with some limitations:
+ * The project works in **Built-In** rendering pipeline.
  * The **file selection** feature works only within the **Unity Editor** and in **WebGL** builds.
  * The **screenshot sharing** feature functions only within the **Unity Editor** and in **WebGL** builds.
  * **UI** elements are optimized for **desktop** platforms. While they may function on other platforms, some adjustments may be required for optimal user experience.
