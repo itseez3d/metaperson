@@ -6,16 +6,21 @@ sidebar_position: 6
 
 # MetaPerson Creator Unity Project
 
-[MetaPerson Creator Desktop](https://metaperson.avatarsdk.com) version is developed in Unity.<br/>
-We offer a source project featuring a customized [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com), retaining all fundamental functionalities. So, you can customize it for your needs and integrate into your project.
+The [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com) version was developed in Unity.
+We offer a source project featuring a customized [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com), retaining all fundamental functionalities. So you can customize it to your needs and integrate it into your project.
 
-Please contact us to get access to the source code of this project: support@avatarsdk.com.
+This plugin is currently available on the [Enterprise plan](https://avatarsdk.com/pricing-cloud/). To access the project's source code, contact us at support@avatarsdk.com.
+
+<div class="iframe-container">
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/A-2YfJ66mWE?si=EMn9qBItt14-U_yl">
+</iframe></div>
 
 ## Getting Started
 
-1\. Extract an archive with MetaPerson Creator project and open it in Unity.
+1\. Extract an archive with the MetaPerson Creator project and open it in Unity.
 
-2\. You will be prompted to provide [credentials](../../getting_started#developer-credentials). Copy **Client Id** and **Client Secret** from your account and press **Save credentials** button.
+2\. You will be prompted to provide [credentials](../../getting_started#developer-credentials). Copy **Client ID** and **Client Secret** from your account and press the **Save credentials** button.
 
 ![](./img/unity_authentication_window.JPG)
 
@@ -24,9 +29,9 @@ Please contact us to get access to the source code of this project: support@avat
 ## Supported Platforms and Limitations
 
 The primary platform for MetaPerson Creator is **WebGL**. However, it can be run for other platforms with some limitations:
- * The project works in **Built-In** rendering pipeline.
+ * The project works in the **Built-In** rendering pipeline.
  * The **file selection** feature works only within the **Unity Editor** and in **WebGL** builds.
- * The **screenshot sharing** feature functions only within the **Unity Editor** and in **WebGL** builds.
+ * The **screenshot-sharing** feature functions only within the **Unity Editor** and in **WebGL** builds.
  * **UI** elements are optimized for **desktop** platforms. While they may function on other platforms, some adjustments may be required for optimal user experience.
  * If you encounter low **FPS** on mobile platforms, consider adjusting **Post Processing** and **Quality** settings.
 
@@ -46,6 +51,6 @@ To export an avatar:
 If you need to change any of these parameters, follow these steps:
 - Open the `Assets/itseez3d/metaperson_creator/scenes/metaperson_creator_main.unity` scene.
 - Find the **model_exporter** object under **metaperson_creator_mgr**.
-- Make necessary changes in the Inspector tab for this object.
+- Make the necessary changes to the Inspector tab for this object.
 
 ![](./img/model_exporter.JPG)
