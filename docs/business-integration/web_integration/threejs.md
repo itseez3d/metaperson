@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # MetaPerson Loader For Three.js
 
-The package helps to load MetaPerson avatars **GLB** format to the Three.js library.
+The package helps to load MetaPerson avatars in **GLB** format to the Three.js library.
 
 The package is available in the GitHub repository: https://github.com/avatarsdk/metaperson-loader-threejs
 
