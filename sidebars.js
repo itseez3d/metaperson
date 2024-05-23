@@ -30,7 +30,15 @@ const sidebars = {
 			items:[
 			'business-integration/getting_started',
 			'business-integration/js_api',			
-			'business-integration/web_integration',
+			{
+				type: 'category',
+				label: 'Web',
+				link: {type: 'doc', id: 'business-integration/web_integration/index'},
+				items:[
+					'business-integration/web_integration/babylonjs',
+					'business-integration/web_integration/threejs',
+				]
+			},
 			{
 				type: 'category',
 				label: 'Unity',
