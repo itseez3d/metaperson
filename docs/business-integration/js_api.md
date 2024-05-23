@@ -171,7 +171,7 @@ Message parameters:
 
 * **eventName** - should be set to `generate_avatar`. This tells MetaPerson Creator which request you're making.
 * **gender** - this parameter specifies the gender of the computed avatar. Possible values are `male` and `female`.
-* **age** - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`. This parameter is available only for the **Desktop version**. 
+* **age** - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`. 
 * **image** - an image in JPEG or PNG format encoded into a base64 string. 
 
 The 'gender' parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
@@ -218,8 +218,6 @@ Message parameters:
 * **eventName** - should be set to `make_screenshot`. This tells MetaPerson Creator which request you're making.
 * **width** - width of the screenshot image. The default value is `640`.
 * **height** - height of the screenshot image. The default value is `480`.
-
-This message is available only for the **Desktop version**.
 
 Once the screenshot is done, MetaPerson Creator sends a link to the image in the [`model_screenshot`](#model-screenshot) event.
 
@@ -331,8 +329,6 @@ Event data:
 * `data.photoFileName` - the name of the photo file from which this avatar was generated.
 * `data.photoUrl` - a link to the source photo. The link is valid till the next avatar is generated. 
 
-This event is available only for the **Desktop version**.
-
 ### Model Exported
 
 The `model_exported` event is sent once the avatar is exported. This event returns an "avatar code" that can be used to reopen this avatar for further modifications.
@@ -354,8 +350,6 @@ Event data:
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `model_screenshot`.
 * `data.screenshotUrl` - a link to the screenshot image. The link is valid till the next screenshot is done.
-
-This event is available only for the **Desktop version**.
 
 ### Action Availability
 MetaPerson Creator sends this message to indicate if a specific [action](#action-messages) becomes available or unavailable.
@@ -388,5 +382,5 @@ Event data:
 
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `action_availability_changed`.
-* `data.actionName` - a name of the action whose availability was changed. Possible values: `avatar_generation`, `avatar_export`, `avatar_screenshot`. The latter is available only for the **Desktop version**.
+* `data.actionName` - a name of the action whose availability was changed. Possible values: `avatar_generation`, `avatar_export`, `avatar_screenshot`.
 * `data.isAvailable` - indicates if the action is available.
