@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'MetaPerson Creator Unity Project'
 description: MetaPerson Creator source project
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # MetaPerson Creator Unity Project
