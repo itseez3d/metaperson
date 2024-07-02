@@ -96,7 +96,8 @@ let uiParametersMessage = {
     // Desktop version specific parameters
     "closeExportDialogWhenExportCompleted" : false,
     "isLanguageSelectionVisible" : true,
-    "language" : ""
+    "language" : "",
+    "showLatestCreatedAvatar" : true
 };
 evt.source.postMessage(uiParametersMessage, "*");
 ```
@@ -110,6 +111,7 @@ Message parameters:
 * **closeExportDialogWhenExportCompleted** - this parameter specifies if the export dialog is shown after an avatar is exported. Default value: `false`.
 * **isLanguageSelectionVisible** - this parameter specifies if the control to select a UI language is visible. Default value: `true`.
 * **language** - this parameter specifies a UI language. Supported values: `EN`, `漢語`. English is set by default if the parameter is empty or isn't set.
+* **showLatestCreatedAvatar** - this parameter specifies if the latest created avatar can be opened from the home screen. Default value: `true`.
 
 #### MetaPerson Creator Mobile
 
@@ -122,7 +124,8 @@ let uiParametersMessage = {
     // Mobile version specific parameters
     "isScreenshotButtonVisible": true,
     "isNoPhotoVisible": true,
-    "exportButtonText": "Export",**age** - this parameters
+    "exportButtonText": "Export",
+    "age": "teen12",
     "theme": "dark", 
     "gender": "female",
 };
@@ -138,6 +141,7 @@ The parameters of this code are:
 * **isScreenshotButtonVisible** - this parameter specifies if the Screenshot button is visible. Default value: `true`.
 * **isNoPhotoVisible** - this parameter specifies if the sample avatars are available. Default value: `true`.
 * **exportButtonText** - it allows changing the text of the Export button. 
+* **age** - this parameter specifies the age for all generated avatars. If it is set, the age selection prompt isn't shown. Possible values are `adult`, `teen15`, and `teen12`.
 * **theme** - it allows choosing the visual theme for the UI (available options: `dark`, `light`).
 * **gender** - if the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are `male` and `female`, or can be empty.
 
