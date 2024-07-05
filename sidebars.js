@@ -75,12 +75,17 @@ const sidebars = {
 				]
 			},
 			'business-integration/android',
-			'business-integration/ios'
-			
-			
+			'business-integration/ios',
+			{
+				type: 'category',
+				label: 'Changelog',
+				link: {type: 'doc', id: 'business-integration/changelog/index'},
+				items:[
+					'business-integration/changelog/desktop',
+					'business-integration/changelog/mobile',				
+				]
+			}
 		]			
-		
-		
 	},
 	'rest_api',
 	'mixamo',
