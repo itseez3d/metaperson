@@ -5,14 +5,32 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.16.0 (2024-07-15)
+
+https://metaperson.avatarsdk.com/1.16.0/iframe.html
+
+**Release notes**:
+
+ * Added new haircuts: 
+    * Haircut21
+ * Added new outfits:
+    * saree_Aramazd
+    * Urasar
+    * top_Khustup
+    * leggins_Khustup
+  * JS API changes:
+    * Added `skipViewerControls` parameter to the [set_ui_parameters](/js_api#ui-parameters) message.
+    * Added `blends` parameter to the [generate_avatar](/js_api#generate-avatar) message
+    * Added `imageBytes` parameter to the [model_screenshot](/js_api#model-screenshot) event.
+
 ### 1.15.1 (2024-07-01)
 
 https://metaperson.avatarsdk.com/1.15.1/iframe.html
 
 **Release notes**:
 
- * Added `showLatestCreatedAvatar` JS API [UI parameter](/js_api#ui-parameters).
-
+ * JS API changes:
+    * Added `showLatestCreatedAvatar` parameter to the [set_ui_parameters](/js_api#ui-parameters) message.
 
 ### 1.15.0 (2024-06-13)
 

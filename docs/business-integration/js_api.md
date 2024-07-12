@@ -93,6 +93,7 @@ let uiParametersMessage = {
     "isExportButtonVisible" : true,
     "isLoginButtonVisible": true,
     "outfitsBlackList" : ["ARPI", "SEVAN"],
+    "skipViewerControls" : ['age', 'animations'],
     // Desktop version specific parameters
     "closeExportDialogWhenExportCompleted" : false,
     "isLanguageSelectionVisible" : true,
@@ -108,6 +109,7 @@ Message parameters:
 * **isExportButtonVisible** - this parameter specifies if the Export button is visible. Default value: `true`.
 * **isLoginButtonVisible** - this parameter specifies if the Login button is visible. Default value: `true`.
 * **outfitsBlackList** - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
+* **skipViewerControls** - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
 * **closeExportDialogWhenExportCompleted** - this parameter specifies if the export dialog is shown after an avatar is exported. Default value: `false`.
 * **isLanguageSelectionVisible** - this parameter specifies if the control to select a UI language is visible. Default value: `true`.
 * **language** - this parameter specifies a UI language. Supported values: `EN`, `漢語`. English is set by default if the parameter is empty or isn't set.
@@ -121,6 +123,7 @@ let uiParametersMessage = {
     "isExportButtonVisible": true,
     "isLoginButtonVisible": false,
     "outfitsBlackList" : ["ARPI", "SEVAN"],
+    "skipViewerControls" : ['age', 'animations'],
     // Mobile version specific parameters
     "isScreenshotButtonVisible": true,
     "isNoPhotoVisible": true,
@@ -138,6 +141,7 @@ The parameters of this code are:
 * **isExportButtonVisible** - this parameter specifies if the Export button is visible. Default value: `true`.
 * **isLoginButtonVisible** - this parameter specifies if the Login button is visible. Default value: `true`.
 * **outfitsBlackList** - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
+* **skipViewerControls** - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
 * **isScreenshotButtonVisible** - this parameter specifies if the Screenshot button is visible. Default value: `true`.
 * **isNoPhotoVisible** - this parameter specifies if the sample avatars are available. Default value: `true`.
 * **exportButtonText** - it allows changing the text of the Export button. 
@@ -166,6 +170,7 @@ let generateAvatarMessage = {
     "eventName": "generate_avatar",
     "gender": "male",
     "age": "adult",
+    "blends": [ { "name": "Body", "value": 0.5 }, { "name": "LowerHeadWidth", "value": 0.25 } ],
     "image": "image_encoded_to_base64_string"
 };
 evt.source.postMessage(generateAvatarMessage, "*"); 
@@ -175,12 +180,42 @@ Message parameters:
 
 * **eventName** - should be set to `generate_avatar`. This tells MetaPerson Creator which request you're making.
 * **gender** - this parameter specifies the gender of the computed avatar. Possible values are `male` and `female`.
-* **age** - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`. 
+* **age** - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`.
+* **blends** - this parameters allows to configure initial proportions of the avatar's body, head, eyes and nose. See more details below about possible values.
 * **image** - an image in JPEG or PNG format encoded into a base64 string. 
 
-The 'gender' parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
+The **gender** parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
 
 Once the avatar is generated, MetaPerson Creator sends the [`model_generated`](#model-generated) event.
+
+#### `blends` Parameter
+
+The `blends` parameter is exclusive to the **Desktop** version. It is an array containing elements with `name` and `value` fields, each representing a blendshape's name and its corresponding value.
+
+**Body Proportions:**
+
+- **Blendshape Names:** `Body`, `Neck`, `Shoulders`, `Chest`, `Forearms`, `Waist`, `Hips`, `Legs`
+- **Value Range:** **[-1, 1]** (0 indicates default size)
+
+**Head Proportions:**
+
+- **Blendshape Names:** `HeadHeight`, `UpperHeadVolume`, `UpperHeadWidth`, `LowerHeadWidth`, `JawLine`
+- **Value Range:** **[0, 1]** (1 indicates default size)
+
+**Eyes Proportions:**
+
+- **Blendshape Names:** `EyesSize` (range **[-1, 1]**), `Monolid`, `Squint` (range **[0, 1]**)
+- **Value Range:** **[-1, 1]** for `EyesSize`; **[0, 1]** for `Monolid` and `Squint` (0 indicates default size)
+
+**Nose Proportions:**
+
+- **Blendshape Names:** `NoseWidth`, `NoseSharp` (range **[0, 1]**), `NoseLength`, `NosePosition`, `NoseTipUpDown`, `NoseTipLeftRight`, `NoseWingsUpDown`, `NoseWingsInOut` (range **[-1, 1]**)
+- **Value Range:** **[0, 1]** for `NoseWidth` and `NoseSharp`; **[-1, 1]** for the others (0 indicates default size)
+
+**Lips Proportion:**
+
+- **Blendshape Name:** `LipsSize`
+- **Value Range:** **[-1, 1]** (0 indicates default size)
 
 ### Export Avatar
 
@@ -354,6 +389,7 @@ Event data:
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `model_screenshot`.
 * `data.screenshotUrl` - a link to the screenshot image. The link is valid till the next screenshot is done.
+* `data.imageBytes` - an array of the screenshot image bytes in PNG format. This parameter is exclusive to the **Desktop** version.
 
 ### Action Availability
 MetaPerson Creator sends this message to indicate if a specific [action](#action-messages) becomes available or unavailable.
