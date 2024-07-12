@@ -79,11 +79,11 @@ const sidebars = {
 			'business-integration/ios',
 			{
 				type: 'category',
-				label: 'Changelog',
-				link: {type: 'doc', id: 'business-integration/changelog/index'},
+				label: 'Release Notes',
+				link: {type: 'doc', id: 'business-integration/release_notes/index'},
 				items:[
-					'business-integration/changelog/desktop',
-					'business-integration/changelog/mobile',				
+					'business-integration/release_notes/desktop',
+					'business-integration/release_notes/mobile',
 				]
 			}
 		]			
