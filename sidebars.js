@@ -49,7 +49,6 @@ const sidebars = {
 					'business-integration/unity/android_and_ios',
 					'business-integration/unity/webgl',
 					'business-integration/unity/vr',
-					'business-integration/unity/rendering_sample',
 					'business-integration/unity/metaperson_creator_unity_project',
 					{
 						type: 'category',
@@ -57,7 +56,9 @@ const sidebars = {
 						link: {type: 'doc', id: 'business-integration/unity/additional_samples/index'},
 						items: [
 							'business-integration/unity/additional_samples/movement_sdk_integration',
-							'business-integration/unity/additional_samples/photon_sample'
+							'business-integration/unity/additional_samples/photon_sample',
+							'business-integration/unity/additional_samples/rendering_sample',
+							'business-integration/unity/additional_samples/eyes_animation_sample',
 						]
 					}
 				]
