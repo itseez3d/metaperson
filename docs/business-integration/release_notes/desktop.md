@@ -5,7 +5,7 @@ description: Desktop Version
 ---
 # Desktop Version
 
-### 1.16.0 (2024-07-15)
+### 1.16.0 (2024-07-16)
 
 https://metaperson.avatarsdk.com/1.16.0/iframe.html
 
@@ -19,9 +19,10 @@ https://metaperson.avatarsdk.com/1.16.0/iframe.html
     * top_Khustup
     * leggins_Khustup
   * JS API changes:
-    * Added `skipViewerControls` parameter to the [set_ui_parameters](/js_api#ui-parameters) message.
-    * Added `blends` parameter to the [generate_avatar](/js_api#generate-avatar) message
-    * Added `imageBytes` parameter to the [model_screenshot](/js_api#model-screenshot) event.
+    * Added `skipViewerControls` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+    * Added `blends` parameter to the [`generate_avatar`](/js_api#generate-avatar) message
+    * Added `imageBytes` parameter to the [`model_screenshot`](/js_api#model-screenshot) event.
+    * Added `photoBytes` parameter to the [`model_generated`](/js_api#model-generated) event.
 
 ### 1.15.1 (2024-07-01)
 
@@ -30,7 +31,7 @@ https://metaperson.avatarsdk.com/1.15.1/iframe.html
 **Release notes**:
 
  * JS API changes:
-    * Added `showLatestCreatedAvatar` parameter to the [set_ui_parameters](/js_api#ui-parameters) message.
+    * Added `showLatestCreatedAvatar` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
 
 ### 1.15.0 (2024-06-13)
 
@@ -56,7 +57,7 @@ https://metaperson.avatarsdk.com/1.14.2/iframe.html
 
 **Release notes**:
 
- * Changed the timing of when the [metaperson_creator_loaded](/js_api#metaperson-creator-loaded) event is sent (again)
+ * Changed the timing of when the [`metaperson_creator_loaded`](/js_api#metaperson-creator-loaded) event is sent (again)
  
 ### 1.14.1 (2024-06-06)
 
@@ -64,7 +65,7 @@ https://metaperson.avatarsdk.com/1.14.1/iframe.html
 
 **Release notes**:
 
- * Changed the timing of when the [metaperson_creator_loaded](/js_api#metaperson-creator-loaded) event is sent
+ * Changed the timing of when the [`metaperson_creator_loaded`](/js_api#metaperson-creator-loaded) event is sent
  
 ### 1.14.0 (2024-04-11)
 
@@ -79,10 +80,10 @@ https://metaperson.avatarsdk.com/1.14.0/iframe.html
     * Haircut18
     * Haircut17
  * JS API changes:
-    * Added language specification to the [set_ui_parameters](/js_api#ui-parameters)
-    * Added [model_screenshot](/js_api#model-screenshot) event
-    * Added [model_generated](/js_api#model-generated} event
-    * Added [authentication_status ](/js_api#authentication-status} event
+    * Added language specification to the [`set_ui_parameters`](/js_api#ui-parameters)
+    * Added [`model_screenshot`](/js_api#model-screenshot) event
+    * Added [`model_generated`](/js_api#model-generated) event
+    * Added [`authentication_status`](/js_api#authentication-status) event
     * `unity_loaded` event replaced by the `metaperson_creator_loaded`
  * Added new female poses
  
@@ -100,8 +101,8 @@ https://metaperson.avatarsdk.com/1.13.0/iframe.html
     * Haircut16
     * Haircut15
  * JS API changes:
-   * Added `outfitsBlackList` to the [set_ui_parameters](/js_api#ui-parameters) message
-   * Added `age` parameter to the [generate_avatar](/js_api#generate-avatar) message
+   * Added `outfitsBlackList` to the [`set_ui_parameters`](/js_api#ui-parameters) message
+   * Added `age` parameter to the [`generate_avatar`](/js_api#generate-avatar) message
    * Added `metaPersonCreator.isLoaded` property
  * T-Shirt texture generation from two photos
  
@@ -122,7 +123,7 @@ https://metaperson.avatarsdk.com/1.11.2/iframe.html
 **Release notes**:
 
  * JS API changes:
-   * Added the [generate_avatar](/js_api#generate-avatar) message
+   * Added the [`generate_avatar`](/js_api#generate-avatar) message
  * Fixed an issue: unable to select a file in VR browser
  
 ### 1.11.1 (2023-12-21)
@@ -155,5 +156,5 @@ https://metaperson.avatarsdk.com/1.10.0/iframe.html
 
  * Use *visemes_15* instead of *visemes_14* blendshapes sets
  * JS API changes:
-   * Added the [show_avatar](/js_api#show-avatar) message
-   * Added `isLoginButtonVisible` parameter to the [set_ui_parameters](/js_api#ui-parameters) message 
+   * Added the [`show_avatar`](/js_api#show-avatar) message
+   * Added `isLoginButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message 

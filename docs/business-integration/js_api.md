@@ -366,7 +366,8 @@ Event data:
 * `data.avatarCode` - a code of the generated avatar.
 * `data.gender` - a gender of the generated avatar. Possible values: `male` and `female`.
 * `data.photoFileName` - the name of the photo file from which this avatar was generated.
-* `data.photoUrl` - a link to the source photo. The link is valid till the next avatar is generated. 
+* `data.photoUrl` - a link to the source photo. The link is valid till the next avatar is generated.
+* `data.photoBytes` - an array of the source photo bytes in JPEG format. This parameter is exclusive to the **Desktop** version.
 
 ### Model Exported
 
