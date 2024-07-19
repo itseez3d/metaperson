@@ -46,9 +46,9 @@ evt.source.postMessage(authenticationMessage, "*");
 
 Message parameters:
 
-* **eventName** - should be set to `authenticate`. The event name tells MetaPerson Creator which request you're making.
-* **clientId** - CLIENT_ID of your developer account.
-* **clientSecret** - CLIENT_SECRET of your developer account.
+* `eventName` - should be set to `authenticate`. The event name tells MetaPerson Creator which request you're making.
+* `clientId` - CLIENT_ID of your developer account.
+* `clientSecret` - CLIENT_SECRET of your developer account.
 
 MetaPerson Creator sends the result of the authentication in the [`authentication_status`](#authentication-status) event.
 
@@ -71,14 +71,14 @@ evt.source.postMessage(exportParametersMessage, "*");
 
 Message parameters:
 
-* **eventName** - should be set to `set_export_parameters`. This tells MetaPerson Creator which request you're making.
-* **format** - this parameter specifies the format of the exported file. Supported formats are `gltf`, `glb`, and `fbx`.
-* **lod** - this parameter specifies the level of detail (LOD) for the exported file. The higher the LOD, the more detailed the exported file will be. Supported LODs are: `1` and `2`.
-* **textureProfile** - this parameter specifies the texture profile for the exported file. This determines the quality of the textures used in the exported file. Supported texture profiles are:
+* `eventName` - should be set to `set_export_parameters`. This tells MetaPerson Creator which request you're making.
+* `format` - this parameter specifies the format of the exported file. Supported formats are `gltf`, `glb`, and `fbx`.
+* `lod` - this parameter specifies the level of detail (LOD) for the exported file. The higher the LOD, the more detailed the exported file will be. Supported LODs are: `1` and `2`.
+* `textureProfile` - this parameter specifies the texture profile for the exported file. This determines the quality of the textures used in the exported file. Supported texture profiles are:
   * `4K.png`, `2K.png`, `1K.png`
   * `4K.jpg`, `2K.jpg`, `1K.jpg`
   * `4K.webp`, `2K.webp`, `1K.webp`
-* **useZip** - by default, MetaPerson Creator returns a link to a ZIP archive with an exported model. You can set it to `false`, to get a direct link to a GLB of FBX file.
+* `useZip` - by default, MetaPerson Creator returns a link to a ZIP archive with an exported model. You can set it to `false`, to get a direct link to a GLB of FBX file.
 
 ### UI Parameters
 
@@ -94,26 +94,35 @@ let uiParametersMessage = {
     "isLoginButtonVisible": true,
     "outfitsBlackList" : ["ARPI", "SEVAN"],
     "skipViewerControls" : ['age', 'animations'],
+    
     // Desktop version specific parameters
     "closeExportDialogWhenExportCompleted" : false,
     "isLanguageSelectionVisible" : true,
     "language" : "",
-    "showLatestCreatedAvatar" : true
+    "showLatestCreatedAvatar" : true,
+    "metaPersonLabelText" : "MetaPerson Avatars",
+    "isTakeSelfieButtonVisible" : true,
+    "isBrowsePhotoButtonVisible" : true,
+    "showSampleAvatars" : true
 };
 evt.source.postMessage(uiParametersMessage, "*");
 ```
 
 Message parameters:
 
-* **eventName** - should be set to `set_ui_parameters`. This tells MetaPerson Creator which request you're making.
-* **isExportButtonVisible** - this parameter specifies if the Export button is visible. Default value: `true`.
-* **isLoginButtonVisible** - this parameter specifies if the Login button is visible. Default value: `true`.
-* **outfitsBlackList** - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
-* **skipViewerControls** - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
-* **closeExportDialogWhenExportCompleted** - this parameter specifies if the export dialog is shown after an avatar is exported. Default value: `false`.
-* **isLanguageSelectionVisible** - this parameter specifies if the control to select a UI language is visible. Default value: `true`.
-* **language** - this parameter specifies a UI language. Supported values: `EN`, `漢語`. English is set by default if the parameter is empty or isn't set.
-* **showLatestCreatedAvatar** - this parameter specifies if the latest created avatar can be opened from the home screen. Default value: `true`.
+* `eventName` - should be set to `set_ui_parameters`. This tells MetaPerson Creator which request you're making.
+* `isExportButtonVisible` - this parameter specifies if the Export button is visible. Default value: `true`.
+* `isLoginButtonVisible` - this parameter specifies if the Login button is visible. Default value: `true`.
+* `outfitsBlackList` - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
+* `skipViewerControls` - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
+* `closeExportDialogWhenExportCompleted` - this parameter specifies if the export dialog is shown after an avatar is exported. Default value: `false`.
+* `isLanguageSelectionVisible` - this parameter specifies if the control to select a UI language is visible. Default value: `true`.
+* `language` - this parameter specifies a UI language. Supported values: `EN`, `漢語`. English is set by default if the parameter is empty or isn't set.
+* `showLatestCreatedAvatar` - this parameter specifies if the latest created avatar can be opened from the home screen. Default value: `true`.
+* `metaPersonLabelText` - a text of the label on the main screen. Default value is "MetaPerson Avatars".
+* `isTakeSelfieButtonVisible` - specifies if the "Take a selfie" button is visible.
+* `isBrowsePhotoButtonVisible` - specifies if the "Browse for photo" button is visible.
+* `showSampleAvatars` - specifies if sample avatars are available. 
 
 #### MetaPerson Creator Mobile
 
@@ -124,6 +133,7 @@ let uiParametersMessage = {
     "isLoginButtonVisible": false,
     "outfitsBlackList" : ["ARPI", "SEVAN"],
     "skipViewerControls" : ['age', 'animations'],
+    
     // Mobile version specific parameters
     "isScreenshotButtonVisible": true,
     "isNoPhotoVisible": true,
@@ -137,17 +147,17 @@ evt.source.postMessage(uiParametersMessage, "*");
 
 The parameters of this code are:
 
-* **eventName** - should be set to `set_ui_parameters`. This tells MetaPerson Creator which request you're making.
-* **isExportButtonVisible** - this parameter specifies if the Export button is visible. Default value: `true`.
-* **isLoginButtonVisible** - this parameter specifies if the Login button is visible. Default value: `true`.
-* **outfitsBlackList** - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
-* **skipViewerControls** - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
-* **isScreenshotButtonVisible** - this parameter specifies if the Screenshot button is visible. Default value: `true`.
-* **isNoPhotoVisible** - this parameter specifies if the sample avatars are available. Default value: `true`.
-* **exportButtonText** - it allows changing the text of the Export button. 
-* **age** - this parameter specifies the age for all generated avatars. If it is set, the age selection prompt isn't shown. Possible values are `adult`, `teen15`, and `teen12`.
-* **theme** - it allows choosing the visual theme for the UI (available options: `dark`, `light`).
-* **gender** - if the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are `male` and `female`, or can be empty.
+* `eventName` - should be set to `set_ui_parameters`. This tells MetaPerson Creator which request you're making.
+* `isExportButtonVisible` - this parameter specifies if the Export button is visible. Default value: `true`.
+* `isLoginButtonVisible` - this parameter specifies if the Login button is visible. Default value: `true`.
+* `outfitsBlackList` - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
+* `skipViewerControls` - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
+* `isScreenshotButtonVisible` - this parameter specifies if the Screenshot button is visible. Default value: `true`.
+* `isNoPhotoVisible` - this parameter specifies if the sample avatars are available. Default value: `true`.
+* `exportButtonText` - it allows changing the text of the Export button. 
+* `age` - this parameter specifies the age for all generated avatars. If it is set, the age selection prompt isn't shown. Possible values are `adult`, `teen15`, and `teen12`.
+* `theme` - it allows choosing the visual theme for the UI (available options: `dark`, `light`).
+* `gender` - if the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are `male` and `female`, or can be empty.
 
 ## Action Messages
 
@@ -178,13 +188,13 @@ evt.source.postMessage(generateAvatarMessage, "*");
 
 Message parameters:
 
-* **eventName** - should be set to `generate_avatar`. This tells MetaPerson Creator which request you're making.
-* **gender** - this parameter specifies the gender of the computed avatar. Possible values are `male` and `female`.
-* **age** - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`.
-* **blends** - this parameters allows to configure initial proportions of the avatar's body, head, eyes and nose. See more details below about possible values.
-* **image** - an image in JPEG or PNG format encoded into a base64 string. 
+* `eventName` - should be set to `generate_avatar`. This tells MetaPerson Creator which request you're making.
+* `gender` - this parameter specifies the gender of the computed avatar. Possible values are `male` and `female`.
+* `age` - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`.
+* `blends` - this parameters allows to configure initial proportions of the avatar's body, head, eyes and nose. See more details below about possible values.
+* `image` - an image in JPEG or PNG format encoded into a base64 string. 
 
-The **gender** parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
+The `gender` parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
 
 Once the avatar is generated, MetaPerson Creator sends the [`model_generated`](#model-generated) event.
 
@@ -233,7 +243,7 @@ function onExportClicked() {
 
 Message parameters:
 
-* **eventName** - should be set to `export_avatar`. This tells MetaPerson Creator which request you're making.
+* `eventName` - should be set to `export_avatar`. This tells MetaPerson Creator which request you're making.
 
 You need to be sure that the avatar is ready for export and displayed on the scene before sending this message.
 
@@ -254,9 +264,9 @@ iframe.contentWindow.postMessage(makeScreenshotEvent, "*");
 
 Message parameters:
 
-* **eventName** - should be set to `make_screenshot`. This tells MetaPerson Creator which request you're making.
-* **width** - width of the screenshot image. The default value is `640`.
-* **height** - height of the screenshot image. The default value is `480`.
+* `eventName` - should be set to `make_screenshot`. This tells MetaPerson Creator which request you're making.
+* `width` - width of the screenshot image. The default value is `640`.
+* `height` - height of the screenshot image. The default value is `480`.
 
 Once the screenshot is done, MetaPerson Creator sends a link to the image in the [`model_screenshot`](#model-screenshot) event.
 
@@ -274,8 +284,8 @@ evt.source.postMessage(showAvatarMessage, "*");
 
 Message parameters:
 
-* **eventName** - should be set to "show_avatar". This tells MetaPerson Creator which request you're making.
-* **avatarCode** - a code of the avatar you need to open.
+* `eventName` - should be set to "show_avatar". This tells MetaPerson Creator which request you're making.
+* `avatarCode` - a code of the avatar you need to open.
 
 The avatar code can be retrieved from the [`model_generated`](#model-generated) and [`model_exported`](#model-exported) events.
 
@@ -311,17 +321,17 @@ function onWindowMessage(evt) {
 
 There are the following events
 
-* [**metaperson_creator_loaded**](#metaperson-creator-loaded) - MetaPerson Creator sends this message when the page is loaded.
+* [`metaperson_creator_loaded`](#metaperson-creator-loaded) - MetaPerson Creator sends this message when the page is loaded.
 
-* [**authentication_status**](#authentication-status) - MetaPerson Creator sends this message once the authentication is done with its status.
+* [`authentication_status`](#authentication-status) - MetaPerson Creator sends this message once the authentication is done with its status.
 
-* [**model_generated**](#model-generated) - MetaPerson Creator sends this message when a new avatar is generated. 
+* [`model_generated`](#model-generated) - MetaPerson Creator sends this message when a new avatar is generated. 
 
-* [**model_exported**](#model-exported) - MetaPerson Creator sends this message when the avatar is exported. This event allows you to get the link to the resulting avatar. This link can then be used to download or integrate the avatar into your website or application.
+* [`model_exported`](#model-exported) - MetaPerson Creator sends this message when the avatar is exported. This event allows you to get the link to the resulting avatar. This link can then be used to download or integrate the avatar into your website or application.
 
-* [**model_screenshot**](#model-screenshot) - MetaPerson Creator sends this message as a response to the [`make screenshot`](#make-screenshot) message.
+* [`model_screenshot`](#model-screenshot) - MetaPerson Creator sends this message as a response to the [`make screenshot`](#make-screenshot) message.
 
-* **action_availability_changed** - The MetaPerson Creator sends this message to tell whether the "Export Avatar" and the "Generate Avatar" actions are available at the current moment.
+* [`action_availability_changed`](#action-availability) - The MetaPerson Creator sends this message to tell whether the [`export_avatar`](#export-avatar) and the [`generate_avatar`](#generate-avatar) actions are available at the current moment.
 
 ### MetaPerson Creator Loaded
 
@@ -425,3 +435,21 @@ Event data:
 * `data.eventName` - is set to `action_availability_changed`.
 * `data.actionName` - a name of the action whose availability was changed. Possible values: `avatar_generation`, `avatar_export`, `avatar_screenshot`.
 * `data.isAvailable` - indicates if the action is available.
+
+
+## Additional Settings
+
+### Loading Screen Image
+
+In the **Desktop** version, you can customize the loading screen image.
+
+![Loading Screen Image](./img/loading_screen_image.png)
+
+To do this, you can pass additional arguments with the URL:
+
+* `logoUrl`- the URL of the image to be displayed.
+* `logoWidth` - the width of the image area. The default value is 512px.
+* `logoHeight` - the height of the image area. The default value is 120px.
+
+If you have an image located at `https://example.com/logo.png`, you would format the URL as follows:
+`https://metaperson.avatarsdk.com/iframe.html?logoUrl=https://example.com/logo.png&logoWidth=300&logoHeight=300`
