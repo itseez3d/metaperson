@@ -12,7 +12,7 @@ https://metaperson.avatarsdk.com/1.16.1/iframe.html
 **Release notes**:
 
   * JS API changes:
-    * Added parameters to configure [loading screen image](js_api#loading-screen-image)
+    * Added parameters to configure [loading screen image](/js_api#loading-screen-image)
     * Added `metaPersonLabelText` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
     * Added `isTakeSelfieButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
     * Added `isBrowsePhotoButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
