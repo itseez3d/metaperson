@@ -12,7 +12,7 @@ https://metaperson.avatarsdk.com/1.16.1/iframe.html
 **Release notes**:
 
   * JS API changes:
-    * Added parameters to configure [loading screen image](/js_api#loading-screen-image)
+    * Added parameters to configure the [loading screen image](/js_api#loading-screen-image)
     * Added `metaPersonLabelText` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
     * Added `isTakeSelfieButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
     * Added `isBrowsePhotoButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
@@ -59,10 +59,10 @@ https://metaperson.avatarsdk.com/1.15.0/iframe.html
     * Kandura_Artanish
     * Kandura_Lalvar
     * Ghutra
- * Added third gender selection
+ * Added third-gender selection
  * Updated icons for UI elements
  * Added lighting selection
- * Generate child avatars with decreased *Shoulders*, *Chest* and *Hips* body proportions
+ * Generate child avatars with decreased *Shoulders*, *Chest*, and *Hips* body proportions
  
 ### 1.14.2 (2024-06-10)
 
@@ -117,7 +117,7 @@ https://metaperson.avatarsdk.com/1.13.0/iframe.html
    * Added `outfitsBlackList` to the [`set_ui_parameters`](/js_api#ui-parameters) message
    * Added `age` parameter to the [`generate_avatar`](/js_api#generate-avatar) message
    * Added `metaPersonCreator.isLoaded` property
- * T-Shirt texture generation from two photos
+ * T-shirt texture generation from two photos
  
 ### 1.12.0 (2024-02-12)
 
