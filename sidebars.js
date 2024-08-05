@@ -90,6 +90,7 @@ const sidebars = {
 	},
 	'rest_api',
 	'mixamo',
+	'salsa',
 	'faq'
   ],
   
