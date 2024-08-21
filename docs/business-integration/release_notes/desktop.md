@@ -5,6 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.16.2 (2024-07-22)
+
+https://metaperson.avatarsdk.com/1.16.2/iframe.html
+
+**Release notes**:
+
+  * Bug fixes:
+    * Default UI controls are visible before a custom UI configuration is provided via the `set_ui_parameters` message
+
 ### 1.16.1 (2024-07-19)
 
 https://metaperson.avatarsdk.com/1.16.1/iframe.html
