@@ -5,6 +5,27 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.17.0 (2024-08-21)
+
+https://metaperson.avatarsdk.com/1.17.0/iframe.html
+
+**Release notes**:
+
+  * Added mirrored haircuts
+  * Added new haircuts: 
+    * Haircut22
+  * Added new outfits:
+    * Parz
+    * sandals_Parz
+    * skirt_Lessing
+    * top_Lessing
+    * kurta_Tandzut
+    * shoes_Tandzut
+    * dhoti_Tandzut
+    * baseball_cap_Vachagan
+  * UI changes
+    * Added tutorial buttons to the export dialog
+
 ### 1.16.2 (2024-07-22)
 
 https://metaperson.avatarsdk.com/1.16.2/iframe.html
