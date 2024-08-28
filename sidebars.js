@@ -91,6 +91,7 @@ const sidebars = {
 	'rest_api',
 	'mixamo',
 	'salsa',
+	'oculus_ue',
 	'faq'
   ],
   
