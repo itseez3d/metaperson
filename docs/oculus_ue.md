@@ -4,4 +4,5 @@ description: Using Oculus lipsync with MetaPerson in Unreal Engine
 ---
 
 # Oculus lipsync UE
-[Oculus lipsync](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync-unreal/) offers top-notch lipsync that works with any language and integrates seamlessly with the MetaPerson avatar. Check out the [UE5 demo project](https://github.com/avatarsdk/metaperson-ue-sample) on our GitHub.
+
+Introducing MetaPerson - [Unreal Engine Oculus LipSync Sample](https://github.com/avatarsdk/metaperson-ue-sample): a powerful demonstration of MetaPerson avatars seamlessly integrated into Unreal Engine using the [Oculus LipSync](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync-unreal/) plugin. Experience cutting-edge facial animation technology with UE 5.2 or newer. This sample showcases how to bring avatars to life with real-time lipsync, allowing you to create more immersive and interactive experiences. Perfect for developers looking to explore advanced avatar animation and lipsync capabilities in Unreal Engine. 
