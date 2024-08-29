@@ -87,11 +87,17 @@ const sidebars = {
 				]
 			}
 		]			
-	},
+	},	
 	'rest_api',
 	'mixamo',
-	'salsa',
-	'oculus_ue',
+	{
+		type: 'category',
+		label: 'LipSync',
+		items:[
+			'salsa',
+			'oculus_ue',
+		]
+	},
 	'faq'
   ],
   
