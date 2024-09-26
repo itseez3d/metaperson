@@ -93,10 +93,11 @@ const sidebars = {
 	{
 		type: 'category',
 		label: 'LipSync',
+		link: {type: 'doc', id: 'lipsync/index'},
 		items:[
-			'salsa',
-			'oculus_ue',
-			'oculus_unity'
+			'lipsync/salsa',
+			'lipsync/oculus_ue',
+			'lipsync/oculus_unity'
 		]
 	},
 	'faq'
