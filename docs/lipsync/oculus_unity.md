@@ -1,6 +1,7 @@
 ---
 sidebar_label: 'Oculus lipsync Unity'
 description: Using Oculus lipsync with MetaPerson in Unity
+slug: /oculus_unity
 ---
 # Oculus lipsync Unity
 

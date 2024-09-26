@@ -1,6 +1,7 @@
 ---
 sidebar_label: 'SALSA lipsync'
 description: Using SALSA lipsync with MetaPerson
+slug: /salsa
 ---
 
 # SALSA lipsync

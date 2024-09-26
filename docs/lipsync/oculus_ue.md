@@ -1,6 +1,7 @@
 ---
 sidebar_label: 'Oculus lipsync UE'
 description: Using Oculus lipsync with MetaPerson in Unreal Engine
+slug: /oculus_ue
 ---
 
 # Oculus lipsync UE
