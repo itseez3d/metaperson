@@ -5,6 +5,31 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.18.0 (2024-09-26)
+
+https://metaperson.avatarsdk.com/1.18.0/iframe.html
+
+**Release notes**:
+
+  * Added LipSync
+  * Added recolorable eyes type
+  * Added "Create My T-Shirt" button
+  * Added earrings:
+    * earrings_01
+    * earrings_02
+    * earrings_03
+    * earrings_04
+  * Added necklaces:
+    * chain_lite
+    * chain_tight
+    * pendant_01
+    * pendant_02
+    * pendant_03
+    * pendant_04
+    * pendant_05
+  * JS API changes:
+    * Added `exportTemplateJson` parameter to the [`set_export_parameters`](/js_api#export-parameters) message.
+
 ### 1.17.0 (2024-08-21)
 
 https://metaperson.avatarsdk.com/1.17.0/iframe.html

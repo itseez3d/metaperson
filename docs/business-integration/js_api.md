@@ -64,7 +64,8 @@ let exportParametersMessage = {
     "format" : "gltf",
     "lod" : 1,
     "textureProfile" : "1K.jpg",
-    "useZip" : true
+    "useZip" : true,
+    "exportTemplateJson": "{\"outfits_shoes\":{\"apply_visibility_masks\" : false}}"
 };
 evt.source.postMessage(exportParametersMessage, "*");
 ```
@@ -79,6 +80,7 @@ Message parameters:
   * `4K.jpg`, `2K.jpg`, `1K.jpg`
   * `4K.webp`, `2K.webp`, `1K.webp`
 * `useZip` - by default, MetaPerson Creator returns a link to a ZIP archive with an exported model. You can set it to `false`, to get a direct link to a GLB of FBX file.
+* `exportTemplateJson` - JSON with common parameters that are applied to all exported avatars. This parameter is avaiable only for the Desktop version. See more details about [export template](#export-template). 
 
 ### UI Parameters
 
@@ -453,3 +455,84 @@ To do this, you can pass additional arguments with the URL:
 
 If you have an image located at `https://example.com/logo.png`, you would format the URL as follows:
 `https://metaperson.avatarsdk.com/iframe.html?logoUrl=https://example.com/logo.png&logoWidth=300&logoHeight=300`
+
+### Export Template
+
+The export template is available exclusively for the **Desktop** version.
+
+It is a JSON file that contains additional export parameters. You can specify the export template using the [`set_export_parameters`](#export-parameters) method.
+
+There are several configuration slots where you can define parameters: **avatar**, **haircuts**, **outfits**, **outfits_top**, **outfits_bottom**, **outfits_shoes**, **hats**, **glasses**, **earrings**, and **necklaces**. Each of these slots may have its own parameters.
+
+* `apply_visibility_masks` – A boolean parameter applicable for the **outfits**, **outfits_top**, **outfits_bottom**, and **outfits_shoes** sections. This determines whether the visibility mask is applied to remove polygons from the body mesh underneath the outfit mesh.
+
+```json
+{
+  "outfits_shoes": 
+  {
+    "apply_visibility_masks" : false
+  }
+}
+```
+
+* `textures list` – It is possible to specify textures and profiles for each slot that should be included in the exported avatar. The example below shows all available textures. Note that not all slots include every listed texture.
+
+```json
+{
+  "avatar": 
+  {
+    "textures" :
+    {
+      "profile" : "2K.jpg",
+      "list": 
+      [
+        "Color",
+        "Normal",
+        "Roughness",
+        "UnityMetallicSmoothness",
+        "GltfMetallicRoughness"
+      ]
+    }
+  },
+  "outfits": 
+  {
+    "textures" :
+    {
+      "profile" : "1K.jpg",
+      "list": 
+      [
+        "Color",
+        "Normal",
+        "Roughness",
+        "UnityMetallicSmoothness",
+        "GltfMetallicRoughness",
+        "RecoloringMask"
+      ]
+    }
+  },
+  "haircuts": 
+  {
+    "textures" :
+    {
+      "profile" : "4K.png",
+      "list": 
+      [
+        "AO",
+        "Alpha",
+        "Color",
+        "Depth",
+        "GltfMetallicRoughness",
+        "Normal",
+        "Root",
+        "Roughness",
+        "ScalpShade",
+        "ScalpShadeAOAlpha",
+        "ScalpShadeAlpha",
+        "Shade",
+        "UniqueID",
+        "UnityMetallicSmoothness"
+      ]
+    }
+  }
+}
+```
