@@ -5,6 +5,17 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.18.1 (2024-09-27)
+
+https://metaperson.avatarsdk.com/1.18.1/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: misalignment of eyes customization controls
+  * Fixed bug: invalid preview image is shown
+  * Updated previews for sample avatars
+  * Removed some animations for skirt_Lessing
+
 ### 1.18.0 (2024-09-26)
 
 https://metaperson.avatarsdk.com/1.18.0/iframe.html
