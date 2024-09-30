@@ -5,6 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.18.2 (2024-09-30)
+
+https://metaperson.avatarsdk.com/1.18.2/iframe.html
+
+**Release notes**:
+
+  * JS API changes:
+    * Added `enableLipsync` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
 ### 1.18.1 (2024-09-27)
 
 https://metaperson.avatarsdk.com/1.18.1/iframe.html

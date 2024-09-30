@@ -105,7 +105,8 @@ let uiParametersMessage = {
     "metaPersonLabelText" : "MetaPerson Avatars",
     "isTakeSelfieButtonVisible" : true,
     "isBrowsePhotoButtonVisible" : true,
-    "showSampleAvatars" : true
+    "showSampleAvatars" : true,
+    "enableLipsync": false,
 };
 evt.source.postMessage(uiParametersMessage, "*");
 ```
@@ -124,7 +125,8 @@ Message parameters:
 * `metaPersonLabelText` - a text of the label on the main screen. Default value is "MetaPerson Avatars".
 * `isTakeSelfieButtonVisible` - specifies if the "Take a selfie" button is visible.
 * `isBrowsePhotoButtonVisible` - specifies if the "Browse for photo" button is visible.
-* `showSampleAvatars` - specifies if sample avatars are available. 
+* `showSampleAvatars` - specifies if sample avatars are available.
+* `enableLipsync` - enables LipSync. Default value: `false`.
 
 #### MetaPerson Creator Mobile
 
