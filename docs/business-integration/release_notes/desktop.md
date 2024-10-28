@@ -5,6 +5,23 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.18.4 (2024-10-28)
+
+https://metaperson.avatarsdk.com/1.18.4/iframe.html
+
+**Release notes**:
+
+  * Bugfixes
+
+### 1.18.3 (2024-10-28)
+
+https://metaperson.avatarsdk.com/1.18.3/iframe.html
+
+**Release notes**:
+
+  * JS API changes:
+    * Added `ageSelectionAvailable`, `pipelineSelectionAvailable`, `defaultPipeline` parameters to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
 ### 1.18.2 (2024-09-30)
 
 https://metaperson.avatarsdk.com/1.18.2/iframe.html
