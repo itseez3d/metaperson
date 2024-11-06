@@ -103,7 +103,7 @@ const config = {
             label: 'MetaPerson Creator',
           },
 		  {
-            to: 'https://leap.avatarsdk.com/',
+            to: 'https://avatarsdk.com/leap/',
             position: 'left',
             label: 'Leap Realistic Facial Animation',
 			style: {color: 'green'},
