@@ -103,6 +103,12 @@ const config = {
             label: 'MetaPerson Creator',
           },
 		  {
+            to: 'https://leap.avatarsdk.com/',
+            position: 'left',
+            label: 'Leap Realistic Facial Animation',
+			style: {color: 'green'},
+          },
+		  {
             to: 'https://accounts.avatarsdk.com/developer/signup/',
             position: 'left',
             label: 'Developer sign-up',

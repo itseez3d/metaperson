@@ -20,6 +20,7 @@ const sidebars = {
   
   tutorialSidebar: [
     'index',
+	'leap',
 	{
 		type: 'category',
 		label: 'Integration',
