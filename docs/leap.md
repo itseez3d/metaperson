@@ -183,5 +183,28 @@ else
   Debug.LogError("Failed to load avatar model");
 ```
 
+## Windows Demo Application
+
+We provide a Windows demo application that allows you to quickly generate a sample avatar and explore how this technology works.
+The application is based on a Unity sample but does not require a Unity installation.
+
+![](./img/leap_demo_app.png)
+
+### How To Run
+
+1. **Download and extract** the archive containing the **Avatar SDK Leap Demo** application.
+2. Run the **Avatar SDK Leap.exe** executable.
+3. Press the **Generate** button to compute the 3D avatar model and its animation.
+4. After computation, press the **Play** button to preview the animation.
+
+### Generating Custom Avatar
+
+If you'd like to compute a custom avatar model using captured data:
+
+1. Obtain an archive with captured data from the iPhone **Leap application**.
+2. Renamed the archive to **avatarsdk_leap_source.zip**.
+3. Replace the archive in the **Avatar SDK Leap_Data\StreamingAssets** directory.
+4. Run the application and press **Generate** to create the avatar.
+
 ## Support
 Please feel free to ask any questions about the Avatar SDK Leap at support@avatarsdk.com
