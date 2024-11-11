@@ -124,5 +124,65 @@ By default, the Level Sequence will be rendered as a sequence of PNG images that
 ffmpeg -r 60  -i "Saved\MovieRenders\LevelSequence_RealisticAnim_0.%04d.png" -c:v libx265 -crf 2 -vf format=yuv420p10le -tag:v hvc1  "I:\renders\video0.mp4" -y
 ```
 
-### Support
+## Leap Unity plugin
+
+The **Avatar SDK Leap Unity plugin** creates a realistic facial animation sequence for your 3D avatar with just a few clicks.
+It requires you to copy captured data from the **Leap application** for iPhone to your computer, where the plugin processes it.
+
+### Requirements
+
+* OS: Windows 10 64-bit
+* Unity 2022.3.17f1 or above
+* Intel or AMD processor with AVX extension set (recommended i7-7700HQ or higher)
+* 6 GB of RAM available
+
+### Getting Started
+
+1. DDownload and extract the archive containing the **Avatar SDK Leap Unity project**.
+2. Open the project in **Unity 2022.3.17f1** or later.
+3. Open the `Assets/AvatarSDK/Leap/Samples/AvatarSDKLeapSample.unity` scene.
+4. Press the **Play** button in the Unity Editor to run the scene.  
+5. Use the **Select Archive** button to choose the archive containing captured data from the **Leap application** for iPhone.  
+6. Select the avatar’s gender and press **Generate** to compute the 3D avatar model and its animation.  
+7. After computation, press the **Play** button to preview the animation.
+
+![](./img/leap_unity_sample.jpg)
+
+### How It Works
+
+#### Compute Avatar and Animation
+
+The `LeapProcess` class handles avatar and animation computation. Call its `GenerateAvatar` method, passing the path to the archive with captured data and the avatar's gender. 
+Computations are asynchronous. Upon completion, retrieve the `AvatarCode` for the generated model.
+
+
+```js
+LeapProcess leapProcess = new LeapProcess();
+bool isGenerated = await leapProcess.GenerateAvatar("path_to_an_archive_with_captured_data", AvatarGender.Male);
+if (isGenerated)
+{
+  string avatarCode = leapProcess.AvatarCode;
+}
+else
+  Debug.LogError("Failed to generate avatar");
+```
+
+#### Play Animation
+
+To show the avatar and to play the animation, you should add the `Leap Animator` component to the scene and specify the [`Meta Person Loader`](https://github.com/avatarsdk/metaperson-loader-unity) component. 
+
+![](./img/leap_unity_animator_component.jpg)
+
+Load the model using the `LoadModel` method, passing the avatar code, and then call `PlayAnimation` to start playback.
+
+```js
+string avatarCode = leapProcess.AvatarCode;
+bool isLoaded = await leapAnimator.LoadModel(avatarCode);
+if (isLoaded)
+  leapAnimator.PlayAnimation();
+else
+  Debug.LogError("Failed to load avatar model");
+```
+
+## Support
 Please feel free to ask any questions about the Avatar SDK Leap at support@avatarsdk.com
