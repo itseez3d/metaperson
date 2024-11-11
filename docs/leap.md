@@ -5,7 +5,7 @@ description: Leap Realistic Facial Animation
 
 # Leap Realistic Facial Animation
 
-We are thrilled to announce the beta version of the Avatar SDK Leap. Leap is facial motion capture software that transforms a video of a person speaking on camera into a 3D animation of the person’s avatar. By leveraging neural networks to predict the shape and texture of the avatar, Leap delivers an unprecedented level of visual quality that transcends the uncanny valley. Currently, users will need an iPhone with the Leap mobile app to record a video, but support for videos captured with standard cameras will be added shortly.
+We are thrilled to announce the beta version of the Avatar SDK Leap. Leap is facial motion capture software that transforms a video of a person speaking on camera into a 3D animation of the person's avatar. By leveraging neural networks to predict the shape and texture of the avatar, Leap delivers an unprecedented level of visual quality that transcends the uncanny valley. Currently, users will need an iPhone with the Leap mobile app to record a video, but support for videos captured with standard cameras will be added shortly.
 
 <div class="iframe-container">
 <iframe width="560" height="315" allow="fullscreen"
@@ -126,8 +126,7 @@ ffmpeg -r 60  -i "Saved\MovieRenders\LevelSequence_RealisticAnim_0.%04d.png" -c:
 
 ## Leap Unity plugin
 
-The **Avatar SDK Leap Unity plugin** creates a realistic facial animation sequence for your 3D avatar with just a few clicks.
-It requires you to copy captured data from the **Leap application** for iPhone to your computer, where the plugin processes it.
+With just a few clicks, the **Avatar SDK Leap Unity plugin** creates a realistic facial animation sequence for your 3D avatar. It requires you to copy captured data from the **Leap application** for  to your computer, where the plugin processes it.
 
 ### Requirements
 
@@ -138,12 +137,12 @@ It requires you to copy captured data from the **Leap application** for iPhone t
 
 ### Getting Started
 
-1. DDownload and extract the archive containing the **Avatar SDK Leap Unity project**.
+1. Download and extract the archive containing the **Avatar SDK Leap Unity project**.
 2. Open the project in **Unity 2022.3.17f1** or later.
 3. Open the `Assets/AvatarSDK/Leap/Samples/AvatarSDKLeapSample.unity` scene.
 4. Press the **Play** button in the Unity Editor to run the scene.  
-5. Use the **Select Archive** button to choose the archive containing captured data from the **Leap application** for iPhone.  
-6. Select the avatar’s gender and press **Generate** to compute the 3D avatar model and its animation.  
+5. Use the **Select Archive** button to choose the archive containing captured data from the iPhone **Leap application**.  
+6. Select the avatar's gender and press **Generate** to compute the 3D avatar model and its animation.  
 7. After computation, press the **Play** button to preview the animation.
 
 ![](./img/leap_unity_sample.jpg)
