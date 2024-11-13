@@ -93,7 +93,7 @@ const sidebars = {
 	'mixamo',
 	{
 		type: 'category',
-		label: 'LipSync',
+		label: 'Lipsync',
 		link: {type: 'doc', id: 'lipsync/index'},
 		items:[
 			'lipsync/salsa',
