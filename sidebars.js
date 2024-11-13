@@ -19,8 +19,8 @@ const sidebars = {
   // But you can create a sidebar manually
   
   tutorialSidebar: [
-    'index',
 	'leap',
+    'index',
 	{
 		type: 'category',
 		label: 'Integration',

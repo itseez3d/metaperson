@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Leap'
+sidebar_label: 'Avatar SDK Leap'
 description: Leap Realistic Facial Animation
 ---
 
