@@ -14,7 +14,7 @@ src="https://www.youtube.com/embed/VY4kIyohjcc?si=PKIum24G0Hr9vnxx">
 
 &nbsp;
 
-Leap has two essential components that combine to bring innovative animation technology to life. The first component is a mobile app that captures detailed and expressive facial animation. This app allows users to record and process facial movements efficiently. The second component is a game engine plugin that takes this rich facial animation data and seamlessly converts it into the animation format suitable for the target platform. An Unreal Engine plugin is available now, and a Unity plugin will be released soon.
+Leap has two essential components that combine to bring innovative animation technology to life. The first component is a mobile app that captures detailed and expressive facial animation. This app allows users to record and process facial movements efficiently. The second component includes game engine plugins that take this rich facial animation data and seamlessly convert it into an animation format suitable for the target platform. 
 
 ## Leap iOS application for dataset capture
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'GitHub Sample'
-description: Metaperson UE Sample
+description: MetaPerson UE Sample
 sidebar_position: 2
 ---
 
