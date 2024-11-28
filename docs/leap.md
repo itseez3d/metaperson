@@ -1,11 +1,11 @@
 ---
-sidebar_label: 'Leap'
+sidebar_label: 'Avatar SDK Leap'
 description: Leap Realistic Facial Animation
 ---
 
 # Leap Realistic Facial Animation
 
-We are thrilled to announce the beta version of the Avatar SDK Leap. Leap is facial motion capture software that transforms a video of a person speaking on camera into a 3D animation of the person’s avatar. By leveraging neural networks to predict the shape and texture of the avatar, Leap delivers an unprecedented level of visual quality that transcends the uncanny valley. Currently, users will need an iPhone with the Leap mobile app to record a video, but support for videos captured with standard cameras will be added shortly.
+We are thrilled to announce the beta version of the Avatar SDK Leap. Leap is facial motion capture software that transforms a video of a person speaking on camera into a 3D animation of the person's avatar. By leveraging neural networks to predict the shape and texture of the avatar, Leap delivers an unprecedented level of visual quality that transcends the uncanny valley. Currently, users will need an iPhone with the Leap mobile app to record a video, but support for videos captured with standard cameras will be added shortly.
 
 <div class="iframe-container">
 <iframe width="560" height="315" allow="fullscreen"
@@ -14,7 +14,7 @@ src="https://www.youtube.com/embed/VY4kIyohjcc?si=PKIum24G0Hr9vnxx">
 
 &nbsp;
 
-Leap has two essential components that combine to bring innovative animation technology to life. The first component is a mobile app that captures detailed and expressive facial animation. This app allows users to record and process facial movements efficiently. The second component is a game engine plugin that takes this rich facial animation data and seamlessly converts it into the animation format suitable for the target platform. An Unreal Engine plugin is available now, and a Unity plugin will be released soon.
+Leap has two essential components that combine to bring innovative animation technology to life. The first component is a mobile app that captures detailed and expressive facial animation. This app allows users to record and process facial movements efficiently. The second component includes game engine plugins that take this rich facial animation data and seamlessly convert it into an animation format suitable for the target platform. 
 
 ## Leap iOS application for dataset capture
 
@@ -124,5 +124,87 @@ By default, the Level Sequence will be rendered as a sequence of PNG images that
 ffmpeg -r 60  -i "Saved\MovieRenders\LevelSequence_RealisticAnim_0.%04d.png" -c:v libx265 -crf 2 -vf format=yuv420p10le -tag:v hvc1  "I:\renders\video0.mp4" -y
 ```
 
-### Support
+## Leap Unity plugin
+
+With just a few clicks, the **Avatar SDK Leap Unity plugin** creates a realistic facial animation sequence for your 3D avatar. It requires you to copy captured data from the **Leap application** for  to your computer, where the plugin processes it.
+
+### Requirements
+
+* OS: Windows 10 64-bit
+* Unity 2022.3.17f1 or above
+* Intel or AMD processor with AVX extension set (recommended i7-7700HQ or higher)
+* 6 GB of RAM available
+
+### Getting Started
+
+1. Download and extract the archive containing the **Avatar SDK Leap Unity project**.
+2. Open the project in **Unity 2022.3.17f1** or later.
+3. Open the `Assets/AvatarSDK/Leap/Samples/AvatarSDKLeapSample.unity` scene.
+4. Press the **Play** button in the Unity Editor to run the scene.  
+5. Use the **Select Archive** button to choose the archive containing captured data from the iPhone **Leap application**.  
+6. Select the avatar's gender and press **Generate** to compute the 3D avatar model and its animation.  
+7. After computation, press the **Play** button to preview the animation.
+
+![](./img/leap_unity_sample.jpg)
+
+### How It Works
+
+#### Compute Avatar and Animation
+
+The `LeapProcess` class handles avatar and animation computation. Call its `GenerateAvatar` method, passing the path to the archive with captured data and the avatar's gender. 
+Computations are asynchronous. Upon completion, retrieve the `AvatarCode` for the generated model.
+
+
+```js
+LeapProcess leapProcess = new LeapProcess();
+bool isGenerated = await leapProcess.GenerateAvatar("path_to_an_archive_with_captured_data", AvatarGender.Male);
+if (isGenerated)
+{
+  string avatarCode = leapProcess.AvatarCode;
+}
+else
+  Debug.LogError("Failed to generate avatar");
+```
+
+#### Play Animation
+
+To show the avatar and to play the animation, you should add the `Leap Animator` component to the scene and specify the [`Meta Person Loader`](https://github.com/avatarsdk/metaperson-loader-unity) component. 
+
+![](./img/leap_unity_animator_component.jpg)
+
+Load the model using the `LoadModel` method, passing the avatar code, and then call `PlayAnimation` to start playback.
+
+```js
+string avatarCode = leapProcess.AvatarCode;
+bool isLoaded = await leapAnimator.LoadModel(avatarCode);
+if (isLoaded)
+  leapAnimator.PlayAnimation();
+else
+  Debug.LogError("Failed to load avatar model");
+```
+
+## Windows Demo Application
+
+We provide a Windows demo application that allows you to quickly generate a sample avatar and explore how this technology works.
+The application is based on a Unity sample but does not require a Unity installation.
+
+![](./img/leap_demo_app.png)
+
+### How To Run
+
+1. **Download and extract** the archive containing the **Avatar SDK Leap Demo** application.
+2. Run the **Avatar SDK Leap.exe** executable.
+3. Press the **Generate** button to compute the 3D avatar model and its animation.
+4. After computation, press the **Play** button to preview the animation.
+
+### Generating Custom Avatar
+
+If you'd like to compute a custom avatar model using captured data:
+
+1. Obtain an archive with captured data from the iPhone **Leap application**.
+2. Renamed the archive to **avatarsdk_leap_source.zip**.
+3. Replace the archive in the **Avatar SDK Leap_Data\StreamingAssets** directory.
+4. Run the application and press **Generate** to create the avatar.
+
+## Support
 Please feel free to ask any questions about the Avatar SDK Leap at support@avatarsdk.com

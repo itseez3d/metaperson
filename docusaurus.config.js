@@ -105,8 +105,8 @@ const config = {
 		  {
             to: 'https://avatarsdk.com/leap/',
             position: 'left',
-            label: 'Leap Realistic Facial Animation',
-			style: {color: 'green'},
+            label: 'Avatar SDK Leap',
+			      style: {color: 'green', fontWeight: 'bold'},
           },
 		  {
             to: 'https://accounts.avatarsdk.com/developer/signup/',

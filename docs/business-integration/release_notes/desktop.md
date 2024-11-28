@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.18.5 (2024-11-18)
+
+https://metaperson.avatarsdk.com/1.18.5/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: authentication status event is sent too early
+
 ### 1.18.4 (2024-10-28)
 
 https://metaperson.avatarsdk.com/1.18.4/iframe.html

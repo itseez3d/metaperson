@@ -19,8 +19,8 @@ const sidebars = {
   // But you can create a sidebar manually
   
   tutorialSidebar: [
-    'index',
 	'leap',
+    'index',
 	{
 		type: 'category',
 		label: 'Integration',
@@ -101,7 +101,7 @@ const sidebars = {
 	},
 	{
 		type: 'category',
-		label: 'LipSync',
+		label: 'Lipsync',
 		link: {type: 'doc', id: 'lipsync/index'},
 		items:[
 			'lipsync/salsa',

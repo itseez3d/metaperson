@@ -120,7 +120,7 @@ Message parameters:
 * `isExportButtonVisible` - this parameter specifies if the Export button is visible. Default value: `true`.
 * `isLoginButtonVisible` - this parameter specifies if the Login button is visible. Default value: `true`.
 * `outfitsBlackList` - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
-* `skipViewerControls` - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
+* `skipViewerControls` - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','earrings','necklaces','age','body','head','eyes','color','animations','lighting'`.
 * `closeExportDialogWhenExportCompleted` - this parameter specifies if the export dialog is shown after an avatar is exported. Default value: `false`.
 * `isLanguageSelectionVisible` - this parameter specifies if the control to select a UI language is visible. Default value: `true`.
 * `language` - this parameter specifies a UI language. Supported values: `EN`, `漢語`. English is set by default if the parameter is empty or isn't set.
