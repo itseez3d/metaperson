@@ -1,4 +1,5 @@
 ---
+slug: /mixamo
 sidebar_label: 'Mixamo animations'
 description: Using Mixamo animations with MetaPerson
 ---

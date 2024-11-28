@@ -89,8 +89,16 @@ const sidebars = {
 			}
 		]			
 	},	
-	'rest_api',
-	'mixamo',
+	'rest_api',	
+	{
+		type: 'category',
+		label: '3D Motion',
+		link: {type: 'doc', id: '3dmotion/index'},
+		items:[
+			'3dmotion/mixamo',			
+			'3dmotion/deepmotion',
+		]
+	},
 	{
 		type: 'category',
 		label: 'LipSync',
