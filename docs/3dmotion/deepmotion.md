@@ -9,14 +9,14 @@ description: Using DeepMotion Animate 3D and SayMotion with MetaPerson
 
 <div class="iframe-container">
 <iframe width="560" height="315" allow="fullscreen"
-src="https://www.youtube.com/embed/AV6cLtuZra4?si=RMnHzYgjKES1Awe2">
+src="https://www.youtube.com/embed/O_8vIwRVa5Q?si=txXPA5x8vBWJjcLy">
 </iframe></div>
 
 &nbsp;
 
 <div class="iframe-container">
 <iframe width="560" height="315" allow="fullscreen"
-src="https://www.youtube.com/embed/ujMxgmFz-pM?si=mJqt8fa_OKHSB5Ha">
+src="https://www.youtube.com/embed/_jAN8LlllrQ?si=M60TzZhNaspdxtlg">
 </iframe></div>
 
 &nbsp;
@@ -79,7 +79,7 @@ Import the FBX file that does not include T-Pose:
 
 ![](./img/dm_imp.png)
 
-For Unreal Engine, use the following import settings:
+For Unreal Engine use the following import settings:
 
 ![](./img/dm_ueimp.png)
 
@@ -103,4 +103,4 @@ Now everything is ready and your MetaPerson avatars are fully animated and eager
 
 ## Additional information
 
-We strongly encourage you to take the time to watch the comprehensive videos about using the DeepMotion technology in conjunction with the MetaPerson on both [Unity](https://youtu.be/AV6cLtuZra4?feature=shared) and [Unreal Engine](https://youtu.be/ujMxgmFz-pM?feature=shared). These tutorials are more detailed and provide a wealth of information that can be very helpful. If you still have any questions or need further assistance, please do not hesitate to contact us at support@avatarsdk.com.
+We strongly encourage you to take the time to watch the comprehensive videos about using the DeepMotion technology in conjunction with the MetaPerson on both [Unity](https://youtu.be/AV6cLtuZra4?feature=shared) and [Unreal Engine](https://youtu.be/ujMxgmFz-pM?feature=shared). These tutorials are more detailed and provide a wealth of information that can be very helpful. If you still have any questions or need further assistance, please do not hesitate to reach out to us at support@avatarsdk.com.
