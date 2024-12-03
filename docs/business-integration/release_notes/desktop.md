@@ -5,6 +5,25 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.19.0 (2024-12-02)
+
+https://metaperson.avatarsdk.com/1.19.0/iframe.html
+
+**Release notes**:
+
+  * New outfits:
+    * pants_Dzoraget
+    * sherwani_Dzoraget
+  * New haircuts: 
+    * Haircut23
+    * Haircut24
+  * JS API changes:
+    * Added `facial_animations` as possible value for `skipViewerControls` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+    * Added `computationParametersPanelVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+  * Added new blendshapes to tune head and facial features
+  * Added facial animations
+  * Show error when a face isn't found on the provided image
+
 ### 1.18.5 (2024-11-18)
 
 https://metaperson.avatarsdk.com/1.18.5/iframe.html
