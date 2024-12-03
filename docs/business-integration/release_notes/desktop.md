@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.19.1 (2024-12-03)
+
+https://metaperson.avatarsdk.com/1.19.1/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: unable to export a model when the animations panel is active
+
 ### 1.19.0 (2024-12-02)
 
 https://metaperson.avatarsdk.com/1.19.0/iframe.html
