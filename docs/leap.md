@@ -69,6 +69,14 @@ When you open the project, the Leap sample level will be loaded. You can explore
 
 ![](./img/leap_victor.png)
 
+To import your animation, you will need to provide you [Avatar SDK Developer Account](https://accounts.avatarsdk.com/developer/)  credentials. To understand the concept of developer credentials, please refer to the corresponding [section](https://docs.metaperson.avatarsdk.com/getting_started#developer-credentials) of the documentation. This section provides a detailed explanation about what developer credentials are, their purpose, and the steps required to obtain them. 
+
+Once you have the `Client ID` and `Client Secret` of your account, enter them in the corresponding fields of the plugin settings. (`Edit->Project Settings->Plugins->Avatar SDK Leap`):
+
+![](./img/leap_cred.png)
+
+Please ensure that your account is equipped with a Pro subscription. Additionally, it's important to double-check that you have input your credentials accurately. Without these steps, you will encounter difficulties and will not be able to successfully generate the desired animation. We want to help you avoid any unnecessary frustration, so please take a moment to verify these details before proceeding.
+
 To import your animation, click the `Window->Avatar SDK Leap` menu to open the plugin window.
 
 ![](./img/leap_menu.png)
@@ -79,12 +87,23 @@ Choose the name for your [level sequence](https://dev.epicgames.com/documentatio
 
 ![](./img/leap_window2.png)
 
-Click on the `Import Leap Animation` button and provide a path with the archive you got after capturing data with your iPhone Leap application. After that, the processing begins.
+Click on the `Import Leap Animation` button and provide a path with the archive you got after capturing data with your iPhone Leap application. After that, the MetaPerson window will open and the avatar generation process will begin.
 
-![](./img/leap_import.png)
+![](./img/leap_generate.png)
 
-Depending on your hardware setup, processing may take from 4 to 5 minutes.
-When the processing is finished, you will be able to open the resulting level sequence or explore the assets created by Leap in the destination folder.
+When the avatar is ready, you will be able to customize your avatar extensively. You can choose from a wide variety of outfits, ranging from casual to formal, ensuring your avatar matches your style perfectly. Additionally, explore numerous haircut styles to give your avatar a distinct look that reflects your personality. 
+
+![](./img/leap_customization.png)
+
+Once you are ready with customization, click on the export button. After you click, wait for the export process to finish. This process might take a little time.
+
+![](./img/leap_export_btn.png)
+
+Once the export process has been successfully completed, it will take a few more seconds to download the avatar animation file and import it to Unreal Engine.
+
+![](./img/leap_downloading.png)
+
+Now the Level Sequence asset with the animation is ready and you may open it by clicking on the corresponding button. Click on the `Open Directory` button to explore all of the assets imported into your project.
 
 ![](./img/leap_window3.png)
 
