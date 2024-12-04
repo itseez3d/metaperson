@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.19.2 (2024-12-04)
+
+https://metaperson.avatarsdk.com/1.19.2/iframe.html
+
+**Release notes**:
+
+  * JS API: added `isScreenshotButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
 ### 1.19.1 (2024-12-03)
 
 https://metaperson.avatarsdk.com/1.19.1/iframe.html
