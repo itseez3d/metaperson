@@ -52,7 +52,7 @@ You will need an iPhone with Leap application installed to capture the facial an
 
 ### Minimal technical requirements
 
-RAM: 16 Gb 
+RAM: 16 GB 
 GPU: GeForce RTX 3050
 CPU: Intel i7 7th gen
 
@@ -61,7 +61,7 @@ The Leap plugin comes with a sample UE project to help you start with facial ani
 
 ![](./img/leap_dir.png)
 
-Another option - in the Unreal Engine Project browser, click on the Browse button in the Recent Project partition and provide a path to the LeapDemo:
+Another option - in the Unreal Engine Project browser, click on the Browse button in the Recent Projects partition and provide a path to the LeapDemo:
 
 ![](./img/leap_launch.png)
 
@@ -69,13 +69,13 @@ When you open the project, the Leap sample level will be loaded. You can explore
 
 ![](./img/leap_victor.png)
 
-To import your animation, you will need to provide you [Avatar SDK Developer Account](https://accounts.avatarsdk.com/developer/)  credentials. To understand the concept of developer credentials, please refer to the corresponding [section](https://docs.metaperson.avatarsdk.com/getting_started#developer-credentials) of the documentation. This section provides a detailed explanation about what developer credentials are, their purpose, and the steps required to obtain them. 
+To import your animation, you will need to provide your [Avatar SDK Developer Account](https://accounts.avatarsdk.com/developer/)  credentials. To understand the concept of developer credentials, please refer to the corresponding [section](https://docs.metaperson.avatarsdk.com/getting_started#developer-credentials) of the documentation. This section provides a detailed explanation of what developer credentials are, their purpose, and the steps required to obtain them. 
 
 Once you have the `Client ID` and `Client Secret` of your account, enter them in the corresponding fields of the plugin settings. (`Edit->Project Settings->Plugins->Avatar SDK Leap`):
 
 ![](./img/leap_cred.png)
 
-Please ensure that your account is equipped with a Pro subscription. Additionally, it's important to double-check that you have input your credentials accurately. Without these steps, you will encounter difficulties and will not be able to successfully generate the desired animation. We want to help you avoid any unnecessary frustration, so please take a moment to verify these details before proceeding.
+Please ensure that your account is equipped with a Pro subscription. Additionally, it's important to double-check that you have input your credentials accurately. These steps are necessary for you to successfully generate the desired animation. We want to help you avoid any unnecessary frustration, so please take a moment to verify these details before proceeding.
 
 To import your animation, click the `Window->Avatar SDK Leap` menu to open the plugin window.
 
@@ -87,11 +87,11 @@ Choose the name for your [level sequence](https://dev.epicgames.com/documentatio
 
 ![](./img/leap_window2.png)
 
-Click on the `Import Leap Animation` button and provide a path with the archive you got after capturing data with your iPhone Leap application. After that, the MetaPerson window will open and the avatar generation process will begin.
+Click on the `Import Leap Animation` button and provide a path with the archive you got after capturing data with your iPhone Leap application. After that, the MetaPerson window will open, and the avatar generation process will begin.
 
 ![](./img/leap_generate.png)
 
-When the avatar is ready, you will be able to customize your avatar extensively. You can choose from a wide variety of outfits, ranging from casual to formal, ensuring your avatar matches your style perfectly. Additionally, explore numerous haircut styles to give your avatar a distinct look that reflects your personality. 
+When the avatar is ready, you can customize it extensively. You can choose from various outfits, from casual to formal, ensuring your avatar matches your style perfectly. Additionally, explore numerous haircut styles to give your avatar a distinct look that reflects your personality. We plan to add almost all assets currently available in the MetaPerson Creator later, so stay tuned.
 
 ![](./img/leap_customization.png)
 
@@ -103,7 +103,7 @@ Once the export process has been successfully completed, it will take a few more
 
 ![](./img/leap_downloading.png)
 
-Now the Level Sequence asset with the animation is ready and you may open it by clicking on the corresponding button. Click on the `Open Directory` button to explore all of the assets imported into your project.
+Now the Level Sequence asset with the animation is ready, and you may open it by clicking on the corresponding button. Click the `Open Directory` button to explore all the assets imported into your project.
 
 ![](./img/leap_window3.png)
 
@@ -113,7 +113,7 @@ The imported animation files may be found in the `/Content/AvatarSdkLeap` direct
 
 ![](./img/leap_assets.png)
 
-Created level sequence contains tracks for the camera, texture and body skeletal mesh. You can edit the created tracks and assets according to your requirements.
+The created level sequence contains tracks for the camera, texture, and body skeletal mesh. You can edit the created tracks and assets according to your requirements.
 
 ![](./img/leap_seq1.png)
 
@@ -145,7 +145,7 @@ ffmpeg -r 60  -i "Saved\MovieRenders\LevelSequence_RealisticAnim_0.%04d.png" -c:
 
 ## Leap Unity plugin
 
-With just a few clicks, the **Avatar SDK Leap Unity plugin** creates a realistic facial animation sequence for your 3D avatar. It requires you to copy captured data from the **Leap application** for  to your computer, where the plugin processes it.
+With just a few clicks, the Avatar SDK Leap Unity plugin creates a realistic facial animation sequence for your 3D avatar. It requires you to copy captured data from the Leap application to your computer, where the plugin processes it.
 
 ### Requirements
 
@@ -156,22 +156,22 @@ With just a few clicks, the **Avatar SDK Leap Unity plugin** creates a realistic
 
 ### Getting Started
 
-1. Download and extract the archive containing the **Avatar SDK Leap Unity project**.
-2. Open the project in **Unity 2022.3.17f1** or later.
+1. Download and extract the archive containing the Avatar SDK Leap Unity project.
+2. Open the project in Unity 2022.3.17f1 or later.
 3. Open the `Assets/AvatarSDK/Leap/Samples/1-GettingStartedSample.unity` scene.
-4. Press the **Play** button in the Unity Editor to run the scene.  
-5. Use the **Select Archive** button to choose the archive containing captured data from the iPhone **Leap application**. 
-There is an archive with the sample avatar in `Assets/StreamingAssets/itseez3d/avatar_sdk_leap/sample_avatar` directory. You can use it, if you don't have the **Leap application**.
-6. Select the avatar's gender and press **Generate** to compute the 3D avatar model and its animation.  
-7. After computation, press the **Play** button to preview the animation.
+4. Press the Play button in the Unity Editor to run the scene.  
+5. Use the Select Archive button to choose the archive containing captured data from the iPhone Leap application.  
+There is an archive with the sample avatar in `Assets/StreamingAssets/itseez3d/avatar_sdk_leap/sample_avatar` directory. You can use it if you don't have the Leap application. 
+6. Select the avatar's gender and press the Generate to compute the 3D avatar model and its animation.  
+7. After computation, press the Play button to preview the animation.
 
 ![](./img/leap_unity_sample.jpg)
 
 ### Customization Sample
 
 This sample demonstrates how to customize a generated avatar by modifying its haircut and outfit using the [MetaPerson Creator](https://metaperson.avatarsdk.com/). 
-The **MetaPerson Creator** page is displayed within a web view component in the Unity scene. 
-The process involves generating a local avatar, selecting haircuts and outfits via **MetaPerson Creator**, and downloading the customized avatar back to display on the scene.
+The MetaPerson Creator page is displayed within a web view component in the Unity scene. 
+The process involves generating a local avatar, selecting haircuts and outfits via MetaPerson Creator, and downloading the customized avatar back to display on the scene.
 
 #### Dependencies
 1. **Web View Component**
@@ -186,12 +186,12 @@ If using this plugin, add the `USE_FILE_DIALOG` script compilation definition to
 
 #### Steps To Run
 1. Open the `Assets/AvatarSDK/Leap/Samples/2-CustomizationSample.unity` scene.
-2. In the Hierarchy tab, select the **SampleHandler** object. Provide your [developer credentials](getting_started#developer-credentials) in the corresponding fields within the Inspector tab.
+2. In the Hierarchy tab, select the SampleHandler object. Provide your [developer credentials](getting_started#developer-credentials) in the corresponding fields within the Inspector tab.
 
 ![](./img/leap_unity_credentials.jpg)
 
-3. Press the **Play** button in the Unity Editor to run the scene.
-4. Select an archive containing captured data from the iPhone **Leap application**, or generate a sample avatar.
+3. Press the Play button in the Unity Editor to run the scene.
+4. Select an archive containing captured data from the iPhone Leap application or generate a sample avatar.
 
 ![](./img/leap_unity_archive_selection.JPG)
 
@@ -200,11 +200,11 @@ You can skip this step to use the default outfit and the "Generated" haircut.
 
 ![](./img/leap_unity_customize_step.JPG)
 
-6. After completing the avatar customization, press the **Go Ahead** button to download the updated model and display it in the scene.
+6. After completing the avatar customization, press the Go Ahead button to download the updated model and display it in the scene.
 
 ![](./img/leap_unity_export_step.JPG)
 
-7. Once the model is loaded, press the **Play** button to run the animation.
+7. Once the model is loaded, press the Play button to run the animation.
 
 ![](./img/leap_unity_play_animation_step.JPG)
 
@@ -246,16 +246,16 @@ else
 
 #### Avatar Customization
 The [MetaPerson Creator](https://metaperson.avatarsdk.com/) is used to customize the avatar. 
-For detailed steps on integrating **MetaPerson Creator** into a Unity desktop application, refer to the [MetaPerson Creator Integration Guide](business-integration/unity/windows_and_macos).
+For detailed steps on integrating MetaPerson Creator into a Unity desktop application, refer to the [MetaPerson Creator Integration Guide](business-integration/unity/windows_and_macos).
 
-To generate an avatar, send a `generate_leap_avatar` event message to **MetaPerson Creator** using the [JS API](js_api). This message must include:
+To generate an avatar, send a `generate_leap_avatar` event message to MetaPerson Creator using the [JS API](js_api). This message must include:
 * **Avatar gender**: Specify the desired gender.
 * **Base64-encoded ZIP archive**: A ZIP archive containing the following files:
   * `photo.jpg`
   * `data.bin`
   * `faceGeometry1.obj`
 
-These files can be extracted from the archive created by the iPhone **Leap application**.
+These files can be extracted from the archive created by the iPhone Leap application.
 
 Here’s an example message structure:
 
@@ -269,31 +269,31 @@ let generateAvatarMessage =
 window.postMessage(generateAvatarMessage, '*');
 ```
 
-Use the `LeapUtils.PrepareArchiveForCloudComputations` method to prepare an archive to send to **MetaPerson Creator**.
+Use the `LeapUtils.PrepareArchiveForCloudComputations` method to prepare an archive to send to MetaPerson Creator.
 
 ```js
 byte[] archiveBytes = LeapUtils.PrepareArchiveForCloudComputations("local_leap_avatar_code");
 string base64Archive = Convert.ToBase64String(archiveBytes);
 ```
 
-Once **MetaPerson Creator** receives the `generate_leap_avatar` message, it computes the avatar and allows you to customize it.
+Once MetaPerson Creator receives the `generate_leap_avatar` message, it computes the avatar and allows you to customize it.
 
-To export the customized avatar and download it, use the [Export Avatar JS API](js_api#export-avatar) message.
+Use the [Export Avatar JS API](js_api#export-avatar) message to export and download the customized avatar.
 
-The animation generated by the **Avatar SDK Leap** Unity plugin can then be applied to the customized avatar.
+The animation generated by the Avatar SDK Leap Unity plugin can then be applied to the customized avatar.
 
 ## Leap Demo Application For Windows
 
-We provide a **Leap Demo Application** that allows you to quickly generate an avatar and explore how this technology works.
+We provide a Leap Demo Application that allows you to quickly generate an avatar and explore how this technology works.
 The application is based on the [Unity Customization Sample](#customization-sample) but does not require a Unity installation.
 
 ![](./img/leap_demo_app.JPG)
 
-1. Download and extract the archive containing the **Avatar SDK Leap Demo** application.
-2. Run the **Avatar SDK Leap.exe** executable.
-3. You can select an archive containing captured data from the iPhone **Leap application**, or generate a **sample avatar**.
-4. While the animation is being processed, press the **Customize** button to choose outfits and haircuts for the avatar. You can skip this step.
-5. After computation, press the **Play** button to preview the animation.
+1. Download and extract the archive containing the Avatar SDK Leap Demo application.
+2. Run the Avatar SDK Leap.exe executable.
+3. You can select an archive containing captured data from the iPhone Leap application or generate a sample avatar. 
+4. While the animation is being processed, press the Customize button to choose outfits and haircuts for the avatar. You can skip this step.
+5. After computation, press the Play button to preview the animation.
 
 ## Support
 Please feel free to ask any questions about the Avatar SDK Leap at support@avatarsdk.com
