@@ -158,13 +158,55 @@ With just a few clicks, the **Avatar SDK Leap Unity plugin** creates a realistic
 
 1. Download and extract the archive containing the **Avatar SDK Leap Unity project**.
 2. Open the project in **Unity 2022.3.17f1** or later.
-3. Open the `Assets/AvatarSDK/Leap/Samples/AvatarSDKLeapSample.unity` scene.
+3. Open the `Assets/AvatarSDK/Leap/Samples/1-GettingStartedSample.unity` scene.
 4. Press the **Play** button in the Unity Editor to run the scene.  
-5. Use the **Select Archive** button to choose the archive containing captured data from the iPhone **Leap application**.  
+5. Use the **Select Archive** button to choose the archive containing captured data from the iPhone **Leap application**. 
+There is an archive with the sample avatar in `Assets/StreamingAssets/itseez3d/avatar_sdk_leap/sample_avatar` directory. You can use it, if you don't have the **Leap application**.
 6. Select the avatar's gender and press **Generate** to compute the 3D avatar model and its animation.  
 7. After computation, press the **Play** button to preview the animation.
 
 ![](./img/leap_unity_sample.jpg)
+
+### Customization Sample
+
+This sample demonstrates how to customize a generated avatar by modifying its haircut and outfit using the [MetaPerson Creator](https://metaperson.avatarsdk.com/). 
+The **MetaPerson Creator** page is displayed within a web view component in the Unity scene. 
+The process involves generating a local avatar, selecting haircuts and outfits via **MetaPerson Creator**, and downloading the customized avatar back to display on the scene.
+
+#### Dependencies
+1. **Web View Component**
+
+To show the [MetaPerson Creator](https://metaperson.avatarsdk.com/) page in the Unity scene, a web view component is required. 
+This sample uses the [Vuplex Web View](https://store.vuplex.com/webview/windows-mac). Contact us for a 20% discount on this plugin.
+
+2. **File Browsing Support**
+
+To open a file selection dialog in a standalone Windows application, the sample uses the [Open File Dialog for Windows](https://assetstore.unity.com/packages/tools/utilities/open-file-dialog-for-windows-282619) plugin.
+If using this plugin, add the `USE_FILE_DIALOG` script compilation definition to your project.
+
+#### Steps To Run
+1. Open the `Assets/AvatarSDK/Leap/Samples/2-CustomizationSample.unity` scene.
+2. In the Hierarchy tab, select the **SampleHandler** object. Provide your [developer credentials](getting_started#developer-credentials) in the corresponding fields within the Inspector tab.
+
+![](./img/leap_unity_credentials.jpg)
+
+3. Press the **Play** button in the Unity Editor to run the scene.
+4. Select an archive containing captured data from the iPhone **Leap application**, or generate a sample avatar.
+
+![](./img/leap_unity_archive_selection.JPG)
+
+5. While the animation is being processed, open the [MetaPerson Creator](https://metaperson.avatarsdk.com/) to customize the avatar.
+You can skip this step to use the default outfit and the "Generated" haircut.
+
+![](./img/leap_unity_customize_step.JPG)
+
+6. After completing the avatar customization, press the **Go Ahead** button to download the updated model and display it in the scene.
+
+![](./img/leap_unity_export_step.JPG)
+
+7. Once the model is loaded, press the **Play** button to run the animation.
+
+![](./img/leap_unity_play_animation_step.JPG)
 
 ### How It Works
 
@@ -202,28 +244,56 @@ else
   Debug.LogError("Failed to load avatar model");
 ```
 
-## Windows Demo Application
+#### Avatar Customization
+The [MetaPerson Creator](https://metaperson.avatarsdk.com/) is used to customize the avatar. 
+For detailed steps on integrating **MetaPerson Creator** into a Unity desktop application, refer to the [MetaPerson Creator Integration Guide](business-integration/unity/windows_and_macos).
 
-We provide a Windows demo application that allows you to quickly generate a sample avatar and explore how this technology works.
-The application is based on a Unity sample but does not require a Unity installation.
+To generate an avatar, send a `generate_leap_avatar` event message to **MetaPerson Creator** using the [JS API](js_api). This message must include:
+* **Avatar gender**: Specify the desired gender.
+* **Base64-encoded ZIP archive**: A ZIP archive containing the following files:
+  * `photo.jpg`
+  * `data.bin`
+  * `faceGeometry1.obj`
 
-![](./img/leap_demo_app.png)
+These files can be extracted from the archive created by the iPhone **Leap application**.
 
-### How To Run
+Here’s an example message structure:
 
-1. **Download and extract** the archive containing the **Avatar SDK Leap Demo** application.
+```js
+let generateAvatarMessage = 
+{
+  'eventName': 'generate_leap_avatar',
+  'gender' : genderStr,
+  'zipArchiveBase64' : zipArchiveBase64Str
+};
+window.postMessage(generateAvatarMessage, '*');
+```
+
+Use the `LeapUtils.PrepareArchiveForCloudComputations` method to prepare an archive to send to **MetaPerson Creator**.
+
+```js
+byte[] archiveBytes = LeapUtils.PrepareArchiveForCloudComputations("local_leap_avatar_code");
+string base64Archive = Convert.ToBase64String(archiveBytes);
+```
+
+Once **MetaPerson Creator** receives the `generate_leap_avatar` message, it computes the avatar and allows you to customize it.
+
+To export the customized avatar and download it, use the [Export Avatar JS API](js_api#export-avatar) message.
+
+The animation generated by the **Avatar SDK Leap** Unity plugin can then be applied to the customized avatar.
+
+## Leap Demo Application For Windows
+
+We provide a **Leap Demo Application** that allows you to quickly generate an avatar and explore how this technology works.
+The application is based on the [Unity Customization Sample](#customization-sample) but does not require a Unity installation.
+
+![](./img/leap_demo_app.JPG)
+
+1. Download and extract the archive containing the **Avatar SDK Leap Demo** application.
 2. Run the **Avatar SDK Leap.exe** executable.
-3. Press the **Generate** button to compute the 3D avatar model and its animation.
-4. After computation, press the **Play** button to preview the animation.
-
-### Generating Custom Avatar
-
-If you'd like to compute a custom avatar model using captured data:
-
-1. Obtain an archive with captured data from the iPhone **Leap application**.
-2. Renamed the archive to **avatarsdk_leap_source.zip**.
-3. Replace the archive in the **Avatar SDK Leap_Data\StreamingAssets** directory.
-4. Run the application and press **Generate** to create the avatar.
+3. You can select an archive containing captured data from the iPhone **Leap application**, or generate a **sample avatar**.
+4. While the animation is being processed, press the **Customize** button to choose outfits and haircuts for the avatar. You can skip this step.
+5. After computation, press the **Play** button to preview the animation.
 
 ## Support
 Please feel free to ask any questions about the Avatar SDK Leap at support@avatarsdk.com
