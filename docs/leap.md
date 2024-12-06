@@ -69,14 +69,6 @@ When you open the project, the Leap sample level will be loaded. You can explore
 
 ![](./img/leap_victor.png)
 
-To import your animation, you will need to provide your [Avatar SDK Developer Account](https://accounts.avatarsdk.com/developer/)  credentials. To understand the concept of developer credentials, please refer to the corresponding [section](https://docs.metaperson.avatarsdk.com/getting_started#developer-credentials) of the documentation. This section provides a detailed explanation of what developer credentials are, their purpose, and the steps required to obtain them. 
-
-Once you have the `Client ID` and `Client Secret` of your account, enter them in the corresponding fields of the plugin settings. (`Edit->Project Settings->Plugins->Avatar SDK Leap`):
-
-![](./img/leap_cred.png)
-
-Please ensure that your account is equipped with a Pro subscription. Additionally, it's important to double-check that you have input your credentials accurately. These steps are necessary for you to successfully generate the desired animation. We want to help you avoid any unnecessary frustration, so please take a moment to verify these details before proceeding.
-
 To import your animation, click the `Window->Avatar SDK Leap` menu to open the plugin window.
 
 ![](./img/leap_menu.png)
