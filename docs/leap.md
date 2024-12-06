@@ -186,25 +186,21 @@ If using this plugin, add the `USE_FILE_DIALOG` script compilation definition to
 
 #### Steps To Run
 1. Open the `Assets/AvatarSDK/Leap/Samples/2-CustomizationSample.unity` scene.
-2. In the Hierarchy tab, select the SampleHandler object. Provide your [developer credentials](getting_started#developer-credentials) in the corresponding fields within the Inspector tab.
-
-![](./img/leap_unity_credentials.jpg)
-
-3. Press the Play button in the Unity Editor to run the scene.
-4. Select an archive containing captured data from the iPhone Leap application or generate a sample avatar.
+2. Press the Play button in the Unity Editor to run the scene.
+3. Select an archive containing captured data from the iPhone Leap application or generate a sample avatar.
 
 ![](./img/leap_unity_archive_selection.JPG)
 
-5. While the animation is being processed, open the [MetaPerson Creator](https://metaperson.avatarsdk.com/) to customize the avatar.
+4. While the animation is being processed, open the [MetaPerson Creator](https://metaperson.avatarsdk.com/) to customize the avatar.
 You can skip this step to use the default outfit and the "Generated" haircut.
 
 ![](./img/leap_unity_customize_step.JPG)
 
-6. After completing the avatar customization, press the Go Ahead button to download the updated model and display it in the scene.
+5. After completing the avatar customization, press the "Go ahead" button to download the updated model and display it in the scene.
 
 ![](./img/leap_unity_export_step.JPG)
 
-7. Once the model is loaded, press the Play button to run the animation.
+6. Once the model is loaded, press the Play button to run the animation.
 
 ![](./img/leap_unity_play_animation_step.JPG)
 
