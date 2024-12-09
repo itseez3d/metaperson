@@ -5,6 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.19.3 (2024-12-09)
+
+https://metaperson.avatarsdk.com/1.19.3/iframe.html
+
+**Release notes**:
+
+  * Disabled skin, lips and eyebrows recoloring when `color` button is hidden.
+  * Preserved computaton parameters (gender, age) after a failed avatar generation attempt.
+
 ### 1.19.2 (2024-12-04)
 
 https://metaperson.avatarsdk.com/1.19.2/iframe.html
