@@ -46,15 +46,15 @@ Avatar SDK Leap UE plugin simplifies the integration of revolutionary Leap Facia
 
 ### Prerequisites
 
-OS: Windows
-Unreal Engine version: 5.3 or 5.4
-You will need an iPhone with Leap application installed to capture the facial animation data.
+- OS: Windows
+- Unreal Engine version: 5.3 or 5.4
+- You will need an iPhone with Leap application installed to capture the facial animation data.
 
 ### Minimal technical requirements
 
-RAM: 16 GB 
-GPU: GeForce RTX 3050
-CPU: Intel i7 7th gen
+- RAM: 16 GB 
+- GPU: GeForce RTX 3050
+- CPU: Intel i7 7th gen
 
 ### Sample project
 The Leap plugin comes with a sample UE project to help you start with facial animation creation. Open the project by double-clicking on the LeapDemo. project file.
@@ -65,7 +65,7 @@ Another option - in the Unreal Engine Project browser, click on the Browse butto
 
 ![](./img/leap_launch.png)
 
-When you open the project, the Leap sample level will be loaded. You can explore the sample animation provided with the project at `/Content/AvatarSdkLeap/Victor`
+When you open the project, the Leap sample level will be loaded. You can explore the sample animation provided with the project at `/Content/AvatarSdkLeap/Victor`.
 
 ![](./img/leap_victor.png)
 
@@ -169,7 +169,7 @@ The process involves generating a local avatar, selecting haircuts and outfits v
 1. **Web View Component**
 
 To show the [MetaPerson Creator](https://metaperson.avatarsdk.com/) page in the Unity scene, a web view component is required. 
-This sample uses the [Vuplex Web View](https://store.vuplex.com/webview/windows-mac). Contact us for a 20% discount on this plugin.
+This sample uses the [Vuplex Web View](https://store.vuplex.com/webview/windows-mac). [Contact us](mailto:support@itseez3d.com) for a 20% discount on this plugin.
 
 2. **File Browsing Support**
 
