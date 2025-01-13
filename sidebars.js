@@ -71,6 +71,7 @@ const sidebars = {
 				items:[
 					'business-integration/ue/overview',
 					'business-integration/ue/github_sample',
+					'business-integration/ue/import_editor',
 					'business-integration/ue/marketplace_plugin',
 					'business-integration/ue/animation_retargeting',
 					'business-integration/ue/metaperson_creator_integration',					

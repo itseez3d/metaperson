@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'Animation retargeting'
 description: Retargeting animation from Epic's Mannequin skeleton to Metaperson.
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Animation Retargeting

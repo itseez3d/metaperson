@@ -39,11 +39,15 @@ Currently, the sample is Windows-only (as a development and target platform). We
 
 ### Which version of UE is supported?
 
-Versions 5.2, 5.3, and 5.4 of the Unreal Engine are supported.
+Versions 5.3, 5.4 and 5.5 of the Unreal Engine are supported.
 
-### The "export " button is not accessible in the MetaPerson Creator. What should I do?
+### The "export" button is not accessible in the MetaPerson Creator. What should I do?
 
 Please, double-check that you entered the correct Client ID and Client Secret. Please check the [additional documentation](../../getting_started#developer-credentials) on the developer credentials.
+
+### I created MetaPerson avatar at https://metaperson.avatarsdk.com/. How to import the downloaded .fbx file to Unreal Engine?
+
+Please, see the corresponding [section](import_editor).
 
 ## Support
 
