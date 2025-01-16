@@ -6,7 +6,11 @@ sidebar_position: 2
 
 # Unreal Engine Marketplace Plugin
 
-You can use our [free official Marketplace Plugin](https://www.unrealengine.com/marketplace/en-US/product/avatar-sdk-metaperson-plugin) to bring the functionality of MetaPerson avatars to your Unreal Engine project. It contains tools to implement the same functionality as in our Sample project. With this plugin, you can create recognizable and customizable avatars. You can also load an avatar at runtime and use it as a character in your project. Plugin contains two demo scenes: the first one with the help of the MetaPerson Creator shows how to create the MetaPerson avatar, and customize and export it to the "Third Person" scene. The second demonstrates how to load an avatar at runtime from a local drive to a "Third Person" scene.
+You can use our [free official Marketplace Plugin](https://www.unrealengine.com/marketplace/en-US/product/avatar-sdk-metaperson-plugin) to bring the functionality of MetaPerson avatars to your Unreal Engine project. It contains tools to implement the same functionality as in our Sample project. With this plugin, you can create recognizable and customizable avatars. You can also load an avatar at runtime and use it as a character in your project. Plugin contains two demo scenes: the first one with the help of the MetaPerson Creator shows how to create the MetaPerson avatar, and customize and export it to the "Third Person" scene. The second demonstrates how to load an avatar at runtime from a local drive to a "Third Person" scene. 
+
+## Importing avatar from Metaperson Creator
+
+With the plugin you can easily import into the level an fbx model created with [MetaPerson Creater](https://metaperson.avatarsdk.com/). See the corresponding [section](import_editor) of the documentation.
 
 ## "Third Person" Map
 
