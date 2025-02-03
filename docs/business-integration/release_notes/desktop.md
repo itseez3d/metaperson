@@ -5,6 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.20.0 (2025-02-03)
+
+https://metaperson.avatarsdk.com/1.20.0/iframe.html
+
+**Release notes**:
+
+  * Upgraded to `metaperson_2.1` pipeline.
+  * Introduced in-app purchases.
+
 ### 1.19.3 (2024-12-09)
 
 https://metaperson.avatarsdk.com/1.19.3/iframe.html
