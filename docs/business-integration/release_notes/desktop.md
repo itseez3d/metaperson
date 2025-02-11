@@ -5,6 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.20.1 (2025-02-1)
+
+https://metaperson.avatarsdk.com/1.20.1/iframe.html
+
+**Release notes**:
+
+  * Fixed an issue with uppercase letters in emails.
+  * Disabled post-processing on Apple M3 devices.
+
 ### 1.20.0 (2025-02-03)
 
 https://metaperson.avatarsdk.com/1.20.0/iframe.html
