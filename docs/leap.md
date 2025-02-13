@@ -47,7 +47,7 @@ Avatar SDK Leap UE plugin simplifies the integration of revolutionary Leap Facia
 ### Prerequisites
 
 - OS: Windows
-- Unreal Engine version: 5.3 or 5.4
+- Unreal Engine version: 5.3, 5.4 or 5.5
 - You will need an iPhone with Leap application installed to capture the facial animation data.
 
 ### Minimal technical requirements
