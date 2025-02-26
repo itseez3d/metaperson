@@ -5,6 +5,29 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.21.0 (2025-02-26)
+
+https://metaperson.avatarsdk.com/1.21.0/iframe.html
+
+**Release notes**:
+
+  * New outfits:
+    * hijab_Gosh
+  * New masks:
+    * mask_Kezelboghaz
+    * mask_Spitakasar
+  * New hands accessories
+    * bracelet_01
+    * bracelet_02
+    * bracelet_03
+    * bracelet_04
+    * gloves_Azhdahak
+    * gloves_Kaputjugh
+    * watches_01
+  * Added assets pricing.
+  * Parametric eyes are now enabled by default.
+  * Predicted haircut is used instead of the Generated in case of long hair.
+
 ### 1.20.1 (2025-02-1)
 
 https://metaperson.avatarsdk.com/1.20.1/iframe.html
