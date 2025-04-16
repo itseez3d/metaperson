@@ -5,6 +5,22 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.23.0 (2025-04-15)
+
+https://metaperson.avatarsdk.com/1.23.0/iframe.html
+
+**Release notes**:
+
+  * Added cartoonish stylization
+  * Added expressions images generation
+  * New haircuts:
+    * Haircut_Afro_Fade
+    * Haircut4_2
+  * New outfits:
+    * shoes_Murghuz
+    * shoes_Gndasar
+    * pants_Dzoraget_2
+
 ### 1.22.0 (2025-03-03)
 
 https://metaperson.avatarsdk.com/1.22.0/iframe.html
