@@ -5,6 +5,17 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.23.1 (2025-04-22)
+
+https://metaperson.avatarsdk.com/1.23.1/iframe.html
+
+**Release notes**:
+
+  * Additional controls for cartoonish stylization
+  * Free export for users with active Avatar SDK subscription
+  * Fixed bugs:
+    * Eyes shape sliders have empty labels after pressing Reset button.
+
 ### 1.23.0 (2025-04-15)
 
 https://metaperson.avatarsdk.com/1.23.0/iframe.html
