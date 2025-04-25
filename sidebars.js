@@ -25,7 +25,8 @@ const sidebars = {
 		label: 'MetaPerson Creator',
 		link: {type: 'doc', id: 'index'},
 		items:[
-			'metaperson-creator/cartoonish'
+			'metaperson-creator/cartoonish',
+			'metaperson-creator/expressions_pack'
 		]
 	},
 	{
