@@ -20,7 +20,14 @@ const sidebars = {
   
   tutorialSidebar: [
 	'leap',
-    'index',
+  {
+		type: 'category',
+		label: 'MetaPerson Creator',
+		link: {type: 'doc', id: 'index'},
+		items:[
+			'metaperson-creator/cartoonish'
+		]
+	},
 	{
 		type: 'category',
 		label: 'Integration',
