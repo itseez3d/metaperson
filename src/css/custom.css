@@ -51,3 +51,8 @@
   color: green; 
   font-weight: bold; 
 }
+
+.menu__link[href="/cartoonish"] {
+  color: orange; 
+  font-weight: bold; 
+}

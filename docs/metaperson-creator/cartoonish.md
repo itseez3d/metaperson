@@ -40,7 +40,7 @@ Makes the eyes larger, giving them a cartoon-style appearance.
 
 Applies a smoothed, stylized texture to the head and body, adding a subtle reddish tint.
 
-*Note: This disables the Smoothed Texture option.*
+*Note: This turns off the Smoothed Texture option.*
 
 ![](./img/cartoonish_texture.gif)
 
@@ -48,6 +48,6 @@ Applies a smoothed, stylized texture to the head and body, adding a subtle reddi
 
 Softens the head and body textures for a more polished look.
 
-*Note: This disables the Cartoonish Texture option.*
+*Note: This turns off the Cartoonish Texture option.*
 
 ![](./img/smoothed_texture.gif)
