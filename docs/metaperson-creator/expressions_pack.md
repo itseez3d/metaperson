@@ -13,6 +13,8 @@ You can download a set of 2D images featuring your avatar with different express
 
 2. Click the **Screenshot** button in the right panel.
 
+![](./img/previews_button.jpg)
+
 3. Download the generated archive containing the images.
 
 ![](./img/emotions_previews_1.png)
