@@ -5,6 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.23.2 (2025-05-05)
+
+https://metaperson.avatarsdk.com/1.23.2/iframe.html
+
+**Release notes**:
+
+  * JS API changes:
+    * Added `accessToken` parameter to the [`authenticate`](/js_api#authentication-parameters) message.
+
 ### 1.23.1 (2025-04-22)
 
 https://metaperson.avatarsdk.com/1.23.1/iframe.html

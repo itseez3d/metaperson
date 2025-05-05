@@ -39,7 +39,8 @@ Here's an example of how you can authenticate your account in MetaPerson Creator
 let authenticationMessage = {
     "eventName": "authenticate",
     "clientId": CLIENT_ID,
-    "clientSecret": CLIENT_SECRET
+    "clientSecret": CLIENT_SECRET,
+    "accessToken": ACCESS_TOKEN
 };
 evt.source.postMessage(authenticationMessage, "*");
 ```
@@ -49,6 +50,8 @@ Message parameters:
 * `eventName` - should be set to `authenticate`. The event name tells MetaPerson Creator which request you're making.
 * `clientId` - CLIENT_ID of your developer account.
 * `clientSecret` - CLIENT_SECRET of your developer account.
+* `accessToken` - can be specified instead of `clientId` and `clientSecret` for enhanced security. The token must be obtained via [REST API](https://api.avatarsdk.com/#authentication-with-oauth-2-0). 
+This parameter is only available in the Desktop version.  
 
 MetaPerson Creator sends the result of the authentication in the [`authentication_status`](#authentication-status) event.
 
