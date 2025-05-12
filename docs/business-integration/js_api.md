@@ -50,8 +50,27 @@ Message parameters:
 * `eventName` - should be set to `authenticate`. The event name tells MetaPerson Creator which request you're making.
 * `clientId` - CLIENT_ID of your developer account.
 * `clientSecret` - CLIENT_SECRET of your developer account.
-* `accessToken` - can be specified instead of `clientId` and `clientSecret` for enhanced security. The token must be obtained via [REST API](https://api.avatarsdk.com/#authentication-with-oauth-2-0). 
-This parameter is only available in the Desktop version.  
+* `accessToken` - for enhanced security, you can provide an `accessToken` instead of exposing `clientId` and `clientSecret` in client-side code. The token should be obtained via [REST API](https://api.avatarsdk.com/samples/curl_metaperson_20/#authorization). 
+Below is the CURL sample for getting the token. This parameter is only available in the Desktop version.
+
+```js
+CLIENT_ID="xFXeBr4shmgHUiymYwW7sDOO9BbwtL3eJkCE3OKu"
+CLIENT_SECRET="hpAYUxCLfKHEkIvRgXTZzGyMvgDj7Tdg4gBhu5nmXjtW0ODMj0HUCt3tmKMBtm94qzcNsVhK6xXj2PKEop7BxBi1W9XMvyx3p9tJVP6mGY19THuS6mNSnJiQI1vQ0QE6"
+
+
+curl -X POST --user "$CLIENT_ID:$CLIENT_SECRET" \
+     "https://api.avatarsdk.com/o/token/" \
+     -F "grant_type=client_credentials"
+
+{
+  "access_token": "PAvD64lbikgVA0GzxgKV2ZhLnPbZ8P",
+  "token_type": "Bearer",
+  "expires_in": 36000,
+  "scope": "read write"
+}
+
+TOKEN="PAvD64lbikgVA0GzxgKV2ZhLnPbZ8P"
+```
 
 MetaPerson Creator sends the result of the authentication in the [`authentication_status`](#authentication-status) event.
 
