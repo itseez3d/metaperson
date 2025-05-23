@@ -51,7 +51,7 @@ Message parameters:
 * `clientId` - CLIENT_ID of your developer account.
 * `clientSecret` - CLIENT_SECRET of your developer account.
 * `accessToken` - for enhanced security, you can provide an `accessToken` instead of exposing `clientId` and `clientSecret` in client-side code. The token should be obtained via [REST API](https://api.avatarsdk.com/samples/curl_metaperson_20/#authorization). 
-Below is the CURL sample for getting the token. This parameter is only available in the Desktop version.
+Below is the CURL sample for getting the token.
 
 ```js
 CLIENT_ID="xFXeBr4shmgHUiymYwW7sDOO9BbwtL3eJkCE3OKu"
@@ -102,7 +102,7 @@ Message parameters:
   * `4K.jpg`, `2K.jpg`, `1K.jpg`
   * `4K.webp`, `2K.webp`, `1K.webp`
 * `useZip` - by default, MetaPerson Creator returns a link to a ZIP archive with an exported model. You can set it to `false`, to get a direct link to a GLB of FBX file.
-* `exportTemplateJson` - JSON with common parameters that are applied to all exported avatars. This parameter is avaiable only for the Desktop version. See more details about [export template](#export-template). 
+* `exportTemplateJson` - JSON with common parameters that are applied to all exported avatars. See more details about [export template](#export-template). 
 
 ### UI Parameters
 
@@ -168,6 +168,7 @@ let uiParametersMessage = {
     "eventName": "set_ui_parameters",
     "isExportButtonVisible": true,
     "isLoginButtonVisible": false,
+    "isHomeButtonVisible": true,
     "outfitsBlackList" : ["ARPI", "SEVAN"],
     "skipViewerControls" : ['age', 'animations'],
     
@@ -187,6 +188,7 @@ The parameters of this code are:
 * `eventName` - should be set to `set_ui_parameters`. This tells MetaPerson Creator which request you're making.
 * `isExportButtonVisible` - this parameter specifies if the Export button is visible. Default value: `true`.
 * `isLoginButtonVisible` - this parameter specifies if the Login button is visible. Default value: `true`.
+* `isHomeButtonVisible` - this parameter specifies if the Home button is visible. Default value: `true`.
 * `outfitsBlackList` - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
 * `skipViewerControls` - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
 * `isScreenshotButtonVisible` - this parameter specifies if the Screenshot button is visible. Default value: `true`.
