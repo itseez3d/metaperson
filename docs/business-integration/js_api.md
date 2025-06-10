@@ -296,7 +296,8 @@ The `make_screenshot` event makes a screenshot of the avatar. Use this event whe
 let makeScreenshotEvent = {
     "eventName": "make_screenshot",
     "width" : 640,
-    "height" : 480
+    "height" : 480,
+    "mode": "head"
 };
 iframe.contentWindow.postMessage(makeScreenshotEvent, "*");
 ```
@@ -306,6 +307,7 @@ Message parameters:
 * `eventName` - should be set to `make_screenshot`. This tells MetaPerson Creator which request you're making.
 * `width` - width of the screenshot image. The default value is `640`.
 * `height` - height of the screenshot image. The default value is `480`.
+* `mode` - specifies whether the camera captures a headshot or a full-body screenshot. Possible values: `head`, `body`.
 
 Once the screenshot is done, MetaPerson Creator sends a link to the image in the [`model_screenshot`](#model-screenshot) event.
 

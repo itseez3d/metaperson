@@ -5,6 +5,28 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.24.0 (2025-06-10)
+
+https://metaperson.avatarsdk.com/1.24.0/iframe.html
+
+**Release notes**:
+
+  * JS API changes:
+    * Added `mode` parameter to the [`make_screenshot`](/js_api#make-screenshot) message.
+  * New haircuts:
+    * Haircut4_3 
+    * Haircut8_2 
+    * Haircut8_3
+    * Haircut9_2
+    * Haircut9_3
+  * New poses:
+    * Pose_A
+    * Pose_Idle
+  * New export parameters: 
+    * textures format
+    * textures resolution
+    * animations and poses
+
 ### 1.23.2 (2025-05-05)
 
 https://metaperson.avatarsdk.com/1.23.2/iframe.html
