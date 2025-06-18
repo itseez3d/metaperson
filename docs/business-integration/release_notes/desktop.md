@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.24.1 (2025-06-18)
+
+https://metaperson.avatarsdk.com/1.24.1/iframe.html
+
+**Release notes**:
+
+  * Bug fixes
+
 ### 1.24.0 (2025-06-10)
 
 https://metaperson.avatarsdk.com/1.24.0/iframe.html
