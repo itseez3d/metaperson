@@ -87,6 +87,8 @@ let exportParametersMessage = {
     "lod" : 1,
     "textureProfile" : "1K.jpg",
     "useZip" : true,
+    "headOnly" : "false",
+    "removeNeckLayers" : 0
     "exportTemplateJson": "{\"outfits_shoes\":{\"apply_visibility_masks\" : false}}"
 };
 evt.source.postMessage(exportParametersMessage, "*");
@@ -102,6 +104,10 @@ Message parameters:
   * `4K.jpg`, `2K.jpg`, `1K.jpg`
   * `4K.webp`, `2K.webp`, `1K.webp`
 * `useZip` - by default, MetaPerson Creator returns a link to a ZIP archive with an exported model. You can set it to `false`, to get a direct link to a GLB of FBX file.
+* `headOnly` - exports only the head portion of a 3D model.
+* `removeNeckLayers` - controls how many polygon layers of the neck to remove/cut from the model. Supported values: 
+  * `0-12` for LOD1, 
+  * `0-8` for LOD2.
 * `exportTemplateJson` - JSON with common parameters that are applied to all exported avatars. See more details about [export template](#export-template). 
 
 ### UI Parameters

@@ -5,6 +5,25 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.25.0 (2025-07-21)
+
+https://metaperson.avatarsdk.com/1.25.0/iframe.html
+
+**Release notes**:
+
+  * New outfits:
+    * Koshadagh
+    * shoes_Koshadagh
+    * Kashatagh
+    * shoes_Kashatagh
+  * Added beards
+  * Additional export options:
+    * export poses as Bind poses
+    * head only export
+  * JS API changes:
+    * Added `headOnly` and `removeNeckLayers` parameters to the [`set_export_parameters`](/js_api#export-parameters) message.
+  * Reduced coins prices
+
 ### 1.24.1 (2025-06-18)
 
 https://metaperson.avatarsdk.com/1.24.1/iframe.html
