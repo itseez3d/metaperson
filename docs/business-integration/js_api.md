@@ -108,7 +108,23 @@ Message parameters:
 * `removeNeckLayers` - controls how many polygon layers of the neck to remove/cut from the model. Supported values: 
   * `0-12` for LOD1, 
   * `0-8` for LOD2.
+* `removeTransparentCornea` - if `true`, removes the Cornea mesh when transparent.
+* `animationName` - name of the animation to export.
+* `animationAsBindPose` - if `true`, uses the first animation frame as the bind pose (instead of T-Pose).
 * `exportTemplateJson` - JSON with common parameters that are applied to all exported avatars. See more details about [export template](#export-template). 
+
+**Available Animations**
+
+* Male
+  * Animations: `Male_Animation_Walk`, `Male_Animation_Idle`.
+  * Poses: `Male_Pose_01` to `Male_Pose_08`, `Male_Pose_A`, `Male_Pose_Idle`.
+* Female
+  * Animations: `Female_Animation_WalkRelaxed`, `Female_Animation_Idle`.
+  * Poses: `Female_Pose_01` to `Female_Pose_05`, `Female_Pose_A`, `Female_Pose_Idle`.
+* Facial Animations: `ArKitDemo_001` to `ArKitDemo_005`.
+ 
+**Notes**
+ * Mobile Limitations: The following parameters are **not supported** in the Mobile version: `headOnly`, `removeNeckLayers`, `removeTransparentCornea`, `animationName`, `animationAsBindPose`.
 
 ### UI Parameters
 
@@ -289,6 +305,7 @@ function onExportClicked() {
 Message parameters:
 
 * `eventName` - should be set to `export_avatar`. This tells MetaPerson Creator which request you're making.
+* In the Desktop version you can specify the parameters for this particular export. Parameters are the same as in the [`set_export_parameters`](#export-parameters) message.
 
 You need to be sure that the avatar is ready for export and displayed on the scene before sending this message.
 
