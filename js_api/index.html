@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.7.0">
 <title data-rh="true">JS API | MetaPerson documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://docs.metaperson.avatarsdk.com/img/metaperson-social-card.png"><meta data-rh="true" name="twitter:image" content="https://docs.metaperson.avatarsdk.com/img/metaperson-social-card.png"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="og:site_name" content="What is MetaPerson Creator | MetaPerson documentation"><meta data-rh="true" property="og:url" content="https://docs.metaperson.avatarsdk.com/"><meta data-rh="true" property="description" content="Bringing Realism to the Metaverse: The Avatar SDK&#x27;s AI-Driven 3D Avatar Creation"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:tag" content="metaverse"><meta data-rh="true" property="article:tag" content="3D avatar creation"><meta data-rh="true" property="article:tag" content="realistic avatar"><meta data-rh="true" property="article:tag" content="selfie-based"><meta data-rh="true" property="article:tag" content="virtual representation"><meta data-rh="true" property="article:tag" content="lifelike avatars"><meta data-rh="true" property="article:tag" content="create avatar from photo"><meta data-rh="true" property="article:tag" content="realistic full body avatar creator"><meta data-rh="true" property="article:tag" content="avatar app"><meta data-rh="true" property="article:tag" content="custom avatar"><meta data-rh="true" property="article:tag" content="vrchat avatar creator"><meta data-rh="true" property="article:tag" content="vrchat model maker"><meta data-rh="true" property="article:published_time" content="2024-04-02T10:12:10+00:00"><meta data-rh="true" property="article:modified_time" content="2024-04-03T10:09:50+00:00"><meta data-rh="true" property="article:publisher" content="https://www.facebook.com/avatarsdk/"><meta data-rh="true" name="twitter:card" content="summary"><meta data-rh="true" name="twitter:site" content="@avatarsdk"><meta data-rh="true" name="twitter:domain" content="avatarsdk.com"><meta data-rh="true" name="twitter:title" content="Realistic Avatars for the Metaverse World"><meta data-rh="true" name="twitter:description" content="Bringing Realism to the Metaverse: The Avatar SDK&amp;#39;s AI-Driven 3D Avatar Creation"><meta data-rh="true" name="twitter:creator" content="@avatarsdk"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="JS API | MetaPerson documentation"><meta data-rh="true" name="description" content="JS API"><meta data-rh="true" property="og:description" content="JS API"><link data-rh="true" rel="icon" href="/img/favicon-32x32.png"><link data-rh="true" rel="canonical" href="https://docs.metaperson.avatarsdk.com/js_api"><link data-rh="true" rel="alternate" href="https://docs.metaperson.avatarsdk.com/js_api" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.metaperson.avatarsdk.com/js_api" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.0be27f34.css">
-<script src="/assets/js/runtime~main.8f7c651c.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5c2d6f47.js" defer="defer"></script>
 <script src="/assets/js/main.b31183b1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -68,7 +68,30 @@ Below is the CURL sample for getting the token.</li>
 <li><code>0-8</code> for LOD2.</li>
 </ul>
 </li>
+<li><code>removeTransparentCornea</code> - if <code>true</code>, removes the Cornea mesh when transparent.</li>
+<li><code>animationName</code> - name of the animation to export.</li>
+<li><code>animationAsBindPose</code> - if <code>true</code>, uses the first animation frame as the bind pose (instead of T-Pose).</li>
 <li><code>exportTemplateJson</code> - JSON with common parameters that are applied to all exported avatars. See more details about <a href="#export-template">export template</a>.</li>
+</ul>
+<p><strong>Available Animations</strong></p>
+<ul>
+<li>Male<!-- -->
+<ul>
+<li>Animations: <code>Male_Animation_Walk</code>, <code>Male_Animation_Idle</code>.</li>
+<li>Poses: <code>Male_Pose_01</code> to <code>Male_Pose_08</code>, <code>Male_Pose_A</code>, <code>Male_Pose_Idle</code>.</li>
+</ul>
+</li>
+<li>Female<!-- -->
+<ul>
+<li>Animations: <code>Female_Animation_WalkRelaxed</code>, <code>Female_Animation_Idle</code>.</li>
+<li>Poses: <code>Female_Pose_01</code> to <code>Female_Pose_05</code>, <code>Female_Pose_A</code>, <code>Female_Pose_Idle</code>.</li>
+</ul>
+</li>
+<li>Facial Animations: <code>ArKitDemo_001</code> to <code>ArKitDemo_005</code>.</li>
+</ul>
+<p><strong>Notes</strong></p>
+<ul>
+<li>Mobile Limitations: The following parameters are <strong>not supported</strong> in the Mobile version: <code>headOnly</code>, <code>removeNeckLayers</code>, <code>removeTransparentCornea</code>, <code>animationName</code>, <code>animationAsBindPose</code>.</li>
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="ui-parameters">UI Parameters<a href="#ui-parameters" class="hash-link" aria-label="Direct link to UI Parameters" title="Direct link to UI Parameters">​</a></h3>
 <p>This message allows you to make some customizations in the UI of MetaPerson Creator. Some parameters differ between Mobile and Desktop versions, so we split this description correspondingly.</p>
@@ -175,6 +198,7 @@ Below is the CURL sample for getting the token.</li>
 <p>Message parameters:</p>
 <ul>
 <li><code>eventName</code> - should be set to <code>export_avatar</code>. This tells MetaPerson Creator which request you&#x27;re making.</li>
+<li>In the Desktop version you can specify the parameters for this particular export. Parameters are the same as in the <a href="#export-parameters"><code>set_export_parameters</code></a> message.</li>
 </ul>
 <p>You need to be sure that the avatar is ready for export and displayed on the scene before sending this message.</p>
 <p>Once the export is completed, MetaPerson Creator sends a link to this model in the <a href="#model-exported"><code>model_exported</code></a> event.</p>
