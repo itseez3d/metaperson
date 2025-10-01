@@ -156,6 +156,8 @@ let uiParametersMessage = {
     "defaultPipeline" : "male",
     "computationParametersPanelVisible" : true,
     "enableLipsync": false,
+    "isGifButtonVisible" : false,
+    "isPngButtonVisible" : false
 };
 evt.source.postMessage(uiParametersMessage, "*");
 ```
@@ -181,6 +183,8 @@ Message parameters:
 * `defaultPipeline` - specifies the default avatar pipeline to be generated (`male` or `female`) if the pipeline selection is disabled in the UI.
 * `computationParametersPanelVisible` - specifies if a right panel with computation parameters (pipeline and age selection) is visible.
 * `enableLipsync` - enables LipSync. Default value: `false`.
+* `isGifButtonVisible` - specifies if the button to generate GIF is visible. Default value: `false`.
+* `isPngButtonVisible` - specifies if the button to generate PNG images is visible. Default value: `false`.
 
 
 #### MetaPerson Creator Mobile
