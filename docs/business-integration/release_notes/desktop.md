@@ -5,23 +5,25 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.27.1 (2025-10-06)
+
+https://metaperson.avatarsdk.com/1.27.1/iframe.html
+
+**Release notes**:
+
+  * Updated female animations: Dizzy_Idle, Shuffling, Excited.
+  * Darkened inner mouth of the models.
+
 ### 1.27.0 (2025-09-30)
 
 https://metaperson.avatarsdk.com/1.27.0/iframe.html
+
+**Release notes**:
+
   * Added new animations
   * Added GIF generation
   * JS API changes:
     * Added `isGifButtonVisible` and `isPngButtonVisible` parameters to the [`set_ui_parameters`](/js_api#ui-parameters) message.
-
-**Release notes**:
-
-  * New outfits:
-    * shoes_Oskepat_long 
-    * shoes_Oskepat_middle 
-    * shoes_Oskepat_short
-  * JS API changes:
-    * Added `removeTransparentCornea`, `animationName` and `animationAsBindPose` parameters to the [`set_export_parameters`](/js_api#export-parameters) message.
-    * Added parameters to the [`export_avatar`](/js_api#export-avatar) message
 
 ### 1.26.0 (2025-08-07)
 
