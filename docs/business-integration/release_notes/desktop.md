@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.27.14 (2025-10-08)
+
+https://metaperson.avatarsdk.com/1.27.14/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: unable to show an avatar in some cases.
+
 ### 1.27.1 (2025-10-06)
 
 https://metaperson.avatarsdk.com/1.27.1/iframe.html
