@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.27.15 (2025-10-20)
+
+https://metaperson.avatarsdk.com/1.27.15/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: cartoonish female avatars have invalid eyes positions.
+
 ### 1.27.14 (2025-10-08)
 
 https://metaperson.avatarsdk.com/1.27.14/iframe.html
