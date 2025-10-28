@@ -111,6 +111,7 @@ Message parameters:
 * `removeTransparentCornea` - if `true`, removes the Cornea mesh when transparent.
 * `animationName` - name of the animation to export.
 * `animationAsBindPose` - if `true`, uses the first animation frame as the bind pose (instead of T-Pose).
+* `exportModelInfo` - if `true`, the exported archive includes a *model.json* file containing the avatar's color data: skin, hair, eyes, eyebrows and lips.
 * `exportTemplateJson` - JSON with common parameters that are applied to all exported avatars. See more details about [export template](#export-template). 
 
 **Available Animations**

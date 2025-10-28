@@ -5,6 +5,17 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.28.0 (2025-10-28)
+
+https://metaperson.avatarsdk.com/1.28.0/iframe.html
+
+**Release notes**:
+
+  * Halloween discount
+  * Multiple asset unlock support
+  * JS API changes:
+    * Added `exportModelInfo` parameter to the [`set_export_parameters`](/js_api#export-parameters) message.
+
 ### 1.27.15 (2025-10-20)
 
 https://metaperson.avatarsdk.com/1.27.15/iframe.html
