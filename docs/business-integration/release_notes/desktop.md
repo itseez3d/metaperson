@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.28.1 (2025-11-10)
+
+https://metaperson.avatarsdk.com/1.28.1/iframe.html
+
+**Release notes**:
+
+  * Halloween discount ended
+
 ### 1.28.0 (2025-10-28)
 
 https://metaperson.avatarsdk.com/1.28.0/iframe.html
