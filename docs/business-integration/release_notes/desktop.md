@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.28.2 (2025-11-13)
+
+https://metaperson.avatarsdk.com/1.28.2/iframe.html
+
+**Release notes**:
+
+  * JS API: parameters for masks, beards and props are supported in export templates
+
 ### 1.28.1 (2025-11-10)
 
 https://metaperson.avatarsdk.com/1.28.1/iframe.html
