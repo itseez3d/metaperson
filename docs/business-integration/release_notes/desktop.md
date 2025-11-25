@@ -5,6 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.29.0 (2025-11-25)
+
+https://metaperson.avatarsdk.com/1.29.0/iframe.html
+
+**Release notes**:
+
+  * Added makeup
+  * JS API: allow to hide *makeup* button via [`set_ui_parameters`](/js_api#ui-parameters) message
+
 ### 1.28.2 (2025-11-13)
 
 https://metaperson.avatarsdk.com/1.28.2/iframe.html
