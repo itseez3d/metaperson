@@ -5,6 +5,16 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.29.1 (2025-11-26)
+
+https://metaperson.avatarsdk.com/1.29.1/iframe.html
+
+**Release notes**:
+
+  * Thanksgiving sale
+  * Bug: unable to set export template for masks, beards and props
+  * Bug: reset button doesn't work for makeup customization
+
 ### 1.29.0 (2025-11-25)
 
 https://metaperson.avatarsdk.com/1.29.0/iframe.html
