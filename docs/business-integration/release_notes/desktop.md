@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.29.2 (2025-11-27)
+
+https://metaperson.avatarsdk.com/1.29.2/iframe.html
+
+**Release notes**:
+
+  * Bug: foundation isn't applied to the exported avatar
+
 ### 1.29.1 (2025-11-26)
 
 https://metaperson.avatarsdk.com/1.29.1/iframe.html
