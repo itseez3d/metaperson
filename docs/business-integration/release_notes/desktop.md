@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.29.3 (2025-12-03)
+
+https://metaperson.avatarsdk.com/1.29.3/iframe.html
+
+**Release notes**:
+
+  * Ended thanksgiving sale
+
 ### 1.29.2 (2025-11-27)
 
 https://metaperson.avatarsdk.com/1.29.2/iframe.html
