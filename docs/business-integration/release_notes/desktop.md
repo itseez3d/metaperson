@@ -7,6 +7,18 @@ description: Desktop Version
 
 ### 1.29.3 (2025-12-03)
 
+https://metaperson.avatarsdk.com/1.30.0/iframe.html
+
+**Release notes**:
+
+  * Christmas sale
+  * Added tattoes
+  * New outfits:
+    * shoes_Gugaric
+    * socks_Bazum
+
+### 1.29.3 (2025-12-03)
+
 https://metaperson.avatarsdk.com/1.29.3/iframe.html
 
 **Release notes**:
