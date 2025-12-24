@@ -5,7 +5,7 @@ description: Desktop Version
 ---
 # Desktop Version
 
-### 1.29.3 (2025-12-03)
+### 1.29.3 (2025-12-23)
 
 https://metaperson.avatarsdk.com/1.30.0/iframe.html
 
