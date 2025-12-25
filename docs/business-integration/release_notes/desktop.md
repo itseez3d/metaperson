@@ -5,6 +5,14 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.30.1 (2025-12-25)
+
+https://metaperson.avatarsdk.com/1.30.1/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: tattoos are not exported
+
 ### 1.30.0 (2025-12-23)
 
 https://metaperson.avatarsdk.com/1.30.0/iframe.html
