@@ -98,7 +98,7 @@ Message parameters:
 
 * `eventName` - should be set to `set_export_parameters`. This tells MetaPerson Creator which request you're making.
 * `format` - this parameter specifies the format of the exported file. Supported formats are `gltf`, `glb`, and `fbx`.
-* `lod` - this parameter specifies the level of detail (LOD) for the exported file. The higher the LOD, the more detailed the exported file will be. Supported LODs are: `1` and `2`.
+* `lod` - this parameter specifies the level of detail (LOD) for the exported mesh. The higher the LOD index, the less detailed the exported mesh is. Supported LODs are: `1` and `2`.
 * `textureProfile` - this parameter specifies the texture profile for the exported file. This determines the quality of the textures used in the exported file. Supported texture profiles are:
   * `4K.png`, `2K.png`, `1K.png`
   * `4K.jpg`, `2K.jpg`, `1K.jpg`
@@ -468,7 +468,7 @@ Event data:
 
 * `data.source` - is set to `metaperson_creator`.
 * `data.eventName` - is set to `model_screenshot`.
-* `data.screenshotUrl` - a link to the screenshot image. The link is valid till the next screenshot is done.
+* `data.screenshotUrl` - a link to the screenshot image. The link points to a local image file that is available within the current session. The link is valid until the next screenshot is taken.
 * `data.imageBytes` - an array of the screenshot image bytes in PNG format. This parameter is exclusive to the **Desktop** version.
 
 ### Action Availability
