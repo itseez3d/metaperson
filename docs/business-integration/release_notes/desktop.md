@@ -5,6 +5,31 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.31.0 (2025-02-05)
+
+https://metaperson.avatarsdk.com/1.31.0/iframe.html
+
+**Release notes**:
+
+  * New outfits:
+    * shoes_Gugarik_long
+    * shoes_Gugarik_middle
+    * shoes_Gugarik_short
+    * Hakari_red
+    * t-shirt_Hakari_red
+    * shorts_Getar_red
+    * shoes_Gugarik_long_red
+    * gloves_Tezh_red
+    * gloves_Tezh_blue
+    * longsleeve_Armaghan_red
+    * Armaghan_red
+    * soccer jerseys
+  * New set of haircuts
+  * Added cartoonish sample avatars
+  * JS API: 
+    * added `avatarState` parameter to [`model_exported`](/js_api#model-exported) event.
+    * added `avatarState` parameter to [`show_avatar`](/js_api#show-avatar) message.
+
 ### 1.30.1 (2025-12-25)
 
 https://metaperson.avatarsdk.com/1.30.1/iframe.html

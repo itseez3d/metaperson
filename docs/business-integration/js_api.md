@@ -258,7 +258,7 @@ Message parameters:
 * `gender` - this parameter specifies the gender of the computed avatar. Possible values are `male` and `female`.
 * `age` - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`.
 * `blends` - this parameters allows to configure initial proportions of the avatar's body, head, eyes and nose. See more details below about possible values.
-* `image` - an image in JPEG or PNG format encoded into a base64 string. 
+* `image` - an image in JPEG or PNG format encoded into a base64 string.
 
 The `gender` parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
 
@@ -355,8 +355,10 @@ Message parameters:
 
 * `eventName` - should be set to "show_avatar". This tells MetaPerson Creator which request you're making.
 * `avatarCode` - a code of the avatar you need to open.
+* `avatarState` - a JSON string with serialized avatar customization. 
 
-The avatar code can be retrieved from the [`model_generated`](#model-generated) and [`model_exported`](#model-exported) events.
+The `avatarCode` can be obtained from the [`model_generated`](#model-generated) and [`model_exported`](#model-exported) events.<br/>
+The `avatarState` can be obtained from the [`model_exported`](#model-exported) event.
 
 <div class="iframe-container">
   <iframe width="560" height="315" allow="fullscreen" src="https://www.youtube.com/embed/iZMRdDbwB-w">
@@ -459,6 +461,7 @@ Event data:
 * `data.url` - a link to the exported file.
 * `data.avatarCode` - a code of the avatar.
 * `data.gender` - an avatar gender
+* `data.avatarState` - a JSON string with serialized avatar customization
 
 ### Model Screenshot
 
