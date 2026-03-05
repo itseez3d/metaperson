@@ -5,6 +5,24 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.32.0 (2025-03-05)
+
+https://metaperson.avatarsdk.com/1.32.0/iframe.html
+
+**Release notes**:
+
+  * Roblox avatars
+  * New outfits:
+    * Gegharkunik 
+    * jersey_Gegharkunik
+    * shorts_Gegharkunik
+    * baseball_cap_Zangezur 
+    * Zangezur 
+    * pants_Zangezur 
+    * shoes_Zangezur 
+    * jersey_Zangezur
+
+
 ### 1.31.0 (2025-02-05)
 
 https://metaperson.avatarsdk.com/1.31.0/iframe.html
