@@ -25,6 +25,7 @@ const sidebars = {
 		label: 'MetaPerson Creator',
 		link: {type: 'doc', id: 'index'},
 		items:[
+			'metaperson-creator/roblox_avatars',
 			'metaperson-creator/cartoonish',
 			'metaperson-creator/expressions_pack'
 		]
