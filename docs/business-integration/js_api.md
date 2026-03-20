@@ -138,7 +138,6 @@ let uiParametersMessage = {
     // Common parameters for Mobile and Desktop versions
     "eventName": "set_ui_parameters",
     "isExportButtonVisible" : true,
-    "isLoginButtonVisible": true,
     "outfitsBlackList" : ["ARPI", "SEVAN"],
     "skipViewerControls" : ['color', 'animations'],
     
@@ -167,7 +166,6 @@ Message parameters:
 
 * `eventName` - should be set to `set_ui_parameters`. This tells MetaPerson Creator which request you're making.
 * `isExportButtonVisible` - this parameter specifies if the Export button is visible. Default value: `true`.
-* `isLoginButtonVisible` - this parameter specifies if the Login button is visible. Default value: `true`.
 * `outfitsBlackList` - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
 * `skipViewerControls` - a list of controls that are hidden during customization of the avatar. Available values: `'style', 'outfits', 'hairstyles', 'head_accessories', 'jewelry', 'hands_accessories', 'body', 'head', 'eyes', 'color', 'makeup', 'tattoo', 'animations', 'facial_animations', 'lighting'`.
 * `isScreenshotButtonVisible` - this parameter specifies if the Screenshot button is visible. Default value: `true`.

@@ -5,6 +5,17 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.33.0 (2025-03-19)
+
+https://metaperson.avatarsdk.com/1.33.0/iframe.html
+
+**Release notes**:
+
+  * Added avatars gallery
+  * JS API:
+    * removed `isLoginButtonVisible` parameter
+    
+
 ### 1.32.0 (2025-03-05)
 
 https://metaperson.avatarsdk.com/1.32.0/iframe.html
