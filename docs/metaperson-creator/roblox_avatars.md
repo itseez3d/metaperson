@@ -7,6 +7,13 @@ slug: /roblox_avatars
 
 MetaPerson Creator lets you create and export **Roblox‑compatible** avatars that can be imported into **Roblox Studio** and used in your experiences.
 
+<div class="iframe-container">
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/a_UD4AuVXYU">
+</iframe></div>
+
+&nbsp;
+
 ### Getting started
 
 Follow these steps to generate and import a Roblox avatar:
