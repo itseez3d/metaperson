@@ -81,23 +81,17 @@ https://metaperson.avatarsdk.com/1.30.0/iframe.html
 
 ### 1.29.3 (2025-12-03)
 
-https://metaperson.avatarsdk.com/1.29.3/iframe.html
-
 **Release notes**:
 
   * Ended thanksgiving sale
 
 ### 1.29.2 (2025-11-27)
 
-https://metaperson.avatarsdk.com/1.29.2/iframe.html
-
 **Release notes**:
 
   * Bug: foundation isn't applied to the exported avatar
 
 ### 1.29.1 (2025-11-26)
-
-https://metaperson.avatarsdk.com/1.29.1/iframe.html
 
 **Release notes**:
 
@@ -107,8 +101,6 @@ https://metaperson.avatarsdk.com/1.29.1/iframe.html
 
 ### 1.29.0 (2025-11-25)
 
-https://metaperson.avatarsdk.com/1.29.0/iframe.html
-
 **Release notes**:
 
   * Added makeup
@@ -116,23 +108,17 @@ https://metaperson.avatarsdk.com/1.29.0/iframe.html
 
 ### 1.28.2 (2025-11-13)
 
-https://metaperson.avatarsdk.com/1.28.2/iframe.html
-
 **Release notes**:
 
   * JS API: parameters for masks, beards and props are supported in export templates
 
 ### 1.28.1 (2025-11-10)
 
-https://metaperson.avatarsdk.com/1.28.1/iframe.html
-
 **Release notes**:
 
   * Halloween discount ended
 
 ### 1.28.0 (2025-10-28)
-
-https://metaperson.avatarsdk.com/1.28.0/iframe.html
 
 **Release notes**:
 
@@ -143,15 +129,11 @@ https://metaperson.avatarsdk.com/1.28.0/iframe.html
 
 ### 1.27.15 (2025-10-20)
 
-https://metaperson.avatarsdk.com/1.27.15/iframe.html
-
 **Release notes**:
 
   * Fixed bug: cartoonish female avatars have invalid eyes positions.
 
 ### 1.27.14 (2025-10-08)
-
-https://metaperson.avatarsdk.com/1.27.14/iframe.html
 
 **Release notes**:
 
@@ -159,16 +141,12 @@ https://metaperson.avatarsdk.com/1.27.14/iframe.html
 
 ### 1.27.1 (2025-10-06)
 
-https://metaperson.avatarsdk.com/1.27.1/iframe.html
-
 **Release notes**:
 
   * Updated female animations: Dizzy_Idle, Shuffling, Excited.
   * Darkened inner mouth of the models.
 
 ### 1.27.0 (2025-09-30)
-
-https://metaperson.avatarsdk.com/1.27.0/iframe.html
 
 **Release notes**:
 
@@ -178,8 +156,6 @@ https://metaperson.avatarsdk.com/1.27.0/iframe.html
     * Added `isGifButtonVisible` and `isPngButtonVisible` parameters to the [`set_ui_parameters`](/js_api#ui-parameters) message.
 
 ### 1.26.0 (2025-08-07)
-
-https://metaperson.avatarsdk.com/1.26.0/iframe.html
 
 **Release notes**:
 
@@ -193,15 +169,11 @@ https://metaperson.avatarsdk.com/1.26.0/iframe.html
 
 ### 1.25.1 (2025-08-05)
 
-https://metaperson.avatarsdk.com/1.25.1/iframe.html
-
 **Release notes**:
 
  * Bugfixes
 
 ### 1.25.0 (2025-07-21)
-
-https://metaperson.avatarsdk.com/1.25.0/iframe.html
 
 **Release notes**:
 
@@ -220,15 +192,11 @@ https://metaperson.avatarsdk.com/1.25.0/iframe.html
 
 ### 1.24.1 (2025-06-18)
 
-https://metaperson.avatarsdk.com/1.24.1/iframe.html
-
 **Release notes**:
 
   * Bug fixes
 
 ### 1.24.0 (2025-06-10)
-
-https://metaperson.avatarsdk.com/1.24.0/iframe.html
 
 **Release notes**:
 
@@ -250,16 +218,12 @@ https://metaperson.avatarsdk.com/1.24.0/iframe.html
 
 ### 1.23.2 (2025-05-05)
 
-https://metaperson.avatarsdk.com/1.23.2/iframe.html
-
 **Release notes**:
 
   * JS API changes:
     * Added `accessToken` parameter to the [`authenticate`](/js_api#authentication-parameters) message.
 
 ### 1.23.1 (2025-04-22)
-
-https://metaperson.avatarsdk.com/1.23.1/iframe.html
 
 **Release notes**:
 
@@ -269,8 +233,6 @@ https://metaperson.avatarsdk.com/1.23.1/iframe.html
     * Eyes shape sliders have empty labels after pressing Reset button.
 
 ### 1.23.0 (2025-04-15)
-
-https://metaperson.avatarsdk.com/1.23.0/iframe.html
 
 **Release notes**:
 
@@ -286,15 +248,11 @@ https://metaperson.avatarsdk.com/1.23.0/iframe.html
 
 ### 1.22.0 (2025-03-03)
 
-https://metaperson.avatarsdk.com/1.22.0/iframe.html
-
 **Release notes**:
 
   * Added export options (LOD, format)
 
 ### 1.21.0 (2025-02-26)
-
-https://metaperson.avatarsdk.com/1.21.0/iframe.html
 
 **Release notes**:
 
@@ -317,16 +275,12 @@ https://metaperson.avatarsdk.com/1.21.0/iframe.html
 
 ### 1.20.1 (2025-02-1)
 
-https://metaperson.avatarsdk.com/1.20.1/iframe.html
-
 **Release notes**:
 
   * Fixed an issue with uppercase letters in emails.
   * Disabled post-processing on Apple M3 devices.
 
 ### 1.20.0 (2025-02-03)
-
-https://metaperson.avatarsdk.com/1.20.0/iframe.html
 
 **Release notes**:
 
@@ -335,8 +289,6 @@ https://metaperson.avatarsdk.com/1.20.0/iframe.html
 
 ### 1.19.3 (2024-12-09)
 
-https://metaperson.avatarsdk.com/1.19.3/iframe.html
-
 **Release notes**:
 
   * Disabled skin, lips and eyebrows recoloring when `color` button is hidden.
@@ -344,23 +296,17 @@ https://metaperson.avatarsdk.com/1.19.3/iframe.html
 
 ### 1.19.2 (2024-12-04)
 
-https://metaperson.avatarsdk.com/1.19.2/iframe.html
-
 **Release notes**:
 
   * JS API: added `isScreenshotButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
 
 ### 1.19.1 (2024-12-03)
 
-https://metaperson.avatarsdk.com/1.19.1/iframe.html
-
 **Release notes**:
 
   * Fixed bug: unable to export a model when the animations panel is active
 
 ### 1.19.0 (2024-12-02)
-
-https://metaperson.avatarsdk.com/1.19.0/iframe.html
 
 **Release notes**:
 
@@ -379,23 +325,17 @@ https://metaperson.avatarsdk.com/1.19.0/iframe.html
 
 ### 1.18.5 (2024-11-18)
 
-https://metaperson.avatarsdk.com/1.18.5/iframe.html
-
 **Release notes**:
 
   * Fixed bug: authentication status event is sent too early
 
 ### 1.18.4 (2024-10-28)
 
-https://metaperson.avatarsdk.com/1.18.4/iframe.html
-
 **Release notes**:
 
   * Bugfixes
 
 ### 1.18.3 (2024-10-28)
-
-https://metaperson.avatarsdk.com/1.18.3/iframe.html
 
 **Release notes**:
 
@@ -404,16 +344,12 @@ https://metaperson.avatarsdk.com/1.18.3/iframe.html
 
 ### 1.18.2 (2024-09-30)
 
-https://metaperson.avatarsdk.com/1.18.2/iframe.html
-
 **Release notes**:
 
   * JS API changes:
     * Added `enableLipsync` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
 
 ### 1.18.1 (2024-09-27)
-
-https://metaperson.avatarsdk.com/1.18.1/iframe.html
 
 **Release notes**:
 
@@ -423,8 +359,6 @@ https://metaperson.avatarsdk.com/1.18.1/iframe.html
   * Removed some animations for skirt_Lessing
 
 ### 1.18.0 (2024-09-26)
-
-https://metaperson.avatarsdk.com/1.18.0/iframe.html
 
 **Release notes**:
 
@@ -449,8 +383,6 @@ https://metaperson.avatarsdk.com/1.18.0/iframe.html
 
 ### 1.17.0 (2024-08-21)
 
-https://metaperson.avatarsdk.com/1.17.0/iframe.html
-
 **Release notes**:
 
   * Added mirrored haircuts
@@ -470,16 +402,12 @@ https://metaperson.avatarsdk.com/1.17.0/iframe.html
 
 ### 1.16.2 (2024-07-22)
 
-https://metaperson.avatarsdk.com/1.16.2/iframe.html
-
 **Release notes**:
 
   * Bug fixes:
     * Default UI controls are visible before a custom UI configuration is provided via the `set_ui_parameters` message
 
 ### 1.16.1 (2024-07-19)
-
-https://metaperson.avatarsdk.com/1.16.1/iframe.html
 
 **Release notes**:
 
@@ -491,8 +419,6 @@ https://metaperson.avatarsdk.com/1.16.1/iframe.html
     * Added `showSampleAvatars` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
 
 ### 1.16.0 (2024-07-16)
-
-https://metaperson.avatarsdk.com/1.16.0/iframe.html
 
 **Release notes**:
 
@@ -511,16 +437,12 @@ https://metaperson.avatarsdk.com/1.16.0/iframe.html
 
 ### 1.15.1 (2024-07-01)
 
-https://metaperson.avatarsdk.com/1.15.1/iframe.html
-
 **Release notes**:
 
  * JS API changes:
     * Added `showLatestCreatedAvatar` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
 
 ### 1.15.0 (2024-06-13)
-
-https://metaperson.avatarsdk.com/1.15.0/iframe.html
 
 **Release notes**:
 
@@ -538,23 +460,17 @@ https://metaperson.avatarsdk.com/1.15.0/iframe.html
  
 ### 1.14.2 (2024-06-10)
 
-https://metaperson.avatarsdk.com/1.14.2/iframe.html
-
 **Release notes**:
 
  * Changed the timing of when the [`metaperson_creator_loaded`](/js_api#metaperson-creator-loaded) event is sent (again)
  
 ### 1.14.1 (2024-06-06)
 
-https://metaperson.avatarsdk.com/1.14.1/iframe.html
-
 **Release notes**:
 
  * Changed the timing of when the [`metaperson_creator_loaded`](/js_api#metaperson-creator-loaded) event is sent
  
 ### 1.14.0 (2024-04-11)
-
-https://metaperson.avatarsdk.com/1.14.0/iframe.html
 
 **Release notes**:
 
@@ -574,8 +490,6 @@ https://metaperson.avatarsdk.com/1.14.0/iframe.html
  
 ### 1.13.0 (2024-03-14)
 
-https://metaperson.avatarsdk.com/1.13.0/iframe.html
-
 **Release notes**:
 
  * Added new outfits:
@@ -593,8 +507,6 @@ https://metaperson.avatarsdk.com/1.13.0/iframe.html
  
 ### 1.12.0 (2024-02-12)
 
-https://metaperson.avatarsdk.com/1.12.0/iframe.html
-
 **Release notes**:
 
  * Added new haircuts:
@@ -602,8 +514,6 @@ https://metaperson.avatarsdk.com/1.12.0/iframe.html
  * Allowed to add logo for some outfits
  
 ### 1.11.2 (2024-01-08)
-
-https://metaperson.avatarsdk.com/1.11.2/iframe.html
 
 **Release notes**:
 
@@ -613,16 +523,12 @@ https://metaperson.avatarsdk.com/1.11.2/iframe.html
  
 ### 1.11.1 (2023-12-21)
 
-https://metaperson.avatarsdk.com/1.11.1/iframe.html
-
 **Release notes**:
 
  * Updated previews for pants_Arteni and sneakers_ARPI
  * Bugfixes
  
 ### 1.11.0 (2023-12-12)
-
-https://metaperson.avatarsdk.com/1.11.0/iframe.html
 
 **Release notes**:
  
@@ -634,8 +540,6 @@ https://metaperson.avatarsdk.com/1.11.0/iframe.html
  * Added animations
  
 ### 1.10.0 (2023-11-02)
-
-https://metaperson.avatarsdk.com/1.10.0/iframe.html
 
 **Release notes**:
 
