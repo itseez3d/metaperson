@@ -5,6 +5,18 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.34.0 (2025-03-26)
+
+https://metaperson.avatarsdk.com/1.34.0/iframe.html
+
+**Release notes**:
+
+  * Added blendshapes export:
+    * Visemes
+    * Head shape modification
+    * Body shape modification
+  * UI changes
+
 ### 1.33.0 (2025-03-19)
 
 https://metaperson.avatarsdk.com/1.33.0/iframe.html
