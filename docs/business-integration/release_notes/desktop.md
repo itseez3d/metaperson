@@ -5,6 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
+### 1.34.1 (2025-04-27)
+
+https://metaperson.avatarsdk.com/1.34.1/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: model is exported without visemes in business integration
+  * Updated LipSync
+
 ### 1.34.0 (2025-03-26)
 
 https://metaperson.avatarsdk.com/1.34.0/iframe.html
