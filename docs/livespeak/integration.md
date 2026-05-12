@@ -11,7 +11,7 @@ This page describes how to integrate **LiveSpeak** into a web page using an `<if
 
 **LiveSpeak** is embedded using an iframe. The iframe must allow scripts and audio playback.
 
-The `iframe.html` page accepts the following query parameters:
+The `index.html` page accepts the following query parameters:
 
 | Parameter | Description |
 | --- | --- |
@@ -22,7 +22,7 @@ The `iframe.html` page accepts the following query parameters:
 ```js
 const iframe = document.createElement('iframe');
 iframe.id = 'livespeak-iframe';
-iframe.src = 'https://metaperson.avatarsdk.com/livespeak/iframe.html?mode=tts_azure1&lang=English';
+iframe.src = 'https://metaperson.avatarsdk.com/livespeak/index.html?mode=tts_azure1&lang=English';
 iframe.title = 'LiveSpeak';
 iframe.sandbox = 'allow-scripts allow-same-origin allow-forms';
 iframe.allow = 'autoplay;';
