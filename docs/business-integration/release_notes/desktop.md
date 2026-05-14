@@ -5,7 +5,15 @@ description: Desktop Version
 ---
 # Desktop Version
 
-### 1.34.1 (2025-04-27)
+### 1.34.2 (2026-05-14)
+
+https://metaperson.avatarsdk.com/1.34.2/iframe.html
+
+**Release notes**:
+
+  * Bug fixes and improvements
+
+### 1.34.1 (2026-04-27)
 
 https://metaperson.avatarsdk.com/1.34.1/iframe.html
 
@@ -14,7 +22,7 @@ https://metaperson.avatarsdk.com/1.34.1/iframe.html
   * Fixed bug: model is exported without visemes in business integration
   * Updated LipSync
 
-### 1.34.0 (2025-03-26)
+### 1.34.0 (2026-03-26)
 
 https://metaperson.avatarsdk.com/1.34.0/iframe.html
 
@@ -26,7 +34,7 @@ https://metaperson.avatarsdk.com/1.34.0/iframe.html
     * Body shape modification
   * UI changes
 
-### 1.33.0 (2025-03-19)
+### 1.33.0 (2026-03-19)
 
 https://metaperson.avatarsdk.com/1.33.0/iframe.html
 
@@ -37,7 +45,7 @@ https://metaperson.avatarsdk.com/1.33.0/iframe.html
     * removed `isLoginButtonVisible` parameter
     
 
-### 1.32.0 (2025-03-05)
+### 1.32.0 (2026-03-05)
 
 https://metaperson.avatarsdk.com/1.32.0/iframe.html
 
@@ -55,7 +63,7 @@ https://metaperson.avatarsdk.com/1.32.0/iframe.html
     * jersey_Zangezur
 
 
-### 1.31.0 (2025-02-05)
+### 1.31.0 (2026-02-05)
 
 https://metaperson.avatarsdk.com/1.31.0/iframe.html
 
