@@ -102,6 +102,15 @@ const sidebars = {
 	'rest_api',	
 	{
 		type: 'category',
+		label: 'LiveSpeak',
+		link: {type: 'doc', id: 'livespeak/index'},
+    items:[
+			'livespeak/integration',
+			'livespeak/samples',
+		]
+	},
+  {
+		type: 'category',
 		label: '3D Motion',
 		link: {type: 'doc', id: '3dmotion/index'},
 		items:[
