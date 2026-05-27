@@ -92,6 +92,8 @@ This event indicates the current state of the avatar. Typical payload:
 | **Speaking** | Avatar is currently playing TTS audio. |
 | **ModelAwaiting** | Waiting for a custom model via [`load_model`](#46-loading-a-custom-model-load_model) command. |
 | **ModelLoading** | Custom model is being loaded. |
+| **WaitingForTouch** | LiveSpeak is waiting for a user gesture to start audio playback. |
+> On iPhone, audio cannot always start automatically. In some cases, a user gesture such as a screen tap is required. If audio cannot be started automatically, the state changes to **WaitingForTouch**.
 
 ### 3.3 `message_processing_error` event
 
