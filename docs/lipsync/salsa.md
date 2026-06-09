@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'SALSA lipsync'
-description: Using SALSA lipsync with MetaPerson
+description: "Add real-time lip-sync to MetaPerson avatars with SALSA LipSync for Unity — drive natural mouth movement from audio, with a video walkthrough."
 slug: /salsa
 ---
 

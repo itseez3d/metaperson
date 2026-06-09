@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'VR'
-description: Integration into VR Unity applications.
+description: "Integrate MetaPerson avatars into VR Unity apps for Meta Quest devices — load selfie-based 3D avatars at runtime, with a ready-to-use sample on our GitHub."
 sidebar_position: 5
 ---
 

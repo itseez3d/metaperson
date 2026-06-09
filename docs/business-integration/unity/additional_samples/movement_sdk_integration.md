@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Movement SDK integration'
-description: Integration with Meta Movement SDK
+description: "Sample showing how to integrate MetaPerson avatars with the Meta Movement SDK in Unity for body tracking and animation — available in our GitHub repository."
 sidebar_position: 1
 ---
 

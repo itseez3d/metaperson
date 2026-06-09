@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Three.js'
-description: MetaPerson Loader For Three.js
+description: "MetaPerson Loader for Three.js loads MetaPerson 3D avatars in GLB format into your Three.js web scene — a ready-to-use package for browser-based 3D apps."
 sidebar_position: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'DeepMotion'
-description: Using DeepMotion Animate 3D and SayMotion with MetaPerson
+description: "Animate MetaPerson avatars with DeepMotion's Animate 3D and SayMotion — a suite of AI tools for creating detailed skeletal animations from video or text."
 ---
 
 # DeepMotion

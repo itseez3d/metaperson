@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Overview'
-description: Basic information needed to run the sample project.
+description: "Overview of the MetaPerson Unreal Engine sample project — the basics you need to create and use selfie-based 3D avatars with Epic animations in UE."
 sidebar_position: 1
 ---
 

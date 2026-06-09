@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Android and iOS'
-description: Integration into Android and iOS Unity applications
+description: "Integrate MetaPerson avatars into Android and iOS Unity apps — two mobile samples in the MetaPerson Loader package show selfie-based 3D avatar loading on phones."
 sidebar_position: 3
 ---
 

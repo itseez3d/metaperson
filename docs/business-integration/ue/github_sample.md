@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'GitHub Sample'
-description: MetaPerson UE Sample
+description: "MetaPerson Unreal Engine sample built on Epic's Third Person template — learn to create, customize and import selfie-based 3D avatars at runtime in UE."
 sidebar_position: 2
 ---
 

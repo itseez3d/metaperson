@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Eyes Animation Sample'
-description: MetaPerson Creator eyes animation sample
+description: "MetaPerson Unity sample showing how to animate avatar eye movement — looking up, down, left and right — for more lifelike 3D characters in your project."
 sidebar_position: 3
 ---
 

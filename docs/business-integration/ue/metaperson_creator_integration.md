@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'MetaPerson Creator integration'
-description: MetaPerson Creator integration technical details.
+description: "Technical guide to integrating MetaPerson Creator into Unreal Engine — embed the selfie-based 3D avatar builder and load lifelike avatars into your UE app."
 sidebar_position: 6
 ---
 

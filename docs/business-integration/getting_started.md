@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'Getting started'
 sidebar_position: 1
-description: Getting started
+description: "Get started with MetaPerson Creator: create an account, integrate the avatar builder into your app, and let users generate 3D avatars from a single selfie."
 slug: /getting_started
 ---
 # Getting started

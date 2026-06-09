@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Import in UE Editor'
-description: How to import an `.fbx` avatar generated with Metaperson Creator.
+description: "Import an .fbx avatar made with MetaPerson Creator into the Unreal Engine editor — the UE MetaPerson plugin helps you create, customize and load avatars."
 sidebar_position: 3
 ---
 

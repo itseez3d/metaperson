@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Cartoonish Avatars'
-description: Cartoonish avatars in MetaPerson Creator
+description: "Create cartoonish, stylized 3D avatars in MetaPerson Creator — a playful alternative to realistic avatars, perfect for games, social VR and 3D experiences."
 slug: /cartoonish
 ---
 # Cartoonish Avatars

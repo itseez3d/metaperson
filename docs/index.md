@@ -1,6 +1,7 @@
 ---
 sidebar_label: 'MetaPerson Creator'
 sidebar_position: 1
+description: "Introducing MetaPerson Creator — the revolutionary 3D avatar builder that lets you create your own lifelike avatar from a single selfie, ready for any platform."
 ---
 
 # What is MetaPerson Creator

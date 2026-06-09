@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'MetaPerson Loader'
-description: MetaPerson Loader Unity package
+description: "MetaPerson Loader is a Unity package that loads GLB/GLTF 3D avatars at runtime, configuring their materials and humanoid animator for instant use in your game."
 sidebar_position: 1
 ---
 

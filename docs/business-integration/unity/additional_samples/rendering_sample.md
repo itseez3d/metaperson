@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Rendering Sample'
-description: MetaPerson Creator unity rendering sample
+description: "MetaPerson Unity rendering sample for matching the high-quality look of MetaPerson Creator Desktop when loading selfie-based 3D avatars in your Unity project."
 sidebar_position: 3
 ---
 

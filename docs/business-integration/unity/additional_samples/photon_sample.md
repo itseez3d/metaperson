@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Multiplayer Photon sample'
-description: Unity Multiplayer Photon Sample
+description: "MetaPerson Unity multiplayer sample built with Photon — see how to sync selfie-based 3D avatars across players in a networked scene. Available on GitHub."
 sidebar_position: 2
 ---
 

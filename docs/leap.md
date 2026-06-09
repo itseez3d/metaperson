@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Avatar SDK Leap'
-description: Leap Realistic Facial Animation
+description: "Avatar SDK Leap is facial motion-capture software that turns a video of a person speaking into realistic facial animation for your MetaPerson 3D avatars."
 ---
 
 # Leap Realistic Facial Animation

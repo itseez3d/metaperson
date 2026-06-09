@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'DeepMotion Animate 3D'
-description: Using DeepMotion Animate 3D with MetaPerson
+description: "Use DeepMotion Animate 3D to turn ordinary video into 3D motion for your MetaPerson avatars — AI markerless motion capture, no mocap suit or special gear."
 ---
 
 # DeepMotion Animate 3D

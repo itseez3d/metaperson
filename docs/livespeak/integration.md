@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Integration'
-description: LiveSpeak Integration
+description: "Integrate LiveSpeak into a web page via iframe — create the iframe, subscribe to events and add real-time voice and lip-sync to your MetaPerson 3D avatars."
 ---
 
 # LiveSpeak Integration

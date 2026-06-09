@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Unreal Engine Marketplace Plugin'
-description: Marketplace version of the project.
+description: "Use the free official MetaPerson Unreal Engine Marketplace plugin to bring selfie-based 3D avatars into your UE project, with tools to load and customize them."
 sidebar_position: 2
 ---
 

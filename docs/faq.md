@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'FAQ'
 sidebar_position: 5
-description: Frequently Asked Questions
+description: "Frequently asked questions about MetaPerson Creator — avatar creation, export formats, mobile support, integration and licensing for the 3D avatar builder."
 ---
 
 

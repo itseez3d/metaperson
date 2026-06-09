@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Windows and macOS'
-description: Integration into Windows and macOS Unity applications
+description: "Integrate MetaPerson avatars into Windows and macOS Unity apps — a desktop sample in the MetaPerson Loader package shows selfie-based 3D avatar loading."
 sidebar_position: 2
 ---
 

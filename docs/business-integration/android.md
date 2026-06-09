@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Android'
-description: Integration into a native Android application
+description: "Integrate MetaPerson Creator into a native Android app so users create 3D avatars from a selfie — includes a ready-to-use GitHub sample and video tutorial."
 sidebar_position: 6
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'WebGL'
-description: Integration into WebGL Unity applications.
+description: "Integrate MetaPerson Creator into a WebGL Unity application — two approaches let users create and load selfie-based 3D avatars directly in the browser."
 sidebar_position: 4
 ---
 

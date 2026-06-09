@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'iOS'
-description: Integration into a native iOS application
+description: "Integrate MetaPerson Creator into a native iOS app so users can create 3D avatars from a selfie — includes a ready-to-use GitHub sample and video tutorial."
 sidebar_position: 7
 ---
 

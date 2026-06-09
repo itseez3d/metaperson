@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Animation retargeting'
-description: Retargeting animation from Epic's Mannequin skeleton to Metaperson.
+description: "Retarget animations from Epic's UE5 Mannequin skeleton onto MetaPerson avatars — MetaPerson ships a Mixamo-compatible rig for easy reuse of existing animations."
 sidebar_position: 5
 ---
 

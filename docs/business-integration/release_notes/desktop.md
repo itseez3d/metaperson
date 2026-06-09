@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'Desktop'
 sidebar_position: 1
-description: Desktop Version
+description: "Release notes and download links for the desktop version of MetaPerson Creator, the embeddable selfie-to-3D-avatar builder for integration into your app."
 ---
 # Desktop Version
 
