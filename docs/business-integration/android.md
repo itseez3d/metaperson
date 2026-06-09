@@ -1,6 +1,6 @@
 # Android integration
 
-> Integration into a native Android application
+> Integrate MetaPerson Creator into a native Android app so users create 3D avatars from a selfie — includes a ready-to-use GitHub sample and video tutorial.
 
 # Android integration
 

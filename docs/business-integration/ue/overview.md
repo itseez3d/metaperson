@@ -1,6 +1,6 @@
 # Overview
 
-> Basic information needed to run the sample project.
+> Overview of the MetaPerson Unreal Engine sample project — the basics you need to create and use selfie-based 3D avatars with Epic animations in UE.
 
 # Overview
 

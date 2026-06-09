@@ -1,6 +1,6 @@
 # iOS integration
 
-> Integration into a native iOS application
+> Integrate MetaPerson Creator into a native iOS app so users can create 3D avatars from a selfie — includes a ready-to-use GitHub sample and video tutorial.
 
 # iOS integration
 

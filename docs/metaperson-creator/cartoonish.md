@@ -1,6 +1,6 @@
 # Cartoonish Avatars
 
-> Cartoonish avatars in MetaPerson Creator
+> Create cartoonish, stylized 3D avatars in MetaPerson Creator — a playful alternative to realistic avatars, perfect for games, social VR and 3D experiences.
 
 # Cartoonish Avatars
 

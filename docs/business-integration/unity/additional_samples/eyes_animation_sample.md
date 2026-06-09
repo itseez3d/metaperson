@@ -1,6 +1,6 @@
 # MetaPerson Eyes Animation Sample
 
-> MetaPerson Creator eyes animation sample
+> MetaPerson Unity sample showing how to animate avatar eye movement — looking up, down, left and right — for more lifelike 3D characters in your project.
 
 # MetaPerson Eyes Animation Sample
 

@@ -1,6 +1,6 @@
 # Integration into Windows and macOS Unity applications
 
-> Integration into Windows and macOS Unity applications
+> Integrate MetaPerson avatars into Windows and macOS Unity apps — a desktop sample in the MetaPerson Loader package shows selfie-based 3D avatar loading.
 
 # Integration into Windows and macOS Unity applications
 

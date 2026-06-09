@@ -1,6 +1,6 @@
 # Working with MetaPerson Creator
 
-> Integrating MetaPerson Creator into your UE project.
+> Integrate MetaPerson Creator into your Unreal Engine project — create, customize and load selfie-based 3D avatars at runtime with the official UE plugin.
 
 # Working with MetaPerson Creator
 

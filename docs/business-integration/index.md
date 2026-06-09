@@ -1,6 +1,6 @@
 # Working with MetaPerson Creator
 
-> Working with MetaPerson Creator
+> Integrate MetaPerson Creator into your product — add selfie-based 3D avatar creation to games, apps and virtual platforms across web, mobile, Unity and Unreal.
 
 # Working with MetaPerson Creator
 

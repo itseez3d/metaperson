@@ -1,6 +1,6 @@
 # Oculus lipsync Unity
 
-> Using Oculus Lipsync with MetaPerson in Unity
+> Add realistic lip-sync to MetaPerson avatars in Unity using Oculus Lipsync — a step-by-step integration guide with a video walkthrough for your project.
 
 # Oculus lipsync Unity
 

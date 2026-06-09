@@ -1,6 +1,6 @@
 # MetaPerson Creator Unity Rendering Sample
 
-> MetaPerson Creator unity rendering sample
+> MetaPerson Unity rendering sample for matching the high-quality look of MetaPerson Creator Desktop when loading selfie-based 3D avatars in your Unity project.
 
 # MetaPerson Creator Unity Rendering Sample
 

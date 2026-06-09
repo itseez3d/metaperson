@@ -1,6 +1,6 @@
 # Integration into VR Unity applications
 
-> Integration into VR Unity applications.
+> Integrate MetaPerson avatars into VR Unity apps for Meta Quest devices — load selfie-based 3D avatars at runtime, with a ready-to-use sample on our GitHub.
 
 # Integration into VR Unity applications
 

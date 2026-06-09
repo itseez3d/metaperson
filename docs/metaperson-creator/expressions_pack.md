@@ -1,6 +1,6 @@
 # Get a Pack of 2D Avatar Images
 
-> Get a Pack of 2D Avatar Images
+> Download an expressions pack from MetaPerson Creator — a set of 2D images of your avatar in different expressions and poses, ready for profiles and content.
 
 # Get a Pack of 2D Avatar Images
 

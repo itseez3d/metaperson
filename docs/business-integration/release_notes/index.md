@@ -1,6 +1,6 @@
 # Release Notes
 
-> Release Notes
+> Release notes for MetaPerson Creator — find the latest desktop and mobile versions of the 3D avatar builder available for integration into your application.
 
 # Release Notes
 

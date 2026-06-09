@@ -1,6 +1,6 @@
 # MetaPerson Loader For Three.js
 
-> MetaPerson Loader For Three.js
+> MetaPerson Loader for Three.js loads MetaPerson 3D avatars in GLB format into your Three.js web scene — a ready-to-use package for browser-based 3D apps.
 
 # MetaPerson Loader For Three.js
 

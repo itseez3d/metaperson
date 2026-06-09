@@ -1,6 +1,6 @@
 # FAQ
 
-> Frequently Asked Questions
+> Frequently asked questions about MetaPerson Creator — avatar creation, export formats, mobile support, integration and licensing for the 3D avatar builder.
 
 # FAQ
 

@@ -1,6 +1,6 @@
 # REST API
 
-> MetaPerson REST API
+> MetaPerson REST API — generate and customize selfie-based 3D avatars programmatically with low-code integration when you need a fully custom avatar pipeline.
 
 # REST API
 

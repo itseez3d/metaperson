@@ -1,6 +1,6 @@
 # Unreal Engine Marketplace Plugin
 
-> Marketplace version of the project.
+> Use the free official MetaPerson Unreal Engine Marketplace plugin to bring selfie-based 3D avatars into your UE project, with tools to load and customize them.
 
 # Unreal Engine Marketplace Plugin
 

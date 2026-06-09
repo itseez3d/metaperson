@@ -1,6 +1,6 @@
 # What is MetaPerson Creator
 
-> Introducing [MetaPerson Creator](https://metaperson.avatarsdk.com) – the revolutionary 3D avatar builder allowing you to create your own lifelike avatar using a selfie!
+> Introducing MetaPerson Creator — the revolutionary 3D avatar builder that lets you create your own lifelike avatar from a single selfie, ready for any platform.
 
 # What is MetaPerson Creator
 

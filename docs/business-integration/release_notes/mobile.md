@@ -1,6 +1,6 @@
 # Mobile Version
 
-> Mobile Version
+> Release notes and links for the mobile version of MetaPerson Creator — the lightweight selfie-to-3D-avatar builder optimized for integration on phones.
 
 # Mobile Version
 

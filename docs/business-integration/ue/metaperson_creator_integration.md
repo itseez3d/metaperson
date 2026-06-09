@@ -1,6 +1,6 @@
 # MetaPerson Creator integration
 
-> MetaPerson Creator integration technical details.
+> Technical guide to integrating MetaPerson Creator into Unreal Engine — embed the selfie-based 3D avatar builder and load lifelike avatars into your UE app.
 
 # MetaPerson Creator integration
 

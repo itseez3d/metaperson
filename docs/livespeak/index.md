@@ -1,8 +1,6 @@
 # LiveSpeak
 
-> **Real‑time voice & lip‑sync layer for 3D avatars**  
-Turn any MetaPerson avatar into a responsive, speaking character inside your app.
-Supports text‑to‑speech (Azure, ElevenLabs), ChatGPT conversations, and raw audio lipsync.
+> LiveSpeak is a real-time voice and lip-sync layer for MetaPerson 3D avatars — add natural, synchronized speech and mouth movement to interactive avatars.
 
 # LiveSpeak
 

@@ -1,6 +1,6 @@
 # Multiplayer Photon sample
 
-> Unity Multiplayer Photon Sample
+> MetaPerson Unity multiplayer sample built with Photon — see how to sync selfie-based 3D avatars across players in a networked scene. Available on GitHub.
 
 # Multiplayer Photon sample
 

@@ -1,6 +1,6 @@
 # Integration into WebGL Unity applications
 
-> Integration into WebGL Unity applications.
+> Integrate MetaPerson Creator into a WebGL Unity application — two approaches let users create and load selfie-based 3D avatars directly in the browser.
 
 # Integration into WebGL Unity applications
 

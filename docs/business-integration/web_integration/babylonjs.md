@@ -1,6 +1,6 @@
 # MetaPerson Loader For Babylon.js
 
-> MetaPerson Loader For Babylon.js
+> MetaPerson Loader for Babylon.js loads MetaPerson 3D avatars in GLB format into your Babylon.js web scene — a ready-to-use package for browser 3D apps.
 
 # MetaPerson Loader For Babylon.js
 

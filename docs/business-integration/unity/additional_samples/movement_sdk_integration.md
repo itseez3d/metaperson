@@ -1,6 +1,6 @@
 # Movement SDK integration
 
-> Integration with Meta Movement SDK
+> Sample showing how to integrate MetaPerson avatars with the Meta Movement SDK in Unity for body tracking and animation — available in our GitHub repository.
 
 # Movement SDK integration
 

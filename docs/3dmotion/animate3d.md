@@ -1,6 +1,6 @@
 # DeepMotion Animate 3D
 
-> Using DeepMotion Animate 3D with MetaPerson
+> Use DeepMotion Animate 3D to turn ordinary video into 3D motion for your MetaPerson avatars — AI markerless motion capture, no mocap suit or special gear.
 
 # DeepMotion Animate 3D
 

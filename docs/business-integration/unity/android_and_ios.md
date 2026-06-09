@@ -1,6 +1,6 @@
 # Integration into Android and iOS Unity applications
 
-> Integration into Android and iOS Unity applications
+> Integrate MetaPerson avatars into Android and iOS Unity apps — two mobile samples in the MetaPerson Loader package show selfie-based 3D avatar loading on phones.
 
 # Integration into Android and iOS Unity applications
 

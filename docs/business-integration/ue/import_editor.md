@@ -1,6 +1,6 @@
 # Import in UE Editor
 
-> How to import an `.fbx` avatar generated with Metaperson Creator.
+> Import an .fbx avatar made with MetaPerson Creator into the Unreal Engine editor — the UE MetaPerson plugin helps you create, customize and load avatars.
 
 # Import in UE Editor
 

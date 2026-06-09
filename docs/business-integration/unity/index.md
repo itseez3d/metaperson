@@ -1,6 +1,6 @@
 # MetaPerson avatars in Unity
 
-> Usage of MetaPerson avatars in Unity.
+> Use MetaPerson avatars in Unity — load selfie-based 3D avatars in GLB/GLTF format at runtime with the MetaPerson Loader package and animate them in your scene.
 
 # MetaPerson avatars in Unity
 

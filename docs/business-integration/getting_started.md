@@ -1,6 +1,6 @@
 # Getting started
 
-> Getting started
+> Get started with MetaPerson Creator: create an account, integrate the avatar builder into your app, and let users generate 3D avatars from a single selfie.
 
 # Getting started
 

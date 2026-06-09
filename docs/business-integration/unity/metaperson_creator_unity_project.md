@@ -1,6 +1,6 @@
 # MetaPerson Creator Unity Project
 
-> MetaPerson Creator source project
+> Access the MetaPerson Creator Unity source project — the Desktop version of the selfie-to-3D-avatar builder was built in Unity and can be customized.
 
 # MetaPerson Creator Unity Project
 

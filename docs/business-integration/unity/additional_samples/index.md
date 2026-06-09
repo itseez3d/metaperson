@@ -1,6 +1,6 @@
 # Additional Unity samples
 
-> Additional Unity samples
+> Additional Unity samples for MetaPerson avatars — explore extra use cases like multiplayer, rendering, eye animation and Meta Movement SDK integration.
 
 # Additional Unity samples
 

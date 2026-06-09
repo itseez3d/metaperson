@@ -1,6 +1,6 @@
 # Web integration
 
-> Web
+> Integrate MetaPerson Creator into your web page via an HTML iframe — use the JS API to send and receive events and load selfie-based 3D avatars in the browser.
 
 # Web integration
 

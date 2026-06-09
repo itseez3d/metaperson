@@ -1,6 +1,6 @@
 # Roblox Avatars
 
-> Roblox avatars in MetaPerson Creator
+> Create Roblox-compatible 3D avatars with MetaPerson Creator — export selfie-based avatars and import them into Roblox Studio for use in your experiences.
 
 # Roblox Avatars
 

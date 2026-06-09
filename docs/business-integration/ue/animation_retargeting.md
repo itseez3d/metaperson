@@ -1,6 +1,6 @@
 # Animation Retargeting
 
-> Retargeting animation from Epic's Mannequin skeleton to Metaperson.
+> Retarget animations from Epic's UE5 Mannequin skeleton onto MetaPerson avatars — MetaPerson ships a Mixamo-compatible rig for easy reuse of existing animations.
 
 # Animation Retargeting
 

@@ -1,6 +1,6 @@
 # LiveSpeak Samples
 
-> LiveSpeak Samples
+> LiveSpeak integration samples — working examples showing how to add real-time voice and lip-sync to MetaPerson 3D avatars in your web application.
 
 # LiveSpeak Samples
 

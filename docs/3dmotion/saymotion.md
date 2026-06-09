@@ -1,6 +1,6 @@
 # DeepMotion SayMotion
 
-> Using DeepMotion SayMotion with MetaPerson
+> Use DeepMotion SayMotion to generate 3D animations for MetaPerson avatars from text or video — turn regular footage into immersive, lifelike character motion.
 
 # DeepMotion SayMotion
 
