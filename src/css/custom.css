@@ -47,10 +47,6 @@
   height: 100%;
 }
 
-.menu__link[href="/leap"] {
-  font-weight: bold; 
-}
-
 .menu__link[href="/roblox_avatars"] {
   color: orange; 
   font-weight: bold; 
