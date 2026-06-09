@@ -1,0 +1,57 @@
+# MetaPerson documentation
+
+> Documentation for MetaPerson Creator and Avatar SDK — AI-driven 3D avatar creation from a single selfie. Cloud API, SDK and plugins for Unity, Unreal Engine, iOS, Android and Web.
+
+This file contains links to documentation sections following the llmstxt.org standard.
+
+## Table of Contents
+
+- [DeepMotion Animate 3D](https://docs.metaperson.avatarsdk.com/docs/3dmotion/animate3d.md): Using DeepMotion Animate 3D with MetaPerson
+- [DeepMotion](https://docs.metaperson.avatarsdk.com/docs/3dmotion/deepmotion.md): Using DeepMotion Animate 3D and SayMotion with MetaPerson
+- [MetaPerson 3D Motion](https://docs.metaperson.avatarsdk.com/docs/3dmotion/index.md): Modern tools and technologies have revolutionized animating 3D avatars, making this process accessible and straightforward for creators of all expe...
+- [Mixamo animations](https://docs.metaperson.avatarsdk.com/docs/3dmotion/mixamo.md): Using Mixamo animations with MetaPerson
+- [DeepMotion SayMotion](https://docs.metaperson.avatarsdk.com/docs/3dmotion/saymotion.md): Using DeepMotion SayMotion with MetaPerson
+- [Android integration](https://docs.metaperson.avatarsdk.com/docs/business-integration/android.md): Integration into a native Android application
+- [Getting started](https://docs.metaperson.avatarsdk.com/docs/business-integration/getting_started.md): Getting started
+- [Working with MetaPerson Creator](https://docs.metaperson.avatarsdk.com/docs/business-integration/index.md): Working with MetaPerson Creator
+- [iOS integration](https://docs.metaperson.avatarsdk.com/docs/business-integration/ios.md): Integration into a native iOS application
+- [JS API](https://docs.metaperson.avatarsdk.com/docs/business-integration/js_api.md): JS API
+- [Desktop Version](https://docs.metaperson.avatarsdk.com/docs/business-integration/release_notes/desktop.md): Desktop Version
+- [Release Notes](https://docs.metaperson.avatarsdk.com/docs/business-integration/release_notes/index.md): Release Notes
+- [Mobile Version](https://docs.metaperson.avatarsdk.com/docs/business-integration/release_notes/mobile.md): Mobile Version
+- [Animation Retargeting](https://docs.metaperson.avatarsdk.com/docs/business-integration/ue/animation_retargeting.md): Retargeting animation from Epic's Mannequin skeleton to Metaperson.
+- [GitHub Sample](https://docs.metaperson.avatarsdk.com/docs/business-integration/ue/github_sample.md): MetaPerson UE Sample
+- [Import in UE Editor](https://docs.metaperson.avatarsdk.com/docs/business-integration/ue/import_editor.md): How to import an `.fbx` avatar generated with Metaperson Creator.
+- [Working with MetaPerson Creator](https://docs.metaperson.avatarsdk.com/docs/business-integration/ue/index.md): Integrating MetaPerson Creator into your UE project.
+- [Unreal Engine Marketplace Plugin](https://docs.metaperson.avatarsdk.com/docs/business-integration/ue/marketplace_plugin.md): Marketplace version of the project.
+- [MetaPerson Creator integration](https://docs.metaperson.avatarsdk.com/docs/business-integration/ue/metaperson_creator_integration.md): MetaPerson Creator integration technical details.
+- [Overview](https://docs.metaperson.avatarsdk.com/docs/business-integration/ue/overview.md): Basic information needed to run the sample project.
+- [MetaPerson Eyes Animation Sample](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/additional_samples/eyes_animation_sample.md): MetaPerson Creator eyes animation sample
+- [Additional Unity samples](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/additional_samples/index.md): Additional Unity samples
+- [Movement SDK integration](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/additional_samples/movement_sdk_integration.md): Integration with Meta Movement SDK
+- [Multiplayer Photon sample](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/additional_samples/photon_sample.md): Unity Multiplayer Photon Sample
+- [MetaPerson Creator Unity Rendering Sample](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/additional_samples/rendering_sample.md): MetaPerson Creator unity rendering sample
+- [Integration into Android and iOS Unity applications](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/android_and_ios.md): Integration into Android and iOS Unity applications
+- [MetaPerson avatars in Unity](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/index.md): Usage of MetaPerson avatars in Unity.
+- [MetaPerson Creator Unity Project](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/metaperson_creator_unity_project.md): MetaPerson Creator source project
+- [MetaPerson Loader](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/metaperson_loader.md): MetaPerson Loader Unity package
+- [Integration into VR Unity applications](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/vr.md): Integration into VR Unity applications.
+- [Integration into WebGL Unity applications](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/webgl.md): Integration into WebGL Unity applications.
+- [Integration into Windows and macOS Unity applications](https://docs.metaperson.avatarsdk.com/docs/business-integration/unity/windows_and_macos.md): Integration into Windows and macOS Unity applications
+- [MetaPerson Loader For Babylon.js](https://docs.metaperson.avatarsdk.com/docs/business-integration/web_integration/babylonjs.md): MetaPerson Loader For Babylon.js
+- [Web integration](https://docs.metaperson.avatarsdk.com/docs/business-integration/web_integration/web_integration.md): Web
+- [MetaPerson Loader For Three.js](https://docs.metaperson.avatarsdk.com/docs/business-integration/web_integration/threejs.md): MetaPerson Loader For Three.js
+- [FAQ](https://docs.metaperson.avatarsdk.com/docs/faq.md): Frequently Asked Questions
+- [What is MetaPerson Creator](https://docs.metaperson.avatarsdk.com/docs/index.md): Introducing [MetaPerson Creator](https://metaperson.avatarsdk.com) – the revolutionary 3D avatar builder allowing you to create your own lifelike a...
+- [Leap Realistic Facial Animation](https://docs.metaperson.avatarsdk.com/docs/leap.md): Leap Realistic Facial Animation
+- [MetaPerson and Lipsync](https://docs.metaperson.avatarsdk.com/docs/lipsync/index.md): MetaPerson avatars are designed to seamlessly integrate with leading lipsync technologies, enabling realistic and expressive speech synchronization...
+- [Oculus lipsync UE](https://docs.metaperson.avatarsdk.com/docs/lipsync/oculus_ue.md): Using Oculus Lipsync with MetaPerson in Unreal Engine
+- [Oculus lipsync Unity](https://docs.metaperson.avatarsdk.com/docs/lipsync/oculus_unity.md): Using Oculus Lipsync with MetaPerson in Unity
+- [SALSA lipsync](https://docs.metaperson.avatarsdk.com/docs/lipsync/salsa.md): Using SALSA lipsync with MetaPerson
+- [LiveSpeak](https://docs.metaperson.avatarsdk.com/docs/livespeak/index.md): **Real‑time voice & lip‑sync layer for 3D avatars**  
+- [LiveSpeak Integration](https://docs.metaperson.avatarsdk.com/docs/livespeak/integration.md): LiveSpeak Integration
+- [LiveSpeak Samples](https://docs.metaperson.avatarsdk.com/docs/livespeak/samples.md): LiveSpeak Samples
+- [Cartoonish Avatars](https://docs.metaperson.avatarsdk.com/docs/metaperson-creator/cartoonish.md): Cartoonish avatars in MetaPerson Creator
+- [Get a Pack of 2D Avatar Images](https://docs.metaperson.avatarsdk.com/docs/metaperson-creator/expressions_pack.md): Get a Pack of 2D Avatar Images
+- [Roblox Avatars](https://docs.metaperson.avatarsdk.com/docs/metaperson-creator/roblox_avatars.md): Roblox avatars in MetaPerson Creator
+- [REST API](https://docs.metaperson.avatarsdk.com/docs/rest_api.md): MetaPerson REST API

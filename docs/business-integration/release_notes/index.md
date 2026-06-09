@@ -1,0 +1,16 @@
+# Release Notes
+
+> Release Notes
+
+# Release Notes
+
+You can find the latest versions of the MetaPerson Creator available for integration at the following links:
+
+**Desktop**: https://metaperson.avatarsdk.com/iframe.html
+
+**Mobile**: https://mobile.metaperson.avatarsdk.com/generator
+
+If you are looking for a specific version and prefer not to receive automatic updates, you can check the release notes and use the link you need:
+
+ * [Desktop Version Release Notes](desktop)
+ * [Mobile Version Release Notes](mobile)

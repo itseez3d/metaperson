@@ -1,0 +1,13 @@
+# MetaPerson 3D Motion
+
+> Modern tools and technologies have revolutionized animating 3D avatars, making this process accessible and straightforward for creators of all experience levels. This section offers comprehensive and in-depth descriptions and video guides that walk you through the steps of using some of the most popular services available today with the MetaPerson avatars.
+
+# MetaPerson 3D Motion
+
+Modern tools and technologies have revolutionized animating 3D avatars, making this process accessible and straightforward for creators of all experience levels. This section offers comprehensive and in-depth descriptions and video guides that walk you through the steps of using some of the most popular services available today with the MetaPerson avatars.
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+```

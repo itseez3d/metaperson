@@ -1,0 +1,3082 @@
+# MetaPerson documentation
+
+> Documentation for MetaPerson Creator and Avatar SDK — AI-driven 3D avatar creation from a single selfie. Cloud API, SDK and plugins for Unity, Unreal Engine, iOS, Android and Web.
+
+This file contains all documentation content in a single document following the llmstxt.org standard.
+
+## DeepMotion Animate 3D
+
+
+SayMotion uses Generative AI and DeepMotion's motion data to turn text into 3D animations. It removes the need for special equipment, expertise, or stock animations, making 3D animation available to everyone. 
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/ujMxgmFz-pM?si=mJqt8fa_OKHSB5Ha">
+</iframe>
+
+&nbsp;
+
+---
+
+## DeepMotion
+
+
+[DeepMotion](https://www.deepmotion.com/) offers a comprehensive suite of advanced tools specifically designed for creating intricate skeletal animations. These advanced tools can animate MetaPerson avatars with high precision and realism, offering users an unmatched digital animation experience.
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/O_8vIwRVa5Q?si=txXPA5x8vBWJjcLy">
+</iframe>
+
+&nbsp;
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/_jAN8LlllrQ?si=M60TzZhNaspdxtlg">
+</iframe>
+
+&nbsp;
+
+## Animate 3D
+
+[Animate 3D](https://www.deepmotion.com/animate-3d) is an innovative and powerful tool that transforms regular videos into captivating and immersive 3D animations. These animations are not only visually appealing but also feature realistic and smooth movements that bring your content to life in an engaging and dynamic way.
+
+### Uploading 3D avatar
+
+To generate a MetaPerson-compatible animation with Animate 3D, you will need to provide a sample avatar model in the "3D Models" section. Click the Upload button, select the FBX model, and then click the Create Animation button to continue.
+
+![](./img/dm_upload.png)
+
+#### Unity and Unreal Engine
+
+For Unity, you may use the generic FBX model exported from the MetaPerson Creator; for Unreal Engine, you will need to export the FBX model from the [MetaPerson UE Plugin](https://github.com/avatarsdk/metaperson-ue-sample).
+
+![](./img/dm_ue0.png)
+
+![](./img/dm_ue1.png)
+
+### Animation parameters
+
+Provide your video file in the corresponding section:
+
+![](./img/dm_vid.png)
+
+and adjust the suggested animation settings.
+
+![](./img/dm_set.png)
+
+Create the animation and download the FBX file.
+
+## SayMotion
+
+[SayMotion](https://www.deepmotion.com/saymotion) uses Generative AI and DeepMotion's motion data to turn text into 3D animations. It removes the need for special equipment, expertise, or stock animations, making 3D animation available to everyone. 
+
+### Uploading 3D avatar
+
+You must upload the MetaPerson avatar like we did for Animate 3D. Click on the corresponding button and provide the FBX file. See the [platform-specific information](#unity-and-unreal-engine).
+
+![](./img/sm_upl.png)
+
+### Animation parameters
+
+Choose the uploaded avatar and adjust the suggested animation settings.
+
+![](./img/sm_set.png)
+
+To proceed, provide your animation prompt. For more detailed guidance, refer to the [official DeepMotion guide](https://www.deepmotion.com/article/saymotion-text-prompt-guide), which offers comprehensive instructions on generating effective prompts for your animations. 
+
+![](./img/sm_pro.png)
+
+Generate the animation and download the FBX file.
+
+## Importing animations
+
+Import the FBX file that does not include T-Pose:
+
+![](./img/dm_imp.png)
+
+For Unreal Engine use the following import settings:
+
+![](./img/dm_ueimp.png)
+
+When importing to your Unity project, it is crucial to set the animation type to "Humanoid" in the rig parameters:
+
+![](./img/dm_unity_hum.png)
+
+Then, set the following parameters in the "Animation" tab:
+
+![](./img/dm_un_ap.png)
+
+Create the Animation Controller and drag the imported animation to the graph. Set the Foot IK option to "true".
+
+![](./img/dm_ac.png)
+
+Set the Animation Controller to the corresponding property of the Animator, attached to the avatar's model on the scene:
+
+![](./img/dm_unity_mod.png)
+
+Now everything is ready and your MetaPerson avatars are fully animated and eagerly awaiting for you to come and see them in action!
+
+## Additional information
+
+We strongly encourage you to take the time to watch the comprehensive videos about using the DeepMotion technology in conjunction with the MetaPerson on both [Unity](https://youtu.be/AV6cLtuZra4?feature=shared) and [Unreal Engine](https://youtu.be/ujMxgmFz-pM?feature=shared). These tutorials are more detailed and provide a wealth of information that can be very helpful. If you still have any questions or need further assistance, please do not hesitate to reach out to us at support@avatarsdk.com.
+
+---
+
+## MetaPerson 3D Motion
+
+
+Modern tools and technologies have revolutionized animating 3D avatars, making this process accessible and straightforward for creators of all experience levels. This section offers comprehensive and in-depth descriptions and video guides that walk you through the steps of using some of the most popular services available today with the MetaPerson avatars.
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+```
+
+---
+
+## Mixamo animations
+
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/wi_A4ucej-8?si=dD4pPy_t5Ng8sj9M">
+</iframe>
+
+&nbsp;
+
+[Mixamo](https://www.mixamo.com/), a famous collection of character animations, can be used with the MetaPerson avatar. Check out the tutorial on our official [YouTube channel](https://youtube.com/playlist?list=PLDdNlBHHu4Dl6zI8ZFNGfFigy9VJeT8on&feature=shared) to learn how to animate your MetaPerson avatars in Unity using Mixamo animation.
+
+---
+
+## DeepMotion SayMotion
+
+
+Animate 3D is an innovative and powerful tool that gives you the ability to transform your regular videos into captivating and immersive 3D animations. These animations are not only visually appealing but also feature realistic and smooth movements that bring your content to life in a way that is engaging and dynamic.
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/AV6cLtuZra4?si=RMnHzYgjKES1Awe2">
+</iframe>
+
+&nbsp;
+
+---
+
+## Android integration
+
+
+MetaPerson Creator can be integrated into a native Android application. Please see our GitHub sample and video tutorial for details.
+
+https://github.com/avatarsdk/metaperson-android-sample
+
+  <iframe width="560" height="315" allow="fullscreen" src="https://www.youtube.com/embed/xbknywXClCs">
+  </iframe>
+
+If you are interested in exploring the capabilities of MetaPerson avatars and how they can be seamlessly integrated into an Android environment, you might find it worthwhile to check out our MetaPerson Showcase application. This application is [available for download on the Google Play store](https://play.google.com/store/apps/details?id=com.avatarsdk.metaperson&pcampaignid=web_share).
+
+ [![](./img/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.avatarsdk.metaperson&pcampaignid=web_share)
+
+---
+
+## Getting started
+
+
+## Account
+
+To start using MetaPerson Creator, simply create an account on [our website](https://accounts.avatarsdk.com).
+By doing so, you'll gain access to our [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan, which offers all our advanced features and the ability to create and customize MetaPerson avatars.
+
+## Developer credentials
+
+Before you can authorize MetaPerson Creator to integrate into your website or application, you need to generate developer credentials in your profile. This is a simple process; you can do it by visiting the developer credentials page on [our website](https://accounts.avatarsdk.com/developer/#web-api).
+
+Once you're on the developer page, you'll need to create a new application to get your "App Client ID" and "App Client Secret" values. These values are required for integrating MetaPerson Creator into your website or application. For this purpose, you need to enter any name in the "Application name" field and press the "SUBMIT" button.
+
+![](./img/application.png)
+
+After the application is created, it will show your "App Client ID" and "App Client Secret" values.
+
+![](./img/credentials.png)
+
+With your developer credentials, you can integrate MetaPerson Creator into your website or application and create custom avatars for your users. Our [support team](mailto:support@avatarsdk.com) is always available to assist you if you need help or have questions.
+
+---
+
+## Working with MetaPerson Creator
+
+
+MetaPerson Creator is more than just a fun tool for personal use. It's also a valuable asset for businesses looking to enhance their online presence. With our easy-to-use API, you can integrate MetaPerson Creator directly into your website or application, allowing your clients to create their custom avatars and use them in your product.
+
+Integrating MetaPerson Creator is easy and straightforward, and our team is always available to provide support and guidance throughout the process. So why not take advantage of this innovative technology and give your business a significant competitive edge? Try MetaPerson Creator today and see the difference it can make for your brand!
+
+Please see the video tutorial on our official [YouTube channel](https://www.youtube.com/user/itSeez3D):
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/TXwKq4U15S8">
+</iframe>
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+```
+
+---
+
+## iOS integration
+
+
+MetaPerson Creator can be integrated into a native iOS application. Please see our GitHub sample and video tutorial for details.
+
+https://github.com/avatarsdk/metaperson-ios-sample
+
+  <iframe width="560" height="315" allow="fullscreen" src="https://www.youtube.com/embed/LtdA07BK5Ws">
+  </iframe>
+
+---
+
+## JS API
+
+
+Communication between MetaPerson Creator and your HTML page or application is performed via a messaging mechanism. JavaScript messages with special events are both posted to and received from the MetaPerson Creator.
+Once MetaPerson Creator page is loaded, it sends a `metaperson_creator_loaded` event. After that, you can send JS messages to MetaPerson Creator, e.g. configuration parameters.
+
+As an example, you can look at the [Web integration sample](web_integration).
+
+## MetaPerson Creator Versions
+There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. It is recommended to use the former on desktop platforms and the latter on mobile platforms.
+
+Use the following URLs to integrate these versions into your site or application:
+
+**Desktop**: https://metaperson.avatarsdk.com/iframe.html
+
+**Mobile**: https://mobile.metaperson.avatarsdk.com/generator
+
+## Configuration Messages
+
+These messages can be sent only once right after MetaPerson Creator was loaded.
+
+* [**Authentication parameters**](#authentication-parameters) - in this message, you should specify your developer credentials. This ensures that your website or application is authorized to access the creator. 
+If you provide an incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. Go to [developer credentials](getting_started#developer-credentials) to get more info.
+
+* [**Export Parameters**](#export-parameters) - in this message, you can configure export parameters for your avatar. You can specify the format of the exported file (such as GLB, GLTF, or FBX), the level of detail for the exported mesh, the resolution of textures, and the format.
+
+* [**UI Parameters**](#ui-parameters) - in this message, you can configure some parts of the UI of MetaPerson Creator. E.g. hide some buttons or rename text for them.
+
+### Authentication Parameters
+
+Here's an example of how you can authenticate your account in MetaPerson Creator. You need [developer credentials](getting_started#developer-credentials) from your account.
+
+```js
+let authenticationMessage = {
+    "eventName": "authenticate",
+    "clientId": CLIENT_ID,
+    "clientSecret": CLIENT_SECRET,
+    "accessToken": ACCESS_TOKEN
+};
+evt.source.postMessage(authenticationMessage, "*");
+```
+
+Message parameters:
+
+* `eventName` - should be set to `authenticate`. The event name tells MetaPerson Creator which request you're making.
+* `clientId` - CLIENT_ID of your developer account.
+* `clientSecret` - CLIENT_SECRET of your developer account.
+* `accessToken` - for enhanced security, you can provide an `accessToken` instead of exposing `clientId` and `clientSecret` in client-side code. The token should be obtained via [REST API](https://api.avatarsdk.com/samples/curl_metaperson_20/#authorization). 
+Below is the CURL sample for getting the token.
+
+```js
+CLIENT_ID="xFXeBr4shmgHUiymYwW7sDOO9BbwtL3eJkCE3OKu"
+CLIENT_SECRET="hpAYUxCLfKHEkIvRgXTZzGyMvgDj7Tdg4gBhu5nmXjtW0ODMj0HUCt3tmKMBtm94qzcNsVhK6xXj2PKEop7BxBi1W9XMvyx3p9tJVP6mGY19THuS6mNSnJiQI1vQ0QE6"
+
+curl -X POST --user "$CLIENT_ID:$CLIENT_SECRET" \
+     "https://api.avatarsdk.com/o/token/" \
+     -F "grant_type=client_credentials"
+
+{
+  "access_token": "PAvD64lbikgVA0GzxgKV2ZhLnPbZ8P",
+  "token_type": "Bearer",
+  "expires_in": 36000,
+  "scope": "read write"
+}
+
+TOKEN="PAvD64lbikgVA0GzxgKV2ZhLnPbZ8P"
+```
+
+MetaPerson Creator sends the result of the authentication in the [`authentication_status`](#authentication-status) event.
+
+### Export Parameters
+
+A message with export parameters allows you to customize the output of your avatar by specifying things like the file format, resolution, and other options. 
+
+Here's an example of how you can specify the export parameters:
+
+```js
+let exportParametersMessage = {
+    "eventName": "set_export_parameters",
+    "format" : "gltf",
+    "lod" : 1,
+    "textureProfile" : "1K.jpg",
+    "useZip" : true,
+    "headOnly" : "false",
+    "removeNeckLayers" : 0
+    "exportTemplateJson": "{\"outfits_shoes\":{\"apply_visibility_masks\" : false}}"
+};
+evt.source.postMessage(exportParametersMessage, "*");
+```
+
+Message parameters:
+
+* `eventName` - should be set to `set_export_parameters`. This tells MetaPerson Creator which request you're making.
+* `format` - this parameter specifies the format of the exported file. Supported formats are `gltf`, `glb`, and `fbx`.
+* `lod` - this parameter specifies the level of detail (LOD) for the exported mesh. The higher the LOD index, the less detailed the exported mesh is. Supported LODs are: `1` and `2`.
+* `textureProfile` - this parameter specifies the texture profile for the exported file. This determines the quality of the textures used in the exported file. Supported texture profiles are:
+  * `4K.png`, `2K.png`, `1K.png`
+  * `4K.jpg`, `2K.jpg`, `1K.jpg`
+  * `4K.webp`, `2K.webp`, `1K.webp`
+* `useZip` - by default, MetaPerson Creator returns a link to a ZIP archive with an exported model. You can set it to `false`, to get a direct link to a GLB of FBX file.
+* `headOnly` - exports only the head portion of a 3D model.
+* `removeNeckLayers` - controls how many polygon layers of the neck to remove/cut from the model. Supported values: 
+  * `0-12` for LOD1, 
+  * `0-8` for LOD2.
+* `removeTransparentCornea` - if `true`, removes the Cornea mesh when transparent.
+* `animationName` - name of the animation to export.
+* `animationAsBindPose` - if `true`, uses the first animation frame as the bind pose (instead of T-Pose).
+* `exportModelInfo` - if `true`, the exported archive includes a *model.json* file containing the avatar's color data: skin, hair, eyes, eyebrows and lips.
+* `exportTemplateJson` - JSON with common parameters that are applied to all exported avatars. See more details about [export template](#export-template). 
+
+**Available Animations**
+
+* Male
+  * Animations: `Male_Animation_Walk`, `Male_Animation_Idle`.
+  * Poses: `Male_Pose_01` to `Male_Pose_08`, `Male_Pose_A`, `Male_Pose_Idle`.
+* Female
+  * Animations: `Female_Animation_WalkRelaxed`, `Female_Animation_Idle`.
+  * Poses: `Female_Pose_01` to `Female_Pose_05`, `Female_Pose_A`, `Female_Pose_Idle`.
+* Facial Animations: `ArKitDemo_001` to `ArKitDemo_005`.
+ 
+**Notes**
+ * Mobile Limitations: The following parameters are **not supported** in the Mobile version: `headOnly`, `removeNeckLayers`, `removeTransparentCornea`, `animationName`, `animationAsBindPose`.
+
+### UI Parameters
+
+This message allows you to make some customizations in the UI of MetaPerson Creator. Some parameters differ between Mobile and Desktop versions, so we split this description correspondingly. 
+
+#### MetaPerson Creator Desktop
+
+```js
+let uiParametersMessage = {
+    // Common parameters for Mobile and Desktop versions
+    "eventName": "set_ui_parameters",
+    "isExportButtonVisible" : true,
+    "outfitsBlackList" : ["ARPI", "SEVAN"],
+    "skipViewerControls" : ['color', 'animations'],
+    
+    // Desktop version specific parameters
+    "isScreenshotButtonVisible": true,
+    "closeExportDialogWhenExportCompleted" : false,
+    "isLanguageSelectionVisible" : true,
+    "language" : "",
+    "showLatestCreatedAvatar" : true,
+    "metaPersonLabelText" : "MetaPerson Avatars",
+    "isTakeSelfieButtonVisible" : true,
+    "isBrowsePhotoButtonVisible" : true,
+    "showSampleAvatars" : true,
+    "ageSelectionAvailable" : true,
+    "pipelineSelectionAvailable" : true,
+    "defaultPipeline" : "male",
+    "computationParametersPanelVisible" : true,
+    "enableLipsync": false,
+    "isGifButtonVisible" : false,
+    "isPngButtonVisible" : false
+};
+evt.source.postMessage(uiParametersMessage, "*");
+```
+
+Message parameters:
+
+* `eventName` - should be set to `set_ui_parameters`. This tells MetaPerson Creator which request you're making.
+* `isExportButtonVisible` - this parameter specifies if the Export button is visible. Default value: `true`.
+* `outfitsBlackList` - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
+* `skipViewerControls` - a list of controls that are hidden during customization of the avatar. Available values: `'style', 'outfits', 'hairstyles', 'head_accessories', 'jewelry', 'hands_accessories', 'body', 'head', 'eyes', 'color', 'makeup', 'tattoo', 'animations', 'facial_animations', 'lighting'`.
+* `isScreenshotButtonVisible` - this parameter specifies if the Screenshot button is visible. Default value: `true`.
+* `closeExportDialogWhenExportCompleted` - this parameter specifies if the export dialog is shown after an avatar is exported. Default value: `false`.
+* `isLanguageSelectionVisible` - this parameter specifies if the control to select a UI language is visible. Default value: `true`.
+* `language` - this parameter specifies a UI language. Supported values: `EN`, `漢語`. English is set by default if the parameter is empty or isn't set.
+* `showLatestCreatedAvatar` - this parameter specifies if the latest created avatar can be opened from the home screen. Default value: `true`.
+* `metaPersonLabelText` - a text of the label on the main screen. Default value is "MetaPerson Avatars".
+* `isTakeSelfieButtonVisible` - specifies if the "Take a selfie" button is visible.
+* `isBrowsePhotoButtonVisible` - specifies if the "Browse for photo" button is visible.
+* `showSampleAvatars` - specifies if sample avatars are available.
+* `ageSelectionAvailable` - specifies whether UI controls for age selection are available. If this parameter is set to false, avatars are generated as 16+ by default.
+* `pipelineSelectionAvailable` - specifies whether UI controls for selecting the avatar's gender are available. If this parameter is set to false, male avatars are generated by default unless otherwise specified by the `defaultPipeline` parameter.
+* `defaultPipeline` - specifies the default avatar pipeline to be generated (`male` or `female`) if the pipeline selection is disabled in the UI.
+* `computationParametersPanelVisible` - specifies if a right panel with computation parameters (pipeline and age selection) is visible.
+* `enableLipsync` - enables LipSync. Default value: `false`.
+* `isGifButtonVisible` - specifies if the button to generate GIF is visible. Default value: `false`.
+* `isPngButtonVisible` - specifies if the button to generate PNG images is visible. Default value: `false`.
+
+#### MetaPerson Creator Mobile
+
+```js
+let uiParametersMessage = {
+    "eventName": "set_ui_parameters",
+    "isExportButtonVisible": true,
+    "isLoginButtonVisible": false,
+    "isHomeButtonVisible": true,
+    "outfitsBlackList" : ["ARPI", "SEVAN"],
+    "skipViewerControls" : ['age', 'animations'],
+    
+    // Mobile version specific parameters
+    "isScreenshotButtonVisible": true,
+    "isNoPhotoVisible": true,
+    "exportButtonText": "Export",
+    "age": "teen12",
+    "theme": "dark", 
+    "gender": "female",
+};
+evt.source.postMessage(uiParametersMessage, "*");
+```
+
+The parameters of this code are:
+
+* `eventName` - should be set to `set_ui_parameters`. This tells MetaPerson Creator which request you're making.
+* `isExportButtonVisible` - this parameter specifies if the Export button is visible. Default value: `true`.
+* `isLoginButtonVisible` - this parameter specifies if the Login button is visible. Default value: `true`.
+* `isHomeButtonVisible` - this parameter specifies if the Home button is visible. Default value: `true`.
+* `outfitsBlackList` - a list of outfits that are not available and not shown in the MetaPerson Creator. The complete list of outfits with their names can be found in [REST API documentation](https://api.avatarsdk.com/#id5). By default, all outfits are available. 
+* `skipViewerControls` - a list of controls that are hidden during customization of the avatar. Available values: `'outfits','hairstyles','glasses','age','body','head','color','animations','lighting'`.
+* `isScreenshotButtonVisible` - this parameter specifies if the Screenshot button is visible. Default value: `true`.
+* `isNoPhotoVisible` - this parameter specifies if the sample avatars are available. Default value: `true`.
+* `exportButtonText` - it allows changing the text of the Export button. 
+* `age` - this parameter specifies the age for all generated avatars. If it is set, the age selection prompt isn't shown. Possible values are `adult`, `teen15`, and `teen12`.
+* `theme` - it allows choosing the visual theme for the UI (available options: `dark`, `light`).
+* `gender` - if the application or website already has the information about the required gender, we can skip this question in the UI of the Mobile version. In this case, it shows the second screen with choosing input photo and you can't get back to the first screen with the home button. Available options are `male` and `female`, or can be empty.
+
+## Action Messages
+
+These messages specify events that tell the MetaPerson Creator to perform some specific actions.
+
+* [**Generate Avatar**](#generate-avatar) - this message allows you to start avatar generation from API by passing an image encoded to base64 string.
+
+* [**Export Avatar**](#export-avatar) - this message allows you to export an avatar from API. It can be required if you hide the button for export from the UI and want to control export functionality not from the iframe, but from an external website or application.
+
+* [**Make Screenshot**](#make-screenshot) - this message allows you to make a screenshot of the avatar. The screenshot captures an avatar head and an upper part of a bust. 
+
+* [**Show Avatar**](#show-avatar) - this message allows you to open an already-created avatar and customize it.
+
+### Generate Avatar
+
+The `generate_avatar` event initiates avatar generation.
+
+```js
+let generateAvatarMessage = {
+    "eventName": "generate_avatar",
+    "gender": "male",
+    "age": "adult",
+    "blends": [ { "name": "Body", "value": 0.5 }, { "name": "LowerHeadWidth", "value": 0.25 } ],
+    "image": "image_encoded_to_base64_string"
+};
+evt.source.postMessage(generateAvatarMessage, "*"); 
+```
+
+Message parameters:
+
+* `eventName` - should be set to `generate_avatar`. This tells MetaPerson Creator which request you're making.
+* `gender` - this parameter specifies the gender of the computed avatar. Possible values are `male` and `female`.
+* `age` - this parameter specifies the age of the avatar. Possible values are `adult`, `teen15`, and `teen12`. The default value is `adult`.
+* `blends` - this parameters allows to configure initial proportions of the avatar's body, head, eyes and nose. See more details below about possible values.
+* `image` - an image in JPEG or PNG format encoded into a base64 string.
+
+The `gender` parameter can be empty in the Desktop version. In this case, the MetaPerson Creator displays a dialog and prompts the user to manually select an avatar gender. 
+
+Once the avatar is generated, MetaPerson Creator sends the [`model_generated`](#model-generated) event.
+
+#### `blends` Parameter
+
+The `blends` parameter is exclusive to the **Desktop** version. It is an array containing elements with `name` and `value` fields, each representing a blendshape's name and its corresponding value.
+
+**Body Proportions:**
+
+- **Blendshape Names:** `Body`, `Neck`, `Shoulders`, `Chest`, `Forearms`, `Waist`, `Hips`, `Legs`
+- **Value Range:** **[-1, 1]** (0 indicates default size)
+
+**Head Proportions:**
+
+- **Blendshape Names:** `HeadHeight`, `UpperHeadVolume`, `UpperHeadWidth`, `LowerHeadWidth`, `JawLine`
+- **Value Range:** **[0, 1]** (1 indicates default size)
+
+**Eyes Proportions:**
+
+- **Blendshape Names:** `EyesSize` (range **[-1, 1]**), `Monolid`, `Squint` (range **[0, 1]**)
+- **Value Range:** **[-1, 1]** for `EyesSize`; **[0, 1]** for `Monolid` and `Squint` (0 indicates default size)
+
+**Nose Proportions:**
+
+- **Blendshape Names:** `NoseWidth`, `NoseSharp` (range **[0, 1]**), `NoseLength`, `NosePosition`, `NoseTipUpDown`, `NoseTipLeftRight`, `NoseWingsUpDown`, `NoseWingsInOut` (range **[-1, 1]**)
+- **Value Range:** **[0, 1]** for `NoseWidth` and `NoseSharp`; **[-1, 1]** for the others (0 indicates default size)
+
+**Lips Proportion:**
+
+- **Blendshape Name:** `LipsSize`
+- **Value Range:** **[-1, 1]** (0 indicates default size)
+
+### Export Avatar
+
+The `export_avatar` event initiates an avatar export. Use this event when you need to implement your own "Export" button outside the iframe with MetaPerson Creator.
+
+```js
+function onExportClicked() {
+    let iframe = document.getElementById("editor_iframe");
+    let exportAvatarMessage = {
+        "eventName": "export_avatar"
+    };
+    iframe.contentWindow.postMessage(exportAvatarMessage, "*");
+}
+```
+
+Message parameters:
+
+* `eventName` - should be set to `export_avatar`. This tells MetaPerson Creator which request you're making.
+* In the Desktop version you can specify the parameters for this particular export. Parameters are the same as in the [`set_export_parameters`](#export-parameters) message.
+
+You need to be sure that the avatar is ready for export and displayed on the scene before sending this message.
+
+Once the export is completed, MetaPerson Creator sends a link to this model in the [`model_exported`](#model-exported) event.
+
+### Make Screenshot
+
+The `make_screenshot` event makes a screenshot of the avatar. Use this event when you need to get a preview of the avatar. The screenshot captures an avatar head and an upper part of a bust. 
+
+```js
+let makeScreenshotEvent = {
+    "eventName": "make_screenshot",
+    "width" : 640,
+    "height" : 480,
+    "mode": "head"
+};
+iframe.contentWindow.postMessage(makeScreenshotEvent, "*");
+```
+
+Message parameters:
+
+* `eventName` - should be set to `make_screenshot`. This tells MetaPerson Creator which request you're making.
+* `width` - width of the screenshot image. The default value is `640`.
+* `height` - height of the screenshot image. The default value is `480`.
+* `mode` - specifies whether the camera captures a headshot or a full-body screenshot. Possible values: `head`, `body`.
+
+Once the screenshot is done, MetaPerson Creator sends a link to the image in the [`model_screenshot`](#model-screenshot) event.
+
+### Show Avatar
+
+It's possible to open a previously generated avatar for further customization. You'll need an "avatar code" to show the avatar in MetaPerson Creator.
+
+```js
+let showAvatarMessage = {
+    "eventName": "show_avatar",
+    "avatarCode": AVATAR_CODE_TO_SHOW
+};
+evt.source.postMessage(showAvatarMessage, "*");
+```
+
+Message parameters:
+
+* `eventName` - should be set to "show_avatar". This tells MetaPerson Creator which request you're making.
+* `avatarCode` - a code of the avatar you need to open.
+* `avatarState` - a JSON string with serialized avatar customization. 
+
+The `avatarCode` can be obtained from the [`model_generated`](#model-generated) and [`model_exported`](#model-exported) events.
+The `avatarState` can be obtained from the [`model_exported`](#model-exported) event.
+
+  <iframe width="560" height="315" allow="fullscreen" src="https://www.youtube.com/embed/iZMRdDbwB-w">
+  </iframe>
+
+## Events Sent By MetaPerson Creator
+
+MetaPerson creator notifies about some events by sending corresponding messages. You need to add an event listener for `message` events to receive these messages.
+
+Each event sent by MetaPerson Creator has a `data` structure that contains different parameters. The `data.source` parameter is common for all events and has a `metaperson_creator` value. It helps to identify messages from MetaPerson Creator.
+
+```js
+document.addEventListener('DOMContentLoaded', function onDocumentReady() {
+    window.addEventListener("message", onWindowMessage);
+});
+
+function onWindowMessage(evt) {
+    if (evt.type === "message") {
+        if (evt.data?.source === "metaperson_creator"){
+            let data = evt.data;
+            let evtName = data?.eventName;
+            
+            switch (evtName) {
+                // handle received events here
+            }
+        }
+    }
+}
+```
+
+There are the following events
+
+* [`metaperson_creator_loaded`](#metaperson-creator-loaded) - MetaPerson Creator sends this message when the page is loaded.
+
+* [`authentication_status`](#authentication-status) - MetaPerson Creator sends this message once the authentication is done with its status.
+
+* [`model_generated`](#model-generated) - MetaPerson Creator sends this message when a new avatar is generated. 
+
+* [`model_exported`](#model-exported) - MetaPerson Creator sends this message when the avatar is exported. This event allows you to get the link to the resulting avatar. This link can then be used to download or integrate the avatar into your website or application.
+
+* [`model_screenshot`](#model-screenshot) - MetaPerson Creator sends this message as a response to the [`make screenshot`](#make-screenshot) message.
+
+* [`action_availability_changed`](#action-availability) - The MetaPerson Creator sends this message to tell whether the [`export_avatar`](#export-avatar) and the [`generate_avatar`](#generate-avatar) actions are available at the current moment.
+
+### MetaPerson Creator Loaded
+
+The `metaperson_creator_loaded` event is sent once the MetaPerson Creator page is loaded. It is the first sent message and indicates that the MetaPerson Creator is initialized and you can send [configuration messages](#configuration-messages).
+
+Event data:
+
+* `data.source` - is set to `metaperson_creator`.
+* `data.eventName` - is set to `metaperson_creator_loaded`.
+
+Also, if you missed this message and need to check if the MetaPerson page is loaded, you can use the following JS object:
+```js
+iframe.contentWindow.metaPersonCreator.isLoaded
+```
+
+### Authentication Status
+
+The `authentication_status` event is a response to the [`authenticate`](#authentication-parameters) message. It contains an authentication result.
+
+Event data:
+
+* `data.source` - is set to `metaperson_creator`.
+* `data.eventName` - is set to `authentication_status`.
+* `data.isAuthenticated` - indicates if the authentication was successful. Possible values: `true` or `false`.
+* `data.errorMessage` - contains a description of the error in case of failed authentication. 
+
+Also, you can use the following JS object to check the authentication status:
+```js
+iframe.contentWindow.metaPersonCreator.isAuthenticated
+```
+
+This event is available only for the **Desktop version**.
+
+### Model Generated
+
+The `model_generated` event is sent when a new avatar is generated.
+
+Event data:
+
+* `data.source` - is set to `metaperson_creator`.
+* `data.eventName` - is set to `model_generated`.
+* `data.avatarCode` - a code of the generated avatar.
+* `data.gender` - a gender of the generated avatar. Possible values: `male` and `female`.
+* `data.photoFileName` - the name of the photo file from which this avatar was generated.
+* `data.photoUrl` - a link to the source photo. The link is valid till the next avatar is generated.
+* `data.photoBytes` - an array of the source photo bytes in JPEG format. This parameter is exclusive to the **Desktop** version.
+
+### Model Exported
+
+The `model_exported` event is sent once the avatar is exported. This event returns an "avatar code" that can be used to reopen this avatar for further modifications.
+
+Event data:
+
+* `data.source` - is set to `metaperson_creator`.
+* `data.eventName` - is set to `model_exported`.
+* `data.url` - a link to the exported file.
+* `data.avatarCode` - a code of the avatar.
+* `data.gender` - an avatar gender
+* `data.avatarState` - a JSON string with serialized avatar customization
+
+### Model Screenshot
+
+The `model_screenshot` event is a response to the [`make screenshot`](#make-screenshot) message. It contains an avatar screenshot.
+
+Event data:
+
+* `data.source` - is set to `metaperson_creator`.
+* `data.eventName` - is set to `model_screenshot`.
+* `data.screenshotUrl` - a link to the screenshot image. The link points to a local image file that is available within the current session. The link is valid until the next screenshot is taken.
+* `data.imageBytes` - an array of the screenshot image bytes in PNG format. This parameter is exclusive to the **Desktop** version.
+
+### Action Availability
+MetaPerson Creator sends this message to indicate if a specific [action](#action-messages) becomes available or unavailable.
+
+For example, the [`export_avatar`](#export-avatar) event can be sent only when the avatar is opened and all assets (outfits, haircuts, glasses) are loaded. So, if you design your own "Export" or "Generate Avatar" buttons, you can enable and disable them according to the parameters of the `action_availability_changed` event.
+
+Here's an example code snippet that demonstrates how to receive and handle this event:
+
+```js
+function onWindowMessage(evt) {
+    if (evt.type === "message") {
+        if (evt.data?.source === "metaperson_creator"){
+            let data = evt.data;
+            let evtName = data?.eventName;
+            if (evtName === "action_availability_changed"){
+                if (data.actionName == "avatar_generation") {
+                    browseImage.disabled = !data.isAvailable;
+                } else if (data.actionName == "avatar_export") {
+                    exportButton.disabled = !data.isAvailable;
+                } else if (data.actionName == "avatar_screenshot") {
+                    screenshotButton.disabled = !data.isAvailable;
+                }
+            }
+        }
+    }
+}
+```
+
+Event data:
+
+* `data.source` - is set to `metaperson_creator`.
+* `data.eventName` - is set to `action_availability_changed`.
+* `data.actionName` - a name of the action whose availability was changed. Possible values: `avatar_generation`, `avatar_export`, `avatar_screenshot`.
+* `data.isAvailable` - indicates if the action is available.
+
+## Additional Settings
+
+### Loading Screen Image
+
+In the **Desktop** version, you can customize the loading screen image.
+
+![Loading Screen Image](./img/loading_screen_image.png)
+
+To do this, you can pass additional arguments with the URL:
+
+* `logoUrl`- the URL of the image to be displayed.
+* `logoWidth` - the width of the image area. The default value is 512px.
+* `logoHeight` - the height of the image area. The default value is 120px.
+
+If you have an image located at `https://example.com/logo.png`, you would format the URL as follows:
+`https://metaperson.avatarsdk.com/iframe.html?logoUrl=https://example.com/logo.png&logoWidth=300&logoHeight=300`
+
+### Export Template
+
+The export template is available exclusively for the **Desktop** version.
+
+It is a JSON file that contains additional export parameters. You can specify the export template using the [`set_export_parameters`](#export-parameters) method.
+
+There are several configuration slots where you can define parameters: **avatar**, **haircuts**, **outfits**, **outfits_top**, **outfits_bottom**, **outfits_shoes**, **hats**, **glasses**, **earrings**, and **necklaces**. Each of these slots may have its own parameters.
+
+* `apply_visibility_masks` – A boolean parameter applicable for the **outfits**, **outfits_top**, **outfits_bottom**, and **outfits_shoes** sections. This determines whether the visibility mask is applied to remove polygons from the body mesh underneath the outfit mesh.
+
+```json
+{
+  "outfits_shoes": 
+  {
+    "apply_visibility_masks" : false
+  }
+}
+```
+
+* `textures list` – It is possible to specify textures and profiles for each slot that should be included in the exported avatar. The example below shows all available textures. Note that not all slots include every listed texture.
+
+```json
+{
+  "avatar": 
+  {
+    "textures" :
+    {
+      "profile" : "2K.jpg",
+      "list": 
+      [
+        "Color",
+        "Normal",
+        "Roughness",
+        "UnityMetallicSmoothness",
+        "GltfMetallicRoughness"
+      ]
+    }
+  },
+  "outfits": 
+  {
+    "textures" :
+    {
+      "profile" : "1K.jpg",
+      "list": 
+      [
+        "Color",
+        "Normal",
+        "Roughness",
+        "UnityMetallicSmoothness",
+        "GltfMetallicRoughness",
+        "RecoloringMask"
+      ]
+    }
+  },
+  "haircuts": 
+  {
+    "textures" :
+    {
+      "profile" : "4K.png",
+      "list": 
+      [
+        "AO",
+        "Alpha",
+        "Color",
+        "Depth",
+        "GltfMetallicRoughness",
+        "Normal",
+        "Root",
+        "Roughness",
+        "ScalpShade",
+        "ScalpShadeAOAlpha",
+        "ScalpShadeAlpha",
+        "Shade",
+        "UniqueID",
+        "UnityMetallicSmoothness"
+      ]
+    }
+  }
+}
+```
+
+---
+
+## Desktop Version
+
+
+### 1.34.2 (2026-05-14)
+
+https://metaperson.avatarsdk.com/1.34.2/iframe.html
+
+**Release notes**:
+
+  * Bug fixes and improvements
+
+### 1.34.1 (2026-04-27)
+
+https://metaperson.avatarsdk.com/1.34.1/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: model is exported without visemes in business integration
+  * Updated LipSync
+
+### 1.34.0 (2026-03-26)
+
+https://metaperson.avatarsdk.com/1.34.0/iframe.html
+
+**Release notes**:
+
+  * Added blendshapes export:
+    * Visemes
+    * Head shape modification
+    * Body shape modification
+  * UI changes
+
+### 1.33.0 (2026-03-19)
+
+https://metaperson.avatarsdk.com/1.33.0/iframe.html
+
+**Release notes**:
+
+  * Added avatars gallery
+  * JS API:
+    * removed `isLoginButtonVisible` parameter
+    
+
+### 1.32.0 (2026-03-05)
+
+https://metaperson.avatarsdk.com/1.32.0/iframe.html
+
+**Release notes**:
+
+  * Roblox avatars
+  * New outfits:
+    * Gegharkunik 
+    * jersey_Gegharkunik
+    * shorts_Gegharkunik
+    * baseball_cap_Zangezur 
+    * Zangezur 
+    * pants_Zangezur 
+    * shoes_Zangezur 
+    * jersey_Zangezur
+
+### 1.31.0 (2026-02-05)
+
+https://metaperson.avatarsdk.com/1.31.0/iframe.html
+
+**Release notes**:
+
+  * New outfits:
+    * shoes_Gugarik_long
+    * shoes_Gugarik_middle
+    * shoes_Gugarik_short
+    * Hakari_red
+    * t-shirt_Hakari_red
+    * shorts_Getar_red
+    * shoes_Gugarik_long_red
+    * gloves_Tezh_red
+    * gloves_Tezh_blue
+    * longsleeve_Armaghan_red
+    * Armaghan_red
+    * soccer jerseys
+  * New set of haircuts
+  * Added cartoonish sample avatars
+  * JS API: 
+    * added `avatarState` parameter to [`model_exported`](/js_api#model-exported) event.
+    * added `avatarState` parameter to [`show_avatar`](/js_api#show-avatar) message.
+
+### 1.30.1 (2025-12-25)
+
+https://metaperson.avatarsdk.com/1.30.1/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: tattoos are not exported
+
+### 1.30.0 (2025-12-23)
+
+https://metaperson.avatarsdk.com/1.30.0/iframe.html
+
+**Release notes**:
+
+  * Christmas sale
+  * Added tattoes
+  * New outfits:
+    * shoes_Gugaric
+    * socks_Bazum
+
+### 1.29.3 (2025-12-03)
+
+**Release notes**:
+
+  * Ended thanksgiving sale
+
+### 1.29.2 (2025-11-27)
+
+**Release notes**:
+
+  * Bug: foundation isn't applied to the exported avatar
+
+### 1.29.1 (2025-11-26)
+
+**Release notes**:
+
+  * Thanksgiving sale
+  * Bug: unable to set export template for masks, beards and props
+  * Bug: reset button doesn't work for makeup customization
+
+### 1.29.0 (2025-11-25)
+
+**Release notes**:
+
+  * Added makeup
+  * JS API: allow to hide *makeup* button via [`set_ui_parameters`](/js_api#ui-parameters) message
+
+### 1.28.2 (2025-11-13)
+
+**Release notes**:
+
+  * JS API: parameters for masks, beards and props are supported in export templates
+
+### 1.28.1 (2025-11-10)
+
+**Release notes**:
+
+  * Halloween discount ended
+
+### 1.28.0 (2025-10-28)
+
+**Release notes**:
+
+  * Halloween discount
+  * Multiple asset unlock support
+  * JS API changes:
+    * Added `exportModelInfo` parameter to the [`set_export_parameters`](/js_api#export-parameters) message.
+
+### 1.27.15 (2025-10-20)
+
+**Release notes**:
+
+  * Fixed bug: cartoonish female avatars have invalid eyes positions.
+
+### 1.27.14 (2025-10-08)
+
+**Release notes**:
+
+  * Fixed bug: unable to show an avatar in some cases.
+
+### 1.27.1 (2025-10-06)
+
+**Release notes**:
+
+  * Updated female animations: Dizzy_Idle, Shuffling, Excited.
+  * Darkened inner mouth of the models.
+
+### 1.27.0 (2025-09-30)
+
+**Release notes**:
+
+  * Added new animations
+  * Added GIF generation
+  * JS API changes:
+    * Added `isGifButtonVisible` and `isPngButtonVisible` parameters to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
+### 1.26.0 (2025-08-07)
+
+**Release notes**:
+
+  * New outfits:
+    * shoes_Oskepat_long 
+    * shoes_Oskepat_middle 
+    * shoes_Oskepat_short
+  * JS API changes:
+    * Added `removeTransparentCornea`, `animationName` and `animationAsBindPose` parameters to the [`set_export_parameters`](/js_api#export-parameters) message.
+    * Added parameters to the [`export_avatar`](/js_api#export-avatar) message
+
+### 1.25.1 (2025-08-05)
+
+**Release notes**:
+
+ * Bugfixes
+
+### 1.25.0 (2025-07-21)
+
+**Release notes**:
+
+  * New outfits:
+    * Koshadagh
+    * shoes_Koshadagh
+    * Kashatagh
+    * shoes_Kashatagh
+  * Added beards
+  * Additional export options:
+    * export poses as Bind poses
+    * head only export
+  * JS API changes:
+    * Added `headOnly` and `removeNeckLayers` parameters to the [`set_export_parameters`](/js_api#export-parameters) message.
+  * Reduced coins prices
+
+### 1.24.1 (2025-06-18)
+
+**Release notes**:
+
+  * Bug fixes
+
+### 1.24.0 (2025-06-10)
+
+**Release notes**:
+
+  * JS API changes:
+    * Added `mode` parameter to the [`make_screenshot`](/js_api#make-screenshot) message.
+  * New haircuts:
+    * Haircut4_3 
+    * Haircut8_2 
+    * Haircut8_3
+    * Haircut9_2
+    * Haircut9_3
+  * New poses:
+    * Pose_A
+    * Pose_Idle
+  * New export parameters: 
+    * textures format
+    * textures resolution
+    * animations and poses
+
+### 1.23.2 (2025-05-05)
+
+**Release notes**:
+
+  * JS API changes:
+    * Added `accessToken` parameter to the [`authenticate`](/js_api#authentication-parameters) message.
+
+### 1.23.1 (2025-04-22)
+
+**Release notes**:
+
+  * Additional controls for cartoonish stylization
+  * Free export for users with active Avatar SDK subscription
+  * Fixed bugs:
+    * Eyes shape sliders have empty labels after pressing Reset button.
+
+### 1.23.0 (2025-04-15)
+
+**Release notes**:
+
+  * Added cartoonish stylization
+  * Added expressions images generation
+  * New haircuts:
+    * Haircut_Afro_Fade
+    * Haircut4_2
+  * New outfits:
+    * shoes_Murghuz
+    * shoes_Gndasar
+    * pants_Dzoraget_2
+
+### 1.22.0 (2025-03-03)
+
+**Release notes**:
+
+  * Added export options (LOD, format)
+
+### 1.21.0 (2025-02-26)
+
+**Release notes**:
+
+  * New outfits:
+    * hijab_Gosh
+  * New masks:
+    * mask_Kezelboghaz
+    * mask_Spitakasar
+  * New hands accessories
+    * bracelet_01
+    * bracelet_02
+    * bracelet_03
+    * bracelet_04
+    * gloves_Azhdahak
+    * gloves_Kaputjugh
+    * watches_01
+  * Added assets pricing.
+  * Parametric eyes are now enabled by default.
+  * Predicted haircut is used instead of the Generated in case of long hair.
+
+### 1.20.1 (2025-02-1)
+
+**Release notes**:
+
+  * Fixed an issue with uppercase letters in emails.
+  * Disabled post-processing on Apple M3 devices.
+
+### 1.20.0 (2025-02-03)
+
+**Release notes**:
+
+  * Upgraded to `metaperson_2.1` pipeline.
+  * Introduced in-app purchases.
+
+### 1.19.3 (2024-12-09)
+
+**Release notes**:
+
+  * Disabled skin, lips and eyebrows recoloring when `color` button is hidden.
+  * Preserved computaton parameters (gender, age) after a failed avatar generation attempt.
+
+### 1.19.2 (2024-12-04)
+
+**Release notes**:
+
+  * JS API: added `isScreenshotButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
+### 1.19.1 (2024-12-03)
+
+**Release notes**:
+
+  * Fixed bug: unable to export a model when the animations panel is active
+
+### 1.19.0 (2024-12-02)
+
+**Release notes**:
+
+  * New outfits:
+    * pants_Dzoraget
+    * sherwani_Dzoraget
+  * New haircuts: 
+    * Haircut23
+    * Haircut24
+  * JS API changes:
+    * Added `facial_animations` as possible value for `skipViewerControls` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+    * Added `computationParametersPanelVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+  * Added new blendshapes to tune head and facial features
+  * Added facial animations
+  * Show error when a face isn't found on the provided image
+
+### 1.18.5 (2024-11-18)
+
+**Release notes**:
+
+  * Fixed bug: authentication status event is sent too early
+
+### 1.18.4 (2024-10-28)
+
+**Release notes**:
+
+  * Bugfixes
+
+### 1.18.3 (2024-10-28)
+
+**Release notes**:
+
+  * JS API changes:
+    * Added `ageSelectionAvailable`, `pipelineSelectionAvailable`, `defaultPipeline` parameters to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
+### 1.18.2 (2024-09-30)
+
+**Release notes**:
+
+  * JS API changes:
+    * Added `enableLipsync` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
+### 1.18.1 (2024-09-27)
+
+**Release notes**:
+
+  * Fixed bug: misalignment of eyes customization controls
+  * Fixed bug: invalid preview image is shown
+  * Updated previews for sample avatars
+  * Removed some animations for skirt_Lessing
+
+### 1.18.0 (2024-09-26)
+
+**Release notes**:
+
+  * Added LipSync
+  * Added recolorable eyes type
+  * Added "Create My T-Shirt" button
+  * Added earrings:
+    * earrings_01
+    * earrings_02
+    * earrings_03
+    * earrings_04
+  * Added necklaces:
+    * chain_lite
+    * chain_tight
+    * pendant_01
+    * pendant_02
+    * pendant_03
+    * pendant_04
+    * pendant_05
+  * JS API changes:
+    * Added `exportTemplateJson` parameter to the [`set_export_parameters`](/js_api#export-parameters) message.
+
+### 1.17.0 (2024-08-21)
+
+**Release notes**:
+
+  * Added mirrored haircuts
+  * Added new haircuts: 
+    * Haircut22
+  * Added new outfits:
+    * Parz
+    * sandals_Parz
+    * skirt_Lessing
+    * top_Lessing
+    * kurta_Tandzut
+    * shoes_Tandzut
+    * dhoti_Tandzut
+    * baseball_cap_Vachagan
+  * UI changes
+    * Added tutorial buttons to the export dialog
+
+### 1.16.2 (2024-07-22)
+
+**Release notes**:
+
+  * Bug fixes:
+    * Default UI controls are visible before a custom UI configuration is provided via the `set_ui_parameters` message
+
+### 1.16.1 (2024-07-19)
+
+**Release notes**:
+
+  * JS API changes:
+    * Added parameters to configure the [loading screen image](/js_api#loading-screen-image)
+    * Added `metaPersonLabelText` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
+    * Added `isTakeSelfieButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
+    * Added `isBrowsePhotoButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
+    * Added `showSampleAvatars` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
+
+### 1.16.0 (2024-07-16)
+
+**Release notes**:
+
+ * Added new haircuts: 
+    * Haircut21
+ * Added new outfits:
+    * saree_Aramazd
+    * Urasar
+    * top_Khustup
+    * leggins_Khustup
+  * JS API changes:
+    * Added `skipViewerControls` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+    * Added `blends` parameter to the [`generate_avatar`](/js_api#generate-avatar) message
+    * Added `imageBytes` parameter to the [`model_screenshot`](/js_api#model-screenshot) event.
+    * Added `photoBytes` parameter to the [`model_generated`](/js_api#model-generated) event.
+
+### 1.15.1 (2024-07-01)
+
+**Release notes**:
+
+ * JS API changes:
+    * Added `showLatestCreatedAvatar` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
+### 1.15.0 (2024-06-13)
+
+**Release notes**:
+
+ * Added new haircuts: 
+    * Haircut19
+    * Haircut20
+ * Added new outfits:
+    * Kandura_Artanish
+    * Kandura_Lalvar
+    * Ghutra
+ * Added third-gender selection
+ * Updated icons for UI elements
+ * Added lighting selection
+ * Generate child avatars with decreased *Shoulders*, *Chest*, and *Hips* body proportions
+ 
+### 1.14.2 (2024-06-10)
+
+**Release notes**:
+
+ * Changed the timing of when the [`metaperson_creator_loaded`](/js_api#metaperson-creator-loaded) event is sent (again)
+ 
+### 1.14.1 (2024-06-06)
+
+**Release notes**:
+
+ * Changed the timing of when the [`metaperson_creator_loaded`](/js_api#metaperson-creator-loaded) event is sent
+ 
+### 1.14.0 (2024-04-11)
+
+**Release notes**:
+
+ * Added new outfits:
+    * jacket_Ergates
+    * pants_Ergates
+ * Added new haircuts:
+    * Haircut18
+    * Haircut17
+ * JS API changes:
+    * Added language specification to the [`set_ui_parameters`](/js_api#ui-parameters)
+    * Added [`model_screenshot`](/js_api#model-screenshot) event
+    * Added [`model_generated`](/js_api#model-generated) event
+    * Added [`authentication_status`](/js_api#authentication-status) event
+    * `unity_loaded` event replaced by the `metaperson_creator_loaded`
+ * Added new female poses
+ 
+### 1.13.0 (2024-03-14)
+
+**Release notes**:
+
+ * Added new outfits:
+    * t-shirt_Vardenis
+    * jacket_Oroklini
+    * top_Urasar
+ * Added new haircuts:
+    * Haircut16
+    * Haircut15
+ * JS API changes:
+   * Added `outfitsBlackList` to the [`set_ui_parameters`](/js_api#ui-parameters) message
+   * Added `age` parameter to the [`generate_avatar`](/js_api#generate-avatar) message
+   * Added `metaPersonCreator.isLoaded` property
+ * T-shirt texture generation from two photos
+ 
+### 1.12.0 (2024-02-12)
+
+**Release notes**:
+
+ * Added new haircuts:
+    * Haircut14
+ * Allowed to add logo for some outfits
+ 
+### 1.11.2 (2024-01-08)
+
+**Release notes**:
+
+ * JS API changes:
+   * Added the [`generate_avatar`](/js_api#generate-avatar) message
+ * Fixed an issue: unable to select a file in VR browser
+ 
+### 1.11.1 (2023-12-21)
+
+**Release notes**:
+
+ * Updated previews for pants_Arteni and sneakers_ARPI
+ * Bugfixes
+ 
+### 1.11.0 (2023-12-12)
+
+**Release notes**:
+ 
+ * Added new outfits:
+   * Akna
+   * jacket_Arteni
+   * jacket_Tavush
+ * Added a button to make screenshots
+ * Added animations
+ 
+### 1.10.0 (2023-11-02)
+
+**Release notes**:
+
+ * Use *visemes_15* instead of *visemes_14* blendshapes sets
+ * JS API changes:
+   * Added the [`show_avatar`](/js_api#show-avatar) message
+   * Added `isLoginButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message
+
+---
+
+## Release Notes
+
+
+You can find the latest versions of the MetaPerson Creator available for integration at the following links:
+
+**Desktop**: https://metaperson.avatarsdk.com/iframe.html
+
+**Mobile**: https://mobile.metaperson.avatarsdk.com/generator
+
+If you are looking for a specific version and prefer not to receive automatic updates, you can check the release notes and use the link you need:
+
+ * [Desktop Version Release Notes](desktop)
+ * [Mobile Version Release Notes](mobile)
+
+---
+
+## Mobile Version
+
+
+### v5 (2024-12-21)
+
+https://v5.mobile.metaperson.avatarsdk.com/generator
+
+**Release notes**:
+
+* Added authentication_status event
+* Fixed issue with QR for input selfie on Desktop
+* Added new outfits:
+    * Urasar
+    * leggings_Khustup
+    * saree_Aramazd
+    * skirt_Lessing
+    * top_Khustup
+    * top_Lessing
+    * Parz
+    * dhoti_Tandzut
+    * kurta_Tandzut
+    * sandals_Parz
+    * shoes_Tandzut
+    * Ghutra
+    * Kandura_Artanish
+    * Kandura_Lalvar
+
+### v4.5 (2024-08-21)
+
+https://v4-5.mobile.metaperson.avatarsdk.com/generator
+
+**Release notes**:
+
+* Allowed to add logo for some outfits
+* T-shirt texture generation from two photos
+
+### v4 (2024-06-25)
+
+https://v4.mobile.metaperson.avatarsdk.com
+
+**Release notes**:
+
+* Added new haircuts: 
+    * Haircut19
+    * Haircut20
+* Added new outfits:
+    * jacket_Ergates
+    * pants_Ergates
+* JS API changes:
+    * Added `skipViewerControls` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+    * Added parameter to initialize [age for the avatars](/js_api#generate-avatar)
+* Added height slider for body section
+* Added new poses for male and female avatars
+
+---
+
+## Animation Retargeting
+
+
+MetaPerson was originally designed using a Mixamo-compatible skeleton so that Mixamo animations can be easily used with avatars. At the same time, UE5 provides [tools](https://docs.unrealengine.com/5.0/en-US/ik-rig-animation-retargeting-in-unreal-engine/) that can be used to retarget an animation from an Epic skeleton to any other. We will not repeat the official documentation here but will focus on the assets provided with the demo project that can help retarget animations.
+
+As mentioned in the documentation, retargeting with IK Rig is achieved by specifying a source and target Skeletal Mesh, which are defined by an IK Rig Asset for each of those meshes. So to retarget animations one needs: Source IKRig for Epic skeleton, Target IKRig for MetaPerson, IK Retargeter asset. Demo project contains all of the mentioned assets: */Game/MannequinToMetaperson2/IK_Retargeting/IK_Manny*, */AvatarSDKMetaperson2/Skeleton/Metaperson2_IK_Rig*, */Game/MannequinToMetaperson2/IK_Retargeting/IK_Retargeter_Metaperson2*. 
+
+Both IK Rigs contain definitions for Retarget Chains:
+
+![Metapeson leg retarget chain](img/retargeting01.png)
+
+![Mannequin leg retarget chain](img/retargeting02.png)
+
+MetaPerson IK Rig contains IK goals for leg bones to reduce the unwanted artifacts where the leg meets the floor surface:
+
+![MetaPerson IK goals](img/retargeting03.png)
+
+[More IK goals can be added](https://docs.unrealengine.com/5.0/en-US/ik-rig-in-unreal-engine/) to IK Rig depending on your project  requirements. 
+
+Retargeter Asset (*/Game/MannequinToMetaperson2/IK_Retargeting/IK_Retargeter_Metaperson2*), according to documentation, is an asset and editor that references both source and target rigs, providing you with functionality to customize the retargeting results. 
+
+Retarget chains are mapped in Retargeter Asset based on their names. We similarly named chains for source and target IK Rigs, so automapping works fine.
+
+![Auto mapped chains](img/retargeting03_1.png)
+
+For best results with animation retargeting, the pose of the target skeletal mesh should be aligned with the source mesh.
+
+![Aligned skeletal meshes](img/retargeting04.png)
+
+Playing a preview animation can help visualize the retargeting result.
+
+![Playing animation](img/retargeting05.png)
+
+Having Retargeter Asset, one can simply retarget existing animations or animation blueprints. Our demo is based on well-known [Epic's Third Person Template](https://docs.unrealengine.com/5.0/en-US/third-person-template-in-unreal-engine/), so we can retarget the animation blueprint provided with it.
+
+![Animation BP](img/retargeting06.png)
+
+Right-click on the asset opens a context menu where you can find the "Duplicate and Retarget Animation Blueprint" command.
+
+![Retarget menu](img/retargeting07.png)
+
+In the "Duplicate and Retarget Animation Blueprint" window you need to set the IK Retageter parameter:
+
+![Duplicate and Retarget Animation Blueprint](img/retargeting08.png)
+
+You also may find it useful to set the naming parameters and destination folder:
+
+![Duplicate and Retarget Animation Blueprint](img/retargeting09.png)
+
+Press the "Retarget" button and explore the results:
+
+![Animation Retarget Result](img/retargeting10.png)
+
+One more thing is required to achieve the best result: open the resulting blueprint and remove the "control rig" element from the animation graph.
+
+![Control Rig](img/retargeting13.png)
+
+Now you can save the results and use the retargeted blueprint as an animation class for the character.
+
+![Character](img/retargeting11.png)
+
+![Animation Class](img/retargeting12.png)
+
+Your animations were successfully retargeted:
+
+![Result](img/retargeting14.png)
+
+---
+
+## GitHub Sample
+
+
+The sample is based on Epic's Third Person [template](https://docs.unrealengine.com/5.0/en-US/third-person-template-in-unreal-engine/) and demonstrates how to integrate MetaPerson Creator into your project. Playing the level opens MetaPerson Creator in the HUD. After that, all of the avatar creation/customization features are available to the user. 
+
+![MetaPerson Creator](img/editor01.png)
+
+When the user finishes the avatar creation process, he can press the Export button. **If you’ve incorrectly added your credentials, or if your account doesn’t have a Pro plan or higher, the Export button may be inactive.**  
+
+![Exporting glb](img/export.png)
+
+When the export process is complete, the MetaPerson Creator will close and the download will begin. 
+
+![Downloading glb](img/downloading.png)
+
+The archive with the avatar will be saved to the local disk and unzipped. After that skeletal mesh of the avatar will be loaded from the glb file. Avatar will be placed in the level instead of the third-person character.
+
+![Avatar on the scene](img/downloaded.png)
+
+### Technical details
+
+For detailed information about the MetaPerson Creator integration, see the [relevant part](metaperson_creator_integration) of the documentation.
+
+### Animations
+
+We use UE5 [IK Rig Retargeting](https://docs.unrealengine.com/5.0/en-US/ik-rig-animation-retargeting-in-unreal-engine/) to retarget animations (and animation blueprints) from Mannequin to MetaPerson skeleton. 
+The animation retargeting process is described in the [corresponding chapter](animation_retargeting).
+
+## FAQ.
+
+### Which platforms are supported by the sample?
+
+Currently, the sample is Windows-only (as a development and target platform). We hope to expand the number of supported platforms in future releases.
+
+### Which version of UE is supported?
+
+Versions 5.3, 5.4 and 5.5 of the Unreal Engine are supported.
+
+### The "export" button is not accessible in the MetaPerson Creator. What should I do?
+
+Please, double-check that you entered the correct Client ID and Client Secret. Please check the [additional documentation](../../getting_started#developer-credentials) on the developer credentials.
+
+### I created MetaPerson avatar at https://metaperson.avatarsdk.com/. How to import the downloaded .fbx file to Unreal Engine?
+
+Please, see the corresponding [section](import_editor).
+
+## Support
+
+You can address any questions about the UE integration or the avatar generation, general feedback, ideas, or feature requests to  [support@avatarsdk.com](mailto:support@avatarsdk.com). 
+For commercial inquiries or licensing questions please use [business_support@itseez3d.com](mailto:business_support@itseez3d.com).
+
+---
+
+## Import in UE Editor
+
+
+The main goal of the UE MetaPerson plugin is to help developers create, customize and import MetaPerson avatars at runtime. At the same time, with a couple of clicks you can import to the Editor `.fbx` avatars you created with web version of the [MetaPerson Creator](https://metaperson.avatarsdk.com/). To import `.fbx`:
+
+1. Export the archive with avatar you downloaded from the MetaPerson Creator.
+2. Open the Plugin window:
+
+![WebBrowser plugin](img/ue_window_import.png)
+
+3. Click on the corresponding button:
+
+![Import Button](img/button_import.png)
+
+4. Provide path to the `.fbx` file
+
+![FBX file](img/fbx-file.png)
+
+After that the import process begins
+
+![FBX import](img/fbx-import-progress.png)
+
+5. To see your avatar in action, load and run the `/AvatarSDKMetaperson2/ThirdPerson/Maps/LoadAvatarMap`. You will see the imported avatar on the scene.
+
+![FBX import result](img/avatar_loaded.png)
+
+You can still seamleslly change the avatar skeletal mesh with new one imported from .glb file at runtime.
+
+All of the assets imported from `.fbx` are available at `/All/Game/MetapersonAvatars` folder.
+
+---
+
+## Working with MetaPerson Creator(Ue)
+
+
+Integrating MetaPerson Creator into your UE project is pretty straightforward and follows the same pattern as integrations on other platforms. We've prepared a sample project that can help you to get started. The project demonstrates how to display the MetaPerson Creator in your application, handle results, download, display on the scene, and animate the MetaPerson avatar. 
+
+Download the [sample project](https://github.com/avatarsdk/metaperson-ue-sample) from our [GitHub](https://github.com/avatarsdk) or use its [marketplace version](marketplace_plugin). To get started with the sample, read the relevant part of the [documentation](overview#running-the-sample) and watch the video tutorial on our official [YouTube channel](https://www.youtube.com/user/itSeez3D):
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/LslWA6CcWMs">
+</iframe>
+&nbsp;
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+```
+
+---
+
+## Unreal Engine Marketplace Plugin
+
+
+You can use our [free official Marketplace Plugin](https://www.fab.com/listings/89f2b560-b158-43fc-b191-bfd4b75d8121) to bring the functionality of MetaPerson avatars to your Unreal Engine project. It contains tools to implement the same functionality as in our Sample project. With this plugin, you can create recognizable and customizable avatars. You can also load an avatar at runtime and use it as a character in your project. Plugin contains two demo scenes: the first one with the help of the MetaPerson Creator shows how to create the MetaPerson avatar, and customize and export it to the "Third Person" scene. The second demonstrates how to load an avatar at runtime from a local drive to a "Third Person" scene. 
+
+## Importing avatar from Metaperson Creator
+
+With the plugin you can easily import into the level an fbx model created with [MetaPerson Creater](https://metaperson.avatarsdk.com/). See the corresponding [section](import_editor) of the documentation.
+
+## "Third Person" Map
+
+The *Third Person* Map is based on the original Epic's [template](https://docs.unrealengine.com/5.0/en-US/third-person-template-in-unreal-engine/). You may find it in the */AvatarSDKMetaperson2/ThirdPerson/Maps/* folder of the plugin. In this map, you can create and customize the avatar with the help of the [MetaPerson Creator](https://avatarsdk.com/metaperson-creator/). After that, you can export it to the scene. You will need an account on the Avatar SDK website to export MetaPerson avatars. If you don't have an account yet, you can create it [here](https://accounts.avatarsdk.com/). Then you can take a [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan. It gives you access to all of the needed features.
+
+To run the demo scene you will need developer credentials that can be found on your [developer page](https://accounts.avatarsdk.com/developer/). Developer credentials are a pair of values (Client ID and Client Secret). 
+
+![Client ID and Client Secret](img/credentials01.png)
+
+See the [additional documentation](../../getting_started#developer-credentials) on the developer credentials. 
+
+Go to the Edit->Project Settings->Plugins->Avatar SDK MetaPerson section in UE Editor and set these parameters in corresponding fields:
+
+![Credentials](img/credentials.png)
+
+Playing the level opens MetaPerson Creator in the HUD. After that, all of the avatar creation/customization features are available to the user. When the user finishes the avatar creation process, he can press the Export button. **If you’ve incorrectly added your credentials, or if your account doesn’t have a Pro plan or higher, the Export button may be inactive.**  
+
+![Exporting glb](img/export.png)
+
+When the export process is complete, the MetaPerson Creator will close and the download will begin. The archive with the avatar will be saved to the local disk and unzipped. After that skeletal mesh of the avatar will be loaded from the glb file. Avatar will be placed in the level instead of the third-person character.
+
+See more information about [animation retargeting](animation_retargeting) and  [MetaPerson Creator integration](metaperson_creator_integration).
+
+## "Load Avatar" Map
+
+*Load Avatar* Map has similar functionality to the *Third Person Map*, but instead of creating an avatar using MetaPerson Creator, you need to specify the path to an existing glb model. If the path you provided leads to the MetaPerson avatar, the avatar will be loaded and displayed on the scene instead of the default one. This functionality does not require you to provide credentials.
+
+![Load Avatar Map](img/avatar-load.png)
+
+## Technical details
+
+See this [page](metaperson_creator_integration) of the documentation for technical details.
+
+---
+
+## MetaPerson Creator integration
+
+
+MetaPerson Creator is a revolutionary 3D avatar builder that allows you to create your own lifelike avatar using just a selfie. Because the MetaPerson Creator supports iframe integration, connecting the MetaPerson Creator to an Unreal Engine project can be done using a standard web browser plugin.
+
+![WebBrowser plugin](img/webbrowser.png)
+
+We created a small class `UAvatarSDKWebBrowser` that inherits from `UWebBrowser` and handles interactions of UE projects with the MetaPerson Creator. We use JavaScript code to subscribe to events and forward them to UE.
+
+```javascript
+function onWindowMessage(evt) {
+    if (evt.type === 'message') {
+        if (evt.data?.source === 'metaperson_creator') {
+            let data = evt.data;
+            let evtName = data?.eventName;
+            if (evtName === 'unity_loaded') {
+                onUnityLoaded(evt, data);
+            } else if (evtName === 'model_exported') {
+                window.ue.avatarsdk_proxy.avatarexportcallback(event.data.url);
+            }
+        }
+    }
+}
+
+function onUnityLoaded(evt, data) {
+    let authenticationMessage = {
+        'eventName': 'authenticate',
+        'clientId': CLIENT_ID,
+        'clientSecret': CLIENT_SECRET,
+        'exportTemplateCode': '',
+    };
+    evt.source.postMessage(authenticationMessage, '*');
+    let exportParametersMessage = {
+        'eventName': 'set_export_parameters',
+        'format': 'glb',
+        'lod': 1,
+        'textureProfile': '2K.png'
+    };
+    evt.source.postMessage(exportParametersMessage, '*');
+
+}
+window.addEventListener('message', onWindowMessage);
+```
+
+We use the `UAvatarSDKBrowserCallbackProxy` class to handle the events from JavaScript and forward them to the `UAvatarSDKWebBrowser` class.
+
+See the [documentation](https://docs.metaperson.avatarsdk.com/web_integration.html) for website integration.
+In the demo project, you can see how it works by looking at the */Game/ThirdPerson/Blueprints/BP_HUD* blueprint.
+
+At first, we need to create the widget and add it to the viewport.
+
+![Create widget](img/createwidget.png)
+
+We need to subscribe to 2 events that are raised by `UAvatarSDKWebBrowser`. The first one is `OnBrowserError` which gets raised if something goes wrong, for example, if you forget to [provide your Client ID and Client Secret](overview#running-the-sample). The second one is `OnAvatarExported` and it is raised when you've finished editing your avatar and it is ready to be downloaded from the cloud. At this point, you can also set the `ReadParametersFromSettings` parameter to false, if you'd like to provide Client ID and Client Secret in the blueprint instead of taking it from the plugin settings.
+
+![Events of browser](img/browserevents.png)
+
+The handler for this event must have a string as a parameter to get the URL. This URL will be used to download the avatar to your local drive. The `UAvatarSDKComponent` class is responsible for downloading the avatar (`DownloadAvatar` method) and loading the skeletal mesh to the skeletal mesh component (`LoadAvatar` method). `UAvatarSDKComponent` is added to our sample character: `AMetaperson2Character` (*\Source\Metaperson2\Metaperson2Character.h*).
+
+![Actor component](img/actorcomponent01.png)
+
+This component has three important events that we need to subscribe to. Their names are self-explanatory:
+
+![Actor component events](img/actorcomponent02.png)
+
+`UAvatarSDKComponent`'s `DownloadAvatar` saves the avatar in the application directory. For example on Windows path to the avatar model can look like this: *C:\Users\USERNAME\AppData\Local\Avatar SDK Metaperson 2\avatars\b1b666a0-8a55-4d1a-acc3-540ae971c858\model.glb*, where *b1b666a0-8a55-4d1a-acc3-540ae971c858* is a unique ID of avatar. The `LoadAvatar` method creates a skeletal mesh from glb file, sets transform, materials, and plugs it into the Character's skeletal mesh component. We use the [glTFRuntime plugin](https://github.com/rdeioris/glTFRuntime) to load a mesh from glb at runtime.
+
+When the LoadAvatar method completes its work, the OnAvatarLoaded event is fired. Your avatar is ready.
+
+![Avatar is ready](img/avatarisready.png)
+
+---
+
+## Overview
+
+
+This project demonstrates how to create and use MetaPerson avatars with Epic animations. 
+
+## Running the sample
+
+You will need an account on the Avatar SDK website to export MetaPerson avatars. If you don't have an account yet, you can create it [here](https://accounts.avatarsdk.com/). After that, you can take a [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan. It gives you access to all of the needed features.
+
+To run the demo scene you will need developer credentials that can be found on your [developer page](https://accounts.avatarsdk.com/developer/). Developer credentials are a pair of values (Client ID and Client Secret).
+
+![Client ID and Client Secret](img/credentials01.png)
+
+See the [additional documentation](../../getting_started#developer-credentials) on the developer credentials. 
+
+Go to the Edit->Project Settings->Plugins->Avatar SDK MetaPerson section in UE Editor and set these parameters in corresponding fields:
+
+![Credentials](img/credentials.png)
+
+---
+
+## MetaPerson Eyes Animation Sample
+
+
+This sample demonstrates how to animate eye movements, such as looking up, down, left, and right.
+
+![Eyes Movements](img/eyes_movements.jpg "Eyes Movements")
+
+The source code of the sample is available on **GitHub**: [MetaPerson Eyes Animation Sample](https://github.com/avatarsdk/metaperson-loader-unity/blob/main/Documentation~/MetaPersonCreatorEyesAnimationSample.md)
+
+## How To Move Eyes
+
+To move the eyes, follow these steps:
+
+1. Set the corresponding blendshape values for the **AvatarHead** and **AvatarEyelashes** meshes.
+2. Rotate the **LeftEye** and **RightEye** bones.
+   - The rotation angle should be interpolated between zero and the maximum angle value.
+   - This angle depends on the blendshape weight.
+
+Blendshapes names and maximum angles values can be found below.
+
+### Look Up Extreme Position
+
+1. **AvatarHead** and **AvatarEyelashes** blendshapes:
+  * `eyeLookUpLeft` = MAX_BLEND_VALUE
+  * `eyeLookUpRight` = MAX_BLEND_VALUE
+  * `eyeLookDownLeft` = 0
+  * `eyeLookDownRight` = 0
+  
+2. Rotate **LeftEye** and **RightEye** along the local X axis by -23 degrees.
+
+### Look Down Extreme Position
+
+1\. **AvatarHead** and **AvatarEyelashes** blendshapes:
+  * `eyeLookUpLeft` = 0
+  * `eyeLookUpRight` = 0
+  * `eyeLookDownLeft` = MAX_BLEND_VALUE
+  * `eyeLookDownRight` = MAX_BLEND_VALUE
+  
+2\. Rotate **LeftEye** and **RightEye** along the local X axis by 23 degrees.
+
+### Look Left Extreme Position
+
+1\. **AvatarHead** and **AvatarEyelashes** blendshapes:
+  * `eyeLookOutLeft` = MAX_BLEND_VALUE
+  * `eyeLookOutRight` = 0
+  * `eyeLookInLeft` = 0
+  * `eyeLookInRight` = MAX_BLEND_VALUE
+  
+2\. Rotate **LeftEye** along the local Y axis by -45 degrees.
+
+3\. Rotate **RightEye** along the local Y axis by -25 degrees.
+
+### Look Right Extreme Position
+
+1\. **AvatarHead** and **AvatarEyelashes** blendshapes:
+  * eyeLookOutLeft = 0
+  * eyeLookOutRight = MAX_BLEND_VALUE
+  * eyeLookInLeft = MAX_BLEND_VALUE
+  * eyeLookInRight = 0
+  
+2\. Rotate **LeftEye** along the local Y axis by 25 degress.
+
+3\. Rotate **RightEye** along the local Y axis by 45 degress.
+
+---
+
+## Additional Unity samples
+
+
+This section offers more Unity samples of MetaPerson avatars, showcasing different use cases.
+
+ * [Movement SDK Integration](https://github.com/avatarsdk/metaperson-quest-movement-sdk-sample)
+ * [Multiplayer Photon Sample](https://github.com/avatarsdk/metaperson-unity-photon-sample)
+
+---
+
+## Movement SDK integration
+
+
+[Movement SDK integration sample is available in our GitHub repository](https://github.com/avatarsdk/metaperson-quest-movement-sdk-sample)
+
+---
+
+## Multiplayer Photon sample
+
+
+[Multiplayer photon sample is available in our GitHub repository](https://github.com/avatarsdk/metaperson-unity-photon-sample)
+
+---
+
+## MetaPerson Creator Unity Rendering Sample
+
+
+If you're integrating avatars into a Unity project and aiming for the rendering quality seen in the [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com) version, 
+check out the [MetaPerson Unity Rendering Sample](https://github.com/avatarsdk/metaperson-unity-rendering-sample) on GitHub. 
+This project includes several sample avatars and a viewer scene configured with the same rendering settings as the [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com) version.
+
+[MetaPerson Unity Rendering Sample](https://github.com/avatarsdk/metaperson-unity-rendering-sample)
+
+---
+
+## Integration into Android and iOS Unity applications
+
+
+There are two mobile samples that are the parts of the MetaPerson Loader package.
+
+1\. The first sample contains a WebView component to show MetaPerson Creator page and can be used out-of-the-box.
+
+[Mobile Integration Sample](https://github.com/avatarsdk/metaperson-loader-unity/blob/main/Documentation~/MetaPersonCreatorMobileIntegration.md)
+
+Watch the video tutorial for the first sample: &nbsp;
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/P5GNQENZSvk?si=UWAUNtoMc2hlYo6N">
+</iframe>
+
+&nbsp;
+
+2\. The second sample depends on the [Vuplex WebView](https://developer.vuplex.com/webview/overview) component and requires this package to be imported into the project.
+
+[Mobile Integration Sample with Vuplex](https://github.com/avatarsdk/metaperson-loader-unity/blob/main/Documentation~/MetaPersonCreatorMobileIntegrationViaVuplex.md)
+
+---
+
+## MetaPerson avatars in Unity
+
+
+MetaPerson avatars can be loaded into a unity scene in **GLB/GLTF** format by using our [MetaPerson Loader](metaperson_loader) package. 
+
+If you are looking for a way to embed MetaPerson Creator page into a unity scene, please see our samples for various platforms:
+
+ * [Windows and macOS](windows_and_macos)
+ * [Android and iOS](android_and_ios)
+ * [WebGL](webgl)
+ * [VR](vr)
+
+---
+
+## MetaPerson Creator Unity Project
+
+
+The [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com) version was developed in Unity.
+We offer a source project featuring a customized [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com), retaining all fundamental functionalities. So you can customize it to your needs and integrate it into your project.
+
+This plugin is currently available on the [Enterprise plan](https://avatarsdk.com/pricing-cloud/). To access the project's source code, contact us at support@avatarsdk.com.
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/A-2YfJ66mWE?si=EMn9qBItt14-U_yl">
+</iframe>
+
+## Getting Started
+
+1\. Extract an archive with the MetaPerson Creator project and open it in Unity.
+
+2\. You will be prompted to provide [credentials](../../getting_started#developer-credentials). Copy **Client ID** and **Client Secret** from your account and press the **Save credentials** button.
+
+![](./img/unity_authentication_window.JPG)
+
+3\. Open and run the `Assets/itseez3d/metaperson_creator/scenes/metaperson_creator_main.unity` scene.
+
+## Supported Platforms and Limitations
+
+The primary platform for MetaPerson Creator is **WebGL**. However, it can be run for other platforms with some limitations:
+ * The project works in the **Built-In** rendering pipeline.
+ * The **file selection** feature works only within the **Unity Editor** and in **WebGL** builds.
+ * The **screenshot-sharing** feature functions only within the **Unity Editor** and in **WebGL** builds.
+ * **UI** elements are optimized for **desktop** platforms. While they may function on other platforms, some adjustments may be required for optimal user experience.
+ * If you encounter low **FPS** on mobile platforms, consider adjusting **Post Processing** and **Quality** settings.
+
+## Export Parameters
+
+The model viewer scene `Assets/itseez3d/metaperson_creator/scenes/metaperson_creator_viewer.unity` allows you to customize a created avatar in various ways and export an optimized lightweight model with applied customizations for further use.
+
+To export an avatar:
+- In the viewer scene, locate and click the export button (at the top-right corner of the interface).
+- By default, the model is exported with the following settings:
+  - LOD1
+  - GLB format
+  - 1K JPG textures
+  - Packed into a ZIP archive
+
+If you need to change any of these parameters, follow these steps:
+- Open the `Assets/itseez3d/metaperson_creator/scenes/metaperson_creator_main.unity` scene.
+- Find the **model_exporter** object under **metaperson_creator_mgr**.
+- Make the necessary changes to the Inspector tab for this object.
+
+![](./img/model_exporter.JPG)
+
+---
+
+## MetaPerson Loader
+
+
+MetaPerson Loader package helps to load avatars in **GLB/GLTF** format in Unity at runtime, and configures their materials and humanoid animator.
+
+The package is available in the GitHub repository: https://github.com/avatarsdk/metaperson-loader-unity.
+
+---
+
+## Integration into VR Unity applications
+
+
+MetaPerson Creator can be integrated into VR applications for Meta Quest devices. See the sample in our GitHub repository:
+
+[VR Integration Sample](https://github.com/avatarsdk/metaperson-vr-quest-sample)
+
+---
+
+## Integration into WebGL Unity applications
+
+
+There are two ways in which MetaPerson Creator can be integrated into a WebGL application.
+
+1\. Integration via an `<iframe>` element into an HTML page of the application. 
+
+[WebGL iframe Integration Sample](https://github.com/avatarsdk/metaperson-loader-unity/blob/main/Documentation~/MetaPersonCreatorWebGLIFrameIntegration.md)
+
+2\. Displaying MetaPerson Creator page inside a Unity scene via a WebView component.
+
+[WebGL WebView Integration Sample](https://github.com/avatarsdk/metaperson-loader-unity/blob/main/Documentation~/MetaPersonCreatorWebGLWebViewIntegration.md)
+
+---
+
+## Integration into Windows and macOS Unity applications
+
+
+A sample for integration MetaPerson Creator into a Unity application for desktop platforms is a part of the MetaPerson Loader package. It can be found in the GitHub repository:
+
+[MetaPerson Creator Desktop Integration Sample](https://github.com/avatarsdk/metaperson-loader-unity/blob/main/Documentation~/MetaPersonCreatorDesktopIntegration.md)
+
+You can see a video tutorial for this sample below:
+
+  <iframe width="560" height="315" allow="fullscreen" src="https://www.youtube.com/embed/UT143JebgoE">
+  </iframe>
+
+---
+
+## MetaPerson Loader For Babylon.js
+
+
+The package helps to load MetaPerson avatars in **GLB** format with the Babylon.js library.
+
+The package is available in the GitHub repository: https://github.com/avatarsdk/metaperson-loader-babylonjs.
+
+# Requirements
+
+- Babylon.js v7.0.0 or a more recent version
+- Supported platforms: Windows, Linux, MacOS, Android, iOS
+
+---
+
+## Web integration
+
+
+MetaPerson Creator can be integrated into your page via an HTML `<iframe>`. [JS API](js_api) messages are used to send events to and receive them from MetaPerson Creator.
+
+## Getting Started
+
+1\. Create an empty HTML page.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaPerson Creator Web Sample</title>
+     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+  </body>
+  
+  <script>
+  </script>
+
+</html>
+```
+
+2\. Add an `<iframe>` element to the `<body>` section. Specify `src` parameter depending on the [MetaPerson Creator version](js_api#metaperson-creator-versions) you are going to use.
+
+```html
+<body>
+  
+    <iframe id="editor_iframe" src="https://metaperson.avatarsdk.com/iframe.html" allow="fullscreen" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+  
+</body>
+```
+
+Note: if you need Lipsync support, you should give the iframe an access to microphone usage by specifying the `allow="microphone"` attribute.
+
+3\. Add the following JavaScript methods to the `<script>` section.
+
+```js
+document.addEventListener('DOMContentLoaded', function onDocumentReady() {
+  window.addEventListener("message", onWindowMessage);
+});
+
+function onWindowMessage(evt) {
+  if (evt.type === "message") {
+    if (evt.data?.source === "metaperson_creator"){
+      let data = evt.data;
+      let evtName = data?.eventName;
+      switch (evtName) {
+      }
+    }
+  }
+}
+```
+
+Firstly, this code subscribes to the `DOMContentLoaded` event. When the document is loaded, it subscribes to the `message` events. `onWindowMessage` method handles all received messages and finds those that are from the MetaPerson Creator.
+Messages from MetaPerson Creator have `evt.data.source` parameter that is set to `"metaperson_creator"`.
+
+4\. Add a handle for the `metaperson_creator_loaded` event. Replace `CLIENT_ID` and `CLIENT_SECRET` with [credentials from your account](getting_started#developer-credentials).
+
+```js
+switch (evtName) {
+  case "metaperson_creator_loaded":
+    let authenticationMessage = {
+      "eventName": "authenticate",
+      "clientId": CLIENT_ID,
+      "clientSecret": CLIENT_SECRET
+    };
+    evt.source.postMessage(authenticationMessage, "*");
+  break;
+}
+```
+
+MetaPerson Creator sends the `metaperson_creator_loaded` event when it is loaded and ready to use. After that, you need to authenticate your account in MetaPerson Creator by sending the `authenticate` message with your credentials.
+
+It's important to ensure that you've correctly added your developer credentials to MetaPerson Creator to ensure that you have access to all of the creator's features, including the Export button. If you've incorrectly added your credentials, or if your account doesn't have a Pro plan or higher, the Export button may be inactive.
+
+Here you can also send additional messages with configuration settings such as export and UI parameters and add handlers to other events from MetaPerson Creator.
+
+See [JS API](js_api) documentation to get more information about various parameters and events.
+
+## Sample Page
+
+A more comprehensive web sample that covers most [JS API](js_api) methods is available at this link below. You can look at the source of this page to get more implementation details.
+
+https://metaperson.avatarsdk.com/business.html
+
+Following this link, you need to enter your [credentials](getting_started#developer-credentials) and choose the version of Meta Person Creator (Desktop or Mobile) you are going to use.
+
+![](./img/web_sample_start_page.jpg)
+
+If you experience any issues or have questions, please don't hesitate to contact our [support team](mailto:support@avatarsdk.com) for assistance.
+
+---
+
+## MetaPerson Loader For Three.js
+
+
+The package helps to load MetaPerson avatars in **GLB** format with the Three.js library.
+
+The package is available in the GitHub repository: https://github.com/avatarsdk/metaperson-loader-threejs.
+
+# Requirements
+
+- Three.js r162 or a more recent version
+- Supported platforms: Windows, Linux, MacOS, Android, iOS
+
+---
+
+## FAQ
+
+
+### 1. Can I use it for mobile web pages or mobile applications?
+
+Sure, in this case, we recommend using MetaPerson Creator Mobile. It is lighter and supports mobile platforms better.
+
+### 2. Do you have any sample projects that integrate MetaPerson Creator?
+
+The sample projects for iOS, Android, Unity VR, and UE can be found here [https://github.com/avatarsdk](https://github.com/avatarsdk). We recommend checking this page on the website [https://avatarsdk.com/metaperson-creator/](https://avatarsdk.com/metaperson-creator/) and our [video tutorials](https://www.youtube.com/watch?v=Z2Ila9tb3aA&list=PLDdNlBHHu4Dl6zI8ZFNGfFigy9VJeT8on).
+
+### 3. What limitations do you have for integration MetaPerson Creator?
+
+When integrating MetaPerson Creator into your website using an iframe, it's important to consider the iframe's size and aspect ratio.
+
+If the iframe is too small, UI controls may overlap or become difficult to use. To avoid this, we recommend using a landscape-oriented iframe with an aspect ratio of 4:3 or 16:9 for the Desktop version and a portrait-oriented iframe for the Mobile one. This will give users enough space to interact with the creator without issues.
+
+It's also important to note that the specific size and aspect ratio of the iframe will depend on your website's layout and design. So, be sure to test the integration thoroughly to ensure that it works well with your website and provides a seamless user experience.
+
+---
+
+## What is MetaPerson Creator
+
+
+Introducing [MetaPerson Creator](https://metaperson.avatarsdk.com) – the revolutionary 3D avatar builder allowing you to create your own lifelike avatar using a selfie!
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/Z2Ila9tb3aA">
+</iframe>
+
+&nbsp;
+
+With MetaPerson Creator, you have complete control over every aspect of your avatar, from facial features to body type, outfits, and hairstyles.
+Our advanced technology uses the latest in facial recognition and 3D modeling to create an avatar that closely resembles you. You can customize your avatar by adjusting its facial features, like the shape of your nose, eyes, and mouth. Plus, you can experiment with different hairstyles and colors until you find the perfect look.
+
+The body settings feature allows you to adjust your avatar's body shape to make it even more personalized. Whether you want a more muscular build or a curvier figure, you can create an avatar that looks just like you or how you envision yourself.
+
+![](./img/facial_features.png)
+
+MetaPerson Creator is perfect for anyone who wants to create a unique 3D avatar for gaming, social media, or just for fun. It's easy to use and doesn't require any special skills or knowledge. So what are you waiting for? Try [MetaPerson Creator](https://metaperson.avatarsdk.com) today and bring your avatar to life!
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/oGjxQi5JrpU">
+</iframe>
+
+&nbsp;
+
+Currently, MetaPerson Creator includes two independent implementations. The first one, *MetaPerson Creator Desktop*, is based on Unity WebGL, and the second one, *MetaPerson Creator Mobile*, uses React.js and three.js for better support for mobile devices. If you open the MetaPerson Creator link [MetaPerson Creator](https://metaperson.avatarsdk.com) from your mobile device, it will redirect you to [https://mobile.metaperson.avatarsdk.com](https://mobile.metaperson.avatarsdk.com). You can use the latest link independently for your projects. The UI here is better suited for different scales, but the features set can differ between these versions. 
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/e9E7GFrG0A4">
+</iframe>
+
+---
+
+## Leap Realistic Facial Animation
+
+
+We are thrilled to announce the beta version of the Avatar SDK Leap. Leap is facial motion capture software that transforms a video of a person speaking on camera into a 3D animation of the person's avatar. By leveraging neural networks to predict the shape and texture of the avatar, Leap delivers an unprecedented level of visual quality that transcends the uncanny valley. Currently, users will need an iPhone with the Leap mobile app to record a video, but support for videos captured with standard cameras will be added shortly.
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/VY4kIyohjcc?si=PKIum24G0Hr9vnxx">
+</iframe>
+
+&nbsp;
+
+Leap has two essential components that combine to bring innovative animation technology to life. The first component is a mobile app that captures detailed and expressive facial animation. This app allows users to record and process facial movements efficiently. The second component includes game engine plugins that take this rich facial animation data and seamlessly convert it into an animation format suitable for the target platform. 
+
+## Leap iOS application for dataset capture
+
+The Leap iOS app captures user facial animation data. The quality of this data greatly affects the animation, so please pay close attention to the tips we provide:
+
+1. For the best results, position yourself so your face and upper shoulders are clearly visible
+2. Please keep your head at a slight angle - no more than 15 degrees is perfect
+3. Try to keep still. Steady hands mean sharper shots. Let's keep things smooth!
+4. Make sure your face is evenly lit. Balanced lighting helps capture all the details clearly!
+5. Please keep your forehead clear of any hair. This helps capture your face more accurately. 
+
+Click on the Start button and prepare yourself for capturing animation. 
+
+![](./img/leap_start.png)
+
+Click on the Record button to start capturing data.
+
+![](./img/leap_record.png)
+
+When you are ready, stop recording and export the archive with your data.
+
+![](./img/leap_export.png)
+
+We'll use this archive in the next step to make facial animations.
+
+## Leap UE plugin
+
+Avatar SDK Leap UE plugin simplifies the integration of revolutionary Leap Facial Capture technology with your Unreal Engine projects. After capturing your data with the Leap application for iPhone, export the collected data to your computer disk. Using this data, the Avatar SDK Leap UE plugin creates a realistic facial animation sequence for your 3D avatar in a few clicks. The plugin will create all the required assets in a few minutes, including skeletal mesh, textures, materials, and animations. 
+
+### Prerequisites
+
+- OS: Windows
+- Unreal Engine version: 5.3, 5.4 or 5.5
+- You will need an iPhone with Leap application installed to capture the facial animation data.
+
+### Minimal technical requirements
+
+- RAM: 16 GB 
+- GPU: GeForce RTX 3050
+- CPU: Intel i7 7th gen
+
+### Sample project
+The Leap plugin comes with a sample UE project to help you start with facial animation creation. Open the project by double-clicking on the LeapDemo. project file.
+
+![](./img/leap_dir.png)
+
+Another option - in the Unreal Engine Project browser, click on the Browse button in the Recent Projects partition and provide a path to the LeapDemo:
+
+![](./img/leap_launch.png)
+
+When you open the project, the Leap sample level will be loaded. You can explore the sample animation provided with the project at `/Content/AvatarSdkLeap/Victor`.
+
+![](./img/leap_victor.png)
+
+To import your animation, click the `Window->Avatar SDK Leap` menu to open the plugin window.
+
+![](./img/leap_menu.png)
+
+![](./img/leap_window1.png)
+
+Choose the name for your [level sequence](https://dev.epicgames.com/documentation/en-us/unreal-engine/sequences-shots-and-takes-in-unreal-engine#levelsequences), and choose a type of avatar to be generated. Click the `Use materials for Ray tracing` if you intend to use path tracing to render your level sequence. For your first try, we recommend leaving it in its default state.
+
+![](./img/leap_window2.png)
+
+Click on the `Import Leap Animation` button and provide a path with the archive you got after capturing data with your iPhone Leap application. After that, the MetaPerson window will open, and the avatar generation process will begin.
+
+![](./img/leap_generate.png)
+
+When the avatar is ready, you can customize it extensively. You can choose from various outfits, from casual to formal, ensuring your avatar matches your style perfectly. Additionally, explore numerous haircut styles to give your avatar a distinct look that reflects your personality. We plan to add almost all assets currently available in the MetaPerson Creator later, so stay tuned.
+
+![](./img/leap_customization.png)
+
+Once you are ready with customization, click on the export button. After you click, wait for the export process to finish. This process might take a little time.
+
+![](./img/leap_export_btn.png)
+
+Once the export process has been successfully completed, it will take a few more seconds to download the avatar animation file and import it to Unreal Engine.
+
+![](./img/leap_downloading.png)
+
+Now the Level Sequence asset with the animation is ready, and you may open it by clicking on the corresponding button. Click the `Open Directory` button to explore all the assets imported into your project.
+
+![](./img/leap_window3.png)
+
+The imported animation files may be found in the `/Content/AvatarSdkLeap` directory:
+
+![](./img/leap_dest.png)
+
+![](./img/leap_assets.png)
+
+The created level sequence contains tracks for the camera, texture, and body skeletal mesh. You can edit the created tracks and assets according to your requirements.
+
+![](./img/leap_seq1.png)
+
+A corresponding Level Sequence Actor will be placed on the current opened level. This Level Sequence Actor may be used to create cinematic content for games and traditional animation in Unreal Engine. The Actor is placed at the location that can be configured in the plugin settings `Edit->Project Settings->Avatar SDK Leap`:
+
+![](./img/leap_settings.png)
+
+### Rendering Video
+
+To render the image frame sequence from your Level Sequence, click on the corresponding button in the Sequencer:
+
+![](./img/leap_seq2.png)
+
+Choose among the predefined Rendering Settings, or create your own. We recommend to use the `RA_No_PT_Config_FAST` to get the fastest result:
+
+![](./img/leap_rendering.png)
+
+The config `RA_No_PT_Config_MID` should give better results and does not use path tracing.
+The config `RA_PT_Config` is made for path tracing rendering. These configurations represent a trade-off between quality and rendering time.
+Click on the `Render Local` button to start the rendering:
+
+![](./img/leap_render_start.png)
+
+By default, the Level Sequence will be rendered as a sequence of PNG images that can be found in the `\Saved\MovieRenders` subdirectory of the project directory. Use video editing software to create video from the set of images. A good option is to use FFmpeg. In such case, the command may look like this:
+
+```
+ffmpeg -r 60  -i "Saved\MovieRenders\LevelSequence_RealisticAnim_0.%04d.png" -c:v libx265 -crf 2 -vf format=yuv420p10le -tag:v hvc1  "I:\renders\video0.mp4" -y
+```
+
+## Leap Unity plugin
+
+With just a few clicks, the Avatar SDK Leap Unity plugin creates a realistic facial animation sequence for your 3D avatar. It requires you to copy captured data from the Leap application to your computer, where the plugin processes it.
+
+### Requirements
+
+* OS: Windows 10 64-bit
+* Unity 6.0 (6000.0.48f1) or above
+* Intel or AMD processor with AVX extension set (recommended i7-7700HQ or higher)
+* 6 GB of RAM available
+
+### Getting Started
+
+1. Download and extract the archive containing the Avatar SDK Leap Unity project.
+2. Open the project in Unity 2022.3.17f1 or later.
+3. Open the `Assets/AvatarSDK/Leap/Samples/1-GettingStartedSample.unity` scene.
+4. Press the Play button in the Unity Editor to run the scene.  
+5. Use the Select Archive button to choose the archive containing captured data from the iPhone Leap application.  
+There is an archive with the sample avatar in `Assets/StreamingAssets/itseez3d/avatar_sdk_leap/sample_avatar` directory. You can use it if you don't have the Leap application. 
+6. Select the avatar's gender and press the Generate to compute the 3D avatar model and its animation.  
+7. After computation, press the Play button to preview the animation.
+
+![](./img/leap_unity_sample.jpg)
+
+### Customization Sample
+
+This sample demonstrates how to customize a generated avatar by modifying its haircut and outfit using the [MetaPerson Creator](https://metaperson.avatarsdk.com/). 
+The MetaPerson Creator page is displayed within a web view component in the Unity scene. 
+The process involves generating a local avatar, selecting haircuts and outfits via MetaPerson Creator, and downloading the customized avatar back to display on the scene.
+
+#### Dependencies
+1. **Web View Component**
+
+To show the [MetaPerson Creator](https://metaperson.avatarsdk.com/) page in the Unity scene, a web view component is required. 
+This sample uses the [Vuplex Web View](https://store.vuplex.com/webview/windows-mac). [Contact us](mailto:support@itseez3d.com) for a 20% discount on this plugin.
+
+2. **File Browsing Support**
+
+To open a file selection dialog in a standalone Windows application, the sample uses the [Open File Dialog for Windows](https://assetstore.unity.com/packages/tools/utilities/open-file-dialog-for-windows-282619) plugin.
+If using this plugin, add the `USE_FILE_DIALOG` script compilation definition to your project.
+
+#### Steps To Run
+1. Open the `Assets/AvatarSDK/Leap/Samples/2-CustomizationSample.unity` scene.
+2. Press the Play button in the Unity Editor to run the scene.
+3. Select an archive containing captured data from the iPhone Leap application or generate a sample avatar.
+
+![](./img/leap_unity_archive_selection.JPG)
+
+4. While the animation is being processed, open the [MetaPerson Creator](https://metaperson.avatarsdk.com/) to customize the avatar.
+You can skip this step to use the default outfit and the "Generated" haircut.
+
+![](./img/leap_unity_customize_step.JPG)
+
+5. After completing the avatar customization, press the "Go ahead" button to download the updated model and display it in the scene.
+
+![](./img/leap_unity_export_step.JPG)
+
+6. Once the model is loaded, press the Play button to run the animation.
+
+![](./img/leap_unity_play_animation_step.JPG)
+
+### How It Works
+
+#### Compute Avatar and Animation
+
+The `LeapProcess` class handles avatar and animation computation. Call its `GenerateAvatar` method, passing the path to the archive with captured data and the avatar's gender. 
+Computations are asynchronous. Upon completion, retrieve the `AvatarCode` for the generated model.
+
+```js
+LeapProcess leapProcess = new LeapProcess();
+bool isGenerated = await leapProcess.GenerateAvatar("path_to_an_archive_with_captured_data", AvatarGender.Male);
+if (isGenerated)
+{
+  string avatarCode = leapProcess.AvatarCode;
+}
+else
+  Debug.LogError("Failed to generate avatar");
+```
+
+#### Play Animation
+
+To show the avatar and to play the animation, you should add the `Leap Animator` component to the scene and specify the [`Meta Person Loader`](https://github.com/avatarsdk/metaperson-loader-unity) component. 
+
+![](./img/leap_unity_animator_component.jpg)
+
+Load the model using the `LoadModel` method, passing the avatar code, and then call `PlayAnimation` to start playback.
+
+```js
+string avatarCode = leapProcess.AvatarCode;
+bool isLoaded = await leapAnimator.LoadModel(avatarCode);
+if (isLoaded)
+  leapAnimator.PlayAnimation();
+else
+  Debug.LogError("Failed to load avatar model");
+```
+
+#### Avatar Customization
+The [MetaPerson Creator](https://metaperson.avatarsdk.com/) is used to customize the avatar. 
+For detailed steps on integrating MetaPerson Creator into a Unity desktop application, refer to the [MetaPerson Creator Integration Guide](business-integration/unity/windows_and_macos).
+
+To generate an avatar, send a `generate_leap_avatar` event message to MetaPerson Creator using the [JS API](js_api). This message must include:
+* **Avatar gender**: Specify the desired gender.
+* **Base64-encoded ZIP archive**: A ZIP archive containing the following files:
+  * `photo.jpg`
+  * `data.bin`
+  * `faceGeometry1.obj`
+
+These files can be extracted from the archive created by the iPhone Leap application.
+
+Here’s an example message structure:
+
+```js
+let generateAvatarMessage = 
+{
+  'eventName': 'generate_leap_avatar',
+  'gender' : genderStr,
+  'zipArchiveBase64' : zipArchiveBase64Str
+};
+window.postMessage(generateAvatarMessage, '*');
+```
+
+Use the `LeapUtils.PrepareArchiveForCloudComputations` method to prepare an archive to send to MetaPerson Creator.
+
+```js
+byte[] archiveBytes = LeapUtils.PrepareArchiveForCloudComputations("local_leap_avatar_code");
+string base64Archive = Convert.ToBase64String(archiveBytes);
+```
+
+Once MetaPerson Creator receives the `generate_leap_avatar` message, it computes the avatar and allows you to customize it.
+
+Use the [Export Avatar JS API](js_api#export-avatar) message to export and download the customized avatar.
+
+The animation generated by the Avatar SDK Leap Unity plugin can then be applied to the customized avatar.
+
+### Leap Streaming Sample
+
+This sample demonstrates how to stream facial animation data in real time from the **Leap iOS app** to **Unity**.
+
+The iOS app sends facial capture frames to the Unity plugin via **WebSocket**. The plugin processes each frame, computes the avatar’s texture, applies blendshapes and pose of the head dynamically.
+
+![](./img/leap_streaming.jpg)
+
+#### Steps To Run
+1. Open the Unity scene: `Assets/AvatarSDK/Leap/Samples/5-LeapStreamingSample.unity`.
+2. Press **Play** in the Unity Editor to start the scene.
+3. Enter your computer’s **IP address** and a **port number** for the connection.
+4. Click the **Start** button in Unity.
+
+![](./img/leap_streaming_unity_settings.jpg)
+
+5. Open the **Leap iOS app** on your device.
+6. Navigate to **Settings**.
+7. Enter the same **IP address** and **port** as specified in Unity.
+8. Tap **Connect**, then close Settings.
+
+![](./img/leap_streaming_ios_settings.jpg)
+
+9. Point your device’s camera at your face and tap **Stream**.
+
+#### Important Notes
+- **Network Requirement**: Your mobile device and computer must be on the **same local network** to establish a connection.
+- The **first frame** captured is used to generate the avatar. For best results, maintain a **neutral facial expression** during this step.
+- The Unity plugin undergoes three stages before displaying the avatar: Computing, Exporting, Loading.
+- The entire process takes **approximately 1 minute**. Progress is displayed in the sample scene.
+- Once loaded, the avatar will animate in real time based on the streamed frames from the iOS app.
+
+### HDRP Sample
+
+An advanced sample project demonstrating high-quality Leap avatar rendering in Unity's High Definition Render Pipeline (HDRP) can be found in the github repository: https://github.com/avatarsdk/leap-unity-hdrp-sample
+
+![](./img/leap_hdrp_sample.jpg)
+
+## Leap Demo Application For Windows
+
+We provide a Leap Demo Application that allows you to quickly generate an avatar and explore how this technology works.
+The application is based on the [Unity Customization Sample](#customization-sample) but does not require a Unity installation.
+
+![](./img/leap_demo_app.JPG)
+
+1. Download and extract the archive containing the Avatar SDK Leap Demo application.
+2. Run the Avatar SDK Leap.exe executable.
+3. You can select an archive containing captured data from the iPhone Leap application or generate a sample avatar. 
+4. While the animation is being processed, press the Customize button to choose outfits and haircuts for the avatar. You can skip this step.
+5. After computation, press the Play button to preview the animation.
+
+## Support
+Please feel free to ask any questions about the Avatar SDK Leap at support@avatarsdk.com
+
+---
+
+## MetaPerson and Lipsync
+
+
+MetaPerson avatars are designed to seamlessly integrate with leading lipsync technologies, enabling realistic and expressive speech synchronization for your projects. Whether you're working in Unity, Unreal Engine, or another platform, MetaPerson provides the flexibility to enhance your avatars with high-quality lipsync capabilities. For detailed implementation, refer to the sections below.
+
+MetaPerson avatars support a comprehensive viseme set, 'visemes_15', which includes a total of 14 visemes and 1 additional blendshape for Laughter. This set is identical to the Oculus Lipsync visemes, making it straightforward to integrate with popular lipsync tools.
+
+Here is the complete list of supported visemes:
+
+- PP
+- FF
+- TH
+- DD
+- kk
+- CH
+- SS
+- nn
+- RR
+- aa
+- E
+- ih
+- oh
+- ou
+- Laughter (blendshape)
+
+For more details, refer to the official [Oculus Lipsync documentation](https://developers.meta.com/horizon/documentation/unity/audio-ovrlipsync-viseme-reference). 
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+```
+
+---
+
+## Oculus lipsync UE
+
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/twNPhC0qSO4?si=fFJH16Pa56cAjjJd">
+</iframe>
+
+&nbsp;
+
+Introducing MetaPerson - [Unreal Engine Oculus LipSync Sample](https://github.com/avatarsdk/metaperson-oculus-ue-sample): a powerful demonstration of MetaPerson avatars seamlessly integrated into Unreal Engine using the [Oculus Lipsync](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync-unreal/) plugin. Experience cutting-edge facial animation technology with UE 5.2 or newer. This sample showcases how to bring avatars to life with real-time lipsync, allowing you to create more immersive and interactive experiences. Perfect for developers looking to explore advanced avatar animation and lipsync capabilities in Unreal Engine.
+
+---
+
+## Oculus lipsync Unity
+
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/olVERGcLq6w?si=ogO_GIaifZfM9tmk">
+</iframe>
+
+&nbsp;
+
+[Oculus Lipsync](https://developers.meta.com/horizon/downloads/package/oculus-lipsync-unity/) offers top-notch lipsync that works with any language and integrates seamlessly with the MetaPerson avatar. Check out the [Unity demo project](https://github.com/avatarsdk/metaperson-oculus-unity-sample) on our GitHub.
+
+---
+
+## SALSA lipsync
+
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/50WuD6XE9Jk?si=dOXTUgQbBJeBCDrf">
+</iframe>
+
+&nbsp;
+
+Discover the potential of MetaPerson - [Unity SALSA LipSync Sample](https://github.com/avatarsdk/metaperson-salsa-sample), a comprehensive demonstration of integrating MetaPerson avatars into Unity using the [SALSA LipSync Suite](https://assetstore.unity.com/packages/tools/animation/salsa-lipsync-suite-148442) package. Designed for developers working with Unity 2021.3.19f1 or newer, this sample project showcases how to animate avatars with real-time lipsync, providing a robust foundation for creating more immersive and interactive experiences. 
+
+With easy setup through the OneClick Base package, you can quickly configure your avatars for seamless facial animations. Whether you're building games, virtual worlds, or interactive media, this project equips you with the tools to bring your digital characters to life. Dive in today and transform your Unity projects with advanced avatar animation capabilities! Watch the video tutorial on our official [YouTube channel](https://youtube.com/playlist?list=PLDdNlBHHu4Dl6zI8ZFNGfFigy9VJeT8on&feature=shared).
+
+---
+
+## LiveSpeak
+
+
+**Real‑time voice & lip‑sync layer for 3D avatars**  
+Turn any MetaPerson avatar into a responsive, speaking character inside your app.
+Supports text‑to‑speech (Azure, ElevenLabs), ChatGPT conversations, and raw audio lipsync.
+
+## Core Features
+
+- **MetaPerson avatar** – load a GLB model of the avatar created with [MetaPerson Creator](https://metaperson.avatarsdk.com/) and exported with Visemes.
+- **Text‑to‑speech engines** – supports Azure Speech and ElevenLabs.
+- **ChatGPT chatbot mode** – ask questions, get AI‑generated replies, spoken by the avatar with lipsync.
+- **Real‑time local lipsync** – feed raw audio samples (PCM, microphone, or stream) – phonemes are mapped to facial blendshapes directly in the browser.
+- **Iframe embeddable** – embed the tool into your app via `<iframe>`.
+- **JavaScript API** – manage LiveSpeak with JS API.
+
+## How It Works
+
+1. Specify a **URL** of the **avatar** (GLB with visemes) or use the default model.
+2. Provide a **text** (or let ChatGPT generate a response).  
+3. LiveSpeak sends the text to a **TTS service** and receives an audio stream.
+4. The avatar’s facial **blendshapes** are animated in real time to match the audio.  
+5. For voice‑only input (microphone or raw audio), the built‑in **local lipsync engine** analyzes the waveform and drives the avatar without external TTS.
+
+## Support
+
+Have a question? Contact us at support@avatarsdk.com.
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+```
+
+---
+
+## LiveSpeak Integration
+
+
+This page describes how to integrate **LiveSpeak** into a web page using an `<iframe>`. It explains iframe creation, subscribing to events from **LiveSpeak**, the events **LiveSpeak** emits, and commands the host can send to **LiveSpeak**.
+
+## 1. Creating the iframe
+
+**LiveSpeak** is embedded using an iframe. The iframe must allow scripts and audio playback.
+
+The `index.html` page accepts the following query parameters:
+
+| Parameter | Description |
+| --- | --- |
+| `mode` | Selects the playback/animation mode:`tts_azure1` — Azure TTS + visemes`tts_azure2` — Azure TTS + ArKit blendshapes`tts_azure3` — Azure TTS + local lipsync`tts_elevenlabs` — ElevenLabs TTS + local lipsync`raw_stream` — expects raw PCM data as an array to animate the model |
+| `lang` | Sets the voice language. Works the same as [`set_language`](#42-setting-language-set_language) command. |
+| `custom_model` | A flag-like parameter (no value needed) that tells the iframe to expect a custom model through the [`load_model`](#47-loading-a-custom-model-load_model) command and to hide the default sample model. |
+
+```js
+const iframe = document.createElement('iframe');
+iframe.id = 'livespeak-iframe';
+iframe.src = 'https://metaperson.avatarsdk.com/livespeak/index.html?mode=tts_azure1&lang=English';
+iframe.title = 'LiveSpeak';
+iframe.sandbox = 'allow-scripts allow-same-origin allow-forms';
+iframe.allow = 'autoplay;';
+iframe.style.width = '100%';
+iframe.style.height = '600px';
+
+document.getElementById('container').appendChild(iframe);
+```
+
+## 2. Subscribing to LiveSpeak events
+
+Communication between the host page and **LiveSpeak** happens via `window.postMessage`. Subscribe to messages on the parent window and filter by `event.data.source === 'livespeak'`.
+
+```js
+window.addEventListener('message', (event) => {
+  const data = event.data;
+  if (!data || data.source !== 'livespeak') return;
+
+  switch (data.eventName) {
+    case 'livespeak_loaded':
+      console.log("LiveSpeak is ready");
+      break;
+    case 'message_processing_error':
+      console.error("Error processing", data.failedEventName, data.reason);
+      break;
+    case 'avatar_state_changed':
+      console.log(data.avatarState);
+      break;
+  }
+});
+```
+
+## 3. LiveSpeak events
+
+This section documents the messages that **LiveSpeak** sends to the host page.
+
+### 3.1 `livespeak_loaded` event
+
+The `livespeak_loaded` event is sent when the **LiveSpeak** iframe has finished initialization and is ready to receive commands.
+
+> Best practice: wait for `livespeak_loaded` before sending [`authenticate`](#41-authenticating-authenticate).
+
+```js
+{
+  source: 'livespeak',
+  eventName: 'livespeak_loaded'
+}
+```
+
+### 3.2 `avatar_state_changed` event
+
+This event indicates the current state of the avatar. Typical payload:
+
+```js
+{
+  source: 'livespeak',
+  eventName: 'avatar_state_changed',
+  avatarState: 'Ready'
+}
+```
+
+| State | Description |
+| --- | --- |
+| **WaitingForAuthentication** | LiveSpeak is waiting for the host page to send the `authenticate` event. |
+| **Authenticating** | LiveSpeak is verifying the provided authentication credentials. |
+| **ModelAwaiting** | Waiting for a custom model via [`load_model`](#47-loading-a-custom-model-load_model) command. |
+| **ModelLoading** | Custom model is being loaded. |
+| **Initializing** | Avatar is starting up and preparing the LiveSpeak session. |
+| **Thinking** | Chatbot or internal logic is processing a prompt. |
+| **Speaking** | Avatar is currently playing TTS audio. |
+| **WaitingForTouch** | LiveSpeak is waiting for a user gesture to start audio playback. |
+| **Ready** | Avatar is idle and ready to receive commands. |
+> On iPhone, audio cannot always start automatically. In some cases, a user gesture such as a screen tap is required. If audio cannot be started automatically, the state changes to **WaitingForTouch**.
+
+### 3.3 `message_processing_error` event
+
+LiveSpeak sends this event when it receives a command that cannot be processed. This helps the host page diagnose issues with malformed commands, missing required parameters, or internal errors.
+
+```js
+{
+  source: 'livespeak',
+  eventName: 'message_processing_error',
+  failedEventName: 'load_model',
+  reason: 'Unable to load the model.'
+}
+```
+
+The payload contains:
+
+- **`failedEventName`** – The `eventName` of the command that caused the error.
+- **`reason`** – A human-readable string describing the error.
+
+> Always listen for `message_processing_error` to catch problems early.
+
+## 4. Commands for LiveSpeak
+
+The host page sends commands to **LiveSpeak** via `iframe.contentWindow.postMessage`. Below are the common commands.
+
+### 4.1 Authenticating (`authenticate`)
+
+Use this message to authenticate in LiveSpeak with your [developer credentials](https://accounts.avatarsdk.com/developer/).
+
+```js
+const authMsg = {
+  eventName: 'authenticate',
+  clientId: clientId,
+  clientSecret: clientSecret
+};
+iframe.contentWindow.postMessage(authMsg, '*');
+```
+
+Message parameters:
+
+* `eventName` - must be set to `authenticate`.
+* `clientId` - CLIENT_ID of your developer account.
+* `clientSecret` - CLIENT_SECRET of your developer account.
+* `accessToken` - for enhanced security, you can provide an `accessToken` instead of exposing `clientId` and `clientSecret` in client-side code.
+
+> You can authenticate using either `clientId/clientSecret` or `accessToken`.
+
+Below is an example of a cURL request to obtain an access token:
+
+```js
+CLIENT_ID="xFXeBr4shmgHUiymYwW7sDOO9BbwtL3eJkCE3OKu"
+CLIENT_SECRET="hpAYUxCLfKHEkIvRgXTZzGyMvgDj7Tdg4gBhu5nmXjtW0ODMj0HUCt3tmKMBtm94qzcNsVhK6xXj2PKEop7BxBi1W9XMvyx3p9tJVP6mGY19THuS6mNSnJiQI1vQ0QE6"
+
+curl -X POST "https://metaperson-api.avatarsdk.com/o/token/" \
+     --user "${CLIENT_ID}:${CLIENT_SECRET}" \
+     -F "grant_type=client_credentials"
+```
+
+Example response:
+
+```json
+{
+  "access_token": "PAvD64lbikgVA0GzxgKV2ZhLnPbZ8P",
+  "token_type": "Bearer",
+  "expires_in": 36000,
+  "scope": "read write"
+}
+```
+
+### 4.2 Setting language (`set_language`)
+
+Use [`set_language`](#42-setting-language-set_language) to define the language used for speech synthesis and chatbot responses.
+
+```js
+iframe.contentWindow.postMessage({
+  eventName: 'set_language',
+  language: 'en_m' // English Male
+}, '*');
+```
+
+**Available languages for Azure TTS:** `English (en_m, en_f)`, `Chinese (zh_m, zh_f)`, `Spanish (es_m, es_f)`, `French (fr_m, fr_f)`, `German (de_m, de_f)`, `Portuguese (pt_m, pt_f)`, `Italian (it_m, it_f)`, `Japanese (ja_m, ja_f)`, `Korean (ko_m, ko_f)`, `Arabic (ar_m, ar_f)`.
+
+**Available languages for ElevenLabs TTS:** `English Female (en_f)`, `English Male (en_m)`.
+
+### 4.3 Setting voice name (`set_voice_name`)
+
+Specify a concrete TTS voice using [`set_voice_name`](#43-setting-voice-name-set_voice_name). [Azure Speech — Language & Voices](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts)
+
+> Applies only to Azure TTS.
+
+```js
+iframe.contentWindow.postMessage({
+  eventName: 'set_voice_name',
+  voiceName: 'en-US-AriaNeural'
+}, '*');
+```
+
+### 4.4 Sending a prompt (`prompt`)
+
+Use [`prompt`](#44-sending-a-prompt-prompt) to send text to the chatbot backend. The avatar will automatically pronounce the chatbot’s response.
+
+```js
+iframe.contentWindow.postMessage({
+  eventName: 'prompt',
+  prompt: 'Tell me a fun fact about space.'
+}, '*');
+```
+
+### 4.5 Speaking exact text (`speak`)
+
+Use [`speak`](#45-speaking-exact-text-speak) when you want the avatar to pronounce exact text without chatbot processing.
+
+```js
+iframe.contentWindow.postMessage({
+  eventName: 'speak',
+  text: 'Welcome to our application.'
+}, '*');
+```
+
+### 4.6 Sending raw PCM audio (`pcm`)
+
+Stream raw audio data to LiveSpeak using the [`pcm`](#46-sending-raw-pcm-audio-pcm) command (single-channel PCM, **16000 Hz**).
+
+```js
+const payload = {
+  eventName: 'pcm',
+  buffer: chunk.buffer
+};
+iframe.contentWindow.postMessage(payload, '*', [chunk.buffer]);
+```
+
+> This command is intended for `mode: 'raw_stream'`, where LiveSpeak expects raw PCM data to animate the model.
+
+### 4.7 Loading a custom model (`load_model`)
+
+The [`load_model`](#47-loading-a-custom-model-load_model) command provides a URL pointing to a MetaPerson avatar in **GLB format**. This command is **only effective** when the iframe was created with the `custom_model` query parameter (flag). It should be sent immediately after receiving the `avatar_state_changed` event with `avatarState: "ModelAwaiting"`.
+
+```js
+// Recommended: wait for ModelAwaiting state before sending load_model
+window.addEventListener('message', (event) => {
+  const data = event.data;
+  if (!data || data.source !== 'livespeak') return;
+
+  if (data.eventName === 'avatar_state_changed' && data.avatarState === 'ModelAwaiting') {
+    const modelUrl = 'https://metaperson.avatarsdk.com/avatars/9b51b708-387c-440c-9f25-a310fef8c01e/model.glb';
+    iframe.contentWindow.postMessage({
+      eventName: 'load_model',
+      modelUrl: modelUrl
+    }, '*');
+  }
+});
+```
+
+> **📦 Exporting a compatible GLB model from MetaPerson Creator:**  
+> You can export a GLB model from [MetaPerson Creator](https://metaperson.avatarsdk.com/). In the export parameters, **make sure “Visemes blendshapes” are enabled** — these are required for accurate lip-sync and facial animation inside LiveSpeak.
+
+> If the provided URL is invalid, the model cannot be downloaded, or the GLB lacks required blendshapes, LiveSpeak will automatically fall back to the default built-in model.
+
+The structure of the `load_model` message:
+
+```js
+{
+  eventName: "load_model",
+  modelUrl: 'https://your-server.com/path/to/avatar.glb'
+}
+```
+
+The URL must be publicly accessible or served with appropriate CORS headers, as the iframe will fetch the binary GLB file directly.
+
+---
+
+## LiveSpeak Samples
+
+
+## Integration Sample
+
+[LiveSpeak integration sample](https://metaperson.avatarsdk.com/livespeak/livespeak_integration_sample.html)
+
+This sample shows how to integrate LiveSpeak into a web page via `<iframe>`, configure mode, language and optionally provide a custom avatar model.
+The avatar can speak provided text or a generated chatbot response based on the given prompt.
+
+## Microphone Sample
+
+[Microphone sample](https://metaperson.avatarsdk.com/livespeak/microphone_sample.html)
+
+This sample shows how to feed a raw microphone stream to LiveSpeak for animating the avatar.
+
+---
+
+## Cartoonish Avatars
+
+
+The **Cartoonish** option in MetaPerson Creator offers a playful, stylized alternative to realistic avatars — perfect for games, social VR, and other 3D experiences.
+Whether you want a lifelike digital twin or a fun, animated persona, you can now support both with just a click.
+
+![](./img/cartoonish_avatars.png)
+
+### Generating Cartoonish Avatars
+
+1. Go to [MetaPerson Creator](https://metaperson.avatarsdk.com) and design your avatar.
+2. Click the **Style** button.
+3. Select the **Cartoonish** option.
+
+![](./img/show_cartoonish_avatar.JPG)
+
+### Customization Options
+
+You can fine-tune your cartoonish avatar with these parameters to create a unique look:
+
+![](./img/custom_option.JPG)
+ 
+#### Cartoonish Shape
+
+Adjusts the face shape to give it a more exaggerated, cartoon-like appearance.
+
+![](./img/cartoonish_shape.gif)
+
+#### Cartoonish Eyes
+
+Makes the eyes larger, giving them a cartoon-style appearance.
+
+![](./img/cartoonish_eyes.gif)
+
+#### Cartoonish Texture
+
+Applies a smoothed, stylized texture to the head and body, adding a subtle reddish tint.
+
+*Note: This turns off the Smoothed Texture option.*
+
+![](./img/cartoonish_texture.gif)
+
+#### Smoothed Texture
+
+Softens the head and body textures for a more polished look.
+
+*Note: This turns off the Cartoonish Texture option.*
+
+![](./img/smoothed_texture.gif)
+
+---
+
+## Get a Pack of 2D Avatar Images
+
+
+You can download a set of 2D images featuring your avatar with different expressions and poses.
+
+**How to do it:**
+
+1. Open your avatar in [MetaPerson Creator](https://metaperson.avatarsdk.com).
+
+2. Click the **Screenshot** button in the right panel.
+
+![](./img/previews_button.jpg)
+
+3. Download the generated archive containing the images.
+
+![](./img/emotions_previews_1.png)
+
+![](./img/emotions_previews_2.png)
+
+![](./img/emotions_previews_3.png)
+
+![](./img/poses_previews_1.png)
+
+![](./img/poses_previews_2.png)
+
+![](./img/poses_previews_3.png)
+
+---
+
+## Roblox Avatars
+
+
+MetaPerson Creator lets you create and export **Roblox‑compatible** avatars that can be imported into **Roblox Studio** and used in your experiences.
+
+<iframe width="560" height="315" allow="fullscreen"
+src="https://www.youtube.com/embed/a_UD4AuVXYU">
+</iframe>
+
+&nbsp;
+
+### Getting started
+
+Follow these steps to generate and import a Roblox avatar:
+
+1. Choose an image, enable the **Roblox‑ready** option, and **Generate** the avatar.
+
+![](./img/roblox_create.jpg)
+
+2. **Export** the avatar. The FBX model download will start after export completes.
+
+![](./img/roblox_export.jpg)
+
+3. Open **Roblox Studio** and **import** the downloaded FBX file.
+
+![](./img/roblox_import_into_studio.png)
+
+![](./img/roblox_import_into_studio_2.jpg)
+
+4. In the **Avatar Setup** window, customize the model and press **Test in Experience** button.
+
+![](./img/roblox_customize.jpg)
+
+5. (Optional) Copy configured assets such as clothing and hair.
+
+![](./img/roblox_copy_assets.jpg)
+
+6. Stop the experience and **paste** the copied assets onto the imported model.
+
+![](./img/roblox_paste_assets.jpg)
+
+7. To use the model as the player's character, rename it to **StarterCharacter** and place it under the **StarterPlayer** in the Explorer.
+
+![](./img/roblox_starter_character.jpg)
+
+### Support
+
+If you have issues or questions, contact the MetaPerson Creator support team at support@avatarsdk.com.
+
+---
+
+## REST API
+
+
+MetaPerson Creator provides ready-to-use customer-facing solutions with low-code integration into your application. However, there might be conditions where you have to go with a completely different approach. For example, you have strict requirements on the application UI or a platform that is not yet supported. In this case, you must use the REST API for MetaPerson avatars. With the REST API, you can do anything MetaPerson Creator does with your exact requirements and even more. However, it may require more effort in the development.
+
+Currently, MetaPerson Creator utilizes the MetaPerson avatars pipeline. See the relevant REST API documentation section&nbsp;[here](https://api.avatarsdk.com/#metaperson-2-0). It provides:
+
+- `generated` and `metaperson` haircuts set: https://api.avatarsdk.com/#haircuts
+- complete `metaperson` and split to top/bottom/shoes outfit sets: https://api.avatarsdk.com/#id5
+- `metaperson` set of glasses: https://api.avatarsdk.com/#id8
+- facial expressions and facial/body modification sets of blendshapes: https://api.avatarsdk.com/#blendshapes
+- various export parameters to retrieve the fine-tuned final avatar model: https://api.avatarsdk.com/#id34
+- a set of PBR textures available for export as static resources (for a client-side avatar model load time optimization): https://api.avatarsdk.com/#id38
+
+You can find a step-by-step tutorial on creating a MetaPerson avatar from a photo and download the avatar’s mesh, haircut, and outfit in glb format using the curl command-line utility on the following&nbsp;[page](https://api.avatarsdk.com/samples/curl_metaperson_20/).
+
+Please note that REST API for MetaPerson avatars is available only on the&nbsp;[Enterprise plan](https://avatarsdk.com/pricing-cloud/). Contact us at&nbsp;[support@avatarsdk.com](mailto:support@avatarsdk.com) if you have any questions.
