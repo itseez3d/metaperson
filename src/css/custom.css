@@ -55,3 +55,8 @@
   color: orange; 
   font-weight: bold; 
 }
+
+.menu__link[href="/livespeak/"] {
+  color: green;
+  font-weight: bold;
+}

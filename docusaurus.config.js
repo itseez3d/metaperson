@@ -170,9 +170,9 @@ const config = {
             label: 'MetaPerson Creator',
           },
 		  {
-            to: 'https://avatarsdk.com/leap/',
+            to: '/livespeak/',
             position: 'left',
-            label: 'Avatar SDK Leap',
+            label: 'LiveSpeak',
 			      style: {color: 'green', fontWeight: 'bold'},
           },
 		  {
