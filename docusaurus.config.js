@@ -23,6 +23,51 @@ const config = {
   organizationName: 'itseez3d', // Usually your GitHub org/user name.
   projectName: 'metaperson', // Usually your repo name.
 
+  // Structured data (JSON-LD) for SEO + AI/GEO comprehension.
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: { type: 'application/ld+json' },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'Organization',
+            '@id': 'https://avatarsdk.com/#organization',
+            name: 'Avatar SDK',
+            url: 'https://avatarsdk.com/',
+            logo: 'https://docs.metaperson.avatarsdk.com/img/logo-normal@2x.png',
+            sameAs: [
+              'https://twitter.com/avatarsdk',
+              'https://www.facebook.com/avatarsdk/',
+              'https://www.youtube.com/itseez3d',
+            ],
+          },
+          {
+            '@type': 'WebSite',
+            '@id': 'https://docs.metaperson.avatarsdk.com/#website',
+            url: 'https://docs.metaperson.avatarsdk.com/',
+            name: 'MetaPerson documentation',
+            description:
+              'Documentation for MetaPerson Creator — AI-driven 3D avatar creation from a single selfie.',
+            publisher: { '@id': 'https://avatarsdk.com/#organization' },
+            inLanguage: 'en',
+          },
+          {
+            '@type': 'SoftwareApplication',
+            name: 'MetaPerson Creator',
+            applicationCategory: 'DeveloperApplication',
+            operatingSystem: 'Web, iOS, Android, Windows, macOS',
+            description:
+              'Create realistic or cartoon 3D avatars from a selfie. Cloud API, SDK and plugins for Unity, Unreal Engine, iOS, Android and Web.',
+            url: 'https://metaperson.avatarsdk.com/',
+            publisher: { '@id': 'https://avatarsdk.com/#organization' },
+          },
+        ],
+      }),
+    },
+  ],
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -33,6 +78,25 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  // GEO: generate /llms.txt (index) and /llms-full.txt (full docs) for AI agents.
+  plugins: [
+    [
+      'docusaurus-plugin-llms',
+      {
+        title: 'MetaPerson documentation',
+        description:
+          'Documentation for MetaPerson Creator and Avatar SDK — AI-driven 3D avatar creation from a single selfie. Cloud API, SDK and plugins for Unity, Unreal Engine, iOS, Android and Web.',
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        // Also emit a raw .md at every linked path so the llms.txt links resolve
+        // to clean markdown (the plugin builds link paths from files, not slugs).
+        generateMarkdownFiles: true,
+        removeDuplicateHeadings: true,
+        includeBlog: false,
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -60,8 +124,6 @@ const config = {
 		{property: 'og:site_name', 	  content: 'What is MetaPerson Creator | MetaPerson documentation'},
 		{property: 'og:description', 	  content: 'Bringing Realism to the Metaverse: The Avatar SDK&#39;s AI-Driven 3D Avatar Creation'},
 		{property: 'og:url', 	  content: 'https://docs.metaperson.avatarsdk.com/'},
-        {property: 'description', content: 'Bringing Realism to the Metaverse: The Avatar SDK\'s AI-Driven 3D Avatar Creation'},
-        {property: 'og:type', 	  content: 'article'},
 		{property: 'article:tag', content: 'metaverse'},
 		{property: 'article:tag', content: '3D avatar creation'},
 		{property: 'article:tag', content: 'realistic avatar'},
@@ -77,7 +139,7 @@ const config = {
 		{property: 'article:published_time', content: '2024-04-02T10:12:10+00:00'},		
 		{property: 'article:modified_time', content: '2024-04-03T10:09:50+00:00'},
 		{property: 'article:publisher', content: 'https://www.facebook.com/avatarsdk/'},	
-		{name: 'twitter:card', content: 'summary'},
+		{name: 'twitter:card', content: 'summary_large_image'},
 		{name: 'twitter:site', content: '@avatarsdk'},		
 		{name: 'twitter:domain', content: 'avatarsdk.com'},
 		{name: 'twitter:title', content: 'Realistic Avatars for the Metaverse World'},
