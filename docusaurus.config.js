@@ -123,33 +123,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-	  metadata: [	    
-		{property: 'og:type', 	  content: 'article'},
-		{property: 'og:title', 	  content: 'Realistic Avatars for the Metaverse World'},
-		{property: 'og:site_name', 	  content: 'What is MetaPerson Creator | MetaPerson documentation'},
-		{property: 'og:description', 	  content: 'Bringing Realism to the Metaverse: The Avatar SDK&#39;s AI-Driven 3D Avatar Creation'},
-		{property: 'og:url', 	  content: 'https://docs.metaperson.avatarsdk.com/'},
-		{property: 'article:tag', content: 'metaverse'},
-		{property: 'article:tag', content: '3D avatar creation'},
-		{property: 'article:tag', content: 'realistic avatar'},
-		{property: 'article:tag', content: 'selfie-based'},		
-		{property: 'article:tag', content: 'virtual representation'},
-		{property: 'article:tag', content: 'lifelike avatars'},
-		{property: 'article:tag', content: 'create avatar from photo'},		
-		{property: 'article:tag', content: 'realistic full body avatar creator'},
-		{property: 'article:tag', content: 'avatar app'},
-		{property: 'article:tag', content: 'custom avatar'},		
-		{property: 'article:tag', content: 'vrchat avatar creator'},
-		{property: 'article:tag', content: 'vrchat model maker'},		
-		{property: 'article:published_time', content: '2024-04-02T10:12:10+00:00'},		
-		{property: 'article:modified_time', content: '2024-04-03T10:09:50+00:00'},
-		{property: 'article:publisher', content: 'https://www.facebook.com/avatarsdk/'},	
+	  // Global meta only. Per-page og:title/og:description come from each doc's
+	  // frontmatter — no global overrides, no stale article:* tags, no global
+	  // og:url (it was stamping the homepage URL onto every page).
+	  metadata: [
+		{property: 'og:type', content: 'website'},
+		{property: 'og:site_name', content: 'MetaPerson documentation'},
 		{name: 'twitter:card', content: 'summary_large_image'},
-		{name: 'twitter:site', content: '@avatarsdk'},		
+		{name: 'twitter:site', content: '@avatarsdk'},
 		{name: 'twitter:domain', content: 'avatarsdk.com'},
-		{name: 'twitter:title', content: 'Realistic Avatars for the Metaverse World'},
-		{name: 'twitter:description', content: 'Bringing Realism to the Metaverse: The Avatar SDK&#39;s AI-Driven 3D Avatar Creation'},		
-		{name: 'twitter:creator', content: '@avatarsdk'},  
+		{name: 'twitter:creator', content: '@avatarsdk'},
       ],
       // Replace with your project's social card 
       image: 'img/metaperson-social-card.png',
