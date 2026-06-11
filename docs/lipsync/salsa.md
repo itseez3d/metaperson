@@ -1,4 +1,4 @@
-# SALSA lipsync
+# SALSA Lipsync in Unity with MetaPerson Avatars
 
 > Add real-time lip-sync to MetaPerson avatars with SALSA LipSync for Unity — drive natural mouth movement from audio, with a video walkthrough.
 

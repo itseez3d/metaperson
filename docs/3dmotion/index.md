@@ -1,4 +1,4 @@
-# MetaPerson 3D Motion
+# Animate 3D Avatars: Mixamo, DeepMotion & More
 
 > Animate your MetaPerson 3D avatars with modern motion tools — DeepMotion Animate 3D, SayMotion, Mixamo and more make character animation fast and accessible.
 

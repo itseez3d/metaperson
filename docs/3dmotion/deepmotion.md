@@ -1,4 +1,4 @@
-# DeepMotion
+# DeepMotion + MetaPerson: AI Animation for 3D Avatars
 
 > Animate MetaPerson avatars with DeepMotion's Animate 3D and SayMotion — a suite of AI tools for creating detailed skeletal animations from video or text.
 

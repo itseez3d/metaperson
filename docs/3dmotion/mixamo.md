@@ -1,4 +1,4 @@
-# Mixamo animations
+# Using Mixamo Animations with MetaPerson 3D Avatars
 
 > Apply free Mixamo animations to your MetaPerson 3D avatars — MetaPerson uses a Mixamo-compatible skeleton, so rigging and animating works out of the box.
 

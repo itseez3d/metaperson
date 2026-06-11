@@ -1,4 +1,4 @@
-# Oculus lipsync UE
+# Oculus Lipsync in Unreal Engine with MetaPerson Avatars
 
 > Add realistic lip-sync to MetaPerson avatars in Unreal Engine using Oculus Lipsync — a step-by-step integration guide with a video walkthrough.
 

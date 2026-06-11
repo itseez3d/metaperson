@@ -1,4 +1,4 @@
-# MetaPerson and Lipsync
+# 3D Avatar Lipsync: Oculus, SALSA & LiveSpeak
 
 > MetaPerson avatars integrate with leading lipsync technologies — Oculus Lipsync, SALSA and more — for realistic, expressive speech animation in Unity and UE.
 
