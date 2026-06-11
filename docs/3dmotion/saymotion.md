@@ -1,4 +1,5 @@
 ---
+title: "DeepMotion SayMotion with MetaPerson — Text to 3D Animation"
 sidebar_label: 'DeepMotion SayMotion'
 description: "Use DeepMotion SayMotion to generate 3D animations for MetaPerson avatars from text or video — turn regular footage into immersive, lifelike character motion."
 ---

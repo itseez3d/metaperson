@@ -1,4 +1,5 @@
 ---
+title: "Using Mixamo Animations with MetaPerson 3D Avatars"
 slug: /mixamo
 sidebar_label: 'Mixamo animations'
 description: "Apply free Mixamo animations to your MetaPerson 3D avatars — MetaPerson uses a Mixamo-compatible skeleton, so rigging and animating works out of the box."

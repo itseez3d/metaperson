@@ -1,4 +1,5 @@
 ---
+title: "Oculus Lipsync in Unity with MetaPerson Avatars"
 sidebar_label: 'Oculus Lipsync Unity'
 description: "Add realistic lip-sync to MetaPerson avatars in Unity using Oculus Lipsync — a step-by-step integration guide with a video walkthrough for your project."
 slug: /oculus_unity
