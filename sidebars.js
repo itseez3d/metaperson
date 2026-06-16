@@ -25,8 +25,9 @@ const sidebars = {
 		label: 'LiveSpeak',
 		link: {type: 'doc', id: 'livespeak/index'},
 		items:[
-			'livespeak/integration',
+			'livespeak/account',
 			'livespeak/samples',
+			'livespeak/integration',
 		]
 	},
 	{

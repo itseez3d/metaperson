@@ -1,26 +1,30 @@
 ---
-sidebar_label: 'Getting started'
+sidebar_label: 'Getting Started'
 sidebar_position: 1
 description: "Get started with MetaPerson Creator: create an account, integrate the avatar builder into your app, and let users generate 3D avatars from a single selfie."
 slug: /getting_started
 ---
-# Getting started
+# Getting Started
 
 ## Account
 
-To start using MetaPerson Creator, simply create an account on [our website](https://accounts.avatarsdk.com).
-By doing so, you'll gain access to our [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan, which offers all our advanced features and the ability to create and customize MetaPerson avatars.
+To start using **MetaPerson Creator**, simply create an account on [our website](https://accounts.avatarsdk.com).
+By doing so, you'll gain access to the [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan, which offers all our advanced features and the ability to create and customize MetaPerson avatars.
 
-## Developer credentials
+## Developer Credentials
 
-Before you can authorize MetaPerson Creator to integrate into your website or application, you need to generate developer credentials in your profile. This is a simple process; you can do it by visiting the developer credentials page on [our website](https://accounts.avatarsdk.com/developer/#web-api).
+Before you can integrate **MetaPerson Creator** into your website or application, you need to generate developer credentials in your profile. This is a simple process — just visit the [developer credentials page](https://accounts.avatarsdk.com/developer/#web-api).
 
-Once you're on the developer page, you'll need to create a new application to get your "App Client ID" and "App Client Secret" values. These values are required for integrating MetaPerson Creator into your website or application. For this purpose, you need to enter any name in the "Application name" field and press the "SUBMIT" button.
+On the developer page, you'll need to create a new application to obtain your **App Client ID** and **App Client Secret** values. To do this, enter a name in the **Application name** field and click the **SUBMIT** button.
 
 ![](./img/application.png)
 
-After the application is created, it will show your "App Client ID" and "App Client Secret" values.
+Once the application is created, your **App Client ID** and **App Client Secret** values will be displayed.
 
 ![](./img/credentials.png)
 
-With your developer credentials, you can integrate MetaPerson Creator into your website or application and create custom avatars for your users. Our [support team](mailto:support@avatarsdk.com) is always available to assist you if you need help or have questions.
+With your developer credentials, you can integrate **MetaPerson Creator** into your website or application and start creating custom avatars for your users.
+
+## Support
+
+Have a question or need help? Contact us at [support@avatarsdk.com](mailto:support@avatarsdk.com) — our team is always available to assist you.
