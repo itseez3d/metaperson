@@ -180,27 +180,31 @@ If you are interested in exploring the capabilities of MetaPerson avatars and ho
 
 ---
 
-## Getting started
+## Getting Started
 
 
 ## Account
 
-To start using MetaPerson Creator, simply create an account on [our website](https://accounts.avatarsdk.com).
-By doing so, you'll gain access to our [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan, which offers all our advanced features and the ability to create and customize MetaPerson avatars.
+To start using **MetaPerson Creator**, simply create an account on [our website](https://accounts.avatarsdk.com).
+By doing so, you'll gain access to the [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan, which offers all our advanced features and the ability to create and customize MetaPerson avatars.
 
-## Developer credentials
+## Developer Credentials
 
-Before you can authorize MetaPerson Creator to integrate into your website or application, you need to generate developer credentials in your profile. This is a simple process; you can do it by visiting the developer credentials page on [our website](https://accounts.avatarsdk.com/developer/#web-api).
+Before you can integrate **MetaPerson Creator** into your website or application, you need to generate developer credentials in your profile. This is a simple process — just visit the [developer credentials page](https://accounts.avatarsdk.com/developer/#web-api).
 
-Once you're on the developer page, you'll need to create a new application to get your "App Client ID" and "App Client Secret" values. These values are required for integrating MetaPerson Creator into your website or application. For this purpose, you need to enter any name in the "Application name" field and press the "SUBMIT" button.
+On the developer page, you'll need to create a new application to obtain your **App Client ID** and **App Client Secret** values. To do this, enter a name in the **Application name** field and click the **SUBMIT** button.
 
 ![](./img/application.png)
 
-After the application is created, it will show your "App Client ID" and "App Client Secret" values.
+Once the application is created, your **App Client ID** and **App Client Secret** values will be displayed.
 
 ![](./img/credentials.png)
 
-With your developer credentials, you can integrate MetaPerson Creator into your website or application and create custom avatars for your users. Our [support team](mailto:support@avatarsdk.com) is always available to assist you if you need help or have questions.
+With your developer credentials, you can integrate **MetaPerson Creator** into your website or application and start creating custom avatars for your users.
+
+## Support
+
+Have a question or need help? Contact us at [support@avatarsdk.com](mailto:support@avatarsdk.com) — our team is always available to assist you.
 
 ---
 
@@ -2618,6 +2622,38 @@ src="https://www.youtube.com/embed/50WuD6XE9Jk?si=dOXTUgQbBJeBCDrf">
 Discover the potential of MetaPerson - [Unity SALSA LipSync Sample](https://github.com/avatarsdk/metaperson-salsa-sample), a comprehensive demonstration of integrating MetaPerson avatars into Unity using the [SALSA LipSync Suite](https://assetstore.unity.com/packages/tools/animation/salsa-lipsync-suite-148442) package. Designed for developers working with Unity 2021.3.19f1 or newer, this sample project showcases how to animate avatars with real-time lipsync, providing a robust foundation for creating more immersive and interactive experiences. 
 
 With easy setup through the OneClick Base package, you can quickly configure your avatars for seamless facial animations. Whether you're building games, virtual worlds, or interactive media, this project equips you with the tools to bring your digital characters to life. Dive in today and transform your Unity projects with advanced avatar animation capabilities! Watch the video tutorial on our official [YouTube channel](https://youtube.com/playlist?list=PLDdNlBHHu4Dl6zI8ZFNGfFigy9VJeT8on&feature=shared).
+
+---
+
+## Account
+
+
+To start using **LiveSpeak**, you need to create an account on [our website](https://accounts.avatarsdk.com).
+By doing so, you'll gain access to the [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan, which is required for **LiveSpeak** integration.
+
+## Developer Credentials
+
+Before you can integrate **LiveSpeak** into your website or application, you need to generate developer credentials in your profile. This is a simple process — just visit the [developer credentials page](https://accounts.avatarsdk.com/developer/#web-api).
+
+On the developer page, you'll need to create a new application to obtain your **App Client ID** and **App Client Secret** values. 
+To do this, enter a name in the **Application name** field and click the **SUBMIT** button.
+
+![](./../business-integration/img/application.png)
+
+Once the application is created, your **App Client ID** and **App Client Secret** values will be displayed.
+
+![](./../business-integration/img/credentials.png)
+
+With your developer credentials, you can now integrate **LiveSpeak** into your website or application.
+
+## Next Steps
+
+- [Run our samples](samples)
+- [Check the LiveSpeak Integration guide](integration) to embed LiveSpeak into your website.
+
+## Support
+
+Have a question? Contact us at support@avatarsdk.com.
 
 ---
 
