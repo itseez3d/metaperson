@@ -9,7 +9,11 @@ This page describes how to integrate **LiveSpeak** into a web page using an `<if
 
 ## 1. Creating the iframe
 
-**LiveSpeak** is embedded using an iframe. The iframe must allow scripts and audio playback.
+The **LiveSpeak** is available under the URL:
+
+`https://metaperson.avatarsdk.com/livespeak/index.html`
+
+It should be is embedded using an **iframe** that must allow scripts and audio playback.
 
 The `index.html` page accepts the following query parameters:
 

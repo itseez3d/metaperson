@@ -12,13 +12,12 @@ Once MetaPerson Creator page is loaded, it sends a `metaperson_creator_loaded` e
 As an example, you can look at the [Web integration sample](web_integration).
 
 ## MetaPerson Creator Versions
-There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. It is recommended to use the former on desktop platforms and the latter on mobile platforms.
-
-Use the following URLs to integrate these versions into your site or application:
+There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. 
 
 **Desktop**: https://metaperson.avatarsdk.com/iframe.html
 
 **Mobile**: https://mobile.metaperson.avatarsdk.com/generator
+
 
 ## Configuration Messages
 
