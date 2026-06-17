@@ -250,9 +250,7 @@ Once MetaPerson Creator page is loaded, it sends a `metaperson_creator_loaded` e
 As an example, you can look at the [Web integration sample](web_integration).
 
 ## MetaPerson Creator Versions
-There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. It is recommended to use the former on desktop platforms and the latter on mobile platforms.
-
-Use the following URLs to integrate these versions into your site or application:
+There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. 
 
 **Desktop**: https://metaperson.avatarsdk.com/iframe.html
 
@@ -2700,7 +2698,11 @@ This page describes how to integrate **LiveSpeak** into a web page using an `<if
 
 ## 1. Creating the iframe
 
-**LiveSpeak** is embedded using an iframe. The iframe must allow scripts and audio playback.
+The **LiveSpeak** is available under the URL:
+
+`https://metaperson.avatarsdk.com/livespeak/index.html`
+
+It should be is embedded using an **iframe** that must allow scripts and audio playback.
 
 The `index.html` page accepts the following query parameters:
 
