@@ -2626,12 +2626,12 @@ With easy setup through the OneClick Base package, you can quickly configure you
 ## Account
 
 
-To start using **LiveSpeak**, you need to create an account on [our website](https://accounts.avatarsdk.com).
-By doing so, you'll gain access to the [free trial](https://avatarsdk.com/pricing-cloud/) of the Pro plan, which is required for **LiveSpeak** integration.
+To start using **LiveSpeak**, you need to create an account on [**our website**](https://accounts.avatarsdk.com).
+By doing so, you'll gain access to the [**free trial**](https://avatarsdk.com/pricing-cloud/) of the Pro plan, which is required for **LiveSpeak** integration.
 
 ## Developer Credentials
 
-Before you can integrate **LiveSpeak** into your website or application, you need to generate developer credentials in your profile. This is a simple process — just visit the [developer credentials page](https://accounts.avatarsdk.com/developer/#web-api).
+Before you can integrate **LiveSpeak** into your website or application, you need to generate developer credentials in your profile. This is a simple process — just visit the [**developer credentials page**](https://accounts.avatarsdk.com/developer/#web-api).
 
 On the developer page, you'll need to create a new application to obtain your **App Client ID** and **App Client Secret** values. 
 To do this, enter a name in the **Application name** field and click the **SUBMIT** button.
@@ -2662,9 +2662,11 @@ Have a question? Contact us at support@avatarsdk.com.
 Turn any MetaPerson avatar into a responsive, speaking character inside your app.
 Supports text‑to‑speech (Azure, ElevenLabs), ChatGPT conversations, and raw audio lipsync.
 
+[**Try LiveSpeak now**](https://metaperson.avatarsdk.com/livespeak/demo.html) – see your avatar speak in real time.
+
 ## Core Features
 
-- **MetaPerson avatar** – load a GLB model of the avatar created with [MetaPerson Creator](https://metaperson.avatarsdk.com/) and exported with Visemes.
+- **MetaPerson avatar** – load a GLB model of the avatar created with [**MetaPerson Creator**](https://metaperson.avatarsdk.com/) and exported with Visemes.
 - **Text‑to‑speech engines** – supports Azure Speech and ElevenLabs.
 - **ChatGPT chatbot mode** – ask questions, get AI‑generated replies, spoken by the avatar with lipsync.
 - **Real‑time local lipsync** – feed raw audio samples (PCM, microphone, or stream) – phonemes are mapped to facial blendshapes directly in the browser.
@@ -2678,6 +2680,8 @@ Supports text‑to‑speech (Azure, ElevenLabs), ChatGPT conversations, and raw 
 3. LiveSpeak sends the text to a **TTS service** and receives an audio stream.
 4. The avatar’s facial **blendshapes** are animated in real time to match the audio.  
 5. For voice‑only input (microphone or raw audio), the built‑in **local lipsync engine** analyzes the waveform and drives the avatar without external TTS.
+
+![](./img/livespeak-pipeline.png)
 
 ## Support
 
@@ -2700,7 +2704,7 @@ This page describes how to integrate **LiveSpeak** into a web page using an `<if
 
 The **LiveSpeak** is available under the URL:
 
-`https://metaperson.avatarsdk.com/livespeak/index.html`
+**`https://metaperson.avatarsdk.com/livespeak/index.html`**
 
 It should be is embedded using an **iframe** that must allow scripts and audio playback.
 
@@ -2965,14 +2969,14 @@ The URL must be publicly accessible or served with appropriate CORS headers, as 
 
 ## Integration Sample
 
-[LiveSpeak integration sample](https://metaperson.avatarsdk.com/livespeak/livespeak_integration_sample.html)
+[**LiveSpeak integration sample**](https://metaperson.avatarsdk.com/livespeak/livespeak_integration_sample.html)
 
 This sample shows how to integrate LiveSpeak into a web page via `<iframe>`, configure mode, language and optionally provide a custom avatar model.
 The avatar can speak provided text or a generated chatbot response based on the given prompt.
 
 ## Microphone Sample
 
-[Microphone sample](https://metaperson.avatarsdk.com/livespeak/microphone_sample.html)
+[**Microphone sample**](https://metaperson.avatarsdk.com/livespeak/microphone_sample.html)
 
 This sample shows how to feed a raw microphone stream to LiveSpeak for animating the avatar.
 

@@ -8,9 +8,11 @@
 Turn any MetaPerson avatar into a responsive, speaking character inside your app.
 Supports text‑to‑speech (Azure, ElevenLabs), ChatGPT conversations, and raw audio lipsync.
 
+[**Try LiveSpeak now**](https://metaperson.avatarsdk.com/livespeak/demo.html) – see your avatar speak in real time.
+
 ## Core Features
 
-- **MetaPerson avatar** – load a GLB model of the avatar created with [MetaPerson Creator](https://metaperson.avatarsdk.com/) and exported with Visemes.
+- **MetaPerson avatar** – load a GLB model of the avatar created with [**MetaPerson Creator**](https://metaperson.avatarsdk.com/) and exported with Visemes.
 - **Text‑to‑speech engines** – supports Azure Speech and ElevenLabs.
 - **ChatGPT chatbot mode** – ask questions, get AI‑generated replies, spoken by the avatar with lipsync.
 - **Real‑time local lipsync** – feed raw audio samples (PCM, microphone, or stream) – phonemes are mapped to facial blendshapes directly in the browser.
@@ -24,6 +26,8 @@ Supports text‑to‑speech (Azure, ElevenLabs), ChatGPT conversations, and raw 
 3. LiveSpeak sends the text to a **TTS service** and receives an audio stream.
 4. The avatar’s facial **blendshapes** are animated in real time to match the audio.  
 5. For voice‑only input (microphone or raw audio), the built‑in **local lipsync engine** analyzes the waveform and drives the avatar without external TTS.
+
+![](./img/livespeak-pipeline.png)
 
 ## Support
 

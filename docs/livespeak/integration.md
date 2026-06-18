@@ -10,7 +10,7 @@ This page describes how to integrate **LiveSpeak** into a web page using an `<if
 
 The **LiveSpeak** is available under the URL:
 
-`https://metaperson.avatarsdk.com/livespeak/index.html`
+**`https://metaperson.avatarsdk.com/livespeak/index.html`**
 
 It should be is embedded using an **iframe** that must allow scripts and audio playback.
 
