@@ -5,6 +5,21 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 1.35.0 (2026-06-25)
+
+https://metaperson.avatarsdk.com/1.35.0/iframe.html
+
+**Release notes**:
+
+  * Added female outfits:
+    * Armaghan_red 
+    * Hakari_red
+    * longsleeve_Armaghan_red
+    * t-shirt_Hakari_red
+    * shorts_Getar_red
+    * shoes_Gugarik_long_red
+    * gloves_Tezh_red
+
 ### 1.34.2 (2026-05-14)
 
 https://metaperson.avatarsdk.com/1.34.2/iframe.html
