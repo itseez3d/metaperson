@@ -5,6 +5,16 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 1.36.0 (2026-07-23)
+
+https://metaperson.avatarsdk.com/1.36.0/iframe.html
+
+**Release notes**:
+
+  * Introduced Avatar SDK Move
+  * JS API changes:
+    * Added `isAnimateButtonVisible` parameter to the [`set_ui_parameters`](/js_api#ui-parameters) message.
+
 ### 1.35.0 (2026-06-25)
 
 https://metaperson.avatarsdk.com/1.35.0/iframe.html

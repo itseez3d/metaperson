@@ -156,7 +156,8 @@ let uiParametersMessage = {
     "computationParametersPanelVisible" : true,
     "enableLipsync": false,
     "isGifButtonVisible" : false,
-    "isPngButtonVisible" : false
+    "isPngButtonVisible" : false,
+    "isAnimateButtonVisible": false
 };
 evt.source.postMessage(uiParametersMessage, "*");
 ```
@@ -183,6 +184,7 @@ Message parameters:
 * `enableLipsync` - enables LipSync. Default value: `false`.
 * `isGifButtonVisible` - specifies if the button to generate GIF is visible. Default value: `false`.
 * `isPngButtonVisible` - specifies if the button to generate PNG images is visible. Default value: `false`.
+* `isAnimateButtonVisible` - specifies if the button to generate animations is visible. Default value: `false`.
 
 
 #### MetaPerson Creator Mobile
