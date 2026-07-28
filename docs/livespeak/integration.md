@@ -18,9 +18,9 @@ The `index.html` page accepts the following query parameters:
 
 | Parameter | Description |
 | --- | --- |
-| `mode` | Selects the playback/animation mode:`tts_azure1` — Azure TTS + visemes`tts_azure2` — Azure TTS + ArKit blendshapes`tts_azure3` — Azure TTS + local lipsync`tts_elevenlabs` — ElevenLabs TTS + local lipsync`raw_stream` — expects raw PCM data as an array to animate the model |
+| `mode` | Selects the playback/animation mode:`tts_azure1` — Azure TTS + visemes`tts_azure2` — Azure TTS + ArKit blendshapes`tts_azure3` — Azure TTS + local lipsync`tts_elevenlabs` — ElevenLabs TTS + local lipsync`raw_stream` — expects raw PCM data as an array to animate the model, played back once [`audio_end`](#47-starting-playback-audio_end) is received |
 | `lang` | Sets the voice language. Works the same as [`set_language`](#42-setting-language-set_language) command. |
-| `custom_model` | A flag-like parameter (no value needed) that tells the iframe to expect a custom model through the [`load_model`](#47-loading-a-custom-model-load_model) command and to hide the default sample model. |
+| `custom_model` | A flag-like parameter (no value needed) that tells the iframe to expect a custom model through the [`load_model`](#48-loading-a-custom-model-load_model) command and to hide the default sample model. |
 
 ```js
 const iframe = document.createElement('iframe');
@@ -91,7 +91,7 @@ This event indicates the current state of the avatar. Typical payload:
 | --- | --- |
 | **WaitingForAuthentication** | LiveSpeak is waiting for the host page to send the `authenticate` event. |
 | **Authenticating** | LiveSpeak is verifying the provided authentication credentials. |
-| **ModelAwaiting** | Waiting for a custom model via [`load_model`](#47-loading-a-custom-model-load_model) command. |
+| **ModelAwaiting** | Waiting for a custom model via [`load_model`](#48-loading-a-custom-model-load_model) command. |
 | **ModelLoading** | Custom model is being loaded. |
 | **Initializing** | Avatar is starting up and preparing the LiveSpeak session. |
 | **Thinking** | Chatbot or internal logic is processing a prompt. |
@@ -183,15 +183,15 @@ iframe.contentWindow.postMessage({
 
 **Available languages for ElevenLabs TTS:** `English Female (en_f)`, `English Male (en_m)`.
 
-### 4.3 Setting voice name (`set_voice_name`)
+### 4.3 Setting voice name (`set_azure_voice_name`)
 
-Specify a concrete TTS voice using [`set_voice_name`](#43-setting-voice-name-set_voice_name). [Azure Speech — Language & Voices](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts)
+Specify a concrete TTS voice using [`set_azure_voice_name`](#43-setting-voice-name-set_azure_voice_name). [Azure Speech — Language & Voices](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts)
 
 > Applies only to Azure TTS.
 
 ```js
 iframe.contentWindow.postMessage({
-  eventName: 'set_voice_name',
+  eventName: 'set_azure_voice_name',
   voiceName: 'en-US-AriaNeural'
 }, '*');
 ```
@@ -220,7 +220,7 @@ iframe.contentWindow.postMessage({
 
 ### 4.6 Sending raw PCM audio (`pcm`)
 
-Stream raw audio data to LiveSpeak using the [`pcm`](#46-sending-raw-pcm-audio-pcm) command (single-channel PCM, **16000 Hz**).
+Stream raw audio data to LiveSpeak using the [`pcm`](#46-sending-raw-pcm-audio-pcm) command. The buffer must contain single-channel **32-bit float** PCM samples at **16000 Hz**.
 
 ```js
 const payload = {
@@ -232,9 +232,38 @@ iframe.contentWindow.postMessage(payload, '*', [chunk.buffer]);
 
 > This command is intended for `mode: 'raw_stream'`, where LiveSpeak expects raw PCM data to animate the model.
 
-### 4.7 Loading a custom model (`load_model`)
+You can send the audio in as many `pcm` chunks as you like. LiveSpeak **accumulates** them and does not start playback until it receives the [`audio_end`](#47-starting-playback-audio_end) command.
 
-The [`load_model`](#47-loading-a-custom-model-load_model) command provides a URL pointing to a MetaPerson avatar in **GLB format**. This command is **only effective** when the iframe was created with the `custom_model` query parameter (flag). It should be sent immediately after receiving the `avatar_state_changed` event with `avatarState: "ModelAwaiting"`.
+### 4.7 Starting playback (`audio_end`)
+
+Send [`audio_end`](#47-starting-playback-audio_end) to signal that the whole audio has been transmitted. LiveSpeak processes the remaining queued `pcm` chunks and starts playing the buffered audio with lip-sync animation.
+
+```js
+iframe.contentWindow.postMessage({
+  eventName: 'audio_end'
+}, '*');
+```
+
+A typical sequence for `mode: 'raw_stream'` looks like this:
+
+```js
+// 1. push the audio, chunk by chunk
+for (const chunk of chunks) {
+  iframe.contentWindow.postMessage(
+    { eventName: 'pcm', buffer: chunk.buffer }, '*', [chunk.buffer]);
+}
+
+// 2. tell LiveSpeak the audio is complete — playback starts here
+iframe.contentWindow.postMessage({ eventName: 'audio_end' }, '*');
+```
+
+While playing, the avatar reports its progress through the [`avatar_state_changed`](#32-avatar_state_changed-event) event: **Thinking** while the buffered audio is being prepared, then **Speaking**, and **Ready** again once the playback is over.
+
+> Both `pcm` and `audio_end` are only accepted in `raw_stream` mode and only when the avatar is in the **Ready** state. Otherwise LiveSpeak replies with a [`message_processing_error`](#33-message_processing_error-event) event (`reason: "Raw streaming isn't configured"` or `Invalid avatar state: <state>`).
+
+### 4.8 Loading a custom model (`load_model`)
+
+The [`load_model`](#48-loading-a-custom-model-load_model) command provides a URL pointing to a MetaPerson avatar in **GLB format**. This command is **only effective** when the iframe was created with the `custom_model` query parameter (flag). It should be sent immediately after receiving the `avatar_state_changed` event with `avatarState: "ModelAwaiting"`.
 
 ```js
 // Recommended: wait for ModelAwaiting state before sending load_model
