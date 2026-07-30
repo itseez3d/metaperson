@@ -4,6 +4,15 @@
 
 # Desktop Version
 
+### 1.36.2 (2026-07-30)
+
+https://metaperson.avatarsdk.com/1.36.2/iframe.html
+
+**Release notes**:
+
+  * Use 6-digit authentication code
+  * UI improvements
+
 ### 1.36.1 (2026-07-24)
 
 https://metaperson.avatarsdk.com/1.36.1/iframe.html
