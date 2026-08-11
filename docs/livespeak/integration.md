@@ -22,6 +22,16 @@ The `index.html` page accepts the following query parameters:
 | `mode` | Selects the playback/animation mode:<br/>`tts_azure1` — Azure TTS + visemes<br/>`tts_azure2` — Azure TTS + ArKit blendshapes<br/>`tts_azure3` — Azure TTS + local lipsync<br/>`tts_elevenlabs` — ElevenLabs TTS + local lipsync<br/>`raw_stream` — expects raw PCM data as an array to animate the model, played back once [`audio_end`](#47-starting-playback-audio_end) is received |
 | `lang` | Sets the voice language. Works the same as [`set_language`](#42-setting-language-set_language) command. |
 | `custom_model` | A flag-like parameter (no value needed) that tells the iframe to expect a custom model through the [`load_model`](#48-loading-a-custom-model-load_model) command and to hide the default sample model. |
+| `framing` | Camera framing preset: `bust` (default) or `body`. See [camera framing](#49-setting-camera-framing-set_camera). |
+| `camera_offset_x`<br/>`camera_offset_y`<br/>`camera_offset_z` | Camera position in metres, relative to the avatar's head. Overrides the preset value. |
+| `camera_pitch`<br/>`camera_yaw`<br/>`camera_roll` | Camera rotation in degrees, relative to a head-on shot. Overrides the preset value. |
+| `camera_fov` | Vertical field of view in degrees. Overrides the preset value. |
+| `background` | Background colour: `default` or a hex colour such as `1a2b3c`. Works the same as the [`set_background`](#410-setting-background-set_background) command. |
+
+```js
+iframe.src = 'https://metaperson.avatarsdk.com/livespeak/index.html'
+           + '?mode=tts_azure1&lang=en_f&framing=body&background=1a2b3c';
+```
 
 ```js
 const iframe = document.createElement('iframe');
@@ -121,6 +131,46 @@ The payload contains:
 
 > Always listen for `message_processing_error` to catch problems early.
 
+### 3.4 `camera_changed` event
+
+LiveSpeak sends this event whenever the camera framing is applied — once at startup, and again after every [`set_camera`](#49-setting-camera-framing-set_camera) command. It reports the framing that is actually in effect, after presets and clamping have been resolved.
+
+```js
+{
+  source: 'livespeak',
+  eventName: 'camera_changed',
+  offsetX: 0,
+  offsetY: 0.081,
+  offsetZ: 1.5,
+  pitch: 0,
+  yaw: 0,
+  roll: 0,
+  fov: 26.99
+}
+```
+
+Use it to discover the values behind a preset before adjusting them, rather than guessing. The values map one to one onto the [`set_camera`](#49-setting-camera-framing-set_camera) fields.
+
+### 3.5 `chatbot_response` event
+
+LiveSpeak sends this event when the chatbot has generated an answer to a [`prompt`](#44-sending-a-prompt-prompt) command, immediately before the avatar begins pronouncing it.
+
+```js
+{
+  source: 'livespeak',
+  eventName: 'chatbot_response',
+  text: 'The Eiffel Tower is 330 metres tall, including its antennas.'
+}
+```
+
+The payload contains:
+
+- **`text`** – The chatbot's generated response, the same text the avatar speaks.
+
+Handle this event if you want to display the conversation in your own interface — LiveSpeak does not render the response on top of the avatar.
+
+> The event is sent only for chatbot answers produced by [`prompt`](#44-sending-a-prompt-prompt). It is not sent for [`speak`](#45-speaking-exact-text-speak), where the host page already knows the text.
+
 ## 4. Commands for LiveSpeak
 
 The host page sends commands to **LiveSpeak** via `iframe.contentWindow.postMessage`. Below are the common commands.
@@ -200,7 +250,7 @@ iframe.contentWindow.postMessage({
 
 ### 4.4 Sending a prompt (`prompt`)
 
-Use [`prompt`](#44-sending-a-prompt-prompt) to send text to the chatbot backend. The avatar will automatically pronounce the chatbot’s response.
+Use [`prompt`](#44-sending-a-prompt-prompt) to send text to the chatbot backend. The avatar will automatically pronounce the chatbot’s response, and the response text is reported through the [`chatbot_response`](#35-chatbot_response-event) event.
 
 ```js
 iframe.contentWindow.postMessage({
@@ -298,3 +348,73 @@ The structure of the `load_model` message:
 ```
 
 The URL must be publicly accessible or served with appropriate CORS headers, as the iframe will fetch the binary GLB file directly.
+
+### 4.9 Setting camera framing (`set_camera`)
+
+Use [`set_camera`](#49-setting-camera-framing-set_camera) to change how the avatar is framed. The same values are also accepted as [query parameters](#1-creating-the-iframe) so the framing is correct on the very first frame, with no visible re-framing.
+
+```js
+iframe.contentWindow.postMessage({
+  eventName: 'set_camera',
+  framing: 'body'
+}, '*');
+```
+
+Message parameters — all optional, and all passed as **strings**:
+
+| Parameter | Unit | Description |
+| --- | --- | --- |
+| `framing` | — | Preset to start from: `bust` (head and shoulders, the default) or `body` (waist-up). |
+| `offsetX` | metres | Sideways offset from the head. `0` keeps the avatar centred. |
+| `offsetY` | metres | Vertical offset from the head. Negative moves the camera down. |
+| `offsetZ` | metres | Distance in front of the head. Larger values move the camera away. |
+| `pitch` | degrees | Tilt. **Positive looks down**, negative looks up. |
+| `yaw` | degrees | Rotation off the head-on axis. |
+| `roll` | degrees | Dutch angle. |
+| `fov` | degrees | Vertical field of view. Smaller values zoom in. |
+
+The camera position is expressed **relative to the avatar's head**, so a framing you define once keeps working when the avatar is replaced through [`load_model`](#48-loading-a-custom-model-load_model). Rotation is relative to a head-on shot, so all-zero angles look straight at the avatar.
+
+Values are resolved in two steps: the named preset provides the starting point, then any parameter you supply overrides that component.
+
+```js
+// the body preset, but pulled slightly further back
+iframe.contentWindow.postMessage({
+  eventName: 'set_camera',
+  framing: 'body',
+  offsetZ: '5.4'
+}, '*');
+```
+
+If `framing` is omitted, the currently applied framing is the starting point, so a single value can be nudged without restating the rest:
+
+```js
+iframe.contentWindow.postMessage({
+  eventName: 'set_camera',
+  fov: '22'
+}, '*');
+```
+
+Values are clamped to a usable range — `offsetZ` to at least `0.55` m so the avatar cannot fall inside the camera's near clip plane, `offsetX` and `offsetY` to ±5 m, and `fov` between `1` and `120`. LiveSpeak reports the resolved framing back through the [`camera_changed`](#34-camera_changed-event) event, and replies with [`message_processing_error`](#33-message_processing_error-event) if a value is not a valid number or the preset name is unknown.
+
+> The vertical field of view is fixed, so the avatar keeps a constant proportion of the viewport height. Resizing the page changes how much is visible to the sides, not the size of the avatar. In a narrow portrait layout such as 9:16, the `bust` preset frames tightly — increase `fov` or `offsetZ` for more margin.
+
+### 4.10 Setting background (`set_background`)
+
+Use [`set_background`](#410-setting-background-set_background) to set the colour behind the avatar.
+
+```js
+iframe.contentWindow.postMessage({
+  eventName: 'set_background',
+  background: '1a2b3c'
+}, '*');
+```
+
+Message parameters:
+
+* `eventName` - must be set to `set_background`.
+* `background` - a hex colour, with or without a leading `#` (`1a2b3c`, `#1a2b3c`), or `default` to restore the built-in background.
+
+The colour is applied after LiveSpeak's post-processing, so the rendered background matches the value you provide exactly. This lets you match the avatar's background to your page.
+
+> Transparent backgrounds are not supported. To place the avatar over your own artwork, set `background` to the colour of your backdrop. Passing `transparent` returns a [`message_processing_error`](#33-message_processing_error-event).
