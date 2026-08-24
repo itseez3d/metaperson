@@ -4,6 +4,14 @@
 
 # Desktop Version
 
+### 1.38.0 (2026-08-24)
+
+https://metaperson.avatarsdk.com/1.38.0/iframe.html
+
+**Release notes**:
+
+  * UI improvements
+
 ### 1.37.0 (2026-08-17)
 
 https://metaperson.avatarsdk.com/1.37.0/iframe.html
