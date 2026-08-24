@@ -52,7 +52,8 @@
   font-weight: bold; 
 }
 
-.menu__link[href="/livespeak/"] {
+.theme-doc-sidebar-item-link-level-1 > .menu__link[href="/move"],
+.theme-doc-sidebar-item-link-level-1 > .menu__link[href="/move/"] {
   color: green;
   font-weight: bold;
 }

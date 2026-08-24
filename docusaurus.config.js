@@ -148,6 +148,12 @@ const config = {
             label: 'REST API',
           },
 		  {
+            to: '/move/',
+            position: 'left',
+            label: 'Avatar SDK Move',
+			      style: {color: 'green', fontWeight: 'bold'},
+          },
+		  {
             to: 'https://metaperson.avatarsdk.com/',
             position: 'left',
             label: 'MetaPerson Creator',
@@ -156,7 +162,6 @@ const config = {
             to: '/livespeak/',
             position: 'left',
             label: 'LiveSpeak',
-			      style: {color: 'green', fontWeight: 'bold'},
           },
 		  {
             to: 'https://accounts.avatarsdk.com/developer/signup/',

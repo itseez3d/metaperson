@@ -20,6 +20,7 @@ const sidebars = {
 
   tutorialSidebar: [
 	'leap',
+	'3dmotion/move',
 	{
 		type: 'category',
 		label: 'LiveSpeak',
@@ -115,6 +116,8 @@ const sidebars = {
 		label: '3D Motion',
 		link: {type: 'doc', id: '3dmotion/index'},
 		items:[
+			'3dmotion/move',
+			'3dmotion/move-unity-plugin',
 			'3dmotion/mixamo',
 			'3dmotion/deepmotion',
 		]
