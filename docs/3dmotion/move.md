@@ -25,6 +25,8 @@ avatar and describe the movement you want. The animation is generated and previe
 avatar, and you can export it together with the model. See the
 [Avatar SDK Move product page](https://avatarsdk.com/move/) for the current beta status.
 
+![Animation generation in MetaPerson Creator.](./img/metaperson-creator-animate.png)
+
 **In Unity.** The [Move Unity plugin](/move-unity-plugin) brings the same pipeline into the Unity
 Editor and into your running application — see that page for installation, the Editor workflow and
 the runtime API, and the [plugin page on avatarsdk.com](https://avatarsdk.com/move-unity-plugin/)
@@ -36,6 +38,8 @@ it play.
 ```csharp
 await animationGenerator.Generate(targetModel, prompt, duration);
 ```
+
+![Animation generation in Avatar SDK Move Unity plugin.](./img/move-plugin-animation.png)
 
 ## Works with any humanoid model
 
