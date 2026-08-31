@@ -16,6 +16,19 @@ src="https://www.youtube.com/embed/ujMxgmFz-pM?si=mJqt8fa_OKHSB5Ha">
 
 &nbsp;
 
+:::tip Looking for text-to-animation?
+
+We build our own animation technology too. **[Avatar SDK Move](/move)** generates
+an animation from a text description — you type what the character should do and
+get a Humanoid clip back, with no motion capture and no video input. It works on
+MetaPerson avatars and on any humanoid model, in the web editor or through the
+[Unity plugin](/move-unity-plugin).
+
+The two approaches solve different problems: Animate 3D reconstructs motion from
+video you supply, Move creates motion from a prompt when you have no footage.
+
+:::
+
 ---
 
 ## DeepMotion + MetaPerson: AI Animation for 3D Avatars
@@ -119,6 +132,19 @@ Now everything is ready and your MetaPerson avatars are fully animated and eager
 ## Additional information
 
 We strongly encourage you to take the time to watch the comprehensive videos about using the DeepMotion technology in conjunction with the MetaPerson on both [Unity](https://youtu.be/AV6cLtuZra4?feature=shared) and [Unreal Engine](https://youtu.be/ujMxgmFz-pM?feature=shared). These tutorials are more detailed and provide a wealth of information that can be very helpful. If you still have any questions or need further assistance, please do not hesitate to reach out to us at support@avatarsdk.com.
+
+:::tip Looking for text-to-animation?
+
+We build our own animation technology too. **[Avatar SDK Move](/move)** generates
+an animation from a text description — you type what the character should do and
+get a Humanoid clip back, with no motion capture and no video input. It works on
+MetaPerson avatars and on any humanoid model, in the web editor or through the
+[Unity plugin](/move-unity-plugin).
+
+The two approaches solve different problems: DeepMotion reconstructs motion from
+video you supply, Move creates motion from a prompt when you have no footage.
+
+:::
 
 ---
 
@@ -331,6 +357,19 @@ src="https://www.youtube.com/embed/AV6cLtuZra4?si=RMnHzYgjKES1Awe2">
 </iframe>
 
 &nbsp;
+
+:::tip Looking for text-to-animation?
+
+We build our own animation technology too. **[Avatar SDK Move](/move)** generates
+an animation from a text description — you type what the character should do and
+get a Humanoid clip back, with no motion capture and no video input. It works on
+MetaPerson avatars and on any humanoid model, in the web editor or through the
+[Unity plugin](/move-unity-plugin).
+
+The two approaches solve different problems: SayMotion reconstructs motion from
+video you supply, Move creates motion from a prompt when you have no footage.
+
+:::
 
 ---
 
