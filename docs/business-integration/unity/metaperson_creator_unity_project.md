@@ -1,4 +1,5 @@
 ---
+title: "Unity Source Project for the 3D Avatar Creator"
 sidebar_label: 'MetaPerson Creator Unity Project'
 description: "Access the MetaPerson Creator Unity source project — the Desktop version of the selfie-to-3D-avatar builder was built in Unity and can be customized."
 sidebar_position: 6

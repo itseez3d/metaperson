@@ -1,4 +1,5 @@
 ---
+title: "JavaScript API for the 3D Avatar Creator iframe"
 sidebar_label: 'JS API'
 sidebar_position: 2
 description: "MetaPerson Creator JS API — exchange JavaScript messages between the avatar builder iframe and your web app to control the flow and receive the exported 3D avatar."

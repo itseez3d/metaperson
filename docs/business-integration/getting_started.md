@@ -1,4 +1,5 @@
 ---
+title: "Getting Started: Add Selfie-to-Avatar to Your Product"
 sidebar_label: 'Getting Started'
 sidebar_position: 1
 description: "Get started with MetaPerson Creator: create an account, integrate the avatar builder into your app, and let users generate 3D avatars from a single selfie."
