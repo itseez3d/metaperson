@@ -5,6 +5,14 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 1.39.0 (2026-08-31)
+
+https://metaperson.avatarsdk.com/1.39.0/iframe.html
+
+**Release notes**:
+
+  * Improved rendering quality
+
 ### 1.38.0 (2026-08-24)
 
 https://metaperson.avatarsdk.com/1.38.0/iframe.html
