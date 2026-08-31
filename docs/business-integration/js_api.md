@@ -1,4 +1,4 @@
-# JS API
+# JavaScript API for the 3D Avatar Creator iframe
 
 > MetaPerson Creator JS API — exchange JavaScript messages between the avatar builder iframe and your web app to control the flow and receive the exported 3D avatar.
 

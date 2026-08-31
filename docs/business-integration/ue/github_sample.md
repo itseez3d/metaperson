@@ -1,4 +1,4 @@
-# GitHub Sample
+# Unreal Engine Sample: Load 3D Avatars at Runtime
 
 > MetaPerson Unreal Engine sample built on Epic's Third Person template — learn to create, customize and import selfie-based 3D avatars at runtime in UE.
 

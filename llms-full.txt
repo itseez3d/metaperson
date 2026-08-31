@@ -350,8 +350,9 @@ If you are interested in exploring the capabilities of MetaPerson avatars and ho
 
 ---
 
-## Getting Started
+## Getting Started: Add Selfie-to-Avatar to Your Product
 
+# Getting Started
 
 ## Account
 
@@ -378,8 +379,9 @@ Have a question or need help? Contact us at [support@avatarsdk.com](mailto:suppo
 
 ---
 
-## Working with MetaPerson Creator
+## Integrate a 3D Avatar Creator into Your App or Game
 
+# Working with MetaPerson Creator
 
 MetaPerson Creator is more than just a fun tool for personal use. It's also a valuable asset for businesses looking to enhance their online presence. With our easy-to-use API, you can integrate MetaPerson Creator directly into your website or application, allowing your clients to create their custom avatars and use them in your product.
 
@@ -411,8 +413,9 @@ https://github.com/avatarsdk/metaperson-ios-sample
 
 ---
 
-## JS API
+## JavaScript API for the 3D Avatar Creator iframe
 
+# JS API
 
 Communication between MetaPerson Creator and your HTML page or application is performed via a messaging mechanism. JavaScript messages with special events are both posted to and received from the MetaPerson Creator.
 Once MetaPerson Creator page is loaded, it sends a `metaperson_creator_loaded` event. After that, you can send JS messages to MetaPerson Creator, e.g. configuration parameters.
@@ -1802,8 +1805,9 @@ Your animations were successfully retargeted:
 
 ---
 
-## GitHub Sample
+## Unreal Engine Sample: Load 3D Avatars at Runtime
 
+# GitHub Sample
 
 The sample is based on Epic's Third Person [template](https://docs.unrealengine.com/5.0/en-US/third-person-template-in-unreal-engine/) and demonstrates how to integrate MetaPerson Creator into your project. Playing the level opens MetaPerson Creator in the HUD. After that, all of the avatar creation/customization features are available to the user. 
 
@@ -1887,7 +1891,7 @@ All of the assets imported from `.fbx` are available at `/All/Game/MetapersonAva
 
 ---
 
-## Working with MetaPerson Creator(Ue)
+## Working with MetaPerson Creator
 
 
 Integrating MetaPerson Creator into your UE project is pretty straightforward and follows the same pattern as integrations on other platforms. We've prepared a sample project that can help you to get started. The project demonstrates how to display the MetaPerson Creator in your application, handle results, download, display on the scene, and animate the MetaPerson avatar. 
@@ -1907,8 +1911,9 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## Unreal Engine Marketplace Plugin
+## Unreal Engine Plugin for Selfie-Based 3D Avatars
 
+# Unreal Engine Marketplace Plugin
 
 You can use our [free official Marketplace Plugin](https://www.fab.com/listings/89f2b560-b158-43fc-b191-bfd4b75d8121) to bring the functionality of MetaPerson avatars to your Unreal Engine project. It contains tools to implement the same functionality as in our Sample project. With this plugin, you can create recognizable and customizable avatars. You can also load an avatar at runtime and use it as a character in your project. Plugin contains two demo scenes: the first one with the help of the MetaPerson Creator shows how to create the MetaPerson avatar, and customize and export it to the "Third Person" scene. The second demonstrates how to load an avatar at runtime from a local drive to a "Third Person" scene. 
 
@@ -2182,8 +2187,9 @@ If you are looking for a way to embed MetaPerson Creator page into a unity scene
 
 ---
 
-## MetaPerson Creator Unity Project
+## Unity Source Project for the 3D Avatar Creator
 
+# MetaPerson Creator Unity Project
 
 The [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com) version was developed in Unity.
 We offer a source project featuring a customized [MetaPerson Creator Desktop](https://metaperson.avatarsdk.com), retaining all fundamental functionalities. So you can customize it to your needs and integrate it into your project.
@@ -3510,8 +3516,9 @@ If you have issues or questions, contact the MetaPerson Creator support team at 
 
 ---
 
-## REST API
+## REST API: Generate 3D Avatars from a Photo
 
+# REST API
 
 MetaPerson Creator provides ready-to-use customer-facing solutions with low-code integration into your application. However, there might be conditions where you have to go with a completely different approach. For example, you have strict requirements on the application UI or a platform that is not yet supported. In this case, you must use the REST API for MetaPerson avatars. With the REST API, you can do anything MetaPerson Creator does with your exact requirements and even more. However, it may require more effort in the development.
 
