@@ -4,23 +4,14 @@
 
 # DeepMotion SayMotion
 
-Animate 3D is an innovative and powerful tool that gives you the ability to transform your regular videos into captivating and immersive 3D animations. These animations are not only visually appealing but also feature realistic and smooth movements that bring your content to life in a way that is engaging and dynamic.
+SayMotion uses Generative AI and DeepMotion's motion data to turn text into 3D animations. It removes the need for special equipment, expertise, or stock animations, making 3D animation available to everyone.
+
+:::tip We build text-to-animation too
+SayMotion and our own **[Avatar SDK Move](/move)** solve the same task from a text prompt. Move is built around MetaPerson avatars and ships a [Unity plugin](/move-unity-plugin) with runtime generation, including WebGL.
+:::
 
 <iframe width="560" height="315" allow="fullscreen"
 src="https://www.youtube.com/embed/AV6cLtuZra4?si=RMnHzYgjKES1Awe2">
 </iframe>
 
 &nbsp;
-
-:::tip Looking for text-to-animation?
-
-We build our own animation technology too. **[Avatar SDK Move](/move)** generates
-an animation from a text description — you type what the character should do and
-get a Humanoid clip back, with no motion capture and no video input. It works on
-MetaPerson avatars and on any humanoid model, in the web editor or through the
-[Unity plugin](/move-unity-plugin).
-
-The two approaches solve different problems: SayMotion reconstructs motion from
-video you supply, Move creates motion from a prompt when you have no footage.
-
-:::

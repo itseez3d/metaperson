@@ -6,6 +6,10 @@
 
 [DeepMotion](https://www.deepmotion.com/) offers a comprehensive suite of advanced tools specifically designed for creating intricate skeletal animations. These advanced tools can animate MetaPerson avatars with high precision and realism, offering users an unmatched digital animation experience.
 
+:::tip We also make animation technology
+If you need animations without video or mocap, see **[Avatar SDK Move](/move)** — it turns a text prompt into a Humanoid clip for MetaPerson avatars and any humanoid model.
+:::
+
 <iframe width="560" height="315" allow="fullscreen"
 src="https://www.youtube.com/embed/O_8vIwRVa5Q?si=txXPA5x8vBWJjcLy">
 </iframe>
@@ -101,16 +105,3 @@ Now everything is ready and your MetaPerson avatars are fully animated and eager
 ## Additional information
 
 We strongly encourage you to take the time to watch the comprehensive videos about using the DeepMotion technology in conjunction with the MetaPerson on both [Unity](https://youtu.be/AV6cLtuZra4?feature=shared) and [Unreal Engine](https://youtu.be/ujMxgmFz-pM?feature=shared). These tutorials are more detailed and provide a wealth of information that can be very helpful. If you still have any questions or need further assistance, please do not hesitate to reach out to us at support@avatarsdk.com.
-
-:::tip Looking for text-to-animation?
-
-We build our own animation technology too. **[Avatar SDK Move](/move)** generates
-an animation from a text description — you type what the character should do and
-get a Humanoid clip back, with no motion capture and no video input. It works on
-MetaPerson avatars and on any humanoid model, in the web editor or through the
-[Unity plugin](/move-unity-plugin).
-
-The two approaches solve different problems: DeepMotion reconstructs motion from
-video you supply, Move creates motion from a prompt when you have no footage.
-
-:::
