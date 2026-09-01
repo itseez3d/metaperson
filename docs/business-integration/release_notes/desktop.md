@@ -5,6 +5,14 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 1.39.1 (2026-09-01)
+
+https://metaperson.avatarsdk.com/1.39.1/iframe.html
+
+**Release notes**:
+
+  * Improved hair rendering with anisotropic shading
+
 ### 1.39.0 (2026-08-31)
 
 https://metaperson.avatarsdk.com/1.39.0/iframe.html
