@@ -18,6 +18,11 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
+  // GitHub Pages serves /path/ and 301-redirects /path to it. Without this,
+  // the sitemap, canonical and og:url all point at the redirecting form,
+  // which slows discovery of new pages.
+  trailingSlash: true,
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'itseez3d', // Usually your GitHub org/user name.

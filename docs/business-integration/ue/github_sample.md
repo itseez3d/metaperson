@@ -25,12 +25,12 @@ The archive with the avatar will be saved to the local disk and unzipped. After 
 
 ### Technical details
 
-For detailed information about the MetaPerson Creator integration, see the [relevant part](metaperson_creator_integration) of the documentation.
+For detailed information about the MetaPerson Creator integration, see the [relevant part](/business-integration/ue/metaperson_creator_integration) of the documentation.
 
 ### Animations
 
 We use UE5 [IK Rig Retargeting](https://docs.unrealengine.com/5.0/en-US/ik-rig-animation-retargeting-in-unreal-engine/) to retarget animations (and animation blueprints) from Mannequin to MetaPerson skeleton. 
-The animation retargeting process is described in the [corresponding chapter](animation_retargeting).
+The animation retargeting process is described in the [corresponding chapter](/business-integration/ue/animation_retargeting).
 
 ## FAQ.
 
@@ -44,11 +44,11 @@ Versions 5.3, 5.4 and 5.5 of the Unreal Engine are supported.
 
 ### The "export" button is not accessible in the MetaPerson Creator. What should I do?
 
-Please, double-check that you entered the correct Client ID and Client Secret. Please check the [additional documentation](../../getting_started#developer-credentials) on the developer credentials.
+Please, double-check that you entered the correct Client ID and Client Secret. Please check the [additional documentation](/getting_started#developer-credentials) on the developer credentials.
 
 ### I created MetaPerson avatar at https://metaperson.avatarsdk.com/. How to import the downloaded .fbx file to Unreal Engine?
 
-Please, see the corresponding [section](import_editor).
+Please, see the corresponding [section](/business-integration/ue/import_editor).
 
 ## Support
 

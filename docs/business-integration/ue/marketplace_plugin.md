@@ -11,7 +11,7 @@ You can use our [free official Marketplace Plugin](https://www.fab.com/listings/
 
 ## Importing avatar from Metaperson Creator
 
-With the plugin you can easily import into the level an fbx model created with [MetaPerson Creater](https://metaperson.avatarsdk.com/). See the corresponding [section](import_editor) of the documentation.
+With the plugin you can easily import into the level an fbx model created with [MetaPerson Creater](https://metaperson.avatarsdk.com/). See the corresponding [section](/business-integration/ue/import_editor) of the documentation.
 
 ## "Third Person" Map
 
@@ -21,7 +21,7 @@ To run the demo scene you will need developer credentials that can be found on y
 
 ![Client ID and Client Secret](img/credentials01.png)
 
-See the [additional documentation](../../getting_started#developer-credentials) on the developer credentials. 
+See the [additional documentation](/getting_started#developer-credentials) on the developer credentials. 
 
 Go to the Edit->Project Settings->Plugins->Avatar SDK MetaPerson section in UE Editor and set these parameters in corresponding fields:
 
@@ -33,7 +33,7 @@ Playing the level opens MetaPerson Creator in the HUD. After that, all of the av
 
 When the export process is complete, the MetaPerson Creator will close and the download will begin. The archive with the avatar will be saved to the local disk and unzipped. After that skeletal mesh of the avatar will be loaded from the glb file. Avatar will be placed in the level instead of the third-person character.
 
-See more information about [animation retargeting](animation_retargeting) and  [MetaPerson Creator integration](metaperson_creator_integration).
+See more information about [animation retargeting](/business-integration/ue/animation_retargeting) and  [MetaPerson Creator integration](/business-integration/ue/metaperson_creator_integration).
 
 ## "Load Avatar" Map
 
@@ -43,4 +43,4 @@ See more information about [animation retargeting](animation_retargeting) and  [
 
 ## Technical details
 
-See this [page](metaperson_creator_integration) of the documentation for technical details.
+See this [page](/business-integration/ue/metaperson_creator_integration) of the documentation for technical details.

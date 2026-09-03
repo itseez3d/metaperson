@@ -21,7 +21,7 @@ src="https://www.youtube.com/embed/A-2YfJ66mWE?si=EMn9qBItt14-U_yl">
 
 1\. Extract an archive with the MetaPerson Creator project and open it in Unity.
 
-2\. You will be prompted to provide [credentials](../../getting_started#developer-credentials). Copy **Client ID** and **Client Secret** from your account and press the **Save credentials** button.
+2\. You will be prompted to provide [credentials](/getting_started#developer-credentials). Copy **Client ID** and **Client Secret** from your account and press the **Save credentials** button.
 
 ![](./img/unity_authentication_window.JPG)
 
