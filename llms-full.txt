@@ -432,7 +432,7 @@ https://github.com/avatarsdk/metaperson-ios-sample
 Communication between MetaPerson Creator and your HTML page or application is performed via a messaging mechanism. JavaScript messages with special events are both posted to and received from the MetaPerson Creator.
 Once MetaPerson Creator page is loaded, it sends a `metaperson_creator_loaded` event. After that, you can send JS messages to MetaPerson Creator, e.g. configuration parameters.
 
-As an example, you can look at the [Web integration sample](web_integration).
+As an example, you can look at the [Web integration sample](/web_integration).
 
 ## MetaPerson Creator Versions
 There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. 
@@ -446,7 +446,7 @@ There are two versions of MetaPerson Creator: **Desktop** and **Mobile**.
 These messages can be sent only once right after MetaPerson Creator was loaded.
 
 * [**Authentication parameters**](#authentication-parameters) - in this message, you should specify your developer credentials. This ensures that your website or application is authorized to access the creator. 
-If you provide an incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. Go to [developer credentials](getting_started#developer-credentials) to get more info.
+If you provide an incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. Go to [developer credentials](/getting_started#developer-credentials) to get more info.
 
 * [**Export Parameters**](#export-parameters) - in this message, you can configure export parameters for your avatar. You can specify the format of the exported file (such as GLB, GLTF, or FBX), the level of detail for the exported mesh, the resolution of textures, and the format.
 
@@ -454,7 +454,7 @@ If you provide an incorrect CLIENT_ID or CLIENT_SECRET, export functionality wil
 
 ### Authentication Parameters
 
-Here's an example of how you can authenticate your account in MetaPerson Creator. You need [developer credentials](getting_started#developer-credentials) from your account.
+Here's an example of how you can authenticate your account in MetaPerson Creator. You need [developer credentials](/getting_started#developer-credentials) from your account.
 
 ```js
 let authenticationMessage = {
@@ -1847,12 +1847,12 @@ The archive with the avatar will be saved to the local disk and unzipped. After 
 
 ### Technical details
 
-For detailed information about the MetaPerson Creator integration, see the [relevant part](metaperson_creator_integration) of the documentation.
+For detailed information about the MetaPerson Creator integration, see the [relevant part](/business-integration/ue/metaperson_creator_integration) of the documentation.
 
 ### Animations
 
 We use UE5 [IK Rig Retargeting](https://docs.unrealengine.com/5.0/en-US/ik-rig-animation-retargeting-in-unreal-engine/) to retarget animations (and animation blueprints) from Mannequin to MetaPerson skeleton. 
-The animation retargeting process is described in the [corresponding chapter](animation_retargeting).
+The animation retargeting process is described in the [corresponding chapter](/business-integration/ue/animation_retargeting).
 
 ## FAQ.
 
@@ -1866,11 +1866,11 @@ Versions 5.3, 5.4 and 5.5 of the Unreal Engine are supported.
 
 ### The "export" button is not accessible in the MetaPerson Creator. What should I do?
 
-Please, double-check that you entered the correct Client ID and Client Secret. Please check the [additional documentation](../../getting_started#developer-credentials) on the developer credentials.
+Please, double-check that you entered the correct Client ID and Client Secret. Please check the [additional documentation](/getting_started#developer-credentials) on the developer credentials.
 
 ### I created MetaPerson avatar at https://metaperson.avatarsdk.com/. How to import the downloaded .fbx file to Unreal Engine?
 
-Please, see the corresponding [section](import_editor).
+Please, see the corresponding [section](/business-integration/ue/import_editor).
 
 ## Support
 
@@ -1939,7 +1939,7 @@ You can use our [free official Marketplace Plugin](https://www.fab.com/listings/
 
 ## Importing avatar from Metaperson Creator
 
-With the plugin you can easily import into the level an fbx model created with [MetaPerson Creater](https://metaperson.avatarsdk.com/). See the corresponding [section](import_editor) of the documentation.
+With the plugin you can easily import into the level an fbx model created with [MetaPerson Creater](https://metaperson.avatarsdk.com/). See the corresponding [section](/business-integration/ue/import_editor) of the documentation.
 
 ## "Third Person" Map
 
@@ -1949,7 +1949,7 @@ To run the demo scene you will need developer credentials that can be found on y
 
 ![Client ID and Client Secret](img/credentials01.png)
 
-See the [additional documentation](../../getting_started#developer-credentials) on the developer credentials. 
+See the [additional documentation](/getting_started#developer-credentials) on the developer credentials. 
 
 Go to the Edit->Project Settings->Plugins->Avatar SDK MetaPerson section in UE Editor and set these parameters in corresponding fields:
 
@@ -1961,7 +1961,7 @@ Playing the level opens MetaPerson Creator in the HUD. After that, all of the av
 
 When the export process is complete, the MetaPerson Creator will close and the download will begin. The archive with the avatar will be saved to the local disk and unzipped. After that skeletal mesh of the avatar will be loaded from the glb file. Avatar will be placed in the level instead of the third-person character.
 
-See more information about [animation retargeting](animation_retargeting) and  [MetaPerson Creator integration](metaperson_creator_integration).
+See more information about [animation retargeting](/business-integration/ue/animation_retargeting) and  [MetaPerson Creator integration](/business-integration/ue/metaperson_creator_integration).
 
 ## "Load Avatar" Map
 
@@ -1971,7 +1971,7 @@ See more information about [animation retargeting](animation_retargeting) and  [
 
 ## Technical details
 
-See this [page](metaperson_creator_integration) of the documentation for technical details.
+See this [page](/business-integration/ue/metaperson_creator_integration) of the documentation for technical details.
 
 ---
 
@@ -2028,7 +2028,7 @@ At first, we need to create the widget and add it to the viewport.
 
 ![Create widget](img/createwidget.png)
 
-We need to subscribe to 2 events that are raised by `UAvatarSDKWebBrowser`. The first one is `OnBrowserError` which gets raised if something goes wrong, for example, if you forget to [provide your Client ID and Client Secret](overview#running-the-sample). The second one is `OnAvatarExported` and it is raised when you've finished editing your avatar and it is ready to be downloaded from the cloud. At this point, you can also set the `ReadParametersFromSettings` parameter to false, if you'd like to provide Client ID and Client Secret in the blueprint instead of taking it from the plugin settings.
+We need to subscribe to 2 events that are raised by `UAvatarSDKWebBrowser`. The first one is `OnBrowserError` which gets raised if something goes wrong, for example, if you forget to [provide your Client ID and Client Secret](/business-integration/ue/overview#running-the-sample). The second one is `OnAvatarExported` and it is raised when you've finished editing your avatar and it is ready to be downloaded from the cloud. At this point, you can also set the `ReadParametersFromSettings` parameter to false, if you'd like to provide Client ID and Client Secret in the blueprint instead of taking it from the plugin settings.
 
 ![Events of browser](img/browserevents.png)
 
@@ -2061,7 +2061,7 @@ To run the demo scene you will need developer credentials that can be found on y
 
 ![Client ID and Client Secret](img/credentials01.png)
 
-See the [additional documentation](../../getting_started#developer-credentials) on the developer credentials. 
+See the [additional documentation](/getting_started#developer-credentials) on the developer credentials. 
 
 Go to the Edit->Project Settings->Plugins->Avatar SDK MetaPerson section in UE Editor and set these parameters in corresponding fields:
 
@@ -2224,7 +2224,7 @@ src="https://www.youtube.com/embed/A-2YfJ66mWE?si=EMn9qBItt14-U_yl">
 
 1\. Extract an archive with the MetaPerson Creator project and open it in Unity.
 
-2\. You will be prompted to provide [credentials](../../getting_started#developer-credentials). Copy **Client ID** and **Client Secret** from your account and press the **Save credentials** button.
+2\. You will be prompted to provide [credentials](/getting_started#developer-credentials). Copy **Client ID** and **Client Secret** from your account and press the **Save credentials** button.
 
 ![](./img/unity_authentication_window.JPG)
 
@@ -2324,7 +2324,7 @@ The package is available in the GitHub repository: https://github.com/avatarsdk/
 ## Web integration
 
 
-MetaPerson Creator can be integrated into your page via an HTML `<iframe>`. [JS API](js_api) messages are used to send events to and receive them from MetaPerson Creator.
+MetaPerson Creator can be integrated into your page via an HTML `<iframe>`. [JS API](/js_api) messages are used to send events to and receive them from MetaPerson Creator.
 
 ## Getting Started
 
@@ -2354,7 +2354,7 @@ MetaPerson Creator can be integrated into your page via an HTML `<iframe>`. [JS 
 </html>
 ```
 
-2\. Add an `<iframe>` element to the `<body>` section. Specify `src` parameter depending on the [MetaPerson Creator version](js_api#metaperson-creator-versions) you are going to use.
+2\. Add an `<iframe>` element to the `<body>` section. Specify `src` parameter depending on the [MetaPerson Creator version](/js_api#metaperson-creator-versions) you are going to use.
 
 ```html
 <body>
@@ -2388,7 +2388,7 @@ function onWindowMessage(evt) {
 Firstly, this code subscribes to the `DOMContentLoaded` event. When the document is loaded, it subscribes to the `message` events. `onWindowMessage` method handles all received messages and finds those that are from the MetaPerson Creator.
 Messages from MetaPerson Creator have `evt.data.source` parameter that is set to `"metaperson_creator"`.
 
-4\. Add a handle for the `metaperson_creator_loaded` event. Replace `CLIENT_ID` and `CLIENT_SECRET` with [credentials from your account](getting_started#developer-credentials).
+4\. Add a handle for the `metaperson_creator_loaded` event. Replace `CLIENT_ID` and `CLIENT_SECRET` with [credentials from your account](/getting_started#developer-credentials).
 
 ```js
 switch (evtName) {
@@ -2409,15 +2409,15 @@ It's important to ensure that you've correctly added your developer credentials 
 
 Here you can also send additional messages with configuration settings such as export and UI parameters and add handlers to other events from MetaPerson Creator.
 
-See [JS API](js_api) documentation to get more information about various parameters and events.
+See [JS API](/js_api) documentation to get more information about various parameters and events.
 
 ## Sample Page
 
-A more comprehensive web sample that covers most [JS API](js_api) methods is available at this link below. You can look at the source of this page to get more implementation details.
+A more comprehensive web sample that covers most [JS API](/js_api) methods is available at this link below. You can look at the source of this page to get more implementation details.
 
 https://metaperson.avatarsdk.com/business.html
 
-Following this link, you need to enter your [credentials](getting_started#developer-credentials) and choose the version of Meta Person Creator (Desktop or Mobile) you are going to use.
+Following this link, you need to enter your [credentials](/getting_started#developer-credentials) and choose the version of Meta Person Creator (Desktop or Mobile) you are going to use.
 
 ![](./img/web_sample_start_page.jpg)
 
@@ -2724,9 +2724,9 @@ else
 
 #### Avatar Customization
 The [MetaPerson Creator](https://metaperson.avatarsdk.com/) is used to customize the avatar. 
-For detailed steps on integrating MetaPerson Creator into a Unity desktop application, refer to the [MetaPerson Creator Integration Guide](business-integration/unity/windows_and_macos).
+For detailed steps on integrating MetaPerson Creator into a Unity desktop application, refer to the [MetaPerson Creator Integration Guide](/business-integration/unity/windows_and_macos).
 
-To generate an avatar, send a `generate_leap_avatar` event message to MetaPerson Creator using the [JS API](js_api). This message must include:
+To generate an avatar, send a `generate_leap_avatar` event message to MetaPerson Creator using the [JS API](/js_api). This message must include:
 * **Avatar gender**: Specify the desired gender.
 * **Base64-encoded ZIP archive**: A ZIP archive containing the following files:
   * `photo.jpg`
@@ -2756,7 +2756,7 @@ string base64Archive = Convert.ToBase64String(archiveBytes);
 
 Once MetaPerson Creator receives the `generate_leap_avatar` message, it computes the avatar and allows you to customize it.
 
-Use the [Export Avatar JS API](js_api#export-avatar) message to export and download the customized avatar.
+Use the [Export Avatar JS API](/js_api#export-avatar) message to export and download the customized avatar.
 
 The animation generated by the Avatar SDK Leap Unity plugin can then be applied to the customized avatar.
 
@@ -2919,8 +2919,8 @@ With your developer credentials, you can now integrate **LiveSpeak** into your w
 
 ## Next Steps
 
-- [Run our samples](samples)
-- [Check the LiveSpeak Integration guide](integration) to embed LiveSpeak into your website.
+- [Run our samples](/livespeak/samples)
+- [Check the LiveSpeak Integration guide](/livespeak/integration) to embed LiveSpeak into your website.
 
 ## Support
 

@@ -24,8 +24,8 @@ With your developer credentials, you can now integrate **LiveSpeak** into your w
 
 ## Next Steps
 
-- [Run our samples](samples)
-- [Check the LiveSpeak Integration guide](integration) to embed LiveSpeak into your website.
+- [Run our samples](/livespeak/samples)
+- [Check the LiveSpeak Integration guide](/livespeak/integration) to embed LiveSpeak into your website.
 
 ## Support
 

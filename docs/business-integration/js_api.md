@@ -7,7 +7,7 @@
 Communication between MetaPerson Creator and your HTML page or application is performed via a messaging mechanism. JavaScript messages with special events are both posted to and received from the MetaPerson Creator.
 Once MetaPerson Creator page is loaded, it sends a `metaperson_creator_loaded` event. After that, you can send JS messages to MetaPerson Creator, e.g. configuration parameters.
 
-As an example, you can look at the [Web integration sample](web_integration).
+As an example, you can look at the [Web integration sample](/web_integration).
 
 ## MetaPerson Creator Versions
 There are two versions of MetaPerson Creator: **Desktop** and **Mobile**. 
@@ -21,7 +21,7 @@ There are two versions of MetaPerson Creator: **Desktop** and **Mobile**.
 These messages can be sent only once right after MetaPerson Creator was loaded.
 
 * [**Authentication parameters**](#authentication-parameters) - in this message, you should specify your developer credentials. This ensures that your website or application is authorized to access the creator. 
-If you provide an incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. Go to [developer credentials](getting_started#developer-credentials) to get more info.
+If you provide an incorrect CLIENT_ID or CLIENT_SECRET, export functionality will be unavailable. So please check these values. Go to [developer credentials](/getting_started#developer-credentials) to get more info.
 
 * [**Export Parameters**](#export-parameters) - in this message, you can configure export parameters for your avatar. You can specify the format of the exported file (such as GLB, GLTF, or FBX), the level of detail for the exported mesh, the resolution of textures, and the format.
 
@@ -29,7 +29,7 @@ If you provide an incorrect CLIENT_ID or CLIENT_SECRET, export functionality wil
 
 ### Authentication Parameters
 
-Here's an example of how you can authenticate your account in MetaPerson Creator. You need [developer credentials](getting_started#developer-credentials) from your account.
+Here's an example of how you can authenticate your account in MetaPerson Creator. You need [developer credentials](/getting_started#developer-credentials) from your account.
 
 ```js
 let authenticationMessage = {

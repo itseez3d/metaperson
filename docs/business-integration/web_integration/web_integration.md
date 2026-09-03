@@ -4,7 +4,7 @@
 
 # Web integration
 
-MetaPerson Creator can be integrated into your page via an HTML `<iframe>`. [JS API](js_api) messages are used to send events to and receive them from MetaPerson Creator.
+MetaPerson Creator can be integrated into your page via an HTML `<iframe>`. [JS API](/js_api) messages are used to send events to and receive them from MetaPerson Creator.
 
 ## Getting Started
 
@@ -34,7 +34,7 @@ MetaPerson Creator can be integrated into your page via an HTML `<iframe>`. [JS 
 </html>
 ```
 
-2\. Add an `<iframe>` element to the `<body>` section. Specify `src` parameter depending on the [MetaPerson Creator version](js_api#metaperson-creator-versions) you are going to use.
+2\. Add an `<iframe>` element to the `<body>` section. Specify `src` parameter depending on the [MetaPerson Creator version](/js_api#metaperson-creator-versions) you are going to use.
 
 ```html
 <body>
@@ -68,7 +68,7 @@ function onWindowMessage(evt) {
 Firstly, this code subscribes to the `DOMContentLoaded` event. When the document is loaded, it subscribes to the `message` events. `onWindowMessage` method handles all received messages and finds those that are from the MetaPerson Creator.
 Messages from MetaPerson Creator have `evt.data.source` parameter that is set to `"metaperson_creator"`.
 
-4\. Add a handle for the `metaperson_creator_loaded` event. Replace `CLIENT_ID` and `CLIENT_SECRET` with [credentials from your account](getting_started#developer-credentials).
+4\. Add a handle for the `metaperson_creator_loaded` event. Replace `CLIENT_ID` and `CLIENT_SECRET` with [credentials from your account](/getting_started#developer-credentials).
 
 ```js
 switch (evtName) {
@@ -89,15 +89,15 @@ It's important to ensure that you've correctly added your developer credentials 
 
 Here you can also send additional messages with configuration settings such as export and UI parameters and add handlers to other events from MetaPerson Creator.
 
-See [JS API](js_api) documentation to get more information about various parameters and events.
+See [JS API](/js_api) documentation to get more information about various parameters and events.
 
 ## Sample Page
 
-A more comprehensive web sample that covers most [JS API](js_api) methods is available at this link below. You can look at the source of this page to get more implementation details.
+A more comprehensive web sample that covers most [JS API](/js_api) methods is available at this link below. You can look at the source of this page to get more implementation details.
 
 https://metaperson.avatarsdk.com/business.html
 
-Following this link, you need to enter your [credentials](getting_started#developer-credentials) and choose the version of Meta Person Creator (Desktop or Mobile) you are going to use.
+Following this link, you need to enter your [credentials](/getting_started#developer-credentials) and choose the version of Meta Person Creator (Desktop or Mobile) you are going to use.
 
 ![](./img/web_sample_start_page.jpg)
 
