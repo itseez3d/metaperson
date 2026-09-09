@@ -4,6 +4,14 @@
 
 # Desktop Version
 
+### 1.39.2 (2026-09-09)
+
+https://metaperson.avatarsdk.com/1.39.2/iframe.html
+
+**Release notes**:
+
+  * Added feedback surveys
+
 ### 1.39.1 (2026-09-01)
 
 https://metaperson.avatarsdk.com/1.39.1/iframe.html
