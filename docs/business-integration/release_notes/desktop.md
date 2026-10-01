@@ -4,6 +4,17 @@
 
 # Desktop Version
 
+### 1.40.0 (2026-10-01)
+
+https://metaperson.avatarsdk.com/1.40.0/iframe.html
+
+**Release notes**:
+
+  * New haircuts:
+    * Haircut25
+    * Haircut_Afro_Fade_2
+  * All animations are now available for export
+
 ### 1.39.3 (2026-09-23)
 
 https://metaperson.avatarsdk.com/1.39.3/iframe.html
