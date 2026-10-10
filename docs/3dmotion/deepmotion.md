@@ -8,8 +8,12 @@ description: "Animate MetaPerson avatars with DeepMotion's Animate 3D and SayMot
 
 [DeepMotion](https://www.deepmotion.com/) offers a comprehensive suite of advanced tools specifically designed for creating intricate skeletal animations. These advanced tools can animate MetaPerson avatars with high precision and realism, offering users an unmatched digital animation experience.
 
-:::tip We also make animation technology
-If you need animations without video or mocap, see **[Avatar SDK Move](/move)** — it turns a text prompt into a Humanoid clip for MetaPerson avatars and any humanoid model.
+:::info Looking for DeepMotion itself?
+This page is our guide to using DeepMotion's tools with MetaPerson avatars. DeepMotion's own site and documentation are at [deepmotion.com](https://www.deepmotion.com/).
+:::
+
+:::tip Prefer to generate the animation without leaving MetaPerson?
+**[Avatar SDK Move](/move)** generates a Humanoid animation clip for a MetaPerson avatar from a text prompt. Generation and preview are free in [MetaPerson Creator](https://metaperson.avatarsdk.com); exporting a clip (FBX/GLB) uses in-app credits. Unity developers can do the same in the Editor or at runtime with the [Move Unity plugin](/move-unity-plugin) (beta, Unity 6000.0+; free for testing and evaluation, commercial use on request). Product page: [avatarsdk.com/move](https://avatarsdk.com/move/).
 :::
 
 <div class="iframe-container">
