@@ -1032,6 +1032,42 @@ There are several configuration slots where you can define parameters: **avatar*
 ## Desktop Version
 
 
+### 1.41.0 (2026-10-06)
+
+https://metaperson.avatarsdk.com/1.41.0/iframe.html
+
+**Release notes**:
+
+  * Added exports history
+  * UI improvements
+
+### 1.40.0 (2026-10-01)
+
+https://metaperson.avatarsdk.com/1.40.0/iframe.html
+
+**Release notes**:
+
+  * New haircuts:
+    * Haircut25
+    * Haircut_Afro_Fade_2
+  * All animations are now available for export
+
+### 1.39.3 (2026-09-23)
+
+https://metaperson.avatarsdk.com/1.39.3/iframe.html
+
+**Release notes**:
+
+  * Reduced the number of feedback surveys
+
+### 1.39.2 (2026-09-09)
+
+https://metaperson.avatarsdk.com/1.39.2/iframe.html
+
+**Release notes**:
+
+  * Added feedback surveys
+
 ### 1.39.1 (2026-09-01)
 
 https://metaperson.avatarsdk.com/1.39.1/iframe.html
