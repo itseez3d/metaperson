@@ -5,6 +5,15 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 1.42.0 (2026-10-14)
+
+https://metaperson.avatarsdk.com/1.42.0/iframe.html
+
+**Release notes**:
+
+  * Added hologram effect when an avatar is loaded
+  * Updated Avatar SDK Move (animation generation)
+
 ### 1.41.0 (2026-10-06)
 
 https://metaperson.avatarsdk.com/1.41.0/iframe.html
