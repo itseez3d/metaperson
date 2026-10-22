@@ -10,7 +10,7 @@ ready to play on your avatar. There is no motion capture, no suit, and no browsi
 animation library for something close enough.
 
 <iframe width="560" height="315" allow="fullscreen"
-src="https://www.youtube.com/embed/C0bZ1FFsBNc">
+src="https://www.youtube.com/embed/EHR8vtuhUhA">
 </iframe>
 
 &nbsp;
@@ -23,9 +23,9 @@ with MetaPerson avatars without any conversion or retargeting setup on your side
 **In the web editor.** Open [MetaPerson Creator](https://metaperson.avatarsdk.com), select your
 avatar and describe the movement you want. The animation is generated and previewed on your own
 avatar, and you can export it together with the model. See the
-[Avatar SDK Move product page](https://avatarsdk.com/move/) for the current beta status.
+[Avatar SDK Move product page](https://avatarsdk.com/move/) for product details.
 
-![Animation generation in MetaPerson Creator.](./img/metaperson-creator-animate.png)
+![Animation generation in MetaPerson Creator: a prompt, duration and Generate button above the My Animations list, next to an avatar performing a generated animation.](./img/metaperson-creator-animate.png)
 
 **In Unity.** The [Move Unity plugin](/move-unity-plugin) brings the same pipeline into the Unity
 Editor and into your running application — see that page for installation, the Editor workflow and
@@ -33,13 +33,13 @@ the runtime API, and the [plugin page on avatarsdk.com](https://avatarsdk.com/mo
 for product details and licensing. In the Editor
 you build a library of clips as project assets; at runtime your application can generate
 animations on demand, so the people using your app can describe the movement they want and watch
-it play.
+it play. Generation takes a few minutes.
 
 ```csharp
 await animationGenerator.Generate(targetModel, prompt, duration);
 ```
 
-![Animation generation in Avatar SDK Move Unity plugin.](./img/move-plugin-animation.png)
+![The Animation Generator window in the Avatar SDK Move Unity plugin, with a prompt and an animation in progress, next to a character performing a generated animation.](./img/move-plugin-animation.png)
 
 ## Works with any humanoid model
 
@@ -59,5 +59,4 @@ WebGL build.
 - Unity 6000.0 or newer
 - Windows, macOS, Linux, WebGL, Android and iOS
 
-Move is currently in beta. For commercial use and licensing, contact us at
-[support@avatarsdk.com](mailto:support@avatarsdk.com).
+For questions about Move, contact us at [support@avatarsdk.com](mailto:support@avatarsdk.com).
