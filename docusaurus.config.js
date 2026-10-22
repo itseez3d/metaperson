@@ -97,6 +97,8 @@ const config = {
         // Also emit a raw .md at every linked path so the llms.txt links resolve
         // to clean markdown (the plugin builds link paths from files, not slugs).
         generateMarkdownFiles: true,
+        // Unlisted third-party guides (DeepMotion) stay reachable by URL but are kept out of llms.txt.
+        ignoreFiles: ['3dmotion/deepmotion.md', '3dmotion/animate3d.md', '3dmotion/saymotion.md'],
         removeDuplicateHeadings: true,
         includeBlog: false,
       },

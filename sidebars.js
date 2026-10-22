@@ -119,7 +119,6 @@ const sidebars = {
 			'3dmotion/move',
 			'3dmotion/move-unity-plugin',
 			'3dmotion/mixamo',
-			'3dmotion/deepmotion',
 		]
 	},
 	{
