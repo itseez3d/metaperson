@@ -17,4 +17,4 @@ Currently, MetaPerson Creator utilizes the MetaPerson avatars pipeline. See the 
 
 You can find a step-by-step tutorial on creating a MetaPerson avatar from a photo and download the avatar’s mesh, haircut, and outfit in glb format using the curl command-line utility on the following&nbsp;[page](https://api.avatarsdk.com/samples/curl_metaperson_20/).
 
-Please note that REST API for MetaPerson avatars is available only on the&nbsp;[Enterprise plan](https://avatarsdk.com/pricing-cloud/). Contact us at&nbsp;[support@avatarsdk.com](mailto:support@avatarsdk.com) if you have any questions.
+Please note that REST API access for MetaPerson avatars is included in the&nbsp;[Pro plan](https://avatarsdk.com/pricing-cloud/) for companies with less than $2M in revenue over the past 12 months and less than $2M in total funding raised, and in the Enterprise plan for everyone else. Contact us at&nbsp;[support@avatarsdk.com](mailto:support@avatarsdk.com) if you have any questions.
