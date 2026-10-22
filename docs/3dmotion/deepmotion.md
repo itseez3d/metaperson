@@ -13,7 +13,7 @@ This page is our guide to using DeepMotion's tools with MetaPerson avatars. Deep
 :::
 
 :::tip Prefer to generate the animation without leaving MetaPerson?
-**[Avatar SDK Move](/move)** generates a Humanoid animation clip for a MetaPerson avatar from a text prompt. Generation and preview are free in [MetaPerson Creator](https://metaperson.avatarsdk.com); exporting a clip (FBX/GLB) uses in-app credits. Unity developers can do the same in the Editor or at runtime with the [Move Unity plugin](/move-unity-plugin) (beta, Unity 6000.0+; free for testing and evaluation, commercial use on request). Product page: [avatarsdk.com/move](https://avatarsdk.com/move/).
+**[Avatar SDK Move](/move)** generates a Humanoid animation clip for a MetaPerson avatar from a text prompt. It is available in [MetaPerson Creator](https://metaperson.avatarsdk.com). Unity developers can do the same in the Editor or at runtime with the [Move Unity plugin](/move-unity-plugin) (Unity 6000.0+). Product page: [avatarsdk.com/move](https://avatarsdk.com/move/).
 :::
 
 <div class="iframe-container">

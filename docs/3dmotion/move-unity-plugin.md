@@ -14,36 +14,45 @@ play.
 
 For an overview of the technology and the web editor, see [Avatar SDK Move](/move). Product details, licensing and the latest release notes live on the [Move Unity plugin page](https://avatarsdk.com/move-unity-plugin/) at avatarsdk.com.
 
-:::info Beta
-The plugin is currently in beta — generation is unlimited for testing and evaluation. See the
-[product page](https://avatarsdk.com/move-unity-plugin/) for current status, or write to
-[support@avatarsdk.com](mailto:support@avatarsdk.com) about commercial use and licensing.
-:::
-
 ## Installation
 
-1. [Download the plugin](https://releases.avatarsdk.com/move/unity/avatar_sdk_move_0.0.1.unitypackage)
+1. [Download the plugin](https://releases.avatarsdk.com/move/unity/avatar_sdk_move_1.0.0.unitypackage)
    and import the `.unitypackage` into your project.
 2. The Account window opens automatically. Enter your email, then the one-time code you receive.
+   It is the same account you use in [MetaPerson Creator](https://metaperson.avatarsdk.com).
 3. Open one of the included sample scenes — one shows the Editor workflow, the other end-to-end
    runtime generation driven from a UI.
+
+The plugin checks for updates when Unity starts and offers to download a newer version. You can also
+check at any time with **Avatar SDK Move → Check for Updates**. Before importing a newer version,
+delete `Assets/itSeez3D/AvatarSDKMove`; your generated animations live outside that folder and are
+kept.
 
 ## Your first animation in the Editor
 
 1. Open **Avatar SDK Move → Animation Generator**.
-2. Assign your humanoid model.
-3. Type what you want it to do.
-4. Press **Generate Animation**.
+2. Type what you want your character to do and choose the duration, from 5 to 10 seconds.
+3. Press **Generate**.
+4. When the animation is ready, press **Show** to play it on your model.
 
-![The Animation Generator window with a prompt entered, next to a character performing the generated animation.](./img/move-plugin-generator.png)
+![The Animation Generator window with a prompt and an animation in progress, next to a character performing a generated animation.](./img/move-plugin-generator.png)
 
-The clip is downloaded, imported as a Humanoid FBX, and starts playing in the preview — on your
-model, not on a generic mannequin.
+Generation runs in the cloud and takes a few minutes. The animation appears under
+**In Progress Animations** with an estimate of the time left, so you can keep working or start the next
+one in the meantime. When it is ready, it is imported into your project automatically as a Humanoid
+FBX, under `Assets/itSeez3D/AvatarSDKMoveData/GeneratedAnimations/`.
 
-![The Animation Generator window docked over the Unity Scene view with a character selected.](./img/move-plugin-target-model.png)
+**Completed Animations** lists every animation on your account, including those generated in another
+project. **Import** downloads one into this project; **Show More** loads older ones.
 
-If you want it wired up, one button builds an Animator Controller from the clip and assigns it to
-your character.
+![The Animation Generator window listing an animation in progress with the estimated waiting time and several completed animations.](./img/move-plugin-history.png)
+
+To preview a clip, assign a humanoid model from your scene as the **Preview Model** and press **Show**
+on an imported animation. If you want it wired up, **Create Animator Controller** builds a controller
+from the clip and assigns it to your character.
+
+If a generation fails, it stays in the list with its animation code — send the code to
+[support@avatarsdk.com](mailto:support@avatarsdk.com).
 
 ![The generated clip playing in the preview, with a Create Animator Controller button.](./img/move-plugin-preview.png)
 
@@ -54,19 +63,33 @@ Add the `AnimationGenerator` prefab to the scene and call `Generate`:
 ```csharp
 // targetModel — a GameObject with an Animator whose Avatar is Humanoid
 // prompt      — plain-text description of the movement
-// duration    — requested clip length in seconds
-AnimationClip clip = await animationGenerator.Generate(targetModel, prompt, duration);
+// duration    — requested animation length in seconds, from 5 to 10
+await animationGenerator.Generate(targetModel, prompt, duration);
 ```
 
-The call is asynchronous and completes when the clip is ready to play. Nothing is written to disk:
-at runtime the animation is delivered as GLB, parsed in memory and applied to the `Animator`
-directly, which is why the same code path also works in a WebGL build where file system access is
-unavailable.
+The call starts the generation, waits for it to finish and plays the result on your character.
+Because generation takes a few minutes, you can also split it in two:
 
-Generation takes several seconds, so keep the UI responsive and show progress while awaiting the
-call — the included runtime sample demonstrates one way to do it.
+```csharp
+TextToAnimationData animation = await animationGenerator.StartGeneration(prompt, duration);
+// ...later, once the animation is completed:
+await animationGenerator.Play(targetModel, animation);
+```
 
-![A running application with a prompt field, a Generate button, and a character kneeling on one knee.](./img/move-plugin-runtime.png)
+`StartGeneration` returns as soon as the generation is started, so your UI stays free while it runs
+in the cloud. Progress, completion and failure are also reported through the `onProgress`,
+`onCompleted` and `onFailed` events of `AnimationGenerator`, which you can wire to UI in the Inspector.
+
+Nothing is written to disk: at runtime the animation is delivered as GLB, parsed in memory and applied
+to the character directly, which is why the same code path also works in a WebGL build where file
+system access is unavailable.
+
+The users of your app sign in with their own email and a one-time code. The runtime sample includes a
+ready-made `AccountPanel` prefab for that, and
+keeps a history of the user's animations: generations in progress survive restarting the app, and
+clicking a completed animation plays it.
+
+![The runtime sample with sign-in, a prompt and animation history, and a character playing a generated animation.](./img/move-plugin-runtime.png)
 
 ## Retargeting
 
@@ -87,6 +110,8 @@ mis-mapped bone in the Humanoid rig is the usual cause.
 ## Requirements and platforms
 
 - **Unity version:** Unity 6000.0 or newer.
+- **Render pipeline:** the plugin's scripts work with any render pipeline; the bundled sample models
+  use URP materials.
 - **Supported platforms:** Windows, macOS, Linux, WebGL, Android and iOS.
 
 ## Notes and limitations
@@ -97,12 +122,11 @@ not supported.
 
 **Clip format differs by context.** In the Editor a clip arrives as FBX and is imported as a
 standard Unity Humanoid `AnimationClip` — usable in Animator Controllers, Timeline and blend trees
-like any other asset. At runtime it arrives as GLB and exists only in memory for that session; store
-the prompt, not the clip, if you need to reproduce it later.
+like any other asset. At runtime it arrives as GLB and exists only in memory for that session; the
+animation stays in the user's history, so it can be played again later.
 
 **Shipping runtime generation.** Generation happens in the cloud, so a build that generates
-animations at runtime needs network access and your account credentials configured in the project.
-Plan for the failure path — no connection, or a request that takes longer than your UI expects.
+animations at runtime needs network access, and each user signs in to their own account. Plan for
+the failure path — no connection, or a generation that takes longer than your UI expects.
 
-**Prompt length and duration.** Longer requested durations take longer to generate. Start with short
-clips (a few seconds) while iterating on prompt wording.
+**Duration.** Animations are 5 to 10 seconds long, and longer animations take longer to generate.
