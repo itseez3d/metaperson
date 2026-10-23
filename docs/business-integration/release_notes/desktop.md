@@ -5,6 +5,14 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 1.43.0 (2026-10-22)
+
+https://metaperson.avatarsdk.com/1.43.0/iframe.html
+
+**Release notes**:
+
+  * Redesigned the animation generation UI in Avatar SDK Move
+
 ### 1.42.0 (2026-10-14)
 
 https://metaperson.avatarsdk.com/1.42.0/iframe.html
