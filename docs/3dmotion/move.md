@@ -1,13 +1,15 @@
 # Avatar SDK Move: Text-to-Animation for MetaPerson Avatars
 
-> Generate 3D animations for MetaPerson avatars from a text prompt with Avatar SDK Move — no mocap, no animation library. Available in the web editor and as a Unity plugin.
+> Text to 3D animation for MetaPerson avatars: Avatar SDK Move generates a rigged animation clip from a text prompt — no mocap, no animation library. In the web editor and as a Unity plugin.
 
 # Avatar SDK Move
 
 Avatar SDK Move generates a 3D character animation from a text description. You type what the
 character should do, the animation is generated in the cloud, and it arrives as a Humanoid clip
 ready to play on your avatar. There is no motion capture, no suit, and no browsing through an
-animation library for something close enough.
+animation library for something close enough. In other words, Move is a text-to-motion
+generator: the output is a 3D animation (FBX or GLB) for your character, not a video. Product
+details and pricing are on the [text to 3D animation page](https://avatarsdk.com/move/).
 
 <iframe width="560" height="315" allow="fullscreen"
 src="https://www.youtube.com/embed/EHR8vtuhUhA">
@@ -58,5 +60,19 @@ WebGL build.
 
 - Unity 6000.0 or newer
 - Windows, macOS, Linux, WebGL, Android and iOS
+
+## Common questions
+
+**Is Move a text-to-motion tool?** Yes — text-to-motion and text-to-animation mean the same thing
+here: a prompt goes in, a 3D character animation comes out. The result is a Humanoid clip you can
+retarget, blend and edit, not a rendered video.
+
+**Can I generate an animation from a text prompt for free?** Generation is paid (about a dollar per
+5-second clip, billed from the same account balance in MetaPerson Creator and in the Unity plugin);
+creating the MetaPerson avatar you animate is free.
+
+**Does it work outside Unity?** Export FBX or GLB from MetaPerson Creator and use the clip in Unreal
+Engine, Blender, three.js or Babylon.js. The Unity plugin delivers clips directly as Humanoid
+animations; see [Mixamo animations](/mixamo) for combining generated clips with library ones.
 
 For questions about Move, contact us at [support@avatarsdk.com](mailto:support@avatarsdk.com).
