@@ -4,6 +4,17 @@
 
 # Desktop Version
 
+### 2.0.0 (2026-11-13)
+
+https://metaperson.avatarsdk.com/2.0.0/iframe.html
+
+**Release notes**:
+
+  * Redesigned UI
+  * Added Humanoid model generation from a text prompt or an image
+  * Added Generic model generation from a text prompt or an image
+  * Added sample animations in Avatar SDK Move
+
 ### 1.43.0 (2026-10-22)
 
 https://metaperson.avatarsdk.com/1.43.0/iframe.html
