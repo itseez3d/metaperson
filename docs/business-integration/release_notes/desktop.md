@@ -5,6 +5,17 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 2.0.1 (2026-11-17)
+
+https://metaperson.avatarsdk.com/2.0.1/iframe.html
+
+**Release notes**:
+
+  * Lowered the price of Generic model generation to 6 coins
+  * Added drag & drop for images
+  * Updated the model viewer UI
+  * Updated the JS API for business integration: removed obsolete UI parameters (see [JS API](/js_api#ui-parameters))
+
 ### 2.0.0 (2026-11-13)
 
 https://metaperson.avatarsdk.com/2.0.0/iframe.html
