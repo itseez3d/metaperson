@@ -5,6 +5,17 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 2.1.0 (2026-11-19)
+
+https://metaperson.avatarsdk.com/2.1.0/iframe.html
+
+**Release notes**:
+
+  * Added an "Open payment" button to reopen the payment window if the browser blocked it
+  * Added controls to rate generated models
+  * Improved rendering quality in the model viewer
+  * Added support for generating Generic models from multiple images
+
 ### 2.0.1 (2026-11-17)
 
 https://metaperson.avatarsdk.com/2.0.1/iframe.html
