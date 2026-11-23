@@ -5,6 +5,14 @@ description: "Release notes and download links for the desktop version of MetaPe
 ---
 # Desktop Version
 
+### 2.1.2 (2026-11-23)
+
+https://metaperson.avatarsdk.com/2.1.2/iframe.html
+
+**Release notes**:
+
+  * Fixed bug: unable to download the first sample avatar
+
 ### 2.1.0 (2026-11-19)
 
 https://metaperson.avatarsdk.com/2.1.0/iframe.html
